@@ -9,9 +9,33 @@ body {
   width: 1000px;
 }
 
-.footer {
-  background-color: #2C3E50
+header {
+  color: #2ecc71;
+  background-color: #2C3E50;
 }
 
+nav {
+  background-color: #0082BC;
+  color: #FFF;
+}
+
+nav a:link, nav a:visited {
+  color: #FFF;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #34495E;
+}
+
+footer {
+  background-color: #2C3E50;
+}
+
+main {
+  color: #2C3E50;
+  background-color: #ECF0F1;
+  height: 50px;
+}
 
 

@@ -1,12 +1,9 @@
 LenditRails::Application.routes.draw do
 
-
-  get '/conferences' => 'conferences#index'
   get '/about' => 'conferences#about'
   get '/sponsors' => 'sponsors#index'
   get '/speakers' => 'speakers#index'
-  get '/videos' => 'videos#index'
-  root 'conferences#index'
+  root 'conferences#europe'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

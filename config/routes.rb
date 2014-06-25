@@ -4,6 +4,7 @@ LenditRails::Application.routes.draw do
   get '/sponsors' => 'sponsors#index'
   get '/speakers' => 'speakers#index'
   get '/thank-you' => 'welcome#thank-you'
+  get '/register' => 'welcome#register'
   root 'conferences#europe'
 
   # The priority is based upon order of creation: first created -> highest priority.

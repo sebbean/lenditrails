@@ -1,11 +1,20 @@
 <footer>
-  <div><%= render '/layouts/get_updates' %></div>
   <div>
-    <a href="mailto:info@lendit.co">info@lendit.co</a>
-
-    &COPY; 2014 LendIt
-
+    <%= render '/layouts/get_updates' %>
   </div>
-  <div>Connect with us on Social Media</div>
-  <div class="fb-share-button" data-href="http://lendit.co" data-width="100px" data-type="icon_link"></div>
+
+  <div>
+    <ul>
+      <li><a href="mailto:info@lendit.co">Contact Us</a></li>
+      <li>Terms of Use</li>
+    </ul>
+  </div>
+  <div>Connect with us on Social Media:</div>
+  <ul>
+    <li><i class="fa fa-facebook-square"></i></li>
+    <li><i class="fa fa-twitter-square"></i></li>
+    <li><i class="fa fa-google-plus-square"></i></li>
+    <li><i class="fa fa-youtube-square"></i></li>
+  </ul>
+<!--   <div class="fb-share-button" data-href="http://lendit.co" data-width="100px" data-type="icon_link"></div> -->
 </footer>

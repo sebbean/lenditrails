@@ -38,6 +38,7 @@ group :production do
 end
 
 ruby '1.9.3'
+# gem 'font-awesome-sass'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

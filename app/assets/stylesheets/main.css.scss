@@ -135,7 +135,7 @@ header.head {
 	min-width: 1280px;
 	padding-top: 162px;
 	padding-bottom: 50px;
-	background-image: url('https://s3-us-west-2.amazonaws.com/lendit/lendit-london-img.png');
+	background-image: url('https://s3-us-west-2.amazonaws.com/lendit/london_image_lendit_cropped.jpg');
 	background-size: 100%;
 	text-align: center;
 	h2 {
@@ -155,7 +155,7 @@ header.head {
 			top: 50%;
 			margin-top: -24px;
 		}
-		a { 
+		a {
 			color: inherit;
 			&:hover {
 				text-decoration: none;
@@ -186,8 +186,8 @@ header.head {
 footer {
 	color: $gray;
 	.get-updates {
-		h2 { 
-			margin-top: 0px; 
+		h2 {
+			margin-top: 0px;
 			font-size: 26px;
 		}
 		form {
@@ -195,14 +195,14 @@ footer {
 			.split { margin-bottom: 10px; }
 		}
 	}
-	& > .container > div { 
+	& > .container > div {
 		margin: 20px 0;
 		float: left;
 		height: 130px;
 		padding: 0 10px;
 	}
 	.first { width: 40%; }
-	.middle, .last { 
+	.middle, .last {
 		width: 30%;
 		font-style: italic;
 	}
@@ -223,14 +223,14 @@ footer {
 				}
 			}
 		}
-		
+
 	}
 	ul {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 	}
-	a { 
+	a {
 		color: $gray;
 		&:hover {
 			color: $green;
@@ -238,7 +238,7 @@ footer {
 		}
 	}
 }
-/* 
+/*
 Old CSS
 .get-updates {
   background-color: #1abc9c;

@@ -52,6 +52,16 @@ button {
 	@include button();
 }
 
+a {
+	&.green {
+		color: $green !important;
+		font-weight: bold;
+		&:hover {
+			color: inherit;
+		}
+	}
+}
+
 form {
 	.split {
 		width: 100%;
@@ -79,6 +89,8 @@ form {
 
 /* Navigation */
 nav {
+	background: rgba(255, 255, 255, .3);
+	box-shadow: 7px 7px 5px rgba(0, 0, 0, .35);
 	position: relative;
 	margin-bottom: -112px;
 	min-height: 112px;
@@ -86,7 +98,6 @@ nav {
 		position: relative;
 		min-height: 112px;
 	}
-	background: rgba(255, 255, 255, .15);
 	font-size: 26px;
 	.nav-logo {
 		float: left;
@@ -122,8 +133,7 @@ nav {
 					color: inherit;
 				}
 				&.active {
-					color: $green;
-					font-weight: bold;
+					border-bottom: 4px solid $green;
 				}
 			}
 		}
@@ -137,7 +147,7 @@ header.head {
 	padding-top: 162px;
 	padding-bottom: 50px;
 	background-image: url('https://s3-us-west-2.amazonaws.com/lendit/london_image_lendit_cropped.jpg');
-	background-size: 100%;
+	background-size: auto 100%;
 	text-align: center;
 	h2 {
 		font-size:45px;
@@ -150,6 +160,10 @@ header.head {
 		padding: 20px 40px 20px 20px;
 		color: #fff;
 		position: relative;
+		@include button(transparent, $green, 5px);
+		&:hover {
+			background-color: rgba(139, 191, 40, 0.8);
+		}
 		.icon {
 			position: absolute;
 			right: 20px;
@@ -166,21 +180,10 @@ header.head {
 			font-size: 44px;
 			letter-spacing: 0.1em;
 		}
-		span:last-of-type {
-			font-size: 32px;
-		}
+		span:last-of-type { font-size: 32px; }
 	}
-	button:first-of-type {
-		margin-right: 23px;
-		@include button(transparent, $green, 5px);
-	}
-	button:last-of-type {
-		margin-left: 23px;
-		@include button($green, $green, 5px);
-		&:hover {
-			background-color: rgba(139, 191, 40, 0.8);
-		}
-	}
+	button:first-of-type { margin-right: 23px; }
+	button:last-of-type { margin-left: 23px; }
 }
 
 /* Footer */

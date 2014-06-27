@@ -81,16 +81,16 @@ form {
 nav {
 	position: relative;
 	margin-bottom: -112px;
+	min-height: 112px;
 	.container {
 		position: relative;
+		min-height: 112px;
 	}
 	background: rgba(255, 255, 255, .15);
 	font-size: 26px;
 	.nav-logo {
 		float: left;
 		img {
-			width: 95px;
-			height: 112px;
 		}
 	}
 	ul {
@@ -131,10 +131,11 @@ nav {
 
 /* Header */
 header.head {
+	background-position: 0px -80px;
 	min-width: 1280px;
 	padding-top: 162px;
 	padding-bottom: 50px;
-	background-image: url('/assets/london_image_lendit.jpg');
+	background-image: url('https://s3-us-west-2.amazonaws.com/lendit/lendit-london-img.png');
 	background-size: 100%;
 	text-align: center;
 	h2 {

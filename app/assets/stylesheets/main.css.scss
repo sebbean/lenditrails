@@ -205,6 +205,24 @@ footer {
 		font-style: italic;
 	}
 	.first, .middle { border-right: 1px solid $gray; }
+	.last {
+		& > div {
+			float: left;
+			width: 50%;
+		}
+		& > ul {
+			float: right;
+			width: 50%;
+			li {
+				float: left;
+				margin-right: 10px;
+				i {
+					font-size:35px;
+				}
+			}
+		}
+		
+	}
 	ul {
 		list-style: none;
 		margin: 0;

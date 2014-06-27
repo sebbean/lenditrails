@@ -144,14 +144,23 @@ nav {
 header.head {
 	background-position: 0px -80px;
 	min-width: 1280px;
-	padding-top: 162px;
+	padding-top: 157px;
 	padding-bottom: 50px;
 	background-image: url('https://s3-us-west-2.amazonaws.com/lendit/london_image_lendit_cropped.jpg');
-	background-size: auto 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
 	text-align: center;
+	h1 {
+		margin: 0;
+		img {
+			height: 231px;
+			width: auto;
+		}
+	}
 	h2 {
 		font-size:45px;
 		font-weight: lighter;
+		margin-top: 0;
 		margin-bottom: 50px;
 	}
 	button {
@@ -175,6 +184,10 @@ header.head {
 			&:hover {
 				text-decoration: none;
 			}
+		}
+		span {
+			line-height: 1;
+			display: block;
 		}
 		span:first-of-type {
 			font-size: 44px;

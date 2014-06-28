@@ -37,7 +37,10 @@ group :production do
   # gem 'canonical-rails'
 end
 
+gem 'canonical-rails', github: 'jumph4x/canonical-rails'
+
 ruby '1.9.3'
+
 # gem 'font-awesome-sass'
 
 # Use ActiveModel has_secure_password

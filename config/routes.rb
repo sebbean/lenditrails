@@ -7,6 +7,18 @@ LenditRails::Application.routes.draw do
   get '/register' => 'welcome#register'
   root 'conferences#europe'
 
+  # See all redirects in WelcomeController
+  # 301 redirects from old WP site
+  get '/event' => 'welcome#go_to_root'
+  get '/event/:id' => 'welcome#go_to_root'
+  get '/speaker' => 'welcome#go_to_speakers'
+  get '/speaker/:id' => 'welcome#go_to_speakers'
+  get '/2014' => 'welcome#go_to_root'
+  get '/lendit-spring-2014' => 'welcome#go_to_root'
+  get '/lendit2013' => 'welcome#go_to_root'
+  get '/lendit-2014-san-francisco-presentations' => 'welcome#go_to_root'
+  get '/videos-2' => 'videos#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

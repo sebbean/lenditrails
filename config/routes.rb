@@ -20,6 +20,7 @@ LenditRails::Application.routes.draw do
   get '/lendit-2014-san-francisco-presentations' => 'welcome#go_to_root'
 
   # 302 redirect to be updated to 301 once Wistia is configured
+  get '/videos', to: redirect("http://lendit.tv", status: 302)
   get '/videos-2', to: redirect("http://lendit.tv", status: 302)
 
   # The priority is based upon order of creation: first created -> highest priority.

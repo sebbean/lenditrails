@@ -5,6 +5,7 @@ LenditRails::Application.routes.draw do
   get '/speakers' => 'speakers#index'
   get '/speakers/sign-up' => 'speakers#sign-up'
   get '/thank-you' => 'welcome#thank-you'
+  get '/terms-of-use' => 'welcome#terms-of-use'
   root 'conferences#london'
 
   # See all redirects in WelcomeController

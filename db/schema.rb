@@ -11,9 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140729012714) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "sponsors", force: true do |t|
+    t.string   "company_name"
+    t.string   "logo_img"
+    t.text     "description"
+    t.string   "site_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

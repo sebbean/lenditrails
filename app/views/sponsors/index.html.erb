@@ -69,7 +69,7 @@
   </section>
 
   <section><% @sponsors.each do |sponsor| %>
-    <%= sponsor.img_url %>
+    <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
     <% end %>
   </section>
 

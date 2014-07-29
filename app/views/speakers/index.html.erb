@@ -13,10 +13,24 @@
 			<p>Join the ranks of these esteemed industry leaders who have participated at LendIt conferences!</p>
     </section>
 
-    <section><!-- Section for the speakers profiles (image with name, title) grid -->
+    <section>
+      <% @europe_speakers.each do |speaker| %>
+        <%= speaker.img_url %>
+        <%= speaker.name %>
+        <%= speaker.title %>
+        <%= speaker.company_name %>
+        <%= speaker.bio %>
+      <% end %>
     </section>
 
-    <section><!-- Section for the past speakers grid -->
+    <section>
+      <% @past_speakers.each do |speaker| %>
+        <%= speaker.img_url %>
+        <%= speaker.name %>
+        <%= speaker.title %>
+        <%= speaker.company_name %>
+        <%= speaker.bio %>
+      <% end %>
     </section>
 
 

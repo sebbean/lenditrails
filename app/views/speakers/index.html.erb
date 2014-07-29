@@ -15,21 +15,21 @@
 
     <section>
       <% @europe_speakers.each do |speaker| %>
-        <%= speaker.img_url %>
-        <%= speaker.name %>
+        <img src="<%= speaker.img_url %>" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+        <%= speaker.first_name %> <%= speaker.last_name %>
         <%= speaker.title %>
         <%= speaker.company_name %>
-        <%= speaker.bio %>
+        <%= raw speaker.bio %>
       <% end %>
     </section>
 
     <section>
       <% @past_speakers.each do |speaker| %>
-        <%= speaker.img_url %>
-        <%= speaker.name %>
+        <img src="<%= speaker.img_url %>" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+        <%= speaker.first_name %> <%= speaker.last_name %>
         <%= speaker.title %>
         <%= speaker.company_name %>
-        <%= speaker.bio %>
+        <%= raw speaker.bio %>
       <% end %>
     </section>
 

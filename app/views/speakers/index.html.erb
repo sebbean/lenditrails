@@ -3,37 +3,52 @@
 <% meta_keywords "p2p, online lending, peer-to-peer, LendIt, speakers, presenters" %>
 <%= canonical_tag -%>
 
-<div class="container">
-	<main>
+<main>
+	<div class="subhero"  style="/*temp styles*/ height:540px; overflow:hidden; border-bottom:30px solid #eee;">
+		<div class="container">
+			<h1>LendIt Europe Speakers</h1>
+			<section class="speakers-intro">
+				<div class="speakers-signup"><a href="/speakers/sign-up"><button>Sign Up To Be A Speaker</button></a></div>
+				<p>The following speakers have been confirmed for LendIt Europe 2014.</p>
+			</section>
 
-		<h1>LendIt Europe Speakers</h1>
+			<section class="current-speakers">
+				<% @europe_speakers.each do |speaker| %>
+					<div class="speaker-col">
+						<div class="speaker">
+							<div class="speaker-top">
+								<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+								<div class="speaker-top-info">
+									<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
+									<div class="speaker-title"><%= speaker.title %></div>
+									<div class="speaker-company"><%= speaker.company_name %></div>
+								</div>
+							</div>
+							<div class="speaker-bio"><%= raw speaker.bio %></div>
+						</div>
+					</div>
+				<% end %>
+			</section>
+		</div>
+	</div>
 
-		<section>
-      <div><a href="/speakers/sign-up"><button>Sign Up To Be A Speaker</button></a></div>
-			<p>The following speakers have been confirmed for LendIt Europe 2014.</p>
-    </section>
-
-    <section>
-      <% @europe_speakers.each do |speaker| %>
-        <img src="<%= speaker.img_url %>" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
-        <%= speaker.first_name %> <%= speaker.last_name %>
-        <%= speaker.title %>
-        <%= speaker.company_name %>
-        <%= raw speaker.bio %>
-      <% end %>
-    </section>
-
-    <section>
-      <% @past_speakers.each do |speaker| %>
-        <img src="<%= speaker.img_url %>" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
-        <%= speaker.first_name %> <%= speaker.last_name %>
-        <%= speaker.title %>
-        <%= speaker.company_name %>
-        <%= raw speaker.bio %>
-      <% end %>
-    </section>
-
-
-  </main>
-</div>
+	<section class="past-speakers">
+		<div class="container">
+			<h2>Past Speakers</h2>
+			<% @past_speakers.each do |speaker| %>
+				<div class="speaker">
+					<div class="speaker-top">
+						<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+						<div class="speaker-top-info">
+							<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
+							<div class="speaker-title"><%= speaker.title %></div>
+							<div class="speaker-company"><%= speaker.company_name %></div>
+						</div>
+					</div>
+					<div class="speaker-bio" style="/*temp styles*/display:none;"><%= raw speaker.bio %></div>
+				</div>
+			<% end %>
+		</div>
+	</section>
+</main>
 

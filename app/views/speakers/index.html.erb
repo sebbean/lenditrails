@@ -14,15 +14,15 @@
     </section>
 
     <section>
-      <div class="europe-speaker">
         <% @europe_speakers.each do |speaker| %>
+          <a href="<%= speaker.img_url %>" class="europe-speaker" title="<%= speaker.first_name %> <%= speaker.last_name %> ">
           <img src="<%= speaker.img_url %>" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
           <%= speaker.first_name %> <%= speaker.last_name %>
           <%= speaker.title %>
           <%= speaker.company_name %>
           <%= raw speaker.bio %>
+          </a>
         <% end %>
-      </div>
     </section>
 
     <section>

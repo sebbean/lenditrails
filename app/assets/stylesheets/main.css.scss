@@ -8,7 +8,14 @@ $linkcolor: #89BE2E;
 $hovercolor: #86BD33;
 %clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }  
 body {
-	font-family:opensans;
+	font-family:verlag;
+	font-weight:200;
+	letter-spacing:.3pt;
+	font-size:16px;
+	color:#777
+}
+button {
+	letter-spacing:.3pt;
 }
 a {
 	color:$linkcolor;
@@ -17,8 +24,10 @@ a {
 	}
 }
 h1 {
-	font-family:verlag condensed;
+	font-family:verlag ;
 	font-size:32px;
+	color:#000;
+	font-weight:600;
 }
 
 h2 {
@@ -44,10 +53,12 @@ nav {
 			}
 			a {
 				display:block;
+				margin-top:15px;
+
 				width:100px;
 				height:90px;
 				background:url(lendit_new_logo_grey.png) center center no-repeat;
-				background-size:contain;
+				background-size:110px;
 				img {
 					display:none;
 					max-height:70px;
@@ -55,7 +66,7 @@ nav {
 			}
 		}
 		ul {
-			margin-top:10px;
+			margin-top:20px;
 			float:right;
 			font-family:verlag;
 			font-weight:500;
@@ -143,7 +154,6 @@ body.conferences  {
 							font-size:16px;
 							font-family:verlag ;
 							font-weight:500;
-							letter-spacing:.4pt;
 
 							box-sizing:border-box;
 							-moz-box-sizing:border-box;
@@ -225,8 +235,8 @@ footer {
 		.col2 {
 			float:right;
 			width:300px;
-			
-			
+
+
 			.social {
 				list-style-type:none;
 				margin:0;
@@ -268,3 +278,147 @@ footer {
 }
 
 .conferences .tab-home  {background:#eee; color:#999;}
+
+
+.subhero {
+	background:#eee;
+	margin-top:20px;
+	padding-top:10px;
+	
+}
+.speakers-intro {
+	margin-bottom:30px;
+	.speakers-signup {
+
+		margin-top:-36px;
+		margin-right:10px;
+		float:right;
+		a	{
+			font-size:16px;
+			font-weight:500;
+			background:#fff;
+			border:1px solid $linkcolor;
+			display:block;
+
+			button {
+				border:none;
+				background:none;
+				padding:4px 10px;
+
+			}
+			&:hover {
+				background:$linkcolor;
+				color: #fff;
+
+			}
+
+		}
+	}
+	p {
+		font-size:18px;
+	}
+
+}
+
+
+.current-speakers {
+	display:table;
+	width:980px;
+	margin-left:-20px;
+	.speaker-col {
+		display:table-cell;
+		.speaker {
+			width:300px;
+			box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			padding:20px 18px 20px 20px;
+			background:#fff;
+			.speaker-top {
+
+				@extend %clearfix;
+
+				.speaker-image {
+					float:left;
+					width:137px;
+					height:166px;
+					margin-right:18px
+
+				}
+				.speaker-top-info {
+					font-family:'verlag condensed';
+					margin-bottom:18px;
+					@extend %clearfix;
+
+					margin-left:20px;
+					.speaker-name {
+						font-size:28px;
+						color:#000;
+						line-height:29px;
+						margin-bottom:8px;
+						font-weight:400;
+
+					}
+					.speaker-title {
+						font-size:14px;
+						text-transform:uppercase;
+						font-weight:300;
+						margin-right:20px;
+						line-height:18px;
+						color:#999;
+						margin-bottom:8px;
+					}
+					.speaker-company {
+						font-size:25px;
+						color:#999;
+						line-height:24px;
+
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.past-speakers {
+	.container {
+		h2 {
+			font-family:verlag;
+			font-weight:600;
+			font-size:18px;
+			text-transform:uppercase;
+			color:#000;
+			margin-top:40px;
+			margin-bottom:30px;
+		}
+		.speaker {
+			width:185px;
+			box-sizing:border-box;
+			-moz-box-sizing:border-box;
+					height:250px;
+					margin-bottom:20px;
+
+			float:left;
+			.speaker-top {
+				.speaker-image {
+					height:150px;
+					width:150px;
+					display:block;
+					margin-bottom:8px;
+				}
+				.speaker-top-info { 
+					.speaker-name {
+						font-weight:600;
+						color:#000;
+					}
+					.speaker-title {
+					}
+					.speaker-company {
+					}
+				}
+				.speaker-bio {
+				}
+			}
+		}
+	}
+}

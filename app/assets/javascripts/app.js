@@ -2,6 +2,6 @@ var app = app || {};
 
 $(document).ready(function() {
 
-  $('.europe-speaker').colorbox({rel:'europe-speaker'});
+  $('.past-speaker').colorbox({inline:true, width:"50%", rel:'past-speaker'});
 
 });

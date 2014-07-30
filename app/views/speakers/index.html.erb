@@ -38,14 +38,24 @@
 			<% @past_speakers.each do |speaker| %>
 				<div class="speaker">
 					<div class="speaker-top">
-						<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
-						<div class="speaker-top-info">
+						<a class="past-speaker" href="#<%= speaker.first_name %><%= speaker.last_name %>">
+							<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+							<div class="speaker-top-info">
+								<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
+								<div class="speaker-title"><%= speaker.title %></div>
+								<div class="speaker-company"><%= speaker.company_name %></div>
+							</div>
+						</a>
+					</div>
+					<div class="speaker-bio" style="/*temp styles*/display:none;">
+						<div id="<%= speaker.first_name %><%= speaker.last_name %>">
+							<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
 							<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
 							<div class="speaker-title"><%= speaker.title %></div>
 							<div class="speaker-company"><%= speaker.company_name %></div>
+							<%= raw speaker.bio %>
 						</div>
 					</div>
-					<div class="speaker-bio" style="/*temp styles*/display:none;"><%= raw speaker.bio %></div>
 				</div>
 			<% end %>
 		</div>

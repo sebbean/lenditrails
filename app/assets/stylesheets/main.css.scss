@@ -12,7 +12,7 @@
 * {outline:none;}
 $linkcolor: #89BE2E;
 $hovercolor: #86BD33;
-%clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }  
+%clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
 
 
 html {
@@ -141,15 +141,15 @@ h2 {
 	width:960px;
 	margin:auto;
 }
-nav {	
+nav {
 	background:#fff;
 	.container {
 		@extend %clearfix;
 		width:100%;
-		min-width:960px; 
+		min-width:960px;
 		max-width:1240px;
 		margin:auto;
-	
+
 		.nav-logo {
 			margin-left:10px;
 			float:left;
@@ -198,19 +198,19 @@ nav {
 body.conferences  {
 	header {
 		min-width:960px;
-		background:#eee url(hero-2014-london.jpg) center center no-repeat; 
+		background:#eee url(hero-2014-london.jpg) center center no-repeat;
 	 	background-size:1207px 451px  ;
 		min-height:450px;
 		@extend clearfix;
 		.container {
-			width:960px; 
+			width:960px;
 			height:450px;
 			margin:auto;
 			box-sizing:border-box;
 			-moz-box-sizing:border-box;
 		.logo {
 				margin-top:150px;
-				background:url(logo-2014-london.png) left center no-repeat; 
+				background:url(logo-2014-london.png) left center no-repeat;
 				background-size: 415px 158px;
 				padding-left:210px;
 				box-sizing:border-box;
@@ -223,7 +223,7 @@ body.conferences  {
 				font-size:32px;
 				font-weight:550;
 				color:#fff;
-				text-shadow:0 1px 3px rgba(0, 0, 0, 0.5);  
+				text-shadow:0 1px 3px rgba(0, 0, 0, 0.5);
 				i {
 					color:$linkcolor;
 					font-weight:200;
@@ -252,7 +252,7 @@ body.conferences  {
 						box-shadow:0 -1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
 						padding:12px 0 8px 60px;
 						display:block;
-						text-shadow:0 1px 3px rgba(0, 0, 0, 0.5);  
+						text-shadow:0 1px 3px rgba(0, 0, 0, 0.5);
 						span {
 							color:#fff;
 							text-transform:uppercase;
@@ -287,7 +287,7 @@ body.conferences  {
 							background:#000;
 							text-decoration:none;
 							box-shadow:0 -1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.4) inset;
-							
+
 						}
 						&:hover:before {
 							opacity:1;
@@ -295,7 +295,7 @@ body.conferences  {
 							transition:all .2s ease-in-out;
 							box-shadow:1px 0 0 rgba(255, 255, 255, 0.4) ;
 							background-color:#91E41D;
-							
+
 						}
 					}
 				}
@@ -326,7 +326,7 @@ footer {
 	.container {
 		width:960px;
 		margin:auto;
-		@extend clearfix; 
+		@extend clearfix;
 		.column1 {
 			width:430px;
 			float:left;
@@ -348,7 +348,7 @@ footer {
 				font-family:verlag;
 				color:#666;
 				font-weight:600;
-				
+
 			}
 			.social {
 				list-style-type:none;
@@ -414,7 +414,7 @@ footer {
 	margin:auto;
 	padding-bottom:50px;
  box-shadow:0 -2px 4px rgba(0, 0, 0, 0.15) inset ;
-	
+
 }
 .conferences h1 {
 	margin-top:0;
@@ -426,7 +426,7 @@ footer {
 	font-size:38px;
 	border-bottom:1px solid #ddd;
 	margin-bottom:20px;
-	
+
 }
 .conferences h1 span {
 	font-family:verlag condensed;
@@ -483,7 +483,7 @@ hr {
 	padding-top:10px;
 	padding-bottom:30px;
  box-shadow:0 2px 4px rgba(0, 0, 0, 0.15) inset ;
-	
+
 }
 .speakers-intro {
 	margin-bottom:30px;
@@ -600,7 +600,7 @@ hr {
 					display:block;
 					margin-bottom:8px;
 				}
-				.speaker-top-info { 
+				.speaker-top-info {
 					.speaker-name {
 						font-weight:600;
 						color:#000;
@@ -737,7 +737,7 @@ hr {
 					.speaker-bio-mask {
 						background: #c00;
 						position:absolute;
-						
+
 						border-bottom:0;
 						background:#fff;
 						width:520px;
@@ -764,11 +764,11 @@ hr {
 
 							margin-top:2px;
 							padding-bottom:40px;
-							
+
 
 
 						}
-						
+
 					}
 				}
 			}
@@ -778,7 +778,7 @@ hr {
 
 .welcome .subhero .col2 p {
 	font-size:16px;
-	
+
 }
 
 .welcome main .cols {

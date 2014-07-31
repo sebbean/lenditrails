@@ -3,8 +3,29 @@
 <% meta_keywords "p2p, online lending, peer-to-peer, LendIt, speakers, presenters" %>
 <%= canonical_tag -%>
 
+<style>
+	/*temp styles*/
+/*	.subhero .show-more {
+		height: 50px;
+		background #EEE;
+	}*/
+/*	.subhero .show-more:hover {
+		color #blue;
+	}*/
+
+	.subhero.show-more {
+		height: 50px;
+	}
+
+	.subhero.show-more-height {
+		height: 540px;
+		overflow: hidden;
+	}
+
+</style>
+
 <main>
-	<div class="subhero" style="/*temp styles*/ height:540px; overflow:hidden; border-bottom:30px solid #eee;">
+	<div class="subhero show-more-height">
 		<div class="container">
 			<h1>LendIt Europe Speakers</h1>
 			<section class="speakers-intro">
@@ -25,7 +46,10 @@
 								</div>
 							</div>
 
-							<div class="speaker-bio"><%= raw speaker.bio %></div>
+							<div class="speaker-bio">
+								<%= raw speaker.bio %>
+							</div>
+								<div class="show-more">See More</div>
 						</div>
 					</div>
 				<% end %>

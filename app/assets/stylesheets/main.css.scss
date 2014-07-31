@@ -320,7 +320,6 @@ footer {
 		max-width:1207px;
 		margin:auto;
 		border-right:1px solid #ddd;
-		border-top:1px solid #ddd;
 		padding-top:40px;
 		padding-bottom:40px;
 		.container {
@@ -335,7 +334,9 @@ footer {
 					font-size:20px;
 					font-family:verlag;
 					font-weight:600;
+					margin-bottom:20px;
 				}
+
 			}
 			.column2 {
 				float:right;
@@ -344,6 +345,8 @@ footer {
 					font-size:20px;
 					font-family:verlag;
 					font-weight:600;
+					margin-top:0;
+					margin-bottom:20px;
 				}
 				.social {
 					border-bottom:1px solid #ddd;
@@ -401,7 +404,12 @@ footer {
 	background:#eee;
 }
 .welcome main {
+	.main-about{
 	padding-bottom:40px;
+	h2 {
+		font-weight:600;
+	}
+}
 }
 .conferences section {
 	background:#fff;
@@ -427,6 +435,7 @@ footer {
 	font-weight:200;
 }
 footer {
+	border-top:1px solid #ddd;
 	.contactus 
 	{
 		list-style-type:none;
@@ -801,6 +810,7 @@ hr {
 	float:right;
 }
 .main-about {
+
 	max-width:1207px;
 	border-left:1px solid #ddd;
 	border-right:1px solid #ddd;
@@ -808,22 +818,19 @@ hr {
 	background:#fff;
 
 
+
+
 	.col1 {
 		h2 {
 			font-size:18px;
 			font-family:verlag;
 			font-weight:600;
-			margin-top:30px;
+			margin-top:40px;
 			margin-bottom:30px;
 		}
 	}
 }
 .get-updates {
-	background:#fafafa;
-	border:1px solid #ddd;
-	padding:20px 20px 26px 20px;
-	margin-left:-20px;
-	width:460px;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	#mc_embed_signup {
@@ -892,12 +899,15 @@ hr {
 
 .conferences nav >.container {padding-bottom:0;}
 .sponsors main {
-	background:#fff;
 	.sponsors-main {
+		background:#fff;
 		max-width:1207px;
 		margin:auto;
 		border-left:1px solid #ddd;
 		border-right:1px solid #ddd;
+		h2 {
+			font-weight:600;
+		}
 
 	}
 }
@@ -919,6 +929,8 @@ hr {
 .sponsors .subhero {
 	font-size:18px;
 }
+.sponsors main {
+}
 .sponsors main .cols {
 	margin-bottom:30px;
 }
@@ -939,13 +951,8 @@ hr {
 }
 .sponsors main .col2 {
 		h2 {
-		margin-top:0;
-		font-size:20px;
-		font-family:verlag;
-		font-weight:600;
-		text-transform:uppercase;
-		margin-top:40px;
-		margin-bottom:30px;
+			margin-top:38px;
+
 	}
 	width:420px;
 	float:right;
@@ -955,12 +962,38 @@ hr {
 	margin-top:20px;
 	margin-bottom:20px;
 }
+.quote-container:nth-child(even) {
+	color:#3E7006;
+}
+.quote-container:nth-child(odd) {
+	color:#666;
+}
+
 
 .quote {
-	font-weight:600;
+	font-weight:500;
 }
 
 .quote-speaker {
 	margin-top:3px;
 	
+}
+
+.welcome {
+	h2 {
+		margin-top:30px;
+		font-weight:600;
+	}
+}
+
+
+.event-image {
+	margin-bottom:12px;
+}
+.event-image img {
+	width:540px;
+	height:200px;
+}
+.about-event {
+	margin-bottom:40px;
 }

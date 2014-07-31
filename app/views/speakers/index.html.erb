@@ -5,10 +5,25 @@
 
 <style>
 	.subhero {
-    height: 540px;
     overflow: hidden;
     border-bottom: 30px solid #EEE;
     display: block;
+  }
+
+   section.current-speakers {
+  	padding-bottom: 20px;
+  }
+
+	.current-speaker-bio {
+		padding-bottom: 30px;
+		overflow: hidden;
+		height: 100%;
+	}
+
+	.show-more-height {
+		background-color: black;
+		color: white;
+		height: 200px;
   }
 
 </style>
@@ -38,10 +53,12 @@
 							<div class="current-speaker-bio show-more-height">
 								<%= raw speaker.bio %>
 							</div>
-							<div class="show-more">(Show More)</div>
+
+
 						</div>
 					</div>
 				<% end %>
+				<div class="show-more">Show More</div>
 			</section>
 		</div>
 	</div>

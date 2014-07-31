@@ -16,7 +16,7 @@ LenditRails::Application.routes.draw do
   get '/lendit-2014-san-francisco-presentations' => 'welcome#go_to_about'
 
   # 302 redirect to be updated to 301 once Wistia is configured
-  get 'blog', to: redirect('/', status: 302)
+  get '/blog', to: redirect('/', status: 302)
   get '/event', to: redirect('/about', status: 302)
   get '/event/:id', to: redirect('/about', status: 302)
   get '/lendit2013', to: redirect('/about', status: 302)

@@ -4,7 +4,7 @@
 <%= canonical_tag -%>
 
 <main>
-	<div class="subhero"  style="/*temp styles*/ height:540px; overflow:hidden; border-bottom:30px solid #eee;">
+	<div class="subhero" style="/*temp styles*/ height:540px; overflow:hidden; border-bottom:30px solid #eee;">
 		<div class="container">
 			<h1>LendIt Europe Speakers</h1>
 			<section class="speakers-intro">
@@ -49,12 +49,15 @@
 						</a>
 					</div>
 					<div class="speaker-bio" style="/*temp styles*/display:none;">
-						<div id="<%= speaker.first_name %><%= speaker.last_name %>">
-							<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
-							<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
-							<div class="speaker-title"><%= speaker.title %></div>
-							<div class="speaker-company"><%= speaker.company_name %></div>
-							<%= raw speaker.bio %>
+						<div id="<%= speaker.first_name %><%= speaker.last_name %>" class="speaker-container">
+							<div class="speaker-top-info">
+								<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+								<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
+								<div class="speaker-title"><%= speaker.title %></div>
+								<div class="speaker-company"><%= speaker.company_name %></div>
+							</div>
+							<div class="speaker-bio-text"><div class="speaker-bio-text-inner"><%= raw speaker.bio %></div></div>
+							<div class="speaker-bio-mask"></div>
 						</div>
 					</div>
 				</div>

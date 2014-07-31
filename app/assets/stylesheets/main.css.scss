@@ -13,8 +13,6 @@
 $linkcolor: #89BE2E;
 $hovercolor: #86BD33;
 %clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }  
-
-
 html {
 }
 body {
@@ -22,7 +20,7 @@ body {
 	font-weight:200;
 	letter-spacing:.3pt;
 	font-size:16px;
-	color:#777;
+	color:#333;
 	@extend %clearfix;
 	position:relative;
 }
@@ -38,7 +36,6 @@ input[type=email] {
 	border-left:1px solid #ddd;
 	letter-spacing:.3pt;
 	-webkit-border-radius:0;
-
 	border-radius:0;
 	box-shadow:0 1px 1px rgba(0,0,0,0.2) inset;
 	color:#444;
@@ -47,7 +44,9 @@ input[type=email] {
 	text-overflow:ellipsis;
 	line-height:20px;
 }
-
+p,li {
+	line-height:1.5em;
+}
 input[type=text]:hover,
 input[type=email]:hover  /* */
 {
@@ -57,10 +56,8 @@ input[type=email]:hover  /* */
 	border-left: 1px solid #aaa;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.2) inset;
 }
-
 input[type=text]:focus,
 input[type=email]:focus /* */
-
 {
 	outline: 0;
 	border-top: 1px solid #666;
@@ -69,55 +66,42 @@ input[type=email]:focus /* */
 	border-left: 1px solid #999;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.3) inset;
 }
-
 input[type=text]::-webkit-input-placeholder,
 input[type=email]::-webkit-input-placeholder /* */
 {
 	color: #d5d5d5;
 	padding-top: 1px;
 }
-
 input[type=text]:focus::-webkit-input-placeholder,
 input[type=email]:focus::-webkit-input-placeholder /* */
  { color: #ccc; }
-
 input[type=text]:-moz-placeholder,
 input[type=email]:-moz-placeholder /* */
 {
 	color: #d5d5d5;
 	padding-top: 1px;
 }
-
 input[type=text]:focus:-moz-placeholder,
 input[type=email]:focus:-moz-placeholder /* */
 { color: #ccc; }
-
 input[type=text]::-moz-placeholder,
 input[type=email]::-moz-placeholder /* */
 {
 	color: #d5d5d5;
 	padding-top: 1px;
 }
-
 input[type=text]:focus::-moz-placeholder,
 input[type=email]:focus::-moz-placeholder /* */
 { color: #ccc; }
-
 input[type=text]:-ms-input-placeholder,
 input[type=email]:-ms-input-placeholder /* */
-
 {
 	color: #d5d5d5;
 	padding-top: 1px;
 }
-
 input[type=text]:focus:-ms-input-placeholder,
 input[type=email]:focus:-ms-input-placeholder /* */
  { color: #ccc; }
-
-
-
-
 button {
 	letter-spacing:.3pt;
 }
@@ -130,7 +114,6 @@ a {
 h1 {
 	font-family:verlag ;
 	font-size:32px;
-	color:#666;
 	font-weight:600;
 }
 h2 {
@@ -149,7 +132,6 @@ nav {
 		min-width:960px; 
 		max-width:1240px;
 		margin:auto;
-	
 		.nav-logo {
 			margin-left:10px;
 			float:left;
@@ -287,7 +269,6 @@ body.conferences  {
 							background:#000;
 							text-decoration:none;
 							box-shadow:0 -1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.4) inset;
-							
 						}
 						&:hover:before {
 							opacity:1;
@@ -295,7 +276,6 @@ body.conferences  {
 							transition:all .2s ease-in-out;
 							box-shadow:1px 0 0 rgba(255, 255, 255, 0.4) ;
 							background-color:#91E41D;
-							
 						}
 					}
 				}
@@ -331,32 +311,32 @@ footer {
 			width:430px;
 			float:left;
 			h2 {
+				margin-top:0;
 				font-size:20px;
 				font-family:verlag;
-				color:#666;
 				font-weight:600;
 			}
 		}
 		.column2 {
 			float:right;
 			width:430px;
-
-
-
 			h2 {
 				font-size:20px;
 				font-family:verlag;
-				color:#666;
 				font-weight:600;
-				
 			}
 			.social {
+				border-bottom:1px solid #ddd;
+				width:100%;
+				display:table;
 				list-style-type:none;
 				margin:0;
-				padding:10px 0 0 0;
+				padding:6px 0 0 0;
 				li {
 					text-transform:uppercase;
-					padding:0;
+					padding:0 0 30px 0;
+
+					float:left;
 					a {
 						box-sizing:border-box;
 						-moz-box-sizing:border-box;
@@ -395,26 +375,21 @@ footer {
 .conferences nav ul {margin-bottom:20px;}
 .conferences header {
  box-shadow:0 2px 3px rgba(0, 0, 0, 0.15) inset ;
-
 }
 .conferences main {
 	background:#eee;
  box-shadow:0 -2px 4px rgba(0, 0, 0, 0.15) inset ;
 }
-
 .welcome main {
 	padding-bottom:40px;
  box-shadow:0 -2px 4px rgba(0, 0, 0, 0.15) inset ;
 }
-
-
 .conferences section {
 	background:#fff;
 	max-width:1207px;
 	margin:auto;
 	padding-bottom:50px;
  box-shadow:0 -2px 4px rgba(0, 0, 0, 0.15) inset ;
-	
 }
 .conferences h1 {
 	margin-top:0;
@@ -426,20 +401,28 @@ footer {
 	font-size:38px;
 	border-bottom:1px solid #ddd;
 	margin-bottom:20px;
-	
 }
 .conferences h1 span {
 	font-family:verlag condensed;
 	font-weight:200;
-
-
 }
-
 footer {
 	background:#fff;
+	.contactus 
+	{
+		list-style-type:none;
+		padding-left:0;
+		margin-left:0;
+		display:table;
+		li {
+			display:table-cell;
+			padding-top:30px;
+			padding-right:20px;
+			font-weight:600;
 
+		}
+	}
 }
-
 .cols {
 	@extend %clearfix;
 }
@@ -447,17 +430,14 @@ footer {
 	color:#000;
 	font-size:18px;
 }
-
 .cols li {
 	font-size:16px;
 	font-weight:400;
 	color:#000;
 }
-
 hr {
 	border-top:1px solid #ccc;
 }
-
 .conferences .container .col1 {
 	float:left;
 	width:430px;
@@ -468,22 +448,25 @@ hr {
 .conferences .container .col2 p {
 	font-weight:500;
 }
-
+.conferences .col2 li {
+	margin-bottom:4px;
+}
 .conferences .container .col2 {
 	float:right;
 	width:430px;
 }
 .conferences .container .col1 .secondary {
+ a {
+	 font-weight:bold;
+ }
 	font-size:16px;
 }
-
 .subhero {
 	background:#eee;
 	margin-top:20px;
 	padding-top:10px;
 	padding-bottom:30px;
  box-shadow:0 2px 4px rgba(0, 0, 0, 0.15) inset ;
-	
 }
 .speakers-intro {
 	margin-bottom:30px;
@@ -574,7 +557,6 @@ hr {
 			font-weight:600;
 			font-size:18px;
 			text-transform:uppercase;
-			color:#666;
 			margin-top:40px;
 			margin-bottom:10px;
 		}
@@ -711,7 +693,6 @@ hr {
 						font-weight:600;
 						font-size:18px;
 						text-transform:uppercase;
-						color:#666;
 						margin-bottom:20px;
 						z-index:2;
 					}
@@ -737,7 +718,6 @@ hr {
 					.speaker-bio-mask {
 						background: #c00;
 						position:absolute;
-						
 						border-bottom:0;
 						background:#fff;
 						width:520px;
@@ -761,45 +741,32 @@ hr {
 						.speaker-bio-text-inner {
 							margin-top:70px;
 							background:url(modal-shadow-cover.png) 0 0 no-repeat;
-
 							margin-top:2px;
 							padding-bottom:40px;
-							
-
-
 						}
-						
 					}
 				}
 			}
 		}
 	}
 }
-
 .welcome .subhero .col2 p {
 	font-size:16px;
-	
 }
-
 .welcome main .cols {
 	@extend %clearfix;
 }
-
 .welcome main .col1 {
 	width:540px;
 	float:left;
 }
-
 .welcome main .col2 {
 	width:300px;
 	float:right;
 }
-
-
 .main-about {
 	.col1 {
 		h2 {
-
 			font-size:18px;
 			font-family:verlag;
 			font-weight:600;
@@ -808,4 +775,74 @@ hr {
 		}
 	}
 }
+.get-updates {
+	background:#fafafa;
+	border:1px solid #ddd;
+	padding:20px 20px 26px 20px;
+	margin-left:-20px;
+	width:460px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	#mc_embed_signup {
+		@extend clearfix;
+		.split {
+			padding-bottom:10px;
+			display:table;
+			.mc-field-group:nth-child(1) {
+				display:table-cell;
+				&:before {
+					font-size:14px;
+					content:'First';
+					text-transform:uppercase;
+					font-weight:400;
+				}
+			}
+			.mc-field-group:nth-child(2) {
+				display:table-cell;
+				padding-left:9px;
+				&:before {
+					font-size:14px;
+					content:'Last';
+					text-transform:uppercase;
+					font-weight:400;
+				}
+			}
+			.mc-field-group {
+				margin-right:10px;
+				input[type=text] {
+					padding:6px 0 6px 6px;
+					box-sizing:border-box;
+					-moz-box-sizing:border-box;
+				}
+			}
+			&+ .mc-field-group {
 
+				display:table;
+				float:none;
+
+					input[type=email] {
+						float:none;
+						width:300px ;
+						padding:6px 0 6px 6px;
+
+
+					}
+
+				&:before {
+					font-size:14px;
+					content:'Email';
+					text-transform:uppercase;
+					font-weight:400;
+					position:relative;
+					
+
+					
+
+
+				}
+			}
+
+
+		}
+	}
+}

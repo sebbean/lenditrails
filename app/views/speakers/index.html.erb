@@ -4,29 +4,17 @@
 <%= canonical_tag -%>
 
 <style>
-	/*temp styles*/
-/*	.subhero .show-more {
-		height: 50px;
-		background #EEE;
-	}*/
-/*	.subhero .show-more:hover {
-		color #blue;
-	}*/
-
-	.subhero.show-more {
-		height: 50px;
-	}
-
-	.subhero.show-more-height {
-		height: 540px;
-		overflow: hidden;
-	}
+	.subhero {
+    height: 540px;
+    overflow: hidden;
+    border-bottom: 30px solid #EEE;
+    display: block;
+  }
 
 </style>
 
 <main>
-	<div class="subhero show-more-height">
-
+	<div class="subhero">
 		<div class="container">
 			<h1>LendIt Europe Speakers</h1>
 			<section class="speakers-intro">
@@ -47,10 +35,10 @@
 								</div>
 							</div>
 
-							<div class="speaker-bio">
+							<div class="current-speaker-bio show-more-height">
 								<%= raw speaker.bio %>
 							</div>
-								<div class="show-more">See More</div>
+							<div class="show-more">(Show More)</div>
 						</div>
 					</div>
 				<% end %>

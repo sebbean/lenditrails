@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require colorbox
+//= require readmore
 //= require shorten
 //= require turbolinks
 //= require_tree .

@@ -10,7 +10,7 @@ $(document).ready(function() {
             $(this).text("Show More");
         }
 
-        $(".text").toggleClass("show-more-height");
+        $(".current-speaker-bio").toggleClass("show-more-height");
     });
 
   // $('.current-speaker-bio').readmore({

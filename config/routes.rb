@@ -10,16 +10,17 @@ LenditRails::Application.routes.draw do
 
   # See all redirects in WelcomeController
   # 301 redirects from old WP site
-  get '/event' => 'welcome#go_to_root'
-  get '/event/:id' => 'welcome#go_to_root'
   get '/speaker' => 'welcome#go_to_speakers'
   get '/speaker/:id' => 'welcome#go_to_speakers'
   get '/2014' => 'welcome#go_to_root'
-  get '/lendit-spring-2014' => 'welcome#go_to_root'
-  get '/lendit2013' => 'welcome#go_to_root'
-  get '/lendit-2014-san-francisco-presentations' => 'welcome#go_to_root'
+  get '/lendit-2014-san-francisco-presentations' => 'welcome#go_to_about'
 
   # 302 redirect to be updated to 301 once Wistia is configured
+  get 'blog', to: redirect('/', status: 302)
+  get '/event', to: redirect('/about', status: 302)
+  get '/event/:id', to: redirect('/about', status: 302)
+  get '/lendit2013', to: redirect('/about', status: 302)
+  get '/lendit-spring-2014', to: redirect('/about', status: 302)
   get '/videos', to: redirect("http://lendit.tv", status: 302)
   get '/videos-2', to: redirect("http://lendit.tv", status: 302)
 

@@ -16,13 +16,18 @@ $hovercolor: #86BD33;
 html {
 }
 body {
+	padding:0;
 	font-family:verlag;
+	background:#fafafa;
 	font-weight:200;
 	letter-spacing:.3pt;
 	font-size:16px;
 	color:#333;
 	@extend %clearfix;
 	position:relative;
+}
+body.conferences {
+	background:#eee;
 }
 input[type=text],
 input[type=email] {
@@ -74,7 +79,7 @@ input[type=email]::-webkit-input-placeholder /* */
 }
 input[type=text]:focus::-webkit-input-placeholder,
 input[type=email]:focus::-webkit-input-placeholder /* */
- { color: #ccc; }
+{ color: #ccc; }
 input[type=text]:-moz-placeholder,
 input[type=email]:-moz-placeholder /* */
 {
@@ -101,7 +106,7 @@ input[type=email]:-ms-input-placeholder /* */
 }
 input[type=text]:focus:-ms-input-placeholder,
 input[type=email]:focus:-ms-input-placeholder /* */
- { color: #ccc; }
+{ color: #ccc; }
 button {
 	letter-spacing:.3pt;
 }
@@ -126,11 +131,16 @@ h2 {
 }
 nav {	
 	background:#fff;
+	border-bottom:1px solid #ccc;
+
 	.container {
 		@extend %clearfix;
+		padding-bottom:20px;
+		border-left:1px solid #ddd;
+		border-right:1px solid #ddd;
 		width:100%;
 		min-width:960px; 
-		max-width:1240px;
+		max-width:1207px;
 		margin:auto;
 		.nav-logo {
 			margin-left:10px;
@@ -181,7 +191,7 @@ body.conferences  {
 	header {
 		min-width:960px;
 		background:#eee url(hero-2014-london.jpg) center center no-repeat; 
-	 	background-size:1207px 451px  ;
+		background-size:1207px 451px  ;
 		min-height:450px;
 		@extend clearfix;
 		.container {
@@ -190,7 +200,7 @@ body.conferences  {
 			margin:auto;
 			box-sizing:border-box;
 			-moz-box-sizing:border-box;
-		.logo {
+			.logo {
 				margin-top:150px;
 				background:url(logo-2014-london.png) left center no-repeat; 
 				background-size: 415px 158px;
@@ -250,7 +260,7 @@ body.conferences  {
 							display:block;
 							font-size:20px;
 							font-weight:400;
-						color:#91E41D;
+							color:#91E41D;
 						}
 						&:before {
 							margin-left:-60px;
@@ -301,70 +311,81 @@ body.conferences  {
 	}
 }
 footer {
-	padding-top:20px;
-	padding-bottom:100px;
-	.container {
-		width:960px;
-		margin:auto;
-		@extend clearfix; 
-		.column1 {
-			width:430px;
-			float:left;
-			h2 {
-				margin-top:0;
-				font-size:20px;
-				font-family:verlag;
-				font-weight:600;
-			}
-		}
-		.column2 {
-			float:right;
-			width:430px;
-			h2 {
-				font-size:20px;
-				font-family:verlag;
-				font-weight:600;
-			}
-			.social {
-				border-bottom:1px solid #ddd;
-				width:100%;
-				display:table;
-				list-style-type:none;
-				margin:0;
-				padding:6px 0 0 0;
-				li {
-					text-transform:uppercase;
-					padding:0 0 30px 0;
+	margin:0;
+	.footer-inside {
+		border-bottom:1px solid #ddd;
+		background:#f5f5f5;
 
-					float:left;
-					a {
-						box-sizing:border-box;
-						-moz-box-sizing:border-box;
-						color:#6775B6;
-						padding-left:60px;
-						padding-top:14px;
-						font-size:16px;
-						font-family:verlag;
-						font-weight:600;
-						width:50px;
+		border-left:1px solid #ddd;
+		max-width:1207px;
+		margin:auto;
+		border-right:1px solid #ddd;
+		border-top:1px solid #ddd;
+		padding-top:40px;
+		padding-bottom:40px;
+		.container {
+			width:960px;
+			margin:auto;
+			@extend clearfix; 
+			.column1 {
+				width:430px;
+				float:left;
+				h2 {
+					margin-top:0;
+					font-size:20px;
+					font-family:verlag;
+					font-weight:600;
+				}
+			}
+			.column2 {
+				float:right;
+				width:430px;
+				h2 {
+					font-size:20px;
+					font-family:verlag;
+					font-weight:600;
+				}
+				.social {
+					border-bottom:1px solid #ddd;
+					width:100%;
+					display:table;
+					list-style-type:none;
+					margin:0;
+					padding:6px 0 0 0;
+					li {
+						text-transform:uppercase;
+						padding:0 0 30px 0;
+
 						float:left;
-						height:48px;
-						margin-bottom:2px;
-						display:block;
-						background: url(social.png) 0 0 no-repeat;
-						opacity:.8;
-						@include hide-text;
-						i {
-							display:none;
+						a {
+							box-sizing:border-box;
+							-moz-box-sizing:border-box;
+							color:#6775B6;
+							padding-left:60px;
+							padding-top:14px;
+							font-size:16px;
+							font-family:verlag;
+							font-weight:600;
+							width:50px;
+							float:left;
+							height:48px;
+							margin-bottom:2px;
+							display:block;
+							background: url(social.png) 0 0 no-repeat;
+							opacity:.8;
+							@include hide-text;
+							i {
+								display:none;
+							}
+							&:hover {
+								text-decoration:none;
+								opacity:1;
+							}
+							&.twitter { background-position: 0 -50px; color:#00B8F0; }
+							&.googleplus { background-position: 0 -100px; color:#EF4B32;}
+							&.youtube { background-position: 0 -150px; color:#D4221E;}
+							&.email { background-position: 0 -200px; color:#808080;}
 						}
-						&:hover {
-							text-decoration:none;
-							opacity:1;
-						}
-						&.twitter { background-position: 0 -50px; color:#00B8F0; }
-						&.googleplus { background-position: 0 -100px; color:#EF4B32;}
-						&.youtube { background-position: 0 -150px; color:#D4221E;}
-						&.email { background-position: 0 -200px; color:#808080;}
 					}
 				}
 			}
@@ -374,22 +395,21 @@ footer {
 .conferences .tab-home  {background:#eee; color:#999;}
 .conferences nav ul {margin-bottom:20px;}
 .conferences header {
- box-shadow:0 2px 3px rgba(0, 0, 0, 0.15) inset ;
 }
 .conferences main {
+
 	background:#eee;
- box-shadow:0 -2px 4px rgba(0, 0, 0, 0.15) inset ;
 }
 .welcome main {
 	padding-bottom:40px;
- box-shadow:0 -2px 4px rgba(0, 0, 0, 0.15) inset ;
 }
 .conferences section {
 	background:#fff;
 	max-width:1207px;
 	margin:auto;
 	padding-bottom:50px;
- box-shadow:0 -2px 4px rgba(0, 0, 0, 0.15) inset ;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
 }
 .conferences h1 {
 	margin-top:0;
@@ -407,7 +427,6 @@ footer {
 	font-weight:200;
 }
 footer {
-	background:#fff;
 	.contactus 
 	{
 		list-style-type:none;
@@ -456,9 +475,9 @@ hr {
 	width:430px;
 }
 .conferences .container .col1 .secondary {
- a {
-	 font-weight:bold;
- }
+	a {
+		font-weight:bold;
+	}
 	font-size:16px;
 }
 .subhero {
@@ -466,7 +485,12 @@ hr {
 	margin-top:20px;
 	padding-top:10px;
 	padding-bottom:30px;
- box-shadow:0 2px 4px rgba(0, 0, 0, 0.15) inset ;
+	max-width:1207px;
+	margin:auto;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+
 }
 .speakers-intro {
 	margin-bottom:30px;
@@ -541,12 +565,19 @@ hr {
 						color:#999;
 						line-height:24px;
 					}
+					background:#fff;
 				}
 			}
 		}
 	}
 }
 .past-speakers {
+	background:#fff;
+	max-width:1207px;
+	margin:auto;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+
 	.container {
 		margin-left:-40px;
 		width:1000px;
@@ -671,7 +702,12 @@ hr {
 	height:34px;
 	width:34px;
 }
+.speakers main {
+	background:#fafafa;
+}
+
 .speakers {
+
 	#colorbox {
 		#cboxWrapper {
 			#cboxLoadedContent {
@@ -765,6 +801,13 @@ hr {
 	float:right;
 }
 .main-about {
+	max-width:1207px;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	margin:auto;
+	background:#fff;
+
+
 	.col1 {
 		h2 {
 			font-size:18px;
@@ -820,13 +863,13 @@ hr {
 				display:table;
 				float:none;
 
-					input[type=email] {
-						float:none;
-						width:300px ;
-						padding:6px 0 6px 6px;
+				input[type=email] {
+					float:none;
+					width:300px ;
+					padding:6px 0 6px 6px;
 
 
-					}
+				}
 
 				&:before {
 					font-size:14px;
@@ -834,9 +877,9 @@ hr {
 					text-transform:uppercase;
 					font-weight:400;
 					position:relative;
-					
 
-					
+
+
 
 
 				}
@@ -845,4 +888,76 @@ hr {
 
 		}
 	}
+}
+
+.conferences nav >.container {padding-bottom:0;}
+.sponsors main {
+	background:#fff;
+	.sponsors-main {
+		max-width:1207px;
+		margin:auto;
+		border-left:1px solid #ddd;
+		border-right:1px solid #ddd;
+
+	}
+}
+.sponsor-images {
+	border-left:10px solid #fafafa;
+	border-top:10px solid #fafafa;
+	@extend %clearfix;
+	.image-container {
+		border-right:10px solid #fafafa;
+		border-bottom:10px solid #fafafa;
+		float:left;
+		img {
+			display:block;
+			width:125px;
+			height:95px;
+		}
+	}
+}
+.sponsors main .cols {
+	margin-bottom:30px;
+}
+
+.sponsors main .col1 {
+	h2 {
+		margin-top:0;
+		font-size:20px;
+		font-family:verlag;
+		font-weight:600;
+		text-transform:uppercase;
+		margin-top:40px;
+		margin-bottom:30px;
+	}
+
+	width:415px;
+	float:left;
+}
+.sponsors main .col2 {
+		h2 {
+		margin-top:0;
+		font-size:20px;
+		font-family:verlag;
+		font-weight:600;
+		text-transform:uppercase;
+		margin-top:40px;
+		margin-bottom:30px;
+	}
+	width:420px;
+	float:right;
+}
+
+.quote-container {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.quote {
+	font-weight:600;
+}
+
+.quote-speaker {
+	margin-top:3px;
+	
 }

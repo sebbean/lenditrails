@@ -11,7 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7219312/703124/css/fonts.css" />
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
@@ -32,5 +31,6 @@
   <%= render 'layouts/footer' %>
   <%= render 'layouts/googleanalytics' %>
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 </body>
 </html>

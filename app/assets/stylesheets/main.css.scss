@@ -190,7 +190,7 @@ nav {
 body.conferences  {
 	header {
 		min-width:960px;
-		background:#eee url(hero-2014-london.jpg) center center no-repeat;
+		background:#eee url(https://s3-us-west-2.amazonaws.com/lendit/home/hero-2014-london.jpg) center center no-repeat;
 		background-size:1207px 451px  ;
 		min-height:450px;
 		@extend clearfix;
@@ -202,7 +202,7 @@ body.conferences  {
 			-moz-box-sizing:border-box;
 			.logo {
 				margin-top:150px;
-				background:url(logo-2014-london.png) left center no-repeat;
+				background:url(https://s3-us-west-2.amazonaws.com/lendit/home/logo-2014-london.png) left center no-repeat;
 				background-size: 415px 158px;
 				padding-left:210px;
 				box-sizing:border-box;

@@ -21,8 +21,6 @@
 	}
 
 	.show-more-height {
-		background-color: black;
-		color: white;
 		height: 200px;
   }
 
@@ -42,6 +40,8 @@
 					<div class="speaker-col">
 						<div class="speaker">
 							<div class="speaker-top">
+
+								<a class="current-speaker" href="#<%= speaker.first_name %><%= speaker.last_name %>">
 								<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
 								<div class="speaker-top-info">
 									<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
@@ -49,16 +49,23 @@
 									<div class="speaker-company"><%= speaker.company_name %></div>
 								</div>
 							</div>
-
 							<div class="current-speaker-bio show-more-height">
 								<%= raw speaker.bio %>
 							</div>
-
-
+							</a>
 						</div>
 					</div>
+					<div style="/*temp styles*/display:none;">
+						<div id="<%= speaker.first_name %><%= speaker.last_name %>">
+							<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+							<%= speaker.first_name %> <%= speaker.last_name %>
+							<%= speaker.title %>
+							<%= speaker.company_name %>
+							<%= raw speaker.bio %>
+						</div>
+					</div>
+
 				<% end %>
-				<div class="show-more">Show More</div>
 			</section>
 		</div>
 	</div>

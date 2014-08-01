@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 
   // colorbox for current speakers
-  $('.current-speaker').colorbox({inline:true, rel:'current-speaker', innerWidth:"700px"});
+  $('.current-speaker').colorbox({inline:true, rel:'current-speaker', innerWidth:"780px", innerHeight:"430px",});
 
   // colorbox for the past speakers
   $('.past-speaker').colorbox({inline:true, innerWidth:"780px", innerHeight:"430px", rel:'past-speaker'});

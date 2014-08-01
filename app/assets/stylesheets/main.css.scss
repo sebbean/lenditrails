@@ -21,16 +21,16 @@ html {
 body {
 	padding:0;
 	font-family:verlag;
-	background:#fafafa;
+	background:#f0f0f0;
 	font-weight:200;
 	letter-spacing:.3pt;
 	font-size:16px;
 	color:#333;
 	@extend %clearfix;
 	position:relative;
+	padding-bottom:100px;
 }
 body.conferences {
-	background:#eee;
 }
 a {
 	color:$linkcolor;
@@ -58,14 +58,14 @@ hr {
 	border-top:1px solid #ccc;
 }
 .subhero {
-	background:#eee;
+	background:#fff url(brillant.png) center center repeat;
 	margin-top:20px;
 	padding-top:10px;
 	max-width:1207px;
 	margin:auto;
-	border-left:1px solid #ddd;
-	border-right:1px solid #ddd;
-	border-bottom:1px solid #ddd;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
 }
 // Form-Elements
 input[type=text],
@@ -153,19 +153,19 @@ button {
 }
 // Nav
 nav {
-	background:#fff;
 	border-bottom:1px solid #ccc;
 	.container {
+	background:#fff;
 		@extend %clearfix;
 		padding-bottom:20px;
-		border-left:1px solid #ddd;
-		border-right:1px solid #ddd;
+		border-left:1px solid #ccc;
+		border-right:1px solid #ccc;
 		width:100%;
 		min-width:960px;
 		max-width:1207px;
 		margin:auto;
 		.nav-logo {
-			margin-left:10px;
+			margin-left:20px;
 			float:left;
 			body.conferences & {
 				display:none;
@@ -184,6 +184,8 @@ nav {
 			}
 		}
 		ul {
+			
+			margin-right:10px;
 			margin-top:20px;
 			float:right;
 			font-family:verlag;
@@ -212,13 +214,13 @@ nav {
 // Footer
 footer {
 	margin:0;
+		border-bottom:1px solid #ccc;
 	.footer-inside {
-		border-bottom:1px solid #ddd;
-		background:#f5f5f5;
-		border-left:1px solid #ddd;
+		background:#fafafa;
+		border-left:1px solid #ccc;
 		max-width:1207px;
 		margin:auto;
-		border-right:1px solid #ddd;
+		border-right:1px solid #ccc;
 		padding-top:40px;
 		padding-bottom:40px;
 		.container {
@@ -247,7 +249,7 @@ footer {
 					margin-bottom:20px;
 				}
 				.social {
-					border-bottom:1px solid #ddd;
+					border-bottom:1px dotted #ccc;
 					width:100%;
 					display:table;
 					list-style-type:none;
@@ -293,9 +295,10 @@ footer {
 	}
 }
 footer {
-	border-top:1px solid #ddd;
-	.contactus
-	{
+	border-top:1px solid #ccc;
+
+	.contactus {
+		float:right;
 		list-style-type:none;
 		padding-left:0;
 		margin-left:0;
@@ -303,8 +306,8 @@ footer {
 		li {
 			display:table-cell;
 			padding-top:20px;
-			padding-right:20px;
-			font-weight:600;
+			padding-left:20px;
+			font-weight:500;
 		}
 	}
 }
@@ -528,10 +531,11 @@ body.conferences  {
 	max-width:1207px;
 	margin:auto;
 	padding-bottom:50px;
-	border-left:1px solid #ddd;
-	border-right:1px solid #ddd;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
 }
 .conferences h1 {
+	background:url(brillant.png) center center repeat;
 	margin-top:0;
 	margin-bottom:0;
 	padding-top:30px;
@@ -539,7 +543,7 @@ body.conferences  {
 	text-align:center;
 	color:#000;
 	font-size:38px;
-	border-bottom:1px solid #ddd;
+	border-bottom:1px solid #ccc;
 	margin-bottom:20px;
 }
 .conferences h1 span {
@@ -571,6 +575,9 @@ body.conferences  {
 }
 .conferences nav >.container {padding-bottom:0;}
 // Speakers
+.speakers .subhero .container {
+	padding-bottom:30px;
+}
 .speakers-intro {
 	margin-bottom:30px;
 	.speakers-signup {
@@ -609,6 +616,7 @@ body.conferences  {
 		background:#fff;
 		color:#777;
 		position:relative;
+			box-shadow:1px 1px 0 rgba(0, 0, 0, 0.1) inset, -1px -1px 0 rgba(0, 0, 0, 0.1) inset;
 		&:after {
 			border-radius:100%;
 			margin-right:10px;
@@ -693,8 +701,8 @@ body.conferences  {
 	background:#fff;
 	max-width:1207px;
 	margin:auto;
-	border-left:1px solid #ddd;
-	border-right:1px solid #ddd;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
 	.container {
 		margin-left:-40px;
 		padding-bottom:30px;
@@ -822,7 +830,6 @@ body.conferences  {
 	width:34px;
 }
 .speakers main {
-	background:#fafafa;
 }
 .speaker-colorbox-title {
 	position: absolute;
@@ -918,8 +925,8 @@ body.conferences  {
 .speaker-signup {
 	padding-top:20px;
 	padding-bottom:40px;
-	border-left:1px solid #ddd;
-	border-right:1px solid #ddd;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
 	max-width:1207px;
 	margin:auto;
 	.ss-required-asterisk {
@@ -981,12 +988,15 @@ body.conferences  {
 }
 	// Sponsors
 	.sponsors main {
+		section {
+			margin-bottom:40px;
+		}
 		.sponsors-main {
 			background:#fff;
 			max-width:1207px;
 			margin:auto;
-			border-left:1px solid #ddd;
-			border-right:1px solid #ddd;
+			border-left:1px solid #ccc;
+			border-right:1px solid #ccc;
 			h2 {
 				font-weight:600;
 			}
@@ -1037,6 +1047,10 @@ body.conferences  {
 	}
 	// About
 	.welcome main {
+			.subhero .container {
+				padding-bottom:30px;
+			}
+		
 		.main-about{
 			padding-bottom:40px;
 			h2 {
@@ -1060,8 +1074,8 @@ body.conferences  {
 	}
 	.main-about {
 		max-width:1207px;
-		border-left:1px solid #ddd;
-		border-right:1px solid #ddd;
+		border-left:1px solid #ccc;
+		border-right:1px solid #ccc;
 		margin:auto;
 		background:#fff;
 		.col1 {
@@ -1106,4 +1120,15 @@ body.conferences  {
 	}
 	.quote-speaker {
 		margin-top:3px;
+	}
+	// Terms of use
+
+	.terms-of-use {
+		max-width:1207px;
+		margin:auto;
+		border-left:1px solid #ccc;
+		border-right:1px solid #ccc;
+		padding-top:40px;
+		padding-bottom:40px;
+
 	}

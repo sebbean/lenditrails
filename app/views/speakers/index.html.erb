@@ -6,7 +6,6 @@
 <style>
 	.subhero {
     overflow: hidden;
-    border-bottom: 30px solid #EEE;
     display: block;
   }
 
@@ -35,13 +34,13 @@
 				<p>The following speakers have been confirmed for LendIt Europe 2014.</p>
 			</section>
 
+
+
 			<section class="current-speakers">
 				<% @europe_speakers.each do |speaker| %>
-					<div class="speaker-col">
+					<a class="current-speaker" href="#<%= speaker.first_name %><%= speaker.last_name %>">
 						<div class="speaker">
 							<div class="speaker-top">
-
-								<a class="current-speaker" href="#<%= speaker.first_name %><%= speaker.last_name %>">
 								<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
 								<div class="speaker-top-info">
 									<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
@@ -52,16 +51,29 @@
 							<div class="current-speaker-bio show-more-height">
 								<%= raw speaker.bio %>
 							</div>
-							</a>
 						</div>
-					</div>
-					<div style="/*temp styles*/display:none;">
-						<div id="<%= speaker.first_name %><%= speaker.last_name %>">
-							<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
-							<%= speaker.first_name %> <%= speaker.last_name %>
-							<%= speaker.title %>
-							<%= speaker.company_name %>
-							<%= raw speaker.bio %>
+					</a>
+					<div class="speaker-bio" style="/*temp styles*/display:none;">
+						<div id="<%= speaker.first_name %><%= speaker.last_name %>" class="speaker-container">
+							<div class="speaker-colorbox-title">Current Speakers</div>
+							<div class="speaker-top-info">
+								<img src="<%= speaker.img_url %>" class="speaker-image-lg" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+								<div class="speaker-name">
+									<%= speaker.first_name %> <%= speaker.last_name %>
+								</div>
+								<div class="speaker-title">
+									<%= speaker.title %>
+								</div>
+								<div class="speaker-company">
+									<%= speaker.company_name %>
+								</div>
+								<div class="speaker-bio-text">
+									<div class="speaker-bio-text-inner">
+										<%= raw speaker.bio %>
+									</div>
+								</div>
+								<div class="speaker-bio-mask"></div>
+							</div>
 						</div>
 					</div>
 
@@ -69,6 +81,10 @@
 			</section>
 		</div>
 	</div>
+
+
+
+
 
 	<section class="past-speakers">
 		<div class="container">
@@ -87,6 +103,7 @@
 					</div>
 					<div class="speaker-bio" style="/*temp styles*/display:none;">
 						<div id="<%= speaker.first_name %><%= speaker.last_name %>" class="speaker-container">
+							<div class="speaker-colorbox-title">Past Speakers</div>
 							<div class="speaker-top-info">
 								<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
 								<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
@@ -102,3 +119,25 @@
 		</div>
 	</section>
 </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

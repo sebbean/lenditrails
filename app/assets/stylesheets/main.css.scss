@@ -20,7 +20,7 @@ html {
 }
 body {
 	padding:0;
-	font-family:Verlag Comp A, sans-serif;
+	font-family:Verlag A, sans-serif;
 	background:#f0f0f0;
 	font-weight:200;
 	letter-spacing:.3pt;
@@ -266,7 +266,7 @@ footer {
 							padding-left:60px;
 							padding-top:14px;
 							font-size:16px;
-							font-family:Verlag Comp A;
+							font-family:Verlag A;
 							font-weight:600;
 							width:50px;
 							float:left;
@@ -386,12 +386,12 @@ footer {
 }
 // Headers
 h1 {
-	font-family:Verlag Comp A;
+	font-family:Verlag A;
 	font-size:32px;
 	font-weight:600;
 }
 h2 {
-	font-family:Verlag Comp A;
+	font-family:Verlag A;
 	font-size:28px;
 }
 // Home
@@ -419,7 +419,7 @@ body.conferences  {
 				padding-top:28px;
 				height:148px;
 				float:left;
-				font-family: Verlag Comp A;
+				font-family: Verlag A;
 				font-size:32px;
 				font-weight:550;
 				color:#fff;
@@ -459,7 +459,7 @@ body.conferences  {
 							text-transform:uppercase;
 							display:block;
 							font-size:16px;
-							font-family: Verlag Comp A;
+							font-family: Verlag A;
 							font-weight:500;
 							box-sizing:border-box;
 							-moz-box-sizing:border-box;
@@ -505,7 +505,7 @@ body.conferences  {
 							font-size:18px;
 						}
 						strong {
-							font-family: Verlag Comp A;
+							font-family: Verlag A;
 							font-weight:500;
 							font-size:36px;
 							line-height:36px;
@@ -547,7 +547,7 @@ body.conferences  {
 	margin-bottom:20px;
 }
 .conferences h1 span {
-	font-family: Verlag Comp A;
+	font-family: Verlag A;
 	font-weight:200;
 }
 .conferences .container .col1 {
@@ -654,7 +654,7 @@ body.conferences  {
 					margin-right:18px
 				}
 				.speaker-top-info {
-					font-family:'Verlag Comp A';
+					font-family:'Verlag A';
 					margin-bottom:18px;
 					@extend %clearfix;
 					margin-left:20px;

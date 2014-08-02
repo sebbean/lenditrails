@@ -66,6 +66,8 @@ hr {
 	border-left:1px solid #ccc;
 	border-right:1px solid #ccc;
 	border-bottom:1px solid #ccc;
+  overflow: hidden;
+  display: block;
 }
 // Form-Elements
 input[type=text],
@@ -610,6 +612,7 @@ body.conferences  {
 	width:980px;
 	margin-left:-20px;
 	display:table;
+	padding-bottom: 20px;
 	a.current-speaker {
 		display:block;
 		float:left;
@@ -696,6 +699,14 @@ body.conferences  {
 			margin-left:40px;
 		}
 	}
+}
+.current-speaker-bio {
+	padding-bottom: 30px;
+	overflow: hidden;
+	height: 100%;
+}
+.show-more-height {
+	height: 200px;
 }
 .past-speakers {
 	background:#fff;

@@ -13,8 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require validate
 //= require colorbox
+//= require validate
 //= require readmore
 //= require shorten
 //= require turbolinks

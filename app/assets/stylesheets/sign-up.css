@@ -1,0 +1,7 @@
+label.error {
+  display: list-item;
+  list-style-position: inside;
+  padding: 5px 0 0;
+  color:#f00;
+  opacity:.5;
+}

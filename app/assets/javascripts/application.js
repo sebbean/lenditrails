@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require validate
 //= require colorbox
 //= require readmore
 //= require shorten

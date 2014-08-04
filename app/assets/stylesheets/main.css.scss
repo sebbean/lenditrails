@@ -20,7 +20,7 @@ html {
 }
 body {
 	padding:0;
-	font-family:'Verlag A', 'Verlag B';
+	font-family:'Verlag A', 'Verlag B', verlag;
 	background:#f0f0f0;
 	font-weight:200;
 	letter-spacing:.3pt;
@@ -190,7 +190,7 @@ nav {
 			margin-right:10px;
 			margin-top:20px;
 			float:right;
-			font-family:'Verlag A', 'Verlag B';
+			font-family:'Verlag A', 'Verlag B', verlag;
 			font-weight:500;
 			font-size:16px;
 			list-style-type:none;
@@ -235,7 +235,7 @@ footer {
 				h2 {
 					margin-top:0;
 					font-size:20px;
-					font-family:'Verlag A', 'Verlag B';
+					font-family:'Verlag A', 'Verlag B', verlag;
 					font-weight:600;
 					margin-bottom:20px;
 				}
@@ -245,7 +245,7 @@ footer {
 				width:430px;
 				h2 {
 					font-size:20px;
-					font-family:'Verlag A', 'Verlag B';
+					font-family:'Verlag A', 'Verlag B', verlag;
 					font-weight:600;
 					margin-top:0;
 					margin-bottom:20px;
@@ -268,7 +268,7 @@ footer {
 							padding-left:60px;
 							padding-top:14px;
 							font-size:16px;
-							font-family:'Verlag A', 'Verlag B';
+							font-family:'Verlag A', 'Verlag B', verlag;
 							font-weight:600;
 							width:50px;
 							float:left;
@@ -289,6 +289,7 @@ footer {
 							&.googleplus { background-position: 0 -100px; color:#EF4B32;}
 							&.youtube { background-position: 0 -150px; color:#D4221E;}
 							&.email { background-position: 0 -200px; color:#808080;}
+							&.linkedin { background-position: 0 -250px; color:#808080;}
 						}
 					}
 				}
@@ -385,15 +386,19 @@ footer {
 			}
 		}
 	}
+	.get-updates-responses {
+		float:left;
+		padding-top:20px;
+	}
 }
 // Headers
 h1 {
-	font-family:'Verlag A', 'Verlag B';
+	font-family:'Verlag A', 'Verlag B', verlag;
 	font-size:32px;
 	font-weight:600;
 }
 h2 {
-	font-family:'Verlag Cond A', 'Verlag Cond B';
+	font-family:'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 	font-size:28px;
 }
 // Home
@@ -421,7 +426,7 @@ body.conferences  {
 				padding-top:28px;
 				height:148px;
 				float:left;
-				font-family:'Verlag A', 'Verlag B';
+				font-family:'Verlag A', 'Verlag B', verlag;
 				font-size:32px;
 				font-weight:550;
 				color:#fff;
@@ -461,7 +466,7 @@ body.conferences  {
 							text-transform:uppercase;
 							display:block;
 							font-size:16px;
-							font-family:'Verlag Cond A', 'Verlag Cond B';
+							font-family:'Verlag Cond A', 'Verlag Cond B', verlag;
 							font-weight:500;
 							box-sizing:border-box;
 							-moz-box-sizing:border-box;
@@ -507,7 +512,7 @@ body.conferences  {
 							font-size:18px;
 						}
 						strong {
-							font-family: 'Verlag Comp A', 'Verlag Comp B';
+							font-family: 'Verlag Comp A', 'Verlag Comp B', 'verlag compressed';
 							font-weight:500;
 							font-size:36px;
 							line-height:36px;
@@ -549,7 +554,7 @@ body.conferences  {
 	margin-bottom:20px;
 }
 .conferences h1 span {
-	font-family: 'Verlag Cond A', 'Verlag Cond B';
+	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 	font-weight:200;
 }
 .conferences .container .col1 {
@@ -657,7 +662,7 @@ body.conferences  {
 					margin-right:18px
 				}
 				.speaker-top-info {
-					font-family: 'Verlag Cond A', 'Verlag Cond B';
+					font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 					margin-bottom:18px;
 					@extend %clearfix;
 					margin-left:20px;
@@ -721,7 +726,7 @@ body.conferences  {
 		margin:auto;
 		h2 {
 			padding-left:20px;
-			font-family:'Verlag A', 'Verlag B';
+			font-family:'Verlag A', 'Verlag B', 'verlag';
 			font-weight:600;
 			font-size:18px;
 			text-transform:uppercase;
@@ -866,7 +871,7 @@ body.conferences  {
 						content: '\00A0';
 						text-transform:uppercase;
 						display:block;
-						font-family:'Verlag A', 'Verlag B';
+						font-family:'Verlag A', 'Verlag B', verlag;
 						font-weight:600;
 						font-size:18px;
 						text-transform:uppercase;
@@ -1041,7 +1046,7 @@ body.conferences  {
 		h2 {
 			margin-top:0;
 			font-size:20px;
-			font-family:'Verlag A', 'Verlag B';
+			font-family:'Verlag A', 'Verlag B', verlag;
 			font-weight:600;
 			text-transform:uppercase;
 			margin-top:40px;
@@ -1093,7 +1098,7 @@ body.conferences  {
 		.col1 {
 			h2 {
 				font-size:18px;
-				font-family:'Verlag A', 'Verlag B';
+				font-family:'Verlag A', 'Verlag B', verlag;
 				font-weight:600;
 				margin-top:40px;
 				margin-bottom:30px;
@@ -1156,3 +1161,4 @@ body.conferences  {
 		min-height: 300px;
 
 	}
+

@@ -412,16 +412,16 @@ body.conferences  {
 		min-width:960px;
 		background:#eee url(https://s3-us-west-2.amazonaws.com/lendit/home/hero-2014-london.jpg) center center no-repeat;
 		background-size:1207px 451px  ;
-		min-height:450px;
+		min-height:400px;
 		@extend clearfix;
 		.container {
 			width:960px;
-			height:450px;
+			height:400px;
 			margin:auto;
 			box-sizing:border-box;
 			-moz-box-sizing:border-box;
 			.logo {
-				margin-top:120px;
+				margin-top:100px;
 				background:url(https://s3-us-west-2.amazonaws.com/lendit/home/logo-2014-london.png) left center no-repeat;
 				background-size: 415px 158px;
 				padding-left:210px;
@@ -442,12 +442,12 @@ body.conferences  {
 				}
 			}
 			.header-buttons {
-				height:450px;
+				height:400px;
 				box-sizing:border-box;
 				-moz-box-sizing:border-box;
 				background: rgba(0, 0, 0, 0.5);
 				box-shadow:-1px 0 0 rgba(255, 255, 255, 0.2), 1px 0 0 rgba(255, 255, 255, 0.2);
-				padding-top:165px;
+				padding-top:135px;
 				width:300px;
 				float:right;
 				width:300px;
@@ -1132,16 +1132,32 @@ body.conferences  {
 		margin-bottom:20px;
 	}
 	.quote-container:nth-child(even) {
-		color:#3E7006;
+		color:#3A8E02;
 	}
 	.quote-container:nth-child(odd) {
-		color:#666;
+		color:#444;
+	}
+	.quote-container:before {
+		color:#ccc;
+		padding-bottom:20px;
+		content:'\f006 \f006 \f006';
+		font-family:fontawesome;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		display:block;
+		text-align:center;
+		
+	}
+	.quote-container:first-of-type:before {
+		display:none;
+
 	}
 	.quote {
-		font-weight:500;
+		font-weight:600;
+		font-size:18px;
 	}
 	.quote-speaker {
-		margin-top:3px;
+		margin-top:12px;
 	}
 	// Terms of use
 
@@ -1157,6 +1173,7 @@ body.conferences  {
 
 	// Thank you after speaker signup
 	.thank-you-speaker {
+		background:#fff;
 		max-width:1207px;
 		margin:auto;
 		border-left:1px solid #ccc;
@@ -1167,3 +1184,13 @@ body.conferences  {
 
 	}
 
+	h1 {
+	text-rendering:optimizeLegibility;
+	}
+
+
+.conferences .tab-home  {background:#eee; color:#999;}
+.sponsors .tab-sponsors  {background:#eee; color:#999;}
+.speakers .tab-speakers  {background:#eee; color:#999;}
+.welcome .tab-about  {background:#eee; color:#999;}
+	

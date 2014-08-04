@@ -387,8 +387,13 @@ footer {
 		}
 	}
 	.get-updates-responses {
+		display: none;
 		float:left;
 		padding-top:20px;
+	}
+	#mce-responses {
+		float: left;
+		padding-top: 20px;
 	}
 }
 // Headers

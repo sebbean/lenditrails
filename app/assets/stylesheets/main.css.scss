@@ -407,16 +407,16 @@ body.conferences  {
 		min-width:960px;
 		background:#eee url(https://s3-us-west-2.amazonaws.com/lendit/home/hero-2014-london.jpg) center center no-repeat;
 		background-size:1207px 451px  ;
-		min-height:450px;
+		min-height:400px;
 		@extend clearfix;
 		.container {
 			width:960px;
-			height:450px;
+			height:400px;
 			margin:auto;
 			box-sizing:border-box;
 			-moz-box-sizing:border-box;
 			.logo {
-				margin-top:150px;
+				margin-top:100px;
 				background:url(https://s3-us-west-2.amazonaws.com/lendit/home/logo-2014-london.png) left center no-repeat;
 				background-size: 415px 158px;
 				padding-left:210px;
@@ -437,12 +437,12 @@ body.conferences  {
 				}
 			}
 			.header-buttons {
-				height:450px;
+				height:400px;
 				box-sizing:border-box;
 				-moz-box-sizing:border-box;
 				background: rgba(0, 0, 0, 0.5);
 				box-shadow:-1px 0 0 rgba(255, 255, 255, 0.2), 1px 0 0 rgba(255, 255, 255, 0.2);
-				padding-top:185px;
+				padding-top:135px;
 				width:300px;
 				float:right;
 				width:300px;

@@ -1,9 +1,5 @@
 LenditRails::Application.routes.draw do
 
-  constraints(:host => /lendit.co/) do
-    match "/(*path)" => redirect {|params, req| "http://www.lendit.co/#{params[:path]}"},  via: [:get, :post]
-  end
-
   get '/about' => 'welcome#about'
   get '/sponsors' => 'sponsors#index'
   get '/speakers' => 'speakers#index'

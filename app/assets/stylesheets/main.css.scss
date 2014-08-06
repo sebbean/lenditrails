@@ -451,7 +451,7 @@ body.conferences  {
 				width:300px;
 				float:right;
 				width:300px;
-				button {
+				.button-register, .button-recap {
 					box-sizing:border-box;
 					-moz-box-sizing:border-box;
 					display:block;
@@ -1146,7 +1146,7 @@ body.conferences  {
 		-moz-osx-font-smoothing: grayscale;
 		display:block;
 		text-align:center;
-		
+
 	}
 	.quote-container:first-of-type:before {
 		display:none;
@@ -1193,4 +1193,4 @@ body.conferences  {
 .sponsors .tab-sponsors  {background:#eee; color:#999;}
 .speakers .tab-speakers  {background:#eee; color:#999;}
 .welcome .tab-about  {background:#eee; color:#999;}
-	
+

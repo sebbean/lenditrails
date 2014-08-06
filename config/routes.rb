@@ -1,12 +1,12 @@
 LenditRails::Application.routes.draw do
 
+  root 'conferences#london'
   get '/about' => 'welcome#about'
   get '/sponsors' => 'sponsors#index'
   get '/speakers' => 'speakers#index'
   get '/speakers/sign-up' => 'speakers#sign-up'
   get '/speakers/thank-you' => 'speakers#thank-you'
   get '/terms-of-use' => 'welcome#terms-of-use'
-  root 'conferences#london'
 
   # See all redirects in WelcomeController
   # 301 redirects from old WP site

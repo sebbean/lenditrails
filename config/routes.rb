@@ -1,5 +1,9 @@
 LenditRails::Application.routes.draw do
 
+  constraints(:host => /lendit-rails-stage.herokuapp.com/) do
+    match "/(*path)" => redirect {|params, req| "http://www.lendit-rails-stage.herokuapp.com/#{params[:path]}"},  via: [:get, :post]
+  end
+
   get '/about' => 'welcome#about'
   get '/sponsors' => 'sponsors#index'
   get '/speakers' => 'speakers#index'

@@ -14,6 +14,14 @@ LenditRails::Application.routes.draw do
   get '/speaker/:id' => 'welcome#go_to_speakers'
   get '/2014' => 'welcome#go_to_root'
   get '/lendit-2014-san-francisco-presentations' => 'welcome#go_to_about'
+  get '/presentations/Renaud-Laplanche-Lending-Club-LendIt-2014-keynote.pdf' => 'welcome#renaud_2014_keynote'
+  get '/presentations/Peter-Renton-Lend-Academy-LendIt-2014-presentation.pdf' => 'welcome#renton_2014_deck'
+  get '/presentations/Sam-Hodges-Funding-Circle-LendIt-2014-presentation.pdf' => 'welcome#hodges_2014_deck'
+  get '/presentations/Mike-Cagney-SoFi-LendIt-2014-presentation.pdf' => 'welcome#cagney_2014_deck'
+  get '/presentations/Michael-Barr-LendiIt-2014.pdf' => 'welcome#barr_2014_deck'
+  get '/presentations/Chales-Moldow-Foundation-Capital-LendIt-2014.pdf' => 'welcome#moldow_2014_deck'
+  get '/presentations/Securitization-Panel-LendIt-2014.pdf' => 'welcome#securitization_panel_2014_deck'
+
 
   # 302 redirect to be updated to 301 once Wistia is configured
   get '/blog', to: redirect('/', status: 302)

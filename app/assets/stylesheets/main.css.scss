@@ -1195,6 +1195,12 @@ body.conferences  {
 .welcome .tab-about  {background:#eee; color:#999;}
 
 @media (max-width:900px) {
+	nav {
+		display:none;
+	}
+	footer {
+		display:none;
+	}
 	body.conferences header .container {
 		width:auto;
 		display:table-cell;
@@ -1226,12 +1232,6 @@ body.conferences  {
 		width:auto;
 		margin-bottom:40px;
 	}
-	body.conferences header .container .header-buttons .button-register a:before {
-		display:none;
-	}
-	body.conferences header .container .header-buttons .button-recap a:before {
-		display:none;
-	}
 	
 	.conferences .container .col2 {
 		float:none;
@@ -1257,7 +1257,7 @@ background:none;
 	body.conferences header .container .header-buttons .button-register a strong,
 	body.conferences header .container .header-buttons .button-recap a strong
  	{
-		font-size:22px;
+		font-size:21px;
 				line-height:inherit;
 	font-family:'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 	}
@@ -1278,30 +1278,28 @@ background:none;
 	body.conferences header .container .header-buttons .button-register, 
 	body.conferences header .container .header-buttons .button-recap 
 	{
-		width:170px;
-		margin:0 0 0 10px;
-		display:inline-block;
-		
 
+		margin:0 0 0 10px;
+		float:none;
+		
+		display:table-cell;
+		width:50%;
+	box-shadow: -1px 0 0 rgba(255, 255, 255, 0.5) inset;
 	}
 	body.conferences header .container .header-buttons .button-register a, body.conferences header .container .header-buttons .button-recap a {
-		padding-left:15px;
 	}
 	body.conferences header .container .header-buttons .button-register a, 
 	body.conferences header .container .header-buttons .button-recap a {
 	
 		background: rgba(0, 0, 0, 0.5);
-		padding-right:10px;
 
-	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(255, 255, 255, 0.3) inset, 1px 1px 0 rgba(255, 255, 255, 0.3) inset, -1px 1px 0 rgba(255, 255, 255, 0.3) inset ;
 }
 
 	body.conferences header .container .header-buttons .button-register a:hover, 
 	body.conferences header .container .header-buttons .button-recap a:hover {
 	
-		padding-right:10px;
+	box-shadow: -1px 0 0 rgba(255, 255, 255, 0.5) inset;
 
-	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(255, 255, 255, 0.3) inset, 1px 1px 0 rgba(255, 255, 255, 0.3) inset, -1px 1px 0 rgba(255, 255, 255, 0.3) inset ;
 }
 
 footer .footer-inside .container {
@@ -1323,33 +1321,32 @@ footer .footer-inside .container .column2 {
 }
 
 @media (max-width:550px) {
+	body.conferences header .container .header-buttons .button-register a:before {
+		display:none;
+	}
+	body.conferences header .container .header-buttons .button-recap a:before {
+		display:none;
+	}
+	
 	body.conferences header {
-		background-position:-1000px -140px;
-		background-size:2414px 902px  ;
+		background-position:-910px -130px;
+		background-size:2173px 812px  ;
+	background-attachment: fixed;
 
 	}
 body.conferences header .container {
-	background-position:center 40px;
-			background-size:353px 135px;
+	background-position:center 50px;
+			background-size:300px 114px ;
 			text-align:left;
 			height:280px
 	
 }
-	body.conferences header .container .header-buttons {
-		width:100%;
-	}
-	body.conferences header .container .header-buttons .button-register,
-	body.conferences header .container .header-buttons .button-recap
- 	{
-		display:table-cell;
-		
-	}
-	body.conferences header .container .header-buttons .button-register a,
-	body.conferences header .container .header-buttons .button-recap a
-	{
-		padding-left:20px;
+	
+	body.conferences header .container .header-buttons .button-register a, body.conferences header .container .header-buttons .button-recap a {
+		padding-left:15px;
 	}
 	
+
 	
 
 

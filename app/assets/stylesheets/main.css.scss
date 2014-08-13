@@ -375,7 +375,7 @@ footer {
 				background:#fff;
 				padding: 4px 10px;
 				position:absolute;
-				right:0;
+				left:325px;
 				top:-35px;
 				letter-spacing: .3pt;
 				font-weight:500;
@@ -1194,3 +1194,163 @@ body.conferences  {
 .speakers .tab-speakers  {background:#eee; color:#999;}
 .welcome .tab-about  {background:#eee; color:#999;}
 
+@media (max-width:900px) {
+	body.conferences header .container {
+		width:auto;
+		display:table-cell;
+		vertical-align:bottom;
+		text-align:right;
+		padding-right:0;
+		padding-left:0;
+		height:380px;
+				background:url(https://s3-us-west-2.amazonaws.com/lendit/home/logo-2014-london.png) 20px 80px no-repeat;
+
+				background-size:374px 143px;
+	//			background-size:332px 127px;
+	}
+	body.conferences header {
+		min-width:0;
+		display:table;
+		width:100%;
+		background-position: -180px -50px;
+		
+		min-height:0;
+
+
+	}
+	.container {
+		width:auto;
+	}
+	.conferences .container .col1 {
+		float:none;
+		width:auto;
+		margin-bottom:40px;
+	}
+	body.conferences header .container .header-buttons .button-register a:before {
+		display:none;
+	}
+	body.conferences header .container .header-buttons .button-recap a:before {
+		display:none;
+	}
+	
+	.conferences .container .col2 {
+		float:none;
+		width:auto;
+	}
+	body.conferences header .container .logo {
+		display:none;
+		float:none;
+		margin:0 0 30px 0;
+		padding-top:0;
+	}
+	body.conferences header .container .header-buttons {
+		
+		padding-top:0;
+		height:auto;
+		margin:auto;
+		display:table;
+background:none;
+		box-shadow:none;
+		width:100%;
+
+	}
+	body.conferences header .container .header-buttons .button-register a strong,
+	body.conferences header .container .header-buttons .button-recap a strong
+ 	{
+		font-size:22px;
+				line-height:inherit;
+	font-family:'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+	}
+	body.conferences header .container .header-buttons .button-register a span, body.conferences header .container .header-buttons .button-recap a span {
+				font-family:'Verlag A', 'Verlag B', verlag;
+
+	}
+	body.conferences header .container .header-buttons .button-register a:before {
+		height:70px;
+		
+	}
+	body.conferences header .container .header-buttons .button-register a span {
+
+		font-size:16px;
+	}
+
+
+	body.conferences header .container .header-buttons .button-register, 
+	body.conferences header .container .header-buttons .button-recap 
+	{
+		width:170px;
+		margin:0 0 0 10px;
+		display:inline-block;
+		
+
+	}
+	body.conferences header .container .header-buttons .button-register a, body.conferences header .container .header-buttons .button-recap a {
+		padding-left:15px;
+	}
+	body.conferences header .container .header-buttons .button-register a, 
+	body.conferences header .container .header-buttons .button-recap a {
+	
+		background: rgba(0, 0, 0, 0.5);
+		padding-right:10px;
+
+	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(255, 255, 255, 0.3) inset, 1px 1px 0 rgba(255, 255, 255, 0.3) inset, -1px 1px 0 rgba(255, 255, 255, 0.3) inset ;
+}
+
+	body.conferences header .container .header-buttons .button-register a:hover, 
+	body.conferences header .container .header-buttons .button-recap a:hover {
+	
+		padding-right:10px;
+
+	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(255, 255, 255, 0.3) inset, 1px 1px 0 rgba(255, 255, 255, 0.3) inset, -1px 1px 0 rgba(255, 255, 255, 0.3) inset ;
+}
+
+footer .footer-inside .container {
+		width:auto;
+
+	}
+footer .footer-inside .container .column1 {
+	float:none;
+	margin-bottom:30px;
+	width:auto;
+}
+footer .footer-inside .container .column2 {
+	float:none;
+	width:auto;
+}
+
+
+	
+}
+
+@media (max-width:550px) {
+	body.conferences header {
+		background-position:-1000px -140px;
+		background-size:2414px 902px  ;
+
+	}
+body.conferences header .container {
+	background-position:center 40px;
+			background-size:353px 135px;
+			text-align:left;
+			height:280px
+	
+}
+	body.conferences header .container .header-buttons {
+		width:100%;
+	}
+	body.conferences header .container .header-buttons .button-register,
+	body.conferences header .container .header-buttons .button-recap
+ 	{
+		display:table-cell;
+		
+	}
+	body.conferences header .container .header-buttons .button-register a,
+	body.conferences header .container .header-buttons .button-recap a
+	{
+		padding-left:20px;
+	}
+	
+	
+
+
+}

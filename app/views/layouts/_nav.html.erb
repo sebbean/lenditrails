@@ -1,5 +1,15 @@
-<nav>
+
+<nav role="navigation" class="navbar navbar-default">
+
+		<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
 	<div class="container">
+		
+	<div id="navbarCollapse" class="collapse navbar-collapse">
 		<div class="nav-logo">
 			<!-- <a href="/"><%#= image_tag 'https://s3-us-west-2.amazonaws.com/lendit/lendi-logo-header.png', :title => 'LendIt logo', :alt => 'LendIt' %></a> -->
 
@@ -7,12 +17,17 @@
 
 		</div>
 		<ul>
-			<li><a href="/" class="tab-home">Home</a></li>
-			<li><a href="/sponsors" class="tab-sponsors">Sponsors</a></li>
-			<li><a href="/speakers" class="tab-speakers">Speakers</a></li>
-			<li><a href="https://www.youtube.com/user/LendItConference/" target="_blank" class="tab-videos">Videos</a></li>
-			<li><a href="/about" class="tab-about">About</a></li>
-			<li><a href="http://register.lendit.co/europe" onclick="_gaq.push(['_link', 'http://register.lendit.co/europe']); return false;" target="_blank">Register</a></li>
+			<div>
+				<li><a href="/" class="tab-home">Home</a></li>
+				<li><a href="/sponsors" class="tab-sponsors">Sponsors</a></li>
+				<li><a href="/speakers" class="tab-speakers">Speakers</a></li>
+			</div>
+			<div>
+				<li><a href="https://www.youtube.com/user/LendItConference/" target="_blank" class="tab-videos">Videos</a></li>
+				<li><a href="/about" class="tab-about">About</a></li>
+				<li><a href="http://register.lendit.co/europe" onclick="_gaq.push(['_link', 'http://register.lendit.co/europe']); return false;" target="_blank">Register</a></li>
+			</div>
 		</ul>
+	</div>
   </div>
 </nav>

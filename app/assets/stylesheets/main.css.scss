@@ -48,6 +48,7 @@ a {
 .cols p {
 	color:#000;
 	font-size:18px;
+
 }
 .cols li {
 	font-size:16px;
@@ -66,8 +67,8 @@ hr {
 	border-left:1px solid #ccc;
 	border-right:1px solid #ccc;
 	border-bottom:1px solid #ccc;
-  overflow: hidden;
-  display: block;
+	overflow: hidden;
+	display: block;
 }
 // Form-Elements
 input[type=text],
@@ -154,18 +155,30 @@ button {
 	letter-spacing:.3pt;
 }
 // Nav
+.navbar {
+	min-height:0;
+	margin-bottom:0;
+}
+.nav-bar-default {
+	border-bottom:1px solid red !important;
+}
 nav {
-	border-bottom:1px solid #ccc;
+
 	.container {
-	background:#fff;
-		@extend %clearfix;
+
+		background:#fff;
 		padding-bottom:20px;
 		border-left:1px solid #ccc;
 		border-right:1px solid #ccc;
 		width:100%;
-		min-width:960px;
+		display:table;
+		float:none;
+
 		max-width:1207px;
 		margin:auto;
+		.nav-col {
+			display:inline;
+		}
 		.nav-logo {
 			margin-left:20px;
 			float:left;
@@ -186,6 +199,10 @@ nav {
 			}
 		}
 		ul {
+			>div {
+				display:inline;
+			}
+
 
 			margin-right:10px;
 			margin-top:20px;
@@ -216,7 +233,7 @@ nav {
 // Footer
 footer {
 	margin:0;
-		border-bottom:1px solid #ccc;
+	border-bottom:1px solid #ccc;
 	.footer-inside {
 		background:#fafafa;
 		border-left:1px solid #ccc;
@@ -265,7 +282,7 @@ footer {
 							box-sizing:border-box;
 							-moz-box-sizing:border-box;
 							color:#6775B6;
-							padding-left:60px;
+							padding-left:55px;
 							padding-top:14px;
 							font-size:16px;
 							font-family:'Verlag A', 'Verlag B', verlag;
@@ -629,7 +646,7 @@ body.conferences  {
 		background:#fff;
 		color:#777;
 		position:relative;
-			box-shadow:1px 1px 0 rgba(0, 0, 0, 0.1) inset, -1px -1px 0 rgba(0, 0, 0, 0.1) inset;
+		box-shadow:1px 1px 0 rgba(0, 0, 0, 0.1) inset, -1px -1px 0 rgba(0, 0, 0, 0.1) inset;
 		&:after {
 			border-radius:100%;
 			margin-right:10px;
@@ -971,11 +988,11 @@ body.conferences  {
 		padding: 6px 20px;
 		letter-spacing: .3pt;
 		font-weight:500;
-	&:hover {
-		border:1px solid $linkcolor;
-		background:$linkcolor;
-		color:#fff;
-	}
+		&:hover {
+			border:1px solid $linkcolor;
+			background:$linkcolor;
+			color:#fff;
+		}
 
 	}
 	.ss-q-title {
@@ -1008,185 +1025,185 @@ body.conferences  {
 		}
 	}
 }
-	// Sponsors
-	.sponsors main {
-		section {
-			margin-bottom:40px;
-		}
-		.sponsors-main {
-			background:#fff;
-			max-width:1207px;
-			margin:auto;
-			border-left:1px solid #ccc;
-			border-right:1px solid #ccc;
-			h2 {
-				font-weight:600;
-			}
-		}
+// Sponsors
+.sponsors main {
+	section {
+		margin-bottom:40px;
 	}
-	.sponsor-images {
-		border-left:10px solid #fafafa;
-		border-top:10px solid #fafafa;
-		@extend %clearfix;
-		.image-container {
-			border-right:10px solid #fafafa;
-			border-bottom:10px solid #fafafa;
-			float:left;
-			img {
-				display:block;
-				width:125px;
-				height:95px;
-			}
+	.sponsors-main {
+		background:#fff;
+		max-width:1207px;
+		margin:auto;
+		border-left:1px solid #ccc;
+		border-right:1px solid #ccc;
+		h2 {
+			font-weight:600;
 		}
 	}
-	.sponsors .subhero {
-		font-size:18px;
+}
+.sponsor-images {
+	border-left:10px solid #fafafa;
+	border-top:10px solid #fafafa;
+	@extend %clearfix;
+	.image-container {
+		border-right:10px solid #fafafa;
+		border-bottom:10px solid #fafafa;
+		float:left;
+		img {
+			display:block;
+			width:125px;
+			height:95px;
+		}
 	}
-	.sponsors main {
-	}
-	.sponsors main .cols {
+}
+.sponsors .subhero {
+	font-size:18px;
+}
+.sponsors main {
+}
+.sponsors main .cols {
+	margin-bottom:30px;
+}
+.sponsors main .col1 {
+	h2 {
+		margin-top:0;
+		font-size:20px;
+		font-family:'Verlag A', 'Verlag B', verlag;
+		font-weight:600;
+		text-transform:uppercase;
+		margin-top:40px;
 		margin-bottom:30px;
 	}
-	.sponsors main .col1 {
+	width:415px;
+	float:left;
+}
+.sponsors main .col2 {
+	h2 {
+		margin-top:38px;
+	}
+	width:420px;
+	float:right;
+}
+// About
+.welcome main {
+	.subhero .container {
+		padding-bottom:30px;
+	}
+
+	.main-about{
+		padding-bottom:40px;
 		h2 {
-			margin-top:0;
-			font-size:20px;
+			font-weight:600;
+		}
+	}
+}
+.welcome .subhero .col2 p {
+	font-size:16px;
+}
+.welcome main .cols {
+	@extend %clearfix;
+}
+.welcome main .col1 {
+	width:540px;
+	float:left;
+}
+.welcome main .col2 {
+	width:300px;
+	float:right;
+}
+.main-about {
+	max-width:1207px;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	margin:auto;
+	background:#fff;
+	.col1 {
+		h2 {
+			font-size:18px;
 			font-family:'Verlag A', 'Verlag B', verlag;
 			font-weight:600;
-			text-transform:uppercase;
 			margin-top:40px;
 			margin-bottom:30px;
 		}
-		width:415px;
-		float:left;
 	}
-	.sponsors main .col2 {
-		h2 {
-			margin-top:38px;
-		}
-		width:420px;
-		float:right;
-	}
-	// About
-	.welcome main {
-			.subhero .container {
-				padding-bottom:30px;
-			}
-
-		.main-about{
-			padding-bottom:40px;
-			h2 {
-				font-weight:600;
-			}
-		}
-	}
-	.welcome .subhero .col2 p {
-		font-size:16px;
-	}
-	.welcome main .cols {
-		@extend %clearfix;
-	}
-	.welcome main .col1 {
-		width:540px;
-		float:left;
-	}
-	.welcome main .col2 {
-		width:300px;
-		float:right;
-	}
-	.main-about {
-		max-width:1207px;
-		border-left:1px solid #ccc;
-		border-right:1px solid #ccc;
-		margin:auto;
-		background:#fff;
-		.col1 {
-			h2 {
-				font-size:18px;
-				font-family:'Verlag A', 'Verlag B', verlag;
-				font-weight:600;
-				margin-top:40px;
-				margin-bottom:30px;
-			}
-		}
-	}
-	.welcome {
-		h2 {
-			margin-top:30px;
-			font-weight:600;
-		}
-	}
-	.event-image {
-		margin-bottom:12px;
-	}
-	.event-image img {
-		width:540px;
-		height:200px;
-	}
-	.about-event {
-		margin-bottom:40px;
-	}
-	// Quotes
-	.quote-container {
-		margin-top:20px;
-		margin-bottom:20px;
-	}
-	.quote-container:nth-child(even) {
-		color:#3A8E02;
-	}
-	.quote-container:nth-child(odd) {
-		color:#444;
-	}
-	.quote-container:before {
-		color:#ccc;
-		padding-bottom:20px;
-		content:'\f006 \f006 \f006';
-		font-family:fontawesome;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		display:block;
-		text-align:center;
-
-	}
-	.quote-container:first-of-type:before {
-		display:none;
-
-	}
-	.quote {
+}
+.welcome {
+	h2 {
+		margin-top:30px;
 		font-weight:600;
-		font-size:18px;
 	}
-	.quote-speaker {
-		margin-top:12px;
-	}
-	// Terms of use
+}
+.event-image {
+	margin-bottom:12px;
+}
+.event-image img {
+	width:540px;
+	height:200px;
+}
+.about-event {
+	margin-bottom:40px;
+}
+// Quotes
+.quote-container {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.quote-container:nth-child(even) {
+	color:#3A8E02;
+}
+.quote-container:nth-child(odd) {
+	color:#444;
+}
+.quote-container:before {
+	color:#ccc;
+	padding-bottom:20px;
+	content:'\f006 \f006 \f006';
+	font-family:fontawesome;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display:block;
+	text-align:center;
 
-	.terms-of-use {
-		max-width:1207px;
-		margin:auto;
-		border-left:1px solid #ccc;
-		border-right:1px solid #ccc;
-		padding-top:40px;
-		padding-bottom:40px;
+}
+.quote-container:first-of-type:before {
+	display:none;
 
-	}
+}
+.quote {
+	font-weight:600;
+	font-size:18px;
+}
+.quote-speaker {
+	margin-top:12px;
+}
+// Terms of use
 
-	// Thank you after speaker signup
-	.thank-you-speaker {
-		background:#fff;
-		max-width:1207px;
-		margin:auto;
-		border-left:1px solid #ccc;
-		border-right:1px solid #ccc;
-		padding-top:40px;
-		padding-bottom:40px;
-		min-height: 300px;
+.terms-of-use {
+	max-width:1207px;
+	margin:auto;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	padding-top:40px;
+	padding-bottom:40px;
 
-	}
+}
 
-	h1 {
+// Thank you after speaker signup
+.thank-you-speaker {
+	background:#fff;
+	max-width:1207px;
+	margin:auto;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	padding-top:40px;
+	padding-bottom:40px;
+	min-height: 300px;
+
+}
+
+h1 {
 	text-rendering:optimizeLegibility;
-	}
+}
 
 
 .conferences .tab-home  {background:#eee; color:#999;}
@@ -1195,12 +1212,48 @@ body.conferences  {
 .welcome .tab-about  {background:#eee; color:#999;}
 
 @media (max-width:900px) {
-	nav {
-		display:none;
+
+	nav .container {
+		padding:0;
+		.nav-logo {
+			display:none;
+		}
+		ul {
+			float:none;
+			display:table;
+			width:100%;
+			padding:0;
+			margin:4px auto 0 auto;
+		>div {
+			display:table-row;
+			float:none;
+		}
+			
+			li {
+				float:none;
+				display:table-cell;
+				width:33%;
+				padding:4px;
+
+					box-sizing:border-box;
+					-moz-box-sizing:border-box;
+
+
+				text-align:center;
+				a {
+					width:100%;
+					padding:4px 0;
+					text-align:center;
+					margin:2px;
+				}
+			}
+		}
 	}
-	footer {
-		display:none;
-	}
+
+
+
+
+
 	body.conferences header .container {
 		width:auto;
 		display:table-cell;
@@ -1209,17 +1262,17 @@ body.conferences  {
 		padding-right:0;
 		padding-left:0;
 		height:380px;
-				background:url(https://s3-us-west-2.amazonaws.com/lendit/home/logo-2014-london.png) 20px 80px no-repeat;
+		background:url(https://s3-us-west-2.amazonaws.com/lendit/home/logo-2014-london.png) 20px 80px no-repeat;
 
-				background-size:374px 143px;
-	//			background-size:332px 127px;
+		background-size:374px 143px;
+		//			background-size:332px 127px;
 	}
 	body.conferences header {
 		min-width:0;
 		display:table;
 		width:100%;
 		background-position: -180px -50px;
-		
+
 		min-height:0;
 
 
@@ -1230,12 +1283,20 @@ body.conferences  {
 	.conferences .container .col1 {
 		float:none;
 		width:auto;
-		margin-bottom:40px;
 	}
-	
+
 	.conferences .container .col2 {
 		float:none;
 		width:auto;
+	}
+	.conferences .container .col2:before {
+		content: 'Preliminary Agenda';
+		font-size:24px;
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-weight:600;
+		margin-top:20px;
+		display:block;
+
 	}
 	body.conferences header .container .logo {
 		display:none;
@@ -1244,30 +1305,30 @@ body.conferences  {
 		padding-top:0;
 	}
 	body.conferences header .container .header-buttons {
-		
+
 		padding-top:0;
 		height:auto;
 		margin:auto;
 		display:table;
-background:none;
+		background:none;
 		box-shadow:none;
 		width:100%;
 
 	}
 	body.conferences header .container .header-buttons .button-register a strong,
 	body.conferences header .container .header-buttons .button-recap a strong
- 	{
+	{
 		font-size:21px;
-				line-height:inherit;
-	font-family:'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		line-height:inherit;
+		font-family:'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 	}
 	body.conferences header .container .header-buttons .button-register a span, body.conferences header .container .header-buttons .button-recap a span {
-				font-family:'Verlag A', 'Verlag B', verlag;
+		font-family:'Verlag A', 'Verlag B', verlag;
 
 	}
 	body.conferences header .container .header-buttons .button-register a:before {
 		height:70px;
-		
+
 	}
 	body.conferences header .container .header-buttons .button-register a span {
 
@@ -1281,43 +1342,43 @@ background:none;
 
 		margin:0 0 0 10px;
 		float:none;
-		
+
 		display:table-cell;
 		width:50%;
-	box-shadow: -1px 0 0 rgba(255, 255, 255, 0.5) inset;
+		box-shadow: -1px 0 0 rgba(255, 255, 255, 0.5) inset;
 	}
 	body.conferences header .container .header-buttons .button-register a, body.conferences header .container .header-buttons .button-recap a {
 	}
 	body.conferences header .container .header-buttons .button-register a, 
 	body.conferences header .container .header-buttons .button-recap a {
-	
+
 		background: rgba(0, 0, 0, 0.5);
 
-}
+	}
 
 	body.conferences header .container .header-buttons .button-register a:hover, 
 	body.conferences header .container .header-buttons .button-recap a:hover {
-	
-	box-shadow: -1px 0 0 rgba(255, 255, 255, 0.5) inset;
 
-}
+		box-shadow: -1px 0 0 rgba(255, 255, 255, 0.5) inset;
 
-footer .footer-inside .container {
+	}
+
+	footer .footer-inside .container {
 		width:auto;
 
 	}
-footer .footer-inside .container .column1 {
-	float:none;
-	margin-bottom:30px;
-	width:auto;
-}
-footer .footer-inside .container .column2 {
-	float:none;
-	width:auto;
-}
+	footer .footer-inside .container .column1 {
+		float:none;
+		margin-bottom:30px;
+		width:auto;
+	}
+	footer .footer-inside .container .column2 {
+		float:none;
+		width:auto;
+	}
 
 
-	
+
 }
 
 @media (max-width:550px) {
@@ -1327,27 +1388,123 @@ footer .footer-inside .container .column2 {
 	body.conferences header .container .header-buttons .button-recap a:before {
 		display:none;
 	}
-	
+
+
+
+
+
+	body.conferences main {
+		background:none;
+	}
 	body.conferences header {
 		background-position:-910px -130px;
 		background-size:2173px 812px  ;
-	background-attachment: fixed;
+
+
+	} body.conferences header .container {
+		background-position:center 50px;
+		background-size:300px 114px ;
+		text-align:left;
+		height:280px
 
 	}
-body.conferences header .container {
-	background-position:center 50px;
-			background-size:300px 114px ;
-			text-align:left;
-			height:280px
-	
-}
-	
+
 	body.conferences header .container .header-buttons .button-register a, body.conferences header .container .header-buttons .button-recap a {
 		padding-left:15px;
 	}
-	
 
-	
+	body.conferences header .container .header-buttons .button-register a span
+	{
+		font-size:14px;
+		font-weight:500;
+
+	}
+	body.conferences header .container .header-buttons .button-recap a span {
+
+		font-size:14px;
+		font-weight:500;
+	}
+
+	body.conferences header .container .header-buttons .button-register a strong
+	{
+		font-family:'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-weight:600;
+	}
+
+	body.conferences header .container .header-buttons .button-recap a strong
+	{
+		font-family:'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-weight:500;
+	}
 
 
+	.conferences h1 {
+		font-size:24px;
+		padding:0;
+		padding-top:30px;
+		margin-left:15px;
+		margin-bottom:0;
+		margin-bottom:10px;
+
+		margin-right:15px;
+		border:none;
+		background:#fff;
+		text-align:center;
+	}
+
+	p.intro {
+		font-size:18px;
+		line-height:130%;
+		font-weight:400;
+		margin:1em 0;
+	}
+
+	p.intro+hr {
+		display:none;
+	}
+
+	p.secondary {
+		font-size:18px !important;
+		line-height:130%;
+		font-weight:400;
+		margin:1em 0;
+
+	}
+	.conferences .col2 ul {
+		padding-left:18px;
+	}
+	.conferences .col2 li {
+		margin-bottom:.4em;
+		line-height:1.25em;
+	}
+
+	footer .footer-inside {
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+	body {
+		padding-bottom:0;
+	}
+	footer .footer-inside .container .column1 h2, 
+	footer .footer-inside .container .column2 h2 {
+		font-family:'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-size:23px;
+	}
+
+	.get-updates #mc_embed_signup .split .mc-field-group input[type=text] {
+		width:140px;
+	}
+
+	.get-updates #mc_embed_signup .split + .mc-field-group input[type=email] {
+		width:195px;
+	}
+
+	.get-updates #mc_embed_signup .clear .button {
+		left:204px;
+	}
+
+
+	footer .footer-inside .container .column2 .social li a {
+		padding-left:54px;
+	}
 }

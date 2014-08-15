@@ -19,7 +19,7 @@ $hovercolor: #86BD33;
 html {
 }
 body {
-	padding:0;
+	padding:126px 0 0 0;
 	font-family:'Verlag A', 'Verlag B', verlag;
 	background:#f0f0f0;
 	font-weight:200;
@@ -31,6 +31,8 @@ body {
 	padding-bottom:100px;
 }
 body.conferences {
+	padding:84px 0 0 0;
+	
 }
 a {
 	color:$linkcolor;
@@ -162,11 +164,17 @@ button {
 .nav-bar-default {
 	border-bottom:1px solid red !important;
 }
+.navbar-default {
+	background:#fff;
+}
 nav {
+
+	background:#fff;
+
 
 	.container {
 
-		background:#fff;
+		  
 		padding-bottom:20px;
 		border-left:1px solid #ccc;
 		border-right:1px solid #ccc;
@@ -199,25 +207,29 @@ nav {
 			}
 		}
 		ul {
+			padding-left:0;
 			>div {
 				display:inline;
 			}
 
 
 			margin-right:10px;
-			margin-top:20px;
+			margin-top:40px;
 			float:right;
 			font-family:'Verlag A', 'Verlag B', verlag;
 			font-weight:500;
 			font-size:16px;
 			list-style-type:none;
+			.conferences & {
+				margin-top:20px;
+			}
 			@extend %clearfix;
 			li {
 				float:left;
 				a {
 					text-transform:uppercase;
 					display:block;
-					padding:10px 14px;
+					padding:10px 20px;
 					margin-left:5px;
 					margin-right:5px;
 					@include border-radius(2px);
@@ -418,6 +430,7 @@ h1 {
 	font-family:'Verlag A', 'Verlag B', verlag;
 	font-size:32px;
 	font-weight:600;
+	top:0;
 }
 h2 {
 	font-family:'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
@@ -610,8 +623,8 @@ body.conferences  {
 .speakers-intro {
 	margin-bottom:30px;
 	.speakers-signup {
-		margin-top:-36px;
-		margin-right:10px;
+		margin-top:-76px;
+		margin-right:0;
 		float:right;
 		a	{
 			font-size:16px;
@@ -814,10 +827,13 @@ body.conferences  {
 	width:100%;
 	opacity:.12;
 	background:#fff;
+	z-index:1031;
+
 }
 #colorbox {
 	outline:none;
 	background: rgba(0, 0, 0, 0.15) ;
+	z-index:1032;
 }
 #cboxCurrent {display:none !important}
 #cboxPrevious {
@@ -1042,17 +1058,16 @@ body.conferences  {
 	}
 }
 .sponsor-images {
-	border-left:10px solid #fafafa;
-	border-top:10px solid #fafafa;
 	@extend %clearfix;
 	.image-container {
-		border-right:10px solid #fafafa;
-		border-bottom:10px solid #fafafa;
+			border:1px solid #ddd;
+			margin:0 10px 10px 0;
 		float:left;
 		img {
 			display:block;
 			width:125px;
 			height:95px;
+			margin:5px;
 		}
 	}
 }
@@ -1074,7 +1089,7 @@ body.conferences  {
 		margin-top:40px;
 		margin-bottom:30px;
 	}
-	width:415px;
+	width:445px;
 	float:left;
 }
 .sponsors main .col2 {
@@ -1202,6 +1217,7 @@ body.conferences  {
 }
 
 h1 {
+
 	text-rendering:optimizeLegibility;
 }
 
@@ -1211,45 +1227,67 @@ h1 {
 .speakers .tab-speakers  {background:#eee; color:#999;}
 .welcome .tab-about  {background:#eee; color:#999;}
 
+
+
+
 @media (max-width:900px) {
 
+
+
+
+
+
 	nav .container {
-		padding:0;
-		.nav-logo {
-			display:none;
+		border-left:none;
+		border-right:none;
+	}
+
+	
+	.subhero, .sponsors main .sponsors-main, footer .footer-inside{
+		border-left:none;
+		border-right:none;
+	}
+	footer {
+		border-bottom:none;
+	}
+
+	body.sponsors main .col1 {
+		h2 {
+			margin-left:16px;
 		}
-		ul {
-			float:none;
+		float:none;
+		width:auto;
+		.sponsor-images {
+			margin-left:16px;
 			display:table;
-			width:100%;
-			padding:0;
-			margin:4px auto 0 auto;
-		>div {
-			display:table-row;
-			float:none;
-		}
-			
-			li {
-				float:none;
-				display:table-cell;
-				width:33%;
-				padding:4px;
+			width:auto;
+			border:none;
 
-					box-sizing:border-box;
-					-moz-box-sizing:border-box;
+			margin-bottom:0;
 
-
-				text-align:center;
-				a {
-					width:100%;
-					padding:4px 0;
-					text-align:center;
-					margin:2px;
-				}
-			}
 		}
 	}
 
+		body.sponsors main .col2 {
+			padding-left:15px;
+			padding-right:15px;
+			width:auto;
+			float:none;
+		}
+
+		.sponsors-main>.container {
+			padding:0;
+		}
+
+
+nav	.container {
+		padding:0 0 20px 0;
+
+	}
+	nav .container ul li a {
+		padding:10px;
+	}
+	
 
 
 
@@ -1378,18 +1416,94 @@ h1 {
 	}
 
 
+	body.speakers {
+		.speakers-signup {
+			margin:20px 0 15px 0;
+			float:none;
+			display:table;
+			width:auto;
+		}
 
+
+	}
+
+}
+
+@media (max-width:767px) {
+
+	body {
+	padding:50px 0 0 0;
+		
+	}
+	body.conferences {
+	padding:50px 0 0 0;
+		
+	}
+
+
+	
+
+	nav .container {
+
+		padding-bottom:0;
+		
+		border:none;
+		.nav-logo {
+			display:none;
+		}
+		ul {
+			float:none;
+			display:table;
+			width:100%;
+			padding:0;
+			margin:4px auto 0 auto;
+		>div {
+			display:table-row;
+			float:none;
+		}
+			
+			li {
+				float:none;
+				display:table-cell;
+				width:33%;
+				padding:4px;
+
+					box-sizing:border-box;
+					-moz-box-sizing:border-box;
+
+
+				text-align:center;
+				a {
+					width:100%;
+					padding:4px 0;
+					text-align:center;
+					margin:2px;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width:550px) {
 	body.conferences header .container .header-buttons .button-register a:before {
 		display:none;
+		
 	}
 	body.conferences header .container .header-buttons .button-recap a:before {
 		display:none;
 	}
 
 
+	body {
+	padding:50px 0 0 0;
+		
+	}
+	body.conferences {
+	padding:50px 0 0 0;
+	
+		
+	}
+	
 
 
 
@@ -1507,4 +1621,15 @@ h1 {
 	footer .footer-inside .container .column2 .social li a {
 		padding-left:54px;
 	}
+
+
+
+
+
+
+
 }
+
+
+
+

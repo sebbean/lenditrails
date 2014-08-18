@@ -12,9 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
-//= require scroll-up-bar
 //= require colorbox
+//= require bootstrap
 //= require validate
 //= require readmore
 //= require shorten

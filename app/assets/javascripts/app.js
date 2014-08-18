@@ -3,7 +3,7 @@ var app = app || {};
 $(document).ready(function() {
 
   // scrollup bar for the nav
-  $('.topbar').scrollupbar();
+  // $('.topbar').scrollupbar();
 
   // speaker form validation
   $("#commentForm").validate({meta: "validate"});

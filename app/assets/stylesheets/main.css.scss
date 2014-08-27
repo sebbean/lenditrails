@@ -1344,8 +1344,8 @@ h1 {
 		height:400px;
 		padding-top:100px;
 
-		width:28%;
-		min-width:130px;
+		width:29%;
+		min-width:230px;
 	}
 	
 
@@ -1429,11 +1429,17 @@ h1 {
 	body.conferences header .container .header-buttons .button-register a strong
 	{
 		font-family:'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-weight:600;
 	}
 	body.conferences header .container .header-buttons .button-recap a strong
 	{
 		font-family:'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-		font-weight:500;
+		font-weight:600;
+	}
+	body.conferences header .container .header-buttons .save-date>div strong {
+		font-family:'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-weight:600;
+		
 	}
 	
 body.conferences header .container .header-buttons .button-register,
@@ -1493,6 +1499,10 @@ body.conferences header .container .header-buttons .button-recap
 		float:left;
 
 	}
+	body.conferences header .container .header-buttons .save-date>div {
+		padding-right:0;
+	}
+	
 	body.conferences header .container .header-buttons .button-register, 
 	body.conferences header .container .header-buttons .button-recap {
 		float:right;
@@ -1866,10 +1876,14 @@ body.conferences header .container .header-buttons .button-recap
 
 	body.conferences header .container .header-buttons .save-date {
 		margin:0;
-		padding-left:10px;
+		padding-left:0;
 		text-align:center;
 		float:none;
 
 }
+	body.conferences header .container .header-buttons .save-date>div {
+		padding-left:0;
+	}
+
 	
 }

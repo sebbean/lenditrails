@@ -486,8 +486,7 @@ body.conferences  {
 }
 
 
-.button-register a,
-.button-recap a
+.button-register a
 {
 	&:before {
 		margin-left:-50px;
@@ -503,6 +502,24 @@ body.conferences  {
 		opacity:.95;
 	}
 }
+
+.button-recap a {
+	&:before {
+		margin-left:-50px;
+		margin-top:-9px;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		background: url(fontawesome-angle.png) -52px center no-repeat;
+		float:right;
+		width:46px;
+		content:'\00A0';
+		height:66px ;
+		box-shadow:-1px 0 0 rgba(255, 255, 255, 0.3) ;
+		opacity:.95;
+	}
+	
+}
+
 
 
 .button-register a,
@@ -563,6 +580,10 @@ body.conferences  {
 	color:#91E41D;
 	font-family:'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 }
+.save-date strong  {
+	color:#fff;
+}
+
 
 .button-register strong {
 	font-size:36px;
@@ -571,7 +592,7 @@ body.conferences  {
 
 }
 .button-register a:before {
-	height:73px;
+	height:75px;
 
 }
 
@@ -1397,17 +1418,38 @@ h1 {
 	body.conferences header .container .header-buttons .save-date >div 
  	{
 		padding:10px;
+		text-shadow:1px 1px 1px rgba(255, 255, 255, 0.2)  ;
 
 
 	}
 	body.conferences header .container .header-buttons .button-register a, 
 	body.conferences header .container .header-buttons .button-recap a {
-		background:rgba(0, 0, 0, 0.5);
-		box-shadow:1px 0 0 rgba(255, 255, 255, 0.5) inset, -1px 0 0 rgba(255, 255, 255, 0.5) inset, 0 -1px 0 rgba(255, 255, 255, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.5) inset ;
+		opacity:.9;
+		-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+		background:#89BE2E;
+background: -moz-radial-gradient(center, ellipse cover, #9eda00 0%, #66be29 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#9eda00), color-stop(100%,#66be29)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, #9eda00 0%,#66be29 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, #9eda00 0%,#66be29 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover, #9eda00 0%,#66be29 100%); /* IE10+ */
+background: radial-gradient(ellipse at center, #9eda00 0%,#66be29 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9eda00', endColorstr='#66be29',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		box-shadow:none;
 	}
+	body.conferences header .container .header-buttons .button-register a strong, 
+	body.conferences header .container .header-buttons .button-recap a strong,
+	body.conferences header .container .header-buttons .button-register a span, 
+	body.conferences header .container .header-buttons .button-recap a span {
+		color:#000;
+		
+	}
+		
+
 	body.conferences header .container .header-buttons .button-register a:hover, 
 	body.conferences header .container .header-buttons .button-recap a:hover {
-		background:#000;
+		opacity:1;
 		box-shadow:none;
 	}
 
@@ -1424,7 +1466,7 @@ h1 {
 	body.conferences header .container .header-buttons .save-date>div span 
 	{
 		font-size:13px;
-		font-weight:500;
+		font-weight:600;
 	}
 	body.conferences header .container .header-buttons .button-register a strong
 	{

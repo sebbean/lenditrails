@@ -32,6 +32,9 @@ LenditRails::Application.routes.draw do
   get '/videos', to: redirect("http://lendit.tv", status: 302)
   get '/videos-2', to: redirect("http://lendit.tv", status: 302)
 
+  #302 redirect to be changed when the LendIt 2015 pages are done
+  get '/europe', to: redirect("/", status: 302)
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

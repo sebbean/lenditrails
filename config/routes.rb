@@ -7,8 +7,11 @@ LenditRails::Application.routes.draw do
   get '/speakers/sign-up' => 'speakers#sign-up'
   get '/speakers/thank-you' => 'speakers#thank-you'
   get '/terms-of-use' => 'welcome#terms-of-use'
-  # new routes to expand to lendit 2015
+
+  # 301 redirects with GA tracking codes
   get '/sharecast' => 'conferences#sharecast'
+
+  # new routes to expand to lendit 2015
   get '/2015' => 'conferences#2015'
   get '/home' => 'welcome#home'
 
@@ -25,7 +28,6 @@ LenditRails::Application.routes.draw do
   get '/presentations/Michael-Barr-LendiIt-2014.pdf' => 'welcome#barr_2014_deck'
   get '/presentations/Chales-Moldow-Foundation-Capital-LendIt-2014.pdf' => 'welcome#moldow_2014_deck'
   get '/presentations/Securitization-Panel-LendIt-2014.pdf' => 'welcome#securitization_panel_2014_deck'
-  # get '/?utm_source=sharecast&utm_medium=video&utm_campaign=europe-2014' => 'conferences#sharecast'
 
 
   # 302 redirect to be updated to 301 once Wistia is configured

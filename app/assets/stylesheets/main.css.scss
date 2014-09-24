@@ -1542,6 +1542,10 @@ body.conferences header .container .header-buttons {
 	display: table;
 	width: 970px;
 	margin-left: -18px;
+	@media (max-width: 960px) {
+	width: auto;
+
+	}	
 }
 .speaker-signup .floating-fields .ss-form-question {
 	float: left;

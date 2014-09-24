@@ -856,7 +856,7 @@ body.conferences header .container .header-buttons {
 // @speakers
 // subhero
 .speakers .subhero .container {
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	@media (max-width: 550px) {
 		padding-bottom: 0;
 	}
@@ -899,9 +899,8 @@ body.conferences header .container .header-buttons {
 .current-speakers {
 	display: table;
 	width: 980px;
-	margin-left: -20px;
+	margin-left: -15px;
 	display: table;
-	padding-bottom: 20px;
 	@media (max-width: 960px) {
 		display:block;
 		width:auto;
@@ -915,6 +914,7 @@ body.conferences header .container .header-buttons {
 	display: block;
 	float: left;
 	background: #fff;
+	margin-bottom:30px;
 	color: #777;
 	position: relative;
 	box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1) inset, -1px -1px 0 rgba(0, 0, 0, 0.1) inset;
@@ -965,41 +965,68 @@ body.conferences header .container .header-buttons {
 	opacity: 1;
 }
 .current-speakers a.current-speaker .speaker {
-	width: 220px;
+	width: 308px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	padding: 20px 18px 20px 20px;
+	padding: 15px 18px 15px 15px;
+
 	@media (max-width: 550px) {
-		width: auto;
+		width:auto;
+		padding-right:0;
 		border: 1px solid #89BE2E;
 	}
+}
+// @@
+.current-speakers a.current-speaker:nth-of-type(3) {
+	@media (min-width: 960px) {
+		
+
+	margin-right:0;
+}
+
 }
 .current-speakers a.current-speaker .speaker .speaker-top {
 @include clearfix;
 }
 
 .current-speakers a.current-speaker .speaker .speaker-top .speaker-image {
-	width: 180px;
-	height: 218px;
-	margin-right: 0;
+	width: 130px;
+	height: 157px;
+	margin-right: 10px;
+	float:left;
+
+	@media (max-width: 550px) {
+	width: 120px;
+	height: 145px;
+		
+
+
+	}
+	
 }
 .current-speakers a.current-speaker .speaker .speaker-top .speaker-top-info {
 	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 	margin-bottom: 0;
-	margin-top:10px;
+	float:right;
+	width:135px;
 @include clearfix;
 	
 	@media (max-width: 550px) {
-		width: auto;
-		float: none;
+		float:left;
+		margin-left:0;
+		width:128px;
+
 	}
 }
 .current-speakers a.current-speaker .speaker .speaker-top .speaker-top-info .speaker-name {
-	font-size: 28px;
+	font-size: 26px;
 	color: #000;
 	line-height: 29px;
 	margin-bottom: 8px;
 	font-weight: 400;
+	@media (max-width: 550px) {
+		font-size:22px;
+	}	
 }
 .current-speakers a.current-speaker .speaker .speaker-top .speaker-top-info .speaker-title {
 	font-size: 14px;
@@ -1009,11 +1036,17 @@ body.conferences header .container .header-buttons {
 	line-height: 18px;
 	color: #999;
 	margin-bottom: 8px;
+
+	
 }
 .current-speakers a.current-speaker .speaker .speaker-top .speaker-top-info .speaker-company {
-	font-size: 25px;
+	font-size: 24px;
 	color: #999;
 	line-height: 24px;
+	@media (max-width: 550px) {
+		font-size:22px;
+	}	
+	
 }
 .current-speakers a.current-speaker:hover {
 	background: #fff;
@@ -1023,17 +1056,21 @@ body.conferences header .container .header-buttons {
 	opacity: .8;
 }
 .current-speakers a.current-speaker {
-	margin-right: 30px;
+	margin-right: 20px;
+	@media (max-width: 767px) {
+		margin-left:10px;
+		margin-right:0;
+	}
 	@media (max-width: 550px) {
 		margin-right: 0;
 	}
 }
 .current-speakers a.current-speaker:last-of-type {
+	@media (min-width:960px) {
 	margin-right:0;
 	margin-left: 0;
-	@media (max-width: 550px) {
-		margin-left: 20px;
-	}
+}
+
 }
 .current-speaker-bio {
 	padding-bottom: 0;

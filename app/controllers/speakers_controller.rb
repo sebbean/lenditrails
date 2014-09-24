@@ -5,6 +5,7 @@ class SpeakersController < ApplicationController
   # GET /speakers.json
   def index
     @europe_speakers = Speaker.where(past_speaker: false)
+    @europe_speakers.sort_by! { |speaker| speaker['last_name'] }
     @past_speakers = Speaker.where(past_speaker: true)
   end
 

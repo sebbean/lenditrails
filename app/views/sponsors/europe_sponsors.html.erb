@@ -28,13 +28,54 @@
 
 		<div class="cols">
 			<div class="col1">
-				<h2>LendIt Europe Sponsors</h2>
-				<section class="sponsor-images"><% @platinum.each do |sponsor| %>
-					<div class="image-container">
-						<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-					</div>
-				<% end %>
-			</section>
+
+				<div>
+					<h2>Europe, November 2014</h2>
+					<h3>Platinum Sponsors</h3>
+					<section class="sponsor-images"><% @platinum.each do |sponsor| %>
+						<div class="image-container">
+							<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+						</div>
+					<% end %>
+				</div>
+
+				<div>
+					<h3>Gold Sponsors</h3>
+					<section class="sponsor-images"><% @gold.each do |sponsor| %>
+						<div class="image-container">
+							<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+						</div>
+					<% end %>
+					</section>
+				</div>
+
+				<div>
+					<h3>Silver Sponsors</h3>
+					<section class="sponsor-images"><% @silver.each do |sponsor| %>
+						<div class="image-container">
+							<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+						</div>
+					<% end %>
+				</div>
+
+				<div>
+					<h3>Bronze Sponsors</h3>
+					<section class="sponsor-images"><% @bronze.each do |sponsor| %>
+						<div class="image-container">
+							<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+						</div>
+					<% end %>
+				</div>
+
+				<div>
+					<h3>Other Sponsors</h3>
+					<section class="sponsor-images"><% @other_sponsors.each do |sponsor| %>
+						<div class="image-container">
+							<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+						</div>
+					<% end %>
+				</div>
+
 		</div>
 
 		<div class="col2">

@@ -3,7 +3,7 @@ LenditRails::Application.routes.draw do
   root 'conferences#europe'
   get '/about' => 'welcome#about'
   get '/sponsors' => 'sponsors#index'
-#  get '/sponsors/europe' => 'sponsors#europe_sponsors'
+  get '/europe/sponsors' => 'sponsors#europe_sponsors'
   get '/speakers' => 'speakers#index'
   get '/speakers/sign-up' => 'speakers#sign-up'
   get '/speakers/thank-you' => 'speakers#thank-you'

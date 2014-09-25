@@ -1652,12 +1652,12 @@ body.conferences header .container .header-buttons {
 		margin-left: 16px;
 	}
 }
-// sponsor images
-.sponsor-images {
-@include clearfix;
+// other sponsors
 
+.sponsor-images {
+	margin-left:-10px;
+	@include clearfix;
 	@media (max-width: 960px) {
-		margin-left: 16px;
 		display: table;
 		width: auto;
 		border: none;
@@ -1666,7 +1666,7 @@ body.conferences header .container .header-buttons {
 }
 .sponsor-images .image-container {
 	border: 1px solid #ddd;
-	margin: 0 10px 10px 0;
+	margin: 0 0 10px 10px;
 	float: left;
 }
 .sponsor-images .image-container img {
@@ -1675,6 +1675,44 @@ body.conferences header .container .header-buttons {
 	height: 95px;
 	margin: 5px;
 }
+
+
+.sponsors-other {
+		@media (max-width: 960px) {
+			margin-left:15px;
+		}
+	
+}
+// highlevel sponsors
+
+.sponsors-highlevel {
+		@media (max-width: 960px) {
+			margin-left:15px;
+		}
+	
+	.sponsor-images {
+		margin-left:-17px;
+		@include clearfix;
+		@media (max-width: 960px) {
+			display: table;
+			width: auto;
+			border: none;
+			margin-bottom: 0;
+		}
+	}
+	.sponsor-images .image-container {
+		border: 1px solid #ddd;
+		margin: 0 0 17px 17px;
+		float: left;
+	}
+	.sponsor-images .image-container img {
+		display: block;
+		width: 195px;
+		height: 148px;
+		margin: 5px;
+	}
+}
+
 // col 2
 .sponsors main .col2 {
 	width: 420px;
@@ -1686,9 +1724,16 @@ body.conferences header .container .header-buttons {
 		float: none;
 	}
 }
+
+
+
 .sponsors main .col2 h2 {
 	margin-top: 38px;
 }
+
+
+
+
 // ============================================================
 .welcome main .cols {
 @include clearfix;

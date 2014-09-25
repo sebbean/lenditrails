@@ -29,51 +29,76 @@
 		<div class="cols">
 			<div class="col1">
 
-				<div>
 					<h2>Europe, November 2014</h2>
+
+				<div class="sponsors-highlevel sponsors-platinum">
 					<h3>Platinum Sponsors</h3>
-					<section class="sponsor-images"><% @platinum.each do |sponsor| %>
-						<div class="image-container">
-							<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-						</div>
-					<% end %>
+					<section class="sponsor-images">
+						<% @platinum.each do |sponsor| %>
+							<div class="image-container">
+								<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+							</div>
+						<% end %>
+
+					<!-- begin temporary --> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <!-- end temporary -->
+
+					</section>
 				</div>
 
-				<div>
+				<div class="sponsors-highlevel sponsors-gold">
 					<h3>Gold Sponsors</h3>
 					<section class="sponsor-images"><% @gold.each do |sponsor| %>
 						<div class="image-container">
 							<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
 						</div>
 					<% end %>
-					</section>
-				</div>
 
-				<div>
+					<!-- begin temporary --> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <!-- end temporary --> 
+
+					</section>
+				</div> 
+
+				<div class="sponsors-highlevel sponsors-silver">
 					<h3>Silver Sponsors</h3>
 					<section class="sponsor-images"><% @silver.each do |sponsor| %>
 						<div class="image-container">
 							<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
 						</div>
 					<% end %>
+
+					<!-- begin temporary --> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <!-- end temporary --> 
+
+					
 				</div>
 
-				<div>
+				<div class="sponsors-highlevel sponsors-bronze">
 					<h3>Bronze Sponsors</h3>
 					<section class="sponsor-images"><% @bronze.each do |sponsor| %>
 						<div class="image-container">
 							<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
 						</div>
 					<% end %>
+
+					<!-- begin temporary --> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <!-- end temporary --> 
+
+				</section>
+					
 				</div>
 
-				<div>
+				<div class="sponsors-other">
 					<h3>Other Sponsors</h3>
 					<section class="sponsor-images"><% @other_sponsors.each do |sponsor| %>
 						<div class="image-container">
 							<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
 						</div>
 					<% end %>
+
+
+					<!-- begin temporary --> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <!-- end temporary --> 
+					<!-- begin temporary --> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <!-- end temporary --> 
+
+				</section>
+					
 				</div>
 
 		</div>

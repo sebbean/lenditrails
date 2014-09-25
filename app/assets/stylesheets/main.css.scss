@@ -76,7 +76,7 @@ input[type=text]:focus:-ms-input-placeholder, input[type=email]:focus:-ms-input-
 button {
 	letter-spacing: .3pt;
 }
-// ============================================================  
+// ============================================================
 // @general
 body {
 	padding: 126px 0 0 0;
@@ -89,7 +89,7 @@ body {
 	position: relative;
 	padding-bottom: 100px;
 @include clearfix;
-	
+
 	@media (max-width: 767px) {
 		padding: 50px 0 0 0;
 	}
@@ -172,7 +172,7 @@ hr {
 		border-right: none;
 	}
 }
-// ============================================================  
+// ============================================================
 // @nav
 .navbar {
 	min-height: 0;
@@ -237,7 +237,7 @@ nav .container ul {
 	font-size: 16px;
 	list-style-type: none;
 @include clearfix;
-	
+
 	@media (max-width: 767px) {
 		float: none;
 		display: table;
@@ -312,7 +312,7 @@ nav .container ul li a:hover {
 .conferences nav ul {
 	margin-bottom: 20px;
 }
-// ============================================================  
+// ============================================================
 // @home
 body.conferences {
 	padding: 84px 0 0 0;
@@ -852,7 +852,7 @@ body.conferences header .container .header-buttons {
 		line-height: 1.25em;
 	}
 }
-// ============================================================  
+// ============================================================
 // @speakers
 // subhero
 .speakers .subhero .container {
@@ -923,7 +923,7 @@ body.conferences header .container .header-buttons {
 		width:auto;
 		margin-bottom:20px;
 	}
-	
+
 	@media (max-width: 550px) {
 		margin-left: 20px;
 		margin-bottom: 20px;
@@ -1010,7 +1010,7 @@ body.conferences header .container .header-buttons {
 	float:right;
 	width:135px;
 @include clearfix;
-	
+
 	@media (max-width: 550px) {
 		float:left;
 		margin-left:0;
@@ -1100,8 +1100,8 @@ body.conferences header .container .header-buttons {
 		display:block;
 		width:auto;
 	}
-	
-	
+
+
 	@media (max-width: 550px) {
 		width: auto;
 	}
@@ -1144,7 +1144,7 @@ body.conferences header .container .header-buttons {
 
 	@media (max-width: 550px) {
 		display:none;
-		
+
 		content: "More...";
 		font-weight: bold;
 		width: auto;
@@ -1419,7 +1419,7 @@ body.conferences header .container .header-buttons {
 	background: #fff;
 	box-sizing: border-box;
 @include clearfix;
-	
+
 	@media (max-width: 550px) {
 		height: auto;
 		margin: 0;
@@ -1522,7 +1522,7 @@ body.conferences header .container .header-buttons {
 		background: none;
 	}
 }
-// ============================================================  
+// ============================================================
 // @signup
 // speaker signup
 .speaker-signup {
@@ -1582,7 +1582,7 @@ body.conferences header .container .header-buttons {
 	@media (max-width: 960px) {
 	width: auto;
 
-	}	
+	}
 }
 .speaker-signup .floating-fields .ss-form-question {
 	float: left;
@@ -1602,7 +1602,7 @@ body.conferences header .container .header-buttons {
 	padding-bottom: 40px;
 	min-height: 300px;
 }
-// ============================================================  
+// ============================================================
 // @sponsors
 .sponsors main section {
 	margin-bottom: 40px;
@@ -1652,12 +1652,12 @@ body.conferences header .container .header-buttons {
 		margin-left: 16px;
 	}
 }
-// sponsor images
+// other sponsors
+
 .sponsor-images {
-@include clearfix;
-	
+	margin-left:-10px;
+	@include clearfix;
 	@media (max-width: 960px) {
-		margin-left: 16px;
 		display: table;
 		width: auto;
 		border: none;
@@ -1666,7 +1666,7 @@ body.conferences header .container .header-buttons {
 }
 .sponsor-images .image-container {
 	border: 1px solid #ddd;
-	margin: 0 10px 10px 0;
+	margin: 0 0 10px 10px;
 	float: left;
 }
 .sponsor-images .image-container img {
@@ -1675,6 +1675,44 @@ body.conferences header .container .header-buttons {
 	height: 95px;
 	margin: 5px;
 }
+
+
+.sponsors-other {
+		@media (max-width: 960px) {
+			margin-left:15px;
+		}
+	
+}
+// highlevel sponsors
+
+.sponsors-highlevel {
+		@media (max-width: 960px) {
+			margin-left:15px;
+		}
+	
+	.sponsor-images {
+		margin-left:-17px;
+		@include clearfix;
+		@media (max-width: 960px) {
+			display: table;
+			width: auto;
+			border: none;
+			margin-bottom: 0;
+		}
+	}
+	.sponsor-images .image-container {
+		border: 1px solid #ddd;
+		margin: 0 0 17px 17px;
+		float: left;
+	}
+	.sponsor-images .image-container img {
+		display: block;
+		width: 195px;
+		height: 148px;
+		margin: 5px;
+	}
+}
+
 // col 2
 .sponsors main .col2 {
 	width: 420px;
@@ -1686,10 +1724,17 @@ body.conferences header .container .header-buttons {
 		float: none;
 	}
 }
+
+
+
 .sponsors main .col2 h2 {
 	margin-top: 38px;
 }
-// ============================================================  
+
+
+
+
+// ============================================================
 .welcome main .cols {
 @include clearfix;
 }
@@ -1792,7 +1837,7 @@ body.conferences header .container .header-buttons {
 .quote-speaker {
 	margin-top: 12px;
 }
-// ============================================================  
+// ============================================================
 // @footer
 footer {
 	margin: 0;
@@ -1958,7 +2003,7 @@ footer .column1 h2 {
 	background: #89be2e;
 	color: #fff;
 }
-// 
+//
 // •div.column2
 footer .column2 {
 	float: right;
@@ -1968,7 +2013,7 @@ footer .column2 {
 		width: auto;
 	}
 }
-// •h2 
+// •h2
 footer .column2 h2 {
 	font-size: 20px;
 	font-family: 'Verlag A', 'Verlag B', verlag;
@@ -2064,7 +2109,7 @@ footer .contactus li {
 }
 
 
-// ============================================================  
+// ============================================================
 // @terms
 .terms-of-use {
 	max-width: 1207px;
@@ -2074,4 +2119,4 @@ footer .contactus li {
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
-// ============================================================  
+// ============================================================

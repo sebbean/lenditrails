@@ -4,7 +4,16 @@ class SponsorsController < ApplicationController
   # GET /sponsors
   # GET /sponsors.json
   def index
-    @sponsors = Sponsor.all
+    @past_sponsors = Sponsor.where(conference: 'LendIt 2014')
+  end
+
+  def europe_sponsors
+    @europe_sponsors = Sponsor.where(conference: 'LendIt Europe 2014')
+    @platinum = @europe_sponsors.where(sponsor_level: 'Platinum')
+    @gold = @europe_sponsors.where(sponsor_level: 'Gold')
+    @silver = @europe_sponsors.where(sponsor_level: 'Silver')
+    @bronze = @europe_sponsors.where(sponsor_level: 'Bronze')
+    @other_sponsors = @europe_sponsors.where(sponsor_level: 'Other')
   end
 
   # GET /sponsors/1

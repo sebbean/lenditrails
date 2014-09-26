@@ -2116,3 +2116,11 @@ footer .contactus li {
 	padding-bottom: 40px;
 }
 // ============================================================
+
+// !IMPORTANT -- this is ONLY for the GLI Finance Limited logo -- if the
+// placement changes, then we have to fix this:
+
+.sponsors-platinum > section > div.image-container:first-of-type img {
+width:205px; height:158px;
+margin:0;
+}

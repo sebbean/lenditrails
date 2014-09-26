@@ -1,9 +1,9 @@
 @mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 }
 // -------------------------------------------
 * {
@@ -88,8 +88,7 @@ body {
 	color: #333;
 	position: relative;
 	padding-bottom: 100px;
-@include clearfix;
-
+	@include clearfix;
 	@media (max-width: 767px) {
 		padding: 50px 0 0 0;
 	}
@@ -143,7 +142,6 @@ a:hover {
 .cols {
 	@include clearfix;
 }
-
 .cols p {
 	color: #000;
 	font-size: 18px;
@@ -236,8 +234,7 @@ nav .container ul {
 	font-weight: 500;
 	font-size: 16px;
 	list-style-type: none;
-@include clearfix;
-
+	@include clearfix;
 	@media (max-width: 767px) {
 		float: none;
 		display: table;
@@ -923,7 +920,6 @@ body.conferences header .container .header-buttons {
 		width:auto;
 		margin-bottom:20px;
 	}
-
 	@media (max-width: 550px) {
 		margin-left: 20px;
 		margin-bottom: 20px;
@@ -969,7 +965,6 @@ body.conferences header .container .header-buttons {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	padding: 15px 18px 15px 15px;
-
 	@media (max-width: 550px) {
 		width:auto;
 		padding-right:0;
@@ -979,43 +974,32 @@ body.conferences header .container .header-buttons {
 // @@
 .current-speakers a.current-speaker:nth-of-type(3) {
 	@media (min-width: 960px) {
-		
-
-	margin-right:0;
-}
-
+		margin-right:0;
+	}
 }
 .current-speakers a.current-speaker .speaker .speaker-top {
-@include clearfix;
+	@include clearfix;
 }
-
 .current-speakers a.current-speaker .speaker .speaker-top .speaker-image {
 	width: 130px;
 	height: 157px;
 	margin-right: 10px;
 	float:left;
-
 	@media (max-width: 550px) {
-	width: 120px;
-	height: 145px;
-		
-
-
+		width: 120px;
+		height: 145px;
 	}
-	
 }
 .current-speakers a.current-speaker .speaker .speaker-top .speaker-top-info {
 	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 	margin-bottom: 0;
 	float:right;
 	width:135px;
-@include clearfix;
-
+	@include clearfix;
 	@media (max-width: 550px) {
 		float:left;
 		margin-left:0;
 		width:128px;
-
 	}
 }
 .current-speakers a.current-speaker .speaker .speaker-top .speaker-top-info .speaker-name {
@@ -1036,8 +1020,6 @@ body.conferences header .container .header-buttons {
 	line-height: 18px;
 	color: #999;
 	margin-bottom: 8px;
-
-	
 }
 .current-speakers a.current-speaker .speaker .speaker-top .speaker-top-info .speaker-company {
 	font-size: 24px;
@@ -1046,7 +1028,6 @@ body.conferences header .container .header-buttons {
 	@media (max-width: 550px) {
 		font-size:22px;
 	}	
-	
 }
 .current-speakers a.current-speaker:hover {
 	background: #fff;
@@ -1067,10 +1048,9 @@ body.conferences header .container .header-buttons {
 }
 .current-speakers a.current-speaker:last-of-type {
 	@media (min-width:960px) {
-	margin-right:0;
-	margin-left: 0;
-}
-
+		margin-right:0;
+		margin-left: 0;
+	}
 }
 .current-speaker-bio {
 	padding-bottom: 0;
@@ -1100,8 +1080,6 @@ body.conferences header .container .header-buttons {
 		display:block;
 		width:auto;
 	}
-
-
 	@media (max-width: 550px) {
 		width: auto;
 	}
@@ -1141,10 +1119,8 @@ body.conferences header .container .header-buttons {
 	}
 }
 .past-speakers .container .speaker:after {
-
 	@media (max-width: 550px) {
 		display:none;
-
 		content: "More...";
 		font-weight: bold;
 		width: auto;
@@ -1418,8 +1394,7 @@ body.conferences header .container .header-buttons {
 	padding: 30px;
 	background: #fff;
 	box-sizing: border-box;
-@include clearfix;
-
+	@include clearfix;
 	@media (max-width: 550px) {
 		height: auto;
 		margin: 0;
@@ -1580,8 +1555,7 @@ body.conferences header .container .header-buttons {
 	width: 970px;
 	margin-left: -18px;
 	@media (max-width: 960px) {
-	width: auto;
-
+		width: auto;
 	}
 }
 .speaker-signup .floating-fields .ss-form-question {
@@ -1605,7 +1579,7 @@ body.conferences header .container .header-buttons {
 // ============================================================
 // @sponsors
 .sponsors main section {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 .sponsors main .sponsors-main {
 	background: #fff;
@@ -1648,12 +1622,27 @@ body.conferences header .container .header-buttons {
 	text-transform: uppercase;
 	margin-top: 40px;
 	margin-bottom: 30px;
+	border-top:2px solid #ddd;
+	border-bottom:1px dotted #ccc;
+	background:#f7f7f7;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:10px;
+	margin-left:-10px;
+	margin-right:4px;
+	
 	@media (max-width: 960px) {
 		margin-left: 16px;
+		margin-right:16px;
 	}
 }
-// other sponsors
+.sponsors main .col1 h3 {
+	margin-bottom:20px;
+	font-weight:500;
+	font-size:28px;
 
+}
+// other sponsors
 .sponsor-images {
 	margin-left:-10px;
 	@include clearfix;
@@ -1675,21 +1664,39 @@ body.conferences header .container .header-buttons {
 	height: 95px;
 	margin: 5px;
 }
-
-
 .sponsors-other {
+	@media (max-width: 960px) {
+		margin-left:15px;
+	}
+}
+// ! this is a divider being applied to the "Past Sponsors" only on the page
+// where this section comes below the Gold, Silver, Other, etc. Sponsors
+.sponsors-past {
+
+
+	h2 {
+		border-top:1px solid #bbb;
+		padding-top:20px;
 		@media (max-width: 960px) {
-			margin-left:15px;
+			margin-right:15px;
 		}
+
+	}
+}
+
+.sponsors-past section {
+	@media (max-width: 960px) {
+		padding-left:15px;
+	}
 	
 }
-// highlevel sponsors
 
+
+// highlevel sponsors
 .sponsors-highlevel {
-		@media (max-width: 960px) {
-			margin-left:15px;
-		}
-	
+	@media (max-width: 960px) {
+		margin-left:15px;
+	}
 	.sponsor-images {
 		margin-left:-17px;
 		@include clearfix;
@@ -1712,7 +1719,6 @@ body.conferences header .container .header-buttons {
 		margin: 5px;
 	}
 }
-
 // col 2
 .sponsors main .col2 {
 	width: 420px;
@@ -1724,19 +1730,12 @@ body.conferences header .container .header-buttons {
 		float: none;
 	}
 }
-
-
-
 .sponsors main .col2 h2 {
 	margin-top: 38px;
 }
-
-
-
-
 // ============================================================
 .welcome main .cols {
-@include clearfix;
+	@include clearfix;
 }
 // @about
 .welcome h2 {
@@ -2092,7 +2091,6 @@ footer .social li a.linkedin {
 	background-position: 0 -250px;
 	color: #808080;
 }
-
 // Contact Us
 footer .contactus {
 	float: right;
@@ -2107,8 +2105,6 @@ footer .contactus li {
 	padding-left: 20px;
 	font-weight: 500;
 }
-
-
 // ============================================================
 // @terms
 .terms-of-use {

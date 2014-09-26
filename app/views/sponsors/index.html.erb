@@ -24,7 +24,7 @@
 							<section class="sponsor-images">
 								<% @platinum.each do |sponsor| %>
 									<div class="image-container">
-										<a href="<%= sponsor.url %>">
+										<a href="<%= sponsor.url %>" target="_blank">
 											<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
 										</a>
 									</div>
@@ -38,7 +38,9 @@
 							<section class="sponsor-images">
 								<% @gold.each do |sponsor| %>
 									<div class="image-container">
-										<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+										<a href="<%= sponsor.url %>" target="_blank">
+                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                    </a>
 									</div>
 								<% end %>
 							</section>
@@ -50,7 +52,9 @@
 							<section class="sponsor-images">
 								<% @silver.each do |sponsor| %>
 									<div class="image-container">
-										<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+										<a href="<%= sponsor.url %>" target="_blank">
+                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                    </a>
 									</div>
 								<% end %>
 							</div>
@@ -61,7 +65,9 @@
 								<section class="sponsor-images">
 									<% @bronze.each do |sponsor| %>
 										<div class="image-container">
-											<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+											<a href="<%= sponsor.url %>" target="_blank">
+                        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                      </a>
 										</div>
 									<% end %>
 								</section>
@@ -73,7 +79,9 @@
 								<section class="sponsor-images">
 									<% @other_sponsors.each do |sponsor| %>
 										<div class="image-container">
-											<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+											<a href="<%= sponsor.url %>" target="_blank">
+                        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                      </a>
 										</div>
 									<% end %>
 								</section>

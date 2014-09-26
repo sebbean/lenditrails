@@ -32,73 +32,77 @@
 					<h2>Europe, November 2014</h2>
 
 				<div class="sponsors-highlevel sponsors-platinum">
+					<% if @platinum.any? %>
 					<h3>Platinum Sponsors</h3>
+					<% end %>
 					<section class="sponsor-images">
 						<% @platinum.each do |sponsor| %>
-							<div class="image-container">
+						<div class="image-container">
+							<a href="<%= sponsor.url %>">
 								<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-							</div>
+							</a>
+						</div>
 						<% end %>
-
-					<!-- begin temporary --> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <!-- end temporary -->
-
 					</section>
 				</div>
 
 				<div class="sponsors-highlevel sponsors-gold">
+					<% if @gold.any? %>
 					<h3>Gold Sponsors</h3>
 					<section class="sponsor-images"><% @gold.each do |sponsor| %>
 						<div class="image-container">
 							<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
 						</div>
 					<% end %>
+					<% end %>
 
-					<!-- begin temporary --> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <!-- end temporary --> 
+					<!-- begin temporary --> <!-- <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div>  --><!-- end temporary -->
 
 					</section>
-				</div> 
+				</div>
 
 				<div class="sponsors-highlevel sponsors-silver">
+					<% if @silver.any? %>
 					<h3>Silver Sponsors</h3>
+					<% end %>
 					<section class="sponsor-images"><% @silver.each do |sponsor| %>
 						<div class="image-container">
 							<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
 						</div>
 					<% end %>
 
-					<!-- begin temporary --> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <!-- end temporary --> 
+					<!-- begin temporary --> <!-- <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> --> <!-- end temporary -->
 
-					
+
 				</div>
 
 				<div class="sponsors-highlevel sponsors-bronze">
+					<% if @bronze.any? %>
 					<h3>Bronze Sponsors</h3>
+					<% end %>
 					<section class="sponsor-images"><% @bronze.each do |sponsor| %>
 						<div class="image-container">
 							<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
 						</div>
 					<% end %>
 
-					<!-- begin temporary --> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <!-- end temporary --> 
+					<!-- begin temporary --> <!-- <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div>  --><!-- end temporary -->
 
 				</section>
-					
+
 				</div>
 
 				<div class="sponsors-other">
+					<% if @other_sponsors.any? %>
 					<h3>Other Sponsors</h3>
+					<% end %>
 					<section class="sponsor-images"><% @other_sponsors.each do |sponsor| %>
 						<div class="image-container">
 							<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
 						</div>
 					<% end %>
-
-
-					<!-- begin temporary --> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <!-- end temporary --> 
-					<!-- begin temporary --> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <div class="image-container"> <img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/bdo.png" alt="BDO"> </div> <!-- end temporary --> 
-
 				</section>
-					
+
 				</div>
 
 		</div>

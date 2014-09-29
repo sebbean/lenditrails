@@ -13,7 +13,7 @@ LenditRails::Application.routes.draw do
   get '/sharecast' => 'conferences#sharecast'
 
   # new routes to expand to lendit 2015
-  get '/2015' => 'conferences#2015'
+  get '/nyc' => 'conferences#nyc-2015'
   get '/home' => 'welcome#home'
 
   # See all redirects in WelcomeController

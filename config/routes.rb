@@ -14,6 +14,7 @@ LenditRails::Application.routes.draw do
 
   # new routes to expand to lendit 2015
   get '/nyc' => 'conferences#nyc-2015'
+  get '/china' => 'conferences#china-2015'
   get '/home' => 'welcome#home'
 
   # See all redirects in WelcomeController

@@ -1,9 +1,9 @@
 LenditRails::Application.routes.draw do
 
   root 'conferences#europe'
+  # get '/home' => 'welcome#home'
   get '/about' => 'welcome#about'
   get '/sponsors' => 'sponsors#index'
-  # get '/europe/sponsors' => 'sponsors#europe_sponsors'
   get '/speakers' => 'speakers#index'
   get '/speakers/sign-up' => 'speakers#sign-up'
   get '/speakers/thank-you' => 'speakers#thank-you'
@@ -12,10 +12,14 @@ LenditRails::Application.routes.draw do
   # 301 redirects with GA tracking codes
   get '/sharecast' => 'conferences#sharecast'
 
-  # new routes to expand to lendit 2015
-  get '/nyc' => 'conferences#nyc-2015'
-  get '/china' => 'conferences#china-2015'
-  get '/home' => 'welcome#home'
+  # routes for LendIt Europe 2014
+  # get '/europe/sponsors' => 'sponsors#europe_sponsors'
+
+  # routes for LendIt NYC 2015
+  # get '/nyc' => 'conferences#nyc-2015'
+
+  # LendIt China
+  # get '/china' => 'conferences#china-2015'
 
   # See all redirects in WelcomeController
   # 301 redirects from old WP site
@@ -44,58 +48,5 @@ LenditRails::Application.routes.draw do
   #302 redirect to be changed when the LendIt 2015 pages are done
   get '/europe', to: redirect("/", status: 302)
 
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
-
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
-
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
-
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
 end

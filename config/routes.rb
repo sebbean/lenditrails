@@ -13,13 +13,13 @@ LenditRails::Application.routes.draw do
   get '/sharecast' => 'conferences#sharecast'
 
   # routes for LendIt Europe 2014
-  get '/europe/sponsors' => 'sponsors#europe_sponsors'
+  # get '/europe/sponsors' => 'sponsors#europe_sponsors'
 
   # routes for LendIt NYC 2015
-  get '/nyc' => 'conferences#nyc-2015'
+  # get '/nyc' => 'conferences#nyc-2015'
 
   # LendIt China
-  get '/china' => 'conferences#china-2015'
+  # get '/china' => 'conferences#china-2015'
 
   # See all redirects in WelcomeController
   # 301 redirects from old WP site

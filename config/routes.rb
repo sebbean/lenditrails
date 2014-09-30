@@ -1,7 +1,7 @@
 LenditRails::Application.routes.draw do
 
-  # root 'conferences#europe'
-  root 'welcome#home'
+  root 'conferences#europe'
+  # root 'welcome#home'
   get '/about' => 'welcome#about'
   get '/sponsors' => 'sponsors#index'
   get '/speakers' => 'speakers#index'
@@ -13,14 +13,11 @@ LenditRails::Application.routes.draw do
   get '/sharecast' => 'conferences#sharecast'
 
 
-  get '/home' => 'welcome#home'
-  get '/europe' => 'conferences#europe'
-  # routes for LendIt Europe 2014
+  # get '/home' => 'welcome#home'
+  # get '/europe' => 'conferences#europe'
+  # get '/nyc' => 'conferences#nyc'
+  # get '/china' => 'conferences#china'
   # get '/europe/sponsors' => 'sponsors#europe_sponsors'
-  # routes for LendIt NYC 2015
-  get '/nyc' => 'conferences#nyc'
-  # LendIt China
-  get '/china' => 'conferences#china'
 
   # See all redirects in WelcomeController
   # 301 redirects from old WP site

@@ -2,8 +2,8 @@ var app = app || {};
 
 $(document).ready(function() {
 
-  // scrollup bar for the nav
-  // $('.topbar').scrollupbar();
+  // requires double tap for mobile
+  $("#nav li:has(ul)").doubleTapToGo();
 
   // speaker form validation
   $("#commentForm").validate({meta: "validate"});

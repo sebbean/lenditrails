@@ -12,10 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require doubletaptogo
 //= require colorbox
 //= require bootstrap
 //= require validate
-//= require readmore
-//= require shorten
 //= require turbolinks
 //= require_tree .

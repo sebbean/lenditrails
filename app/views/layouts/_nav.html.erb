@@ -10,22 +10,20 @@
 
 	<div id="navbarCollapse" class="collapse navbar-collapse">
 		<div class="nav-logo">
-			<!-- <a href="/"><%#= image_tag 'https://s3-us-west-2.amazonaws.com/lendit/lendi-logo-header.png', :title => 'LendIt logo', :alt => 'LendIt' %></a> -->
-
 			<a href="/"><%= image_tag 'https://s3-us-west-2.amazonaws.com/lendit/lenditlogo_toscale_header_nodrpshadow.png', :title => 'LendIt logo', :alt => 'LendIt' %></a>
 
 		</div>
 		<ul>
 			<div>
 				<li><a href="/" class="tab-home">Home</a></li>
-				<li>
+<!-- 				<li>
 					<a href="/"></a>Conferences</a>
 					<ul>
 						<li>Europe</li>
 						<li>NYC</li>
 						<li>China</li>
 					</ul>
-				</li>
+				</li> -->
 				<li><a href="/sponsors" class="tab-sponsors">Sponsors</a></li>
 				<li><a href="/speakers" class="tab-speakers">Speakers</a></li>
 			</div>
@@ -33,11 +31,11 @@
 				<li><a href="https://www.youtube.com/user/LendItConference/" target="_blank" class="tab-videos">Videos</a></li>
 				<li><a href="/about" class="tab-about">About</a></li>
 				<li>
-					<a href="/">Register</a>
-					<ul>
+					<a href="http://register.lendit.co/europe" onclick="_gaq.push(['_link', 'http://register.lendit.co/europe']); return false;" target="_blank">Register</a>
+<!-- 					<ul>
 						<li><a href="http://register.lendit.co/europe" onclick="_gaq.push(['_link', 'http://register.lendit.co/europe']); return false;" target="_blank">Europe</a></li>
 						<li><a href="">NYC</a></li>
-					</ul>
+					</ul> -->
 
 				</li>
 			</div>

@@ -817,7 +817,6 @@ body.conferences header .container .header-buttons {
 	font-weight: bold;
 }
 // homepage col2
-/* shit! */
 .conferences .container .col2 {
 	float: right;
 	width: 430px;
@@ -1630,7 +1629,6 @@ body.conferences header .container .header-buttons {
 	padding-left:10px;
 	margin-left:-10px;
 	margin-right:4px;
-	
 	@media (max-width: 960px) {
 		margin-left: 16px;
 		margin-right:16px;
@@ -1640,7 +1638,6 @@ body.conferences header .container .header-buttons {
 	margin-bottom:20px;
 	font-weight:500;
 	font-size:28px;
-
 }
 // other sponsors
 .sponsor-images {
@@ -1672,26 +1669,19 @@ body.conferences header .container .header-buttons {
 // ! this is a divider being applied to the "Past Sponsors" only on the page
 // where this section comes below the Gold, Silver, Other, etc. Sponsors
 .sponsors-past {
-
-
 	h2 {
 		border-top:1px solid #bbb;
 		padding-top:20px;
 		@media (max-width: 960px) {
 			margin-right:15px;
 		}
-
 	}
 }
-
 .sponsors-past section {
 	@media (max-width: 960px) {
 		padding-left:15px;
 	}
-	
 }
-
-
 // highlevel sponsors
 .sponsors-highlevel {
 	@media (max-width: 960px) {
@@ -1732,6 +1722,221 @@ body.conferences header .container .header-buttons {
 }
 .sponsors main .col2 h2 {
 	margin-top: 38px;
+}
+// ============================================================
+.homepage-container {
+	width: 940px;
+	margin: 0 auto;
+	padding-top:10px;
+	@include clearfix;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.homepage .lendit-intro {
+	max-width:1207px;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	background:#fff;
+	margin:auto ;
+	padding-bottom:50px;
+}
+.homepage header {
+	max-width:1207px;
+	margin:auto;
+	background:#fff;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	
+}
+.homepage .hero {
+	display:table;
+	width:100%;
+	max-width:1100px;
+	margin: auto ;
+	text-align:center;
+	list-style-type:none;
+	padding:0;
+	border-spacing:2px;
+		padding-top:40px;
+		padding-bottom:40px;
+	@media (min-width: 960px) {
+		padding-left:40px;
+		padding-right:40px;
+	}
+		
+	
+	@media (max-width: 960px) {
+		padding-left:0;
+		padding-right:0;
+	}
+
+	@media (max-width: 550px) {
+		display:block;
+	}
+	
+	
+	li {
+		background-size:366px;
+		background-position:center center;
+		background-repeat:no-repeat;
+		display:table-cell;
+		vertical-align:middle;
+		height:260px;
+		width:33%;
+		position:relative;
+	@media (max-width: 550px) {
+		width:auto;
+		max-width:366px;
+		display:block;
+	}
+		
+		&.london { 
+			background-image:url(conf-thumb-london.jpg);
+		}
+		&.newyork { 
+			background-image:url(conf-thumb-newyork.jpg);
+		}
+		&.shanghai { 
+			background-image:url(conf-thumb-shanghai.jpg);
+		}
+		> a {
+			height:260px;
+			display:block;
+			padding-top:130px;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			background: rgba(0, 0, 0, 0.5) ;
+			text-shadow:2px 2px 2px rgba(0, 0, 0, 0.4) ; 
+			color:#fff;
+			opacity:.9;
+				 transition: all ease-in-out .1s;
+				 .conf-date {
+					 display:table;
+					 margin:10px auto;
+					 &:after {
+						 content:'\00A0 \f105';
+						 font-family:FontAwesome;
+						 color:rgba(146, 211, 96, 1);
+						 opacity:0;
+						 width:0;
+						 overflow:hidden;
+						 float:right;
+						 transition: opacity ease-in-out .8s;
+					 }
+				 }
+			&:hover {
+				opacity:1;
+				background:rgba(20, 20, 20, 0.7)  ;
+			.conf-date {
+				color:rgba(146, 211, 96, 1);
+				&:after {
+					opacity:1;
+					width:12px;
+						 transition: width ease-in-out .2s;
+				}
+			}
+			}
+		}
+	}
+}
+.homepage .conf-name {
+	font-size:38px;
+	font-weight:600;
+	text-rendering: optimizeLegibility;
+}
+.homepage .conf-date {
+	margin-top:10px;
+	font-size:18px;
+}
+.homepage .conf-register {
+	position:absolute;
+	margin-top:-40px;
+	right:0;
+	font-weight:500;
+	text-transform:uppercase;
+	line-height:20px;
+	a {
+		display:block;
+		background:#eee;
+		padding:10px 18px;
+		transition: all ease-in-out .1s;
+			background:#fff;
+			color: rgba(139, 191, 40, 1);
+		&:hover {
+			background: rgba(139, 191, 40, 1);
+			color:#fff;
+		}
+	}
+}
+// @@
+.homepage-recap {
+	margin-left:30px;
+	float:right;
+	background: url(homepage-recap.jpg) center center no-repeat;
+	background-size:383px;
+	width:403px;
+	border:1px solid #eee;
+	height:358px;
+	position:relative;
+	&:hover {
+		border:1px solid #ccc;
+		transition: border ease-in-out .6s;
+	}
+	a {
+		border:10px solid #eee;
+		transition: all ease-in-out .1s;
+		background: rgba(50, 50, 50, 0.6) ;
+		opacity:.9;
+		display:block;
+		height:100%;
+		width:100%;
+		font-size:32px;
+		font-weight:500;
+		text-rendering: optimizeLegibility;
+		color:#fff;
+		text-align:center;
+		padding-top:190px;
+		text-shadow:2px 2px 2px rgba(0, 0, 0, 0.4) ; 
+		b {
+			font-weight:500;
+			display:table;
+			margin:auto;
+			&:after {
+				content:'\00A0 \f105';
+				font-family:FontAwesome;
+				color:rgba(146, 211, 96, 1);
+				font-size:30px;
+				opacity:0;
+				width:0;
+				overflow:hidden;
+				float:right;
+				transition: opacity ease-in-out .8s;
+				margin-top:5px;
+				font-weight:100;
+			}
+		}
+		&:after {
+			background: url(homepage-recap-youtube.png) center center no-repeat;
+			content:'';
+			height:48px;
+			width:48px;
+			display:block;
+			position:absolute;
+			right:0;
+			bottom:0;
+			opacity:0;
+		}
+		&:hover {
+			opacity:1;
+			background: rgba(0, 0, 0, 0.6) ;
+			color:rgba(146, 211, 96, 1);
+			b:after {
+				opacity:1;
+				width:22px;
+				transition: width ease-in-out .2s;
+			}
+		}
+	}
 }
 // ============================================================
 .welcome main .cols {
@@ -2116,10 +2321,8 @@ footer .contactus li {
 	padding-bottom: 40px;
 }
 // ============================================================
-
 // !IMPORTANT -- this is ONLY for the GLI Finance Limited logo -- if the
 // placement changes, then we have to fix this:
-
 .sponsors-platinum > section > div.image-container:first-of-type img {
 width:205px; height:158px;
 margin:0;

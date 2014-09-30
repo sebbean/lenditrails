@@ -88,10 +88,10 @@
 							<% end %>
 						</div>
 						<div>
-							<% if @other_sponsors.any? %>
-							<h3>Other Sponsors</h3>
+							<% if @smartphone.any? %>
+							<h3>Smartphone App Sponsor</h3>
 							<section class="sponsor-images">
-								<% @other_sponsors.each do |sponsor| %>
+								<% @smartphone.each do |sponsor| %>
 									<div class="image-container">
 											<a href="<%= sponsor.url %>" target="_blank">
                         <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
@@ -101,7 +101,23 @@
 							</section>
 							<% end %>
 						</div>
-						<div class="sponsors-past">
+
+						<div>
+							<% if @exhibitor.any? %>
+							<h3>Exhibitor</h3>
+							<section class="sponsor-images">
+								<% @exhibitor.each do |sponsor| %>
+									<div class="image-container">
+											<a href="<%= sponsor.url %>" target="_blank">
+                        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                      </a>
+										</div>
+								<% end %>
+							</section>
+							<% end %>
+						</div>
+
+						<div class="sponsors-past" style="display: none;">
 							<h2>Past Sponsors</h2>
 							<section class="sponsor-images">
 								<% @past_sponsors.each do |sponsor| %>

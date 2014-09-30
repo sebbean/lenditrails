@@ -1,7 +1,7 @@
 LenditRails::Application.routes.draw do
 
-  root 'conferences#europe'
-  get '/home' => 'welcome#home'
+  # root 'conferences#europe'
+  root 'welcome#home'
   get '/about' => 'welcome#about'
   get '/sponsors' => 'sponsors#index'
   get '/speakers' => 'speakers#index'
@@ -12,14 +12,15 @@ LenditRails::Application.routes.draw do
   # 301 redirects with GA tracking codes
   get '/sharecast' => 'conferences#sharecast'
 
+
+  get '/home' => 'welcome#home'
+  get '/europe' => 'conferences#europe'
   # routes for LendIt Europe 2014
   # get '/europe/sponsors' => 'sponsors#europe_sponsors'
-
   # routes for LendIt NYC 2015
-  # get '/nyc' => 'conferences#nyc-2015'
-
+  get '/nyc' => 'conferences#nyc'
   # LendIt China
-  # get '/china' => 'conferences#china-2015'
+  get '/china' => 'conferences#china'
 
   # See all redirects in WelcomeController
   # 301 redirects from old WP site
@@ -46,7 +47,7 @@ LenditRails::Application.routes.draw do
   get '/videos-2', to: redirect("http://lendit.tv", status: 302)
 
   #302 redirect to be changed when the LendIt 2015 pages are done
-  get '/europe', to: redirect("/", status: 302)
+  # get '/europe', to: redirect("/", status: 302)
 
 
 end

@@ -4,4 +4,13 @@ class ConferencesController < ApplicationController
     redirect_to ('/?utm_source=sharecast&utm_medium=video&utm_campaign=europe-2014'), :status => 301
   end
 
+  def china
+  end
+
+  def europe
+  end
+
+  def nyc
+  end
+
 end

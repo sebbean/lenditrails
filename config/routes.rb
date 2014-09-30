@@ -1,7 +1,7 @@
 LenditRails::Application.routes.draw do
 
   root 'conferences#europe'
-  # get '/home' => 'welcome#home'
+  get '/home' => 'welcome#home'
   get '/about' => 'welcome#about'
   get '/sponsors' => 'sponsors#index'
   get '/speakers' => 'speakers#index'

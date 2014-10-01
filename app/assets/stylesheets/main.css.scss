@@ -174,16 +174,31 @@ hr {
 // ============================================================
 
 .nav-container {
-	min-height:52px;
-	background:#fff; 
-	@include clearfix;
-
-
-	max-width:1207px;
-	margin:auto;
 	background:#fff;
+	border-bottom:1px solid #ccc;
+}
+.nav-container-inner {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+
 	border-left:1px solid #ccc;
 	border-right:1px solid #ccc;
+	margin:auto;
+	max-width:1207px;
+
+@media only screen and ( max-width: 50em ) {
+	border-left:none;
+	border-right:none;
+}
+	
+@media only screen and ( min-width: 50em ) {
+	
+	padding-right:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+	@include clearfix;
 }
 
 $lendit-green: #89be2e;
@@ -212,26 +227,45 @@ $nav-link-border-top: $light-grey;
 
 $nav-caret: $lendit-green;
 
-$nav-font-size:16px;
+$nav-font-size:20px;
 
 
 #nav a {
+
 	text-decoration:none;
+	-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
 }
 #nav ul {
 	list-style-type:none;
 	padding:0;
 	margin:0;
+@media only screen and ( max-width: 40em ) {
+}
+
 }
 
 #nav {
-	width: 60em; /* 1000 */
 	font-weight: 400;
-	position: absolute;
 	z-index:400;
-	left: 50%;
-	margin-left: -30em; /* 30 480 */
 	@include clearfix;
+
+@media only screen and ( min-width: 50em ) {
+	float:right;
+	left:auto;
+	right:0;
+}
+@media only screen and ( max-width: 62.5em ) {
+	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+
+}
+@media only screen and ( max-width: 50em ) {
+	font-family: 'Verlag A', 'Verlag B', verlag;
+	font-weight:600;
+}
+
+
 	
 }
 
@@ -245,38 +279,60 @@ $nav-font-size:16px;
 #nav li a {
 	color: $nav-link-color;
 	display: block;
-	text-transform:uppercase;
+@media only screen and ( min-width: 62.5em ) {
+	padding-left:20px;
+	padding-right:20px;
 }
+@media only screen and ( max-width: 62.5em ) {
+	padding-left:10px;
+	padding-right:10px;
+}	
+}
+
 #nav li a:active {
 	background-color: $nav-link-active !important;
 }
 
 #nav span:after {
+	font-family: fontawesome;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	content:'\00A0 \f0d7';
+	font-size:.8em;
+}
+
+/*
+#nav span:after {
 	width: 0;
 	height: 0;
-	border: 0.313em solid transparent; /* 5 */
+	border: 0.313em solid transparent; 
 	border-bottom: none;
 	border-top-color: $nav-caret;
 	content: '';
 	vertical-align: middle;
 	display: inline-block;
 	position: relative;
-	right: -0.313em; /* 5 */
+	right: -0.313em; 
 
 }
 #nav li:not(:first-child):hover span:after {
  border-top-color:#fff ;
 }
+*/
 
 
 /* first level */
 
 #nav > ul {
-	height: 2.75em; /* 60 */
+	height: 3.1em; /* 60 */
 	background-color: $nav-ul-background;
+
+@media only screen and ( max-width: 50em ) {
+	background-color: $light-grey;
+}	
 }
 #nav > ul > li {
-	width: 16.6%;
 	height: 100%;
 	float: left;
 	//border-right:1px solid #fff;
@@ -285,12 +341,13 @@ $nav-font-size:16px;
 #nav > ul > li > a {
 	height: 100%;
 	font-size: $nav-font-size; /* 24 */
-	line-height: 3em; /* 60 (24) */
+	line-height: 2.5em; /* 60 (24) */
 	text-align: center;
-	@media (max-width: 767px) {
-		line-height:3.5em;
-	font-size: 14px; /* 24 */
-	}
+
+@media only screen and ( max-width: 50em ) {
+	line-height: 2em; /* 60 (24) */
+}	
+	
 }
 #nav > ul > li:not( :last-child ) > a {
 //	border-right: 1px solid $nav-border-right;
@@ -311,6 +368,7 @@ $nav-font-size:16px;
 	display: none;
 	position: absolute;
 	top: 100%;
+	z-index:400;
 }
 #nav li:hover ul
 {
@@ -327,7 +385,7 @@ $nav-font-size:16px;
 	color:$nav-menu-active-foreground;
 	font-size: $nav-font-size; /* 20 */
 	border-top: 1px solid $nav-link-border-top;
-	padding: 0.75em; /* 15 (20) */
+	padding: 0.4em; /* 15 (20) */
 }
 #nav li ul li a:hover,
 #nav li ul:not( :hover ) li.active a
@@ -340,13 +398,12 @@ $nav-font-size:16px;
 {
 	#nav
 	{
-		width: 100%;
 		position: static;
 		margin: 0;
 	}
 }
 
-@media only screen and ( max-width: 40em ) /* 640 */
+@media only screen and ( max-width: 50em ) /* 640 */
 {
 	html
 	{
@@ -419,7 +476,7 @@ $nav-font-size:16px;
 	#nav > ul > li:not( :last-child ) > a
 	{
 		border-right: none;
-		border-bottom: 1px solid $nav-small-border-bottom;
+//		border-bottom: 1px solid $nav-small-border-bottom;
 	}
 
 
@@ -430,6 +487,7 @@ $nav-font-size:16px;
 		position: static;
 		padding: 1.25em; /* 20 */
 		padding-top: 0;
+		padding-bottom:0;
 	}
 }
 

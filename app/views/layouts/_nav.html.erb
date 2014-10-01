@@ -1,45 +1,38 @@
-<nav role="navigation" class="navbar navbar-default navbar-fixed-top ">
+<div class="nav-container">
+<nav id="nav" role="navigation">
 
-		<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-	<div class="container">
-
-	<div id="navbarCollapse" class="collapse navbar-collapse">
-		<div class="nav-logo">
-			<a href="/"><%= image_tag 'https://s3-us-west-2.amazonaws.com/lendit/lenditlogo_toscale_header_nodrpshadow.png', :title => 'LendIt logo', :alt => 'LendIt' %></a>
-
-		</div>
-		<ul>
-			<div>
-				<li><a href="/" class="tab-home">Home</a></li>
-				<li>
-					<a href="/"></a>Conferences</a>
- 					<ul>
-						<li>Europe</li>
-						<li>NYC</li>
-						<li>China</li>
-					</ul>
-				</li>
-				<li><a href="/sponsors" class="tab-sponsors">Sponsors</a></li>
-				<li><a href="/speakers" class="tab-speakers">Speakers</a></li>
-			</div>
-			<div>
-				<li><a href="https://www.youtube.com/user/LendItConference/" target="_blank" class="tab-videos">Videos</a></li>
-				<li><a href="/about" class="tab-about">About</a></li>
-				<li>
-					<a href="http://register.lendit.co/europe" onclick="_gaq.push(['_link', 'http://register.lendit.co/europe']); return false;" target="_blank">Register</a>
-					<ul>
-						<li><a href="http://register.lendit.co/europe" onclick="_gaq.push(['_link', 'http://register.lendit.co/europe']); return false;" target="_blank">Europe</a></li>
-						<li><a href="">NYC</a></li>
-					</ul>
-
-				</li>
-			</div>
-		</ul>
-	</div>
-  </div>
+	<a href="#nav" title="Show navigation">Show navigation</a>
+	<a href="#" title="Hide navigation">Hide navigation</a>
+	<ul class="clearfix">
+		<li><a href="/">Home</a></li>
+		<li>
+			<a href="/" aria-haspopup="true"><span>Conferences</span></a>
+			<ul>
+				<li><a href="#">Europe</a></li>
+				<li><a href="#">NYC</a></li>
+				<li><a href="#">China</a></li>
+			</ul>
+		</li>
+		<li><a href="/sponsors">Sponsors</a></li>
+		<li><a href="/speakers">Speakers</a></li>
+		<li><a href="https://www.youtube.com/user/LendItConference/">Videos</a></li>
+		<li>
+			<a href="/about" aria-haspopup="true"><span>About</span></a>
+			<ul>
+				<li><a href="http://register.lendit.co/europe" onclick="_gaq.push(['_link', 'http://register.lendit.co/europe']); return false;" target="_blank">Register</a></li>
+				<li><a href="http://register.lendit.co/europe" onclick="_gaq.push(['_link', 'http://register.lendit.co/europe']); return false;" target="_blank">Europe</a></li>
+				<li><a href="">NYC</a></li>
+			</ul>
+		</li>
+	</ul>
 </nav>
+</div>
+
+
+
+
+<!-- 
+<div class="nav-logo">
+	<a href="/"><%= image_tag 'https://s3-us-west-2.amazonaws.com/lendit/lenditlogo_toscale_header_nodrpshadow.png', :title => 'LendIt logo', :alt => 'LendIt' %></a>
+</div>
+-->

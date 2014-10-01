@@ -18,71 +18,133 @@
 			<div class="cols">
 				<div class="col1">
 					<h2>LendIt Europe, November 17, 2014</h2>
-					<div class="sponsors-highlevel sponsors-platinum">
-						<% if @platinum.any? %>
-							<h3>Platinum Sponsors</h3>
-							<section class="sponsor-images">
-								<% @platinum.each do |sponsor| %>
-									<div class="image-container">
-										<a href="<%= sponsor.url %>" target="_blank">
-											<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-										</a>
-									</div>
-								<% end %>
-							</section>
-						<% end %>
-					</div>
+          <div class="sponsors-highlevel sponsors-platinum">
+            <% if @platinum.any? %>
+              <h3>Platinum Sponsors</h3>
+              <section class="sponsor-images">
+                <% @platinum.each do |sponsor| %>
+                  <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
+                  <div class="image-container">
+                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                  </div>
+                  </a>
+
+                  <div style="/*temp styles*/display:none;">
+                   <div id="sponsor-<%= sponsor.id %>">
+                    <div><%= sponsor.conference %></div>
+                    <div><%= sponsor.sponsor_level %> Sponsor</div>
+                    <div><a href="<%= sponsor.url %>" target="_blank">
+                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                    </div>
+                    <div><%= raw sponsor.description %></div>
+                    <div>Visit <%= sponsor.company_name %> ></div>
+                  </div>
+                </div>
+
+                <% end %>
+              </section>
+            <% end %>
+          </div>
 					<div class="sponsors-highlevel sponsors-gold">
 						<% if @gold.any? %>
 							<h3>Gold Sponsors</h3>
 							<section class="sponsor-images">
 								<% @gold.each do |sponsor| %>
+                  <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
 									<div class="image-container">
-										<a href="<%= sponsor.url %>" target="_blank">
                       <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-                    </a>
-									</div>
+                  </div>
+                  </a>
+
+                  <div style="/*temp styles*/display:none;">
+                   <div id="sponsor-<%= sponsor.id %>">
+                    <div><%= sponsor.conference %></div>
+                    <div><%= sponsor.sponsor_level %> Sponsor</div>
+                    <div><a href="<%= sponsor.url %>" target="_blank">
+                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                    </div>
+                    <div><%= raw sponsor.description %></div>
+                    <div>Visit <%= sponsor.company_name %> ></div>
+                  </div>
+                </div>
 								<% end %>
 							</section>
 						<% end %>
 					</div>
+
 					<div class="sponsors-highlevel sponsors-silver">
 						<% if @silver.any? %>
 							<h3>Silver Sponsors</h3>
 							<section class="sponsor-images">
 								<% @silver.each do |sponsor| %>
+                  <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
 									<div class="image-container">
-										<a href="<%= sponsor.url %>" target="_blank">
                       <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-                    </a>
-									</div>
+                  </div>
+                  </a>
+                  <div style="/*temp styles*/display:none;">
+                   <div id="sponsor-<%= sponsor.id %>">
+                    <div><%= sponsor.conference %> Sponsor</div>
+                    <div><%= sponsor.sponsor_level %> Sponsor</div>
+                    <div><a href="<%= sponsor.url %>" target="_blank">
+                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                    </div>
+                    <div><%= raw sponsor.description %></div>
+                    <div>Visit <%= sponsor.company_name %> ></div>
+                  </div>
+                </div>
 								<% end %>
 							</div>
 						<% end %>
+
 						<div class="sponsors-highlevel sponsors-bronze">
 							<% if @bronze.any? %>
 								<h3>Bronze Sponsors</h3>
 								<section class="sponsor-images">
 									<% @bronze.each do |sponsor| %>
+                    <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
 										<div class="image-container">
-											<a href="<%= sponsor.url %>" target="_blank">
-                        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-                      </a>
-										</div>
+									    <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                    </div>
+                    </a>
+
+                  <div style="/*temp styles*/display:none;">
+                   <div id="sponsor-<%= sponsor.id %>">
+                    <div><%= sponsor.conference %></div>
+                    <div><%= sponsor.sponsor_level %> Sponsor</div>
+                    <div><a href="<%= sponsor.url %>" target="_blank">
+                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                    </div>
+                    <div><%= raw sponsor.description %></div>
+                    <div>Visit <%= sponsor.company_name %> ></div>
+                  </div>
+                </div>
 									<% end %>
 								</section>
 							<% end %>
 						</div>
+
 						<div class="sponsors-other">
 							<% if @cocktails.any? %>
 								<h3>Cocktail Party Sponsors</h3>
 								<section class="sponsor-images">
 									<% @cocktails.each do |sponsor| %>
+                    <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
 										<div class="image-container">
-											<a href="<%= sponsor.url %>" target="_blank">
-                        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-                      </a>
-										</div>
+                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                    </div>
+                    </a>
+                  <div style="/*temp styles*/display:none;">
+                   <div id="sponsor-<%= sponsor.id %>">
+                    <div><%= sponsor.conference %></div>
+                    <div><%= sponsor.sponsor_level %> Sponsor</div>
+                    <div><a href="<%= sponsor.url %>" target="_blank">
+                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                    </div>
+                    <div><%= raw sponsor.description %></div>
+                    <div>Visit <%= sponsor.company_name %> ></div>
+                  </div>
+                </div>
 									<% end %>
 								</section>
 							<% end %>
@@ -92,11 +154,22 @@
 							<h3>Smartphone App Sponsor</h3>
 							<section class="sponsor-images">
 								<% @smartphone.each do |sponsor| %>
+                  <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
 									<div class="image-container">
-											<a href="<%= sponsor.url %>" target="_blank">
-                        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-                      </a>
-										</div>
+							      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                  </div>
+                  </a>
+                  <div style="/*temp styles*/display:none;">
+                   <div id="sponsor-<%= sponsor.id %>">
+                    <div><%= sponsor.conference %></div>
+                    <div><%= sponsor.sponsor_level %> Sponsor</div>
+                    <div><a href="<%= sponsor.url %>" target="_blank">
+                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                    </div>
+                    <div><%= raw sponsor.description %></div>
+                    <div>Visit <%= sponsor.company_name %> ></div>
+                  </div>
+                </div>
 								<% end %>
 							</section>
 							<% end %>
@@ -107,11 +180,22 @@
 							<h3>Exhibitor</h3>
 							<section class="sponsor-images">
 								<% @exhibitor.each do |sponsor| %>
+                  <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
 									<div class="image-container">
-											<a href="<%= sponsor.url %>" target="_blank">
-                        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-                      </a>
-										</div>
+                    <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                  </div>
+                  </a>
+                  <div style="/*temp styles*/display:none;">
+                   <div id="sponsor-<%= sponsor.id %>">
+                    <div><%= sponsor.conference %></div>
+                    <div><%= sponsor.sponsor_level %> Sponsor</div>
+                    <div><a href="<%= sponsor.url %>" target="_blank">
+                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                    </div>
+                    <div><%= raw sponsor.description %></div>
+                    <div>Visit <%= sponsor.company_name %> ></div>
+                  </div>
+                </div>
 								<% end %>
 							</section>
 							<% end %>

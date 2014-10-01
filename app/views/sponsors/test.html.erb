@@ -1,0 +1,193 @@
+<%= title "LendIt Sponsors Page" %>
+<% meta_description "Sponsors of the LendIt Europe 2014 Peer-to-Peer and Online Lending Conference." %>
+<% meta_keywords "p2p, online lending, peer-to-peer, LendIt, sponsors" %>
+<%= canonical_tag -%>
+<main>
+  <div class="subhero">
+    <div class="container">
+      <h1>Sponsors</h1>
+      <section>
+        <p> TEST</p>
+      </section>
+    </div>
+  </div>
+  <div class="sponsors-main">
+    <div class="container">
+      <div class="cols">
+        <div class="col1">
+          <h2>LendIt Europe, November 17, 2014</h2>
+
+
+
+          <div class="sponsors-highlevel sponsors-platinum">
+            <% if @platinum.any? %>
+              <h3>Platinum Sponsors</h3>
+              <section class="sponsor-images">
+                <% @platinum.each do |sponsor| %>
+                  <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
+                  <div class="image-container">
+                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                  </div>
+                  </a>
+
+                  <div style="/*temp styles*/display:none;">
+                   <div id="sponsor-<%= sponsor.id %>">
+                    <div><%= sponsor.conference %></div>
+                    <div><%= sponsor.sponsor_level %></div>
+                    <div><a href="<%= sponsor.url %>" target="_blank">
+                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                    </div>
+                    <div><%= raw sponsor.description %></div>
+                    <div>Visit <%= sponsor.company_name %> ></div>
+                  </div>
+                </div>
+
+                <% end %>
+              </section>
+            <% end %>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="sponsors-highlevel sponsors-gold">
+            <% if @gold.any? %>
+              <h3>Gold Sponsors</h3>
+              <section class="sponsor-images">
+                <% @gold.each do |sponsor| %>
+                  <div class="image-container">
+                    <a href="<%= sponsor.url %>" target="_blank">
+                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                    </a>
+                  </div>
+                <% end %>
+              </section>
+            <% end %>
+          </div>
+          <div class="sponsors-highlevel sponsors-silver">
+            <% if @silver.any? %>
+              <h3>Silver Sponsors</h3>
+              <section class="sponsor-images">
+                <% @silver.each do |sponsor| %>
+                  <div class="image-container">
+                    <a href="<%= sponsor.url %>" target="_blank">
+                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                    </a>
+                  </div>
+                <% end %>
+              </div>
+            <% end %>
+            <div class="sponsors-highlevel sponsors-bronze">
+              <% if @bronze.any? %>
+                <h3>Bronze Sponsors</h3>
+                <section class="sponsor-images">
+                  <% @bronze.each do |sponsor| %>
+                    <div class="image-container">
+                      <a href="<%= sponsor.url %>" target="_blank">
+                        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                      </a>
+                    </div>
+                  <% end %>
+                </section>
+              <% end %>
+            </div>
+            <div class="sponsors-other">
+              <% if @cocktails.any? %>
+                <h3>Cocktail Party Sponsors</h3>
+                <section class="sponsor-images">
+                  <% @cocktails.each do |sponsor| %>
+                    <div class="image-container">
+                      <a href="<%= sponsor.url %>" target="_blank">
+                        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                      </a>
+                    </div>
+                  <% end %>
+                </section>
+              <% end %>
+            </div>
+            <div>
+              <% if @smartphone.any? %>
+              <h3>Smartphone App Sponsor</h3>
+              <section class="sponsor-images">
+                <% @smartphone.each do |sponsor| %>
+                  <div class="image-container">
+                      <a href="<%= sponsor.url %>" target="_blank">
+                        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                      </a>
+                    </div>
+                <% end %>
+              </section>
+              <% end %>
+            </div>
+
+            <div>
+              <% if @exhibitor.any? %>
+              <h3>Exhibitor</h3>
+              <section class="sponsor-images">
+                <% @exhibitor.each do |sponsor| %>
+                  <div class="image-container">
+                      <a href="<%= sponsor.url %>" target="_blank">
+                        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                      </a>
+                    </div>
+                <% end %>
+              </section>
+              <% end %>
+            </div>
+
+            <div class="sponsors-past" style="display: none;">
+              <h2>Past Sponsors</h2>
+              <section class="sponsor-images">
+                <% @past_sponsors.each do |sponsor| %>
+                  <div class="image-container">
+                    <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+                  </div>
+                <% end %>
+              </section>
+            </div>
+          </div>
+          <div class="col2">
+            <section>
+              <h2>What previous sponsors are saying about LendIt</h2>
+              <div class="quote-container">
+                <div class="quote"> "The conference certainly did exceed our expectations at every level. The crowd, the speakers, the content, the events, and the networking all provided us, and I am sure your other sponsors and participants, with a first class conference and business opportunities. We told you last year that LendIt was our best conference experience ever, only to be surpassed by LendIt 2014." </div>
+                <div class="quote-speaker"> - Reggie Karas, Managing Director of Millennium Trust Company </div>
+              </div>
+              <div class="quote-container">
+                <div class="quote"> "The conference was both well organized and attended. The growth and improvement from last year's conference was eye opening. It speaks to both the growth of the industry as well as the sophistication and development of the market participants." </div>
+                <div class="quote-speaker"> - Adam Goller, VP of Lending, Cross River Bank </div>
+              </div>
+              <div class="quote-container">
+                <div class="quote"> "The event was put together very well and the content was exceptional." </div>
+                <div class="quote-speaker"> - Larry Chiavaro, Executive Vice President and Principal at First Associates Loan Servicing, LLC.  </div>
+              </div>
+              <div class="quote-container">
+                <div class="quote"> "Marketplace lending is arguably the hottest spot for financial innovation today and Lendit is right at its center, stoking the fires with great education, content, and networking. Lendit assembles all the key players, asks all the right questions, and creates the perfect forum to fire up ideas, spark connections, and facilitate deal making." </div>
+                <div class="quote-speaker"> - Penelope Holt, Chief Marketing Officer of BorrowersFirst </div>
+              </div>
+              <div class="quote-container">
+                <div class="quote"> "We thought that LendIt 2014 was a brilliant event. The quality of the people attending, and the content of the presentations, were awesome." </div>
+                <div class="quote-speaker"> - Christian Faes, Co-founder of LendInvest </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>

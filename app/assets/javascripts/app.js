@@ -2,11 +2,16 @@ var app = app || {};
 
 $(document).ready(function() {
 
+  // $(".group1").colorbox({rel:'group1'});
+
   // requires double tap for mobile
   $("#nav li:has(ul)").doubleTapToGo();
 
   // speaker form validation
   $("#commentForm").validate({meta: "validate"});
+
+  // colorbox for sponsors
+  $('.sponsor-top').colorbox({inline:true, rel:'current-speaker', innerWidth:"780px", innerHeight:"430px",});
 
   // colorbox for current speakers
   $('.current-speaker').colorbox({inline:true, rel:'current-speaker', innerWidth:"780px", innerHeight:"430px",});

@@ -9,7 +9,7 @@ $(document).ready(function() {
   $("#commentForm").validate({meta: "validate"});
 
   // colorbox for sponsors
-  // $('.sponsor-top').colorbox({inline:true, rel:'current-speaker', innerWidth:"780px", innerHeight:"430px",});
+  $('.sponsor-top').colorbox({inline:true, rel:'current-speaker', innerWidth:"780px", innerHeight:"430px",});
 
   // colorbox for current speakers
   $('.current-speaker').colorbox({inline:true, rel:'current-speaker', innerWidth:"780px", innerHeight:"430px",});

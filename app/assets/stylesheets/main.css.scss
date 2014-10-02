@@ -190,9 +190,9 @@ hr {
 	border-left:none;
 	border-right:none;
 }
-	
+
 @media only screen and ( min-width: 50em ) {
-	
+
 	padding-right:20px;
 	padding-top:20px;
 	padding-bottom:20px;
@@ -266,7 +266,7 @@ border-radius: 2px;
 }
 
 
-	
+
 }
 
 #nav > a {
@@ -286,7 +286,7 @@ border-radius: 2px;
 @media only screen and ( max-width: 62.5em ) {
 	padding-left:10px;
 	padding-right:10px;
-}	
+}
 }
 
 #nav li a:active {
@@ -297,7 +297,7 @@ border-radius: 2px;
 	font-family: fontawesome;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	
+
 	content:'\00A0 \f0d7';
 	font-size:.8em;
 }
@@ -306,14 +306,14 @@ border-radius: 2px;
 #nav span:after {
 	width: 0;
 	height: 0;
-	border: 0.313em solid transparent; 
+	border: 0.313em solid transparent;
 	border-bottom: none;
 	border-top-color: $nav-caret;
 	content: '';
 	vertical-align: middle;
 	display: inline-block;
 	position: relative;
-	right: -0.313em; 
+	right: -0.313em;
 
 }
 #nav li:not(:first-child):hover span:after {
@@ -330,7 +330,7 @@ border-radius: 2px;
 
 @media only screen and ( max-width: 50em ) {
 	background-color: $light-grey;
-}	
+}
 }
 #nav > ul > li {
 	height: 100%;
@@ -346,8 +346,8 @@ border-radius: 2px;
 
 @media only screen and ( max-width: 50em ) {
 	line-height: 2em; /* 60 (24) */
-}	
-	
+}
+
 }
 #nav > ul > li:not( :last-child ) > a {
 //	border-right: 1px solid $nav-border-right;
@@ -1193,7 +1193,7 @@ body.conferences header .container .header-buttons {
 	font-weight: 400;
 	@media (max-width: 550px) {
 		font-size:22px;
-	}	
+	}
 }
 .current-speakers a.current-speaker .speaker .speaker-top .speaker-top-info .speaker-title {
 	font-size: 14px;
@@ -1210,7 +1210,7 @@ body.conferences header .container .header-buttons {
 	line-height: 24px;
 	@media (max-width: 550px) {
 		font-size:22px;
-	}	
+	}
 }
 .current-speakers a.current-speaker:hover {
 	background: #fff;
@@ -1783,6 +1783,23 @@ body.conferences header .container .header-buttons {
 .sponsors main .sponsors-main h2 {
 	font-weight: 600;
 }
+.sponsors-intro .sponsorship-packages a {
+	font-size: 16px;
+	font-weight: 500;
+	background: #fff;
+	border: 1px solid #89be2e;
+	display: block;
+	width: 247px;
+}
+.sponsors-intro .sponsorship-packages a button {
+	border: none;
+	background: none;
+	padding: 4px 10px;
+}
+.sponsors-intro .sponsorship-packages a:hover {
+	background: #89be2e;
+	color: #fff;
+}
 .sponsors .subhero {
 	font-size: 18px;
 }
@@ -1971,13 +1988,13 @@ body.conferences header .container .header-buttons {
 			max-width:366px;
 			display:block;
 		}
-		&.london { 
+		&.london {
 			background-image:url(conf-thumb-london.jpg);
 		}
-		&.newyork { 
+		&.newyork {
 			background-image:url(conf-thumb-newyork.jpg);
 		}
-		&.shanghai { 
+		&.shanghai {
 			background-image:url(conf-thumb-shanghai.jpg);
 		}
 		> a {
@@ -1987,7 +2004,7 @@ body.conferences header .container .header-buttons {
 			box-sizing: border-box;
 			-moz-box-sizing: border-box;
 			background: rgba(0, 0, 0, 0.5) ;
-			text-shadow:2px 2px 2px rgba(0, 0, 0, 0.4) ; 
+			text-shadow:2px 2px 2px rgba(0, 0, 0, 0.4) ;
 			color:#fff;
 			opacity:.9;
 			transition: all ease-in-out .1s;
@@ -2077,7 +2094,7 @@ body.conferences header .container .header-buttons {
 		color:#fff;
 		text-align:center;
 		padding-top:190px;
-		text-shadow:2px 2px 2px rgba(0, 0, 0, 0.4) ; 
+		text-shadow:2px 2px 2px rgba(0, 0, 0, 0.4) ;
 		b {
 			font-weight:500;
 			display:table;

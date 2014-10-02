@@ -1520,7 +1520,7 @@ body.conferences header .container .header-buttons {
 		margin-bottom: 15px;
 	}
 }
-.speakers #colorbox #cboxWrapper #cboxLoadedContent {
+#colorbox #cboxWrapper #cboxLoadedContent {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	@media (max-width: 550px) {
@@ -1530,7 +1530,7 @@ body.conferences header .container .header-buttons {
 		border-top: 48px solid #fff;
 	}
 }
-.speakers #colorbox #cboxWrapper #cboxLoadedContent:before {
+#colorbox #cboxWrapper #cboxLoadedContent:before {
 	@media (max-width: 550px) {
 		content: '\00A0';
 		position: absolute;
@@ -1545,7 +1545,7 @@ body.conferences header .container .header-buttons {
 		border-bottom: 1px solid #ddd;
 	}
 }
-.speakers #colorbox #cboxWrapper #cboxLoadedContent .speaker-container {
+#colorbox #cboxWrapper #cboxLoadedContent .speaker-container {
 	position: relative;
 	margin: 15px 15px 0 15px;
 	height: 400px;
@@ -1561,7 +1561,7 @@ body.conferences header .container .header-buttons {
 		font-size: 18px;
 	}
 }
-.speakers #colorbox #cboxWrapper #cboxLoadedContent .speaker-container:before {
+#colorbox #cboxWrapper #cboxLoadedContent .speaker-container:before {
 	content: '\00A0';
 	text-transform: uppercase;
 	display: block;
@@ -1575,7 +1575,7 @@ body.conferences header .container .header-buttons {
 		display: none;
 	}
 }
-.speakers #colorbox #cboxWrapper #cboxLoadedContent .speaker-container .speaker-top-info {
+#colorbox #cboxWrapper #cboxLoadedContent .speaker-container .speaker-top-info {
 	float: left;
 	vertical-align: top;
 	width: 150px;
@@ -1584,7 +1584,7 @@ body.conferences header .container .header-buttons {
 		float: none;
 	}
 }
-.speakers #colorbox #cboxWrapper #cboxLoadedContent .speaker-container .speaker-top-info .speaker-image {
+#colorbox #cboxWrapper #cboxLoadedContent .speaker-container .speaker-top-info .speaker-image {
 	height: 150px;
 	width: 150px;
 	margin-bottom: 10px;
@@ -1594,7 +1594,7 @@ body.conferences header .container .header-buttons {
 		height: 187px;
 	}
 }
-.speakers #colorbox #cboxWrapper #cboxLoadedContent .speaker-container .speaker-top-info .speaker-image-lg {
+#colorbox #cboxWrapper #cboxLoadedContent .speaker-container .speaker-top-info .speaker-image-lg {
 	width: 137px;
 	height: 166px;
 	margin-bottom: 10px;
@@ -1604,11 +1604,11 @@ body.conferences header .container .header-buttons {
 		height: 221px;
 	}
 }
-.speakers #colorbox #cboxWrapper #cboxLoadedContent .speaker-container .speaker-top-info .speaker-name {
+#colorbox #cboxWrapper #cboxLoadedContent .speaker-container .speaker-top-info .speaker-name {
 	font-weight: 600;
 	color: #000;
 }
-.speakers #colorbox #cboxWrapper #cboxLoadedContent .speaker-container .speaker-bio-mask {
+#colorbox #cboxWrapper #cboxLoadedContent .speaker-container .speaker-bio-mask {
 	background: #c00;
 	position: absolute;
 	border-bottom: 0;
@@ -1623,7 +1623,7 @@ body.conferences header .container .header-buttons {
 		display: none;
 	}
 }
-.speakers #colorbox #cboxWrapper #cboxLoadedContent .speaker-container .speaker-bio-text {
+#colorbox #cboxWrapper #cboxLoadedContent .speaker-container .speaker-bio-text {
 	background: url(modal-shadow.png) 0 80px no-repeat;
 	position: relative;
 	float: left;
@@ -1646,7 +1646,7 @@ body.conferences header .container .header-buttons {
 		background: #fff;
 	}
 }
-.speakers #colorbox #cboxWrapper #cboxLoadedContent .speaker-container .speaker-bio-text .speaker-bio-text-inner {
+#colorbox #cboxWrapper #cboxLoadedContent .speaker-container .speaker-bio-text .speaker-bio-text-inner {
 	margin-top: 70px;
 	background: url(modal-shadow-cover.png) 0 0 no-repeat;
 	margin-top: 2px;
@@ -1842,6 +1842,7 @@ body.conferences header .container .header-buttons {
 		margin-left:15px;
 	}
 }
+
 // ! this is a divider being applied to the "Past Sponsors" only on the page
 // where this section comes below the Gold, Silver, Other, etc. Sponsors
 .sponsors-past {
@@ -1899,6 +1900,15 @@ body.conferences header .container .header-buttons {
 .sponsors main .col2 h2 {
 	margin-top: 38px;
 }
+
+
+// Modal sponsors
+.modal-sponsor-image {
+	max-width:140px;
+}
+
+
+
 // ============================================================
 .homepage-container {
 	width: 940px;

@@ -1,7 +1,7 @@
 LenditRails::Application.routes.draw do
 
-  root 'conferences#europe'
-  # root 'welcome#home'
+  # root 'conferences#europe'
+  root 'welcome#home'
   get '/about' => 'welcome#about'
   get '/sponsors' => 'sponsors#index'
   get '/speakers' => 'speakers#index'
@@ -13,9 +13,9 @@ LenditRails::Application.routes.draw do
   get '/sharecast' => 'conferences#sharecast'
 
   # get '/home' => 'welcome#home'
-  # get '/europe' => 'conferences#europe'
-  # get '/nyc' => 'conferences#nyc'
-  # get '/china' => 'conferences#china'
+  get '/europe' => 'conferences#europe'
+  get '/nyc' => 'conferences#nyc'
+  get '/china' => 'conferences#china'
   # get '/europe/sponsors' => 'sponsors#europe_sponsors'
   # get '/test' => 'sponsors#test'
 

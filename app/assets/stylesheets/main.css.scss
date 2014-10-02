@@ -172,44 +172,62 @@ hr {
 }
 // @nav
 // ============================================================
-
 .nav-container {
 	background:#fff;
 	border-bottom:1px solid #ccc;
 }
+.nav-logo {
+	float:left;
+	width:100px;
+	height:80px;
+	background:#fff url(lendit_new_logo_grey.png) 0 center no-repeat;
+	background-size:100px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:15px;
+	.conferences & {
+		display:none;
+	}
+	@media only screen and ( min-width: 62.5em ) {
+	
+	margin-left:30px;
+
+}
+	@media only screen and ( max-width: 50em ) {
+		display:none;
+	}	
+}
 .nav-container-inner {
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
-
 	border-left:1px solid #ccc;
 	border-right:1px solid #ccc;
 	margin:auto;
 	max-width:1207px;
 
-@media only screen and ( max-width: 50em ) {
-	border-left:none;
-	border-right:none;
+		@media only screen and ( min-width: 62.5em ) {
+	
+			min-height:100px;
+
 }
 
-@media only screen and ( min-width: 50em ) {
-
-	padding-right:20px;
-	padding-top:20px;
-	padding-bottom:20px;
-}
-
+	@media only screen and ( max-width: 50em ) {
+		border-left:none;
+		border-right:none;
+	}
+	@media only screen and ( min-width: 50em ) {
+		padding-right:20px;
+		padding-top:0;
+		padding-bottom:0;
+	}
 	@include clearfix;
 }
-
 $lendit-green: #89be2e;
 $lendit-grey: #8c8d8d;
 $light-grey: #eee;
-
-
 $nav-link-color: $lendit-green;
 $nav-menu-bars: $lendit-green;
 $nav-link-active: $lendit-grey;
-
 $nav-border-right:#cc0;
 $nav-parent-active-foreground: #fff;
 $nav-parent-active-background: $lendit-green;
@@ -217,21 +235,13 @@ $nav-menu-active-background: $lendit-green;
 $nav-menu-active-foreground: #fff;
 $nav-menu-hover-background: $lendit-grey;
 // l2-link-hover
-
-
 $nav-small-border-bottom:#fff;
 $nav-l1-link-background:$light-grey;
-
 $nav-ul-background: #fff;
 $nav-link-border-top: $light-grey;
-
 $nav-caret: $lendit-green;
-
 $nav-font-size:20px;
-
-
 #nav a {
-
 	text-decoration:none;
 	-webkit-border-radius: 2px;
 -moz-border-radius: 2px;
@@ -241,38 +251,32 @@ border-radius: 2px;
 	list-style-type:none;
 	padding:0;
 	margin:0;
-@media only screen and ( max-width: 40em ) {
+	@media only screen and ( max-width: 40em ) {
+	}
 }
-
-}
-
 #nav {
 	font-weight: 400;
 	z-index:400;
 	@include clearfix;
+	@media only screen and ( min-width: 50em ) {
+		float:right;
+		left:auto;
+		right:0;
+		margin-top:24px;
+	}
 
-@media only screen and ( min-width: 50em ) {
-	float:right;
-	left:auto;
-	right:0;
+	
+	@media only screen and ( max-width: 62.5em ) {
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+	}
+	@media only screen and ( max-width: 50em ) {
+		font-family: 'Verlag A', 'Verlag B', verlag;
+		font-weight:600;
+	}
 }
-@media only screen and ( max-width: 62.5em ) {
-	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-
-}
-@media only screen and ( max-width: 50em ) {
-	font-family: 'Verlag A', 'Verlag B', verlag;
-	font-weight:600;
-}
-
-
-
-}
-
 #nav > a {
 	display: none;
 }
-
 #nav li {
 	position: relative;
 }
@@ -288,20 +292,16 @@ border-radius: 2px;
 	padding-right:10px;
 }
 }
-
 #nav li a:active {
 	background-color: $nav-link-active !important;
 }
-
 #nav span:after {
 	font-family: fontawesome;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
 	content:'\00A0 \f0d7';
 	font-size:.8em;
 }
-
 /*
 #nav span:after {
 	width: 0;
@@ -314,20 +314,15 @@ border-radius: 2px;
 	display: inline-block;
 	position: relative;
 	right: -0.313em;
-
 }
 #nav li:not(:first-child):hover span:after {
  border-top-color:#fff ;
 }
 */
-
-
 /* first level */
-
 #nav > ul {
 	height: 3.1em; /* 60 */
 	background-color: $nav-ul-background;
-
 @media only screen and ( max-width: 50em ) {
 	background-color: $light-grey;
 }
@@ -343,11 +338,9 @@ border-radius: 2px;
 	font-size: $nav-font-size; /* 24 */
 	line-height: 2.5em; /* 60 (24) */
 	text-align: center;
-
 @media only screen and ( max-width: 50em ) {
 	line-height: 2em; /* 60 (24) */
 }
-
 }
 #nav > ul > li:not( :last-child ) > a {
 //	border-right: 1px solid $nav-border-right;
@@ -358,10 +351,7 @@ border-radius: 2px;
 	background-color: $nav-parent-active-background;
 	color: $nav-parent-active-foreground;
 }
-
-
 /* second level */
-
 #nav li ul
 {
 	background-color: $nav-menu-active-background;
@@ -392,24 +382,20 @@ border-radius: 2px;
 {
 	background-color: $nav-menu-hover-background;
 }
-
-
 @media only screen and ( max-width: 62.5em ) /* 1000 */
 {
 	#nav
 	{
 		position: static;
-		margin: 0;
+		// margin: 0;
 	}
 }
-
 @media only screen and ( max-width: 50em ) /* 640 */
 {
 	html
 	{
 		font-size: 75%; /* 12 */
 	}
-
 	#nav
 	{
 		position: relative;
@@ -423,7 +409,6 @@ border-radius: 2px;
 		text-align: left;
 		text-indent: -9999px;
 		background-color: $nav-l1-link-background;
-
 		position: relative;
 	}
 	#nav > a:before,
@@ -440,16 +425,12 @@ border-radius: 2px;
 	{
 		top: 60%;
 	}
-
 	#nav:not( :target ) > a:first-of-type,
 	#nav:target > a:last-of-type
 	{
 		display: block;
 	}
-
-
 	/* first level */
-
 	#nav > ul
 	{
 		height: auto;
@@ -478,10 +459,7 @@ border-radius: 2px;
 		border-right: none;
 //		border-bottom: 1px solid $nav-small-border-bottom;
 	}
-
-
 	/* second level */
-
 	#nav li ul
 	{
 		position: static;
@@ -490,9 +468,6 @@ border-radius: 2px;
 		padding-bottom:0;
 	}
 }
-
-
-
 // ============================================================
 // @home
 body.conferences {

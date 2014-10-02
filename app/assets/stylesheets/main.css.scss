@@ -1904,11 +1904,16 @@ body.conferences header .container .header-buttons {
 
 // Modal sponsors
 .modal-sponsor-image {
-	max-width:140px;
+	max-width:160px;
 	border: 1px solid #ddd;
+	margin-bottom:20px;
 }
 
 
+.sponsorship-packages {
+	padding-top:20px;
+	padding-bottom:20px;
+}
 
 // ============================================================
 .homepage-container {

@@ -32,13 +32,14 @@
 
                   <div style="/*temp styles*/display:none;">
                    <div id="sponsor-<%= sponsor.id %>">
-                    <div><%= sponsor.conference %></div>
-                    <div><%= sponsor.sponsor_level %> Sponsor</div>
+                    <div>Sponsors</div>
                     <div><a href="<%= sponsor.url %>" target="_blank">
                       <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>"></a>
                     </div>
+                    <div>LendIt Europe</div>
+                    <div><%= sponsor.sponsor_level %> Sponsor</div>
+                    <div><a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a></div>
                     <div><%= raw sponsor.description %></div>
-                    <div>Visit <%= sponsor.company_name %> ></div>
                   </div>
                 </div>
 

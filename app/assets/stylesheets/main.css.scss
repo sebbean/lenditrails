@@ -189,13 +189,13 @@ hr {
 		display:none;
 	}
 	@media only screen and ( min-width: 62.5em ) {
-	
+
 	margin-left:30px;
 
 }
 	@media only screen and ( max-width: 50em ) {
 		display:none;
-	}	
+	}
 }
 .nav-container-inner {
 	box-sizing:border-box;
@@ -206,7 +206,7 @@ hr {
 	max-width:1207px;
 
 		@media only screen and ( min-width: 62.5em ) {
-	
+
 			min-height:100px;
 
 }
@@ -265,7 +265,7 @@ border-radius: 2px;
 		margin-top:24px;
 	}
 
-	
+
 	@media only screen and ( max-width: 62.5em ) {
 		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 	}
@@ -1905,6 +1905,7 @@ body.conferences header .container .header-buttons {
 // Modal sponsors
 .modal-sponsor-image {
 	max-width:140px;
+	border: 1px solid #ddd;
 }
 
 

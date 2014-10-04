@@ -1913,7 +1913,7 @@ border-top-color:#fff ;
 		@media (min-width: 550px) {
 			display:table;
 		}
-		
+
 		@media (max-width: 960px) {
 			width: auto;
 		}
@@ -1925,7 +1925,7 @@ border-top-color:#fff ;
 
 		@media (min-width: 1017px) {
 			padding-left:0;
-		}			
+		}
 		@media (min-width: 750px) {
 			display:table-cell;
 			vertical-align:top;
@@ -1938,16 +1938,16 @@ border-top-color:#fff ;
 
 		@media (min-width: 1017px) {
 			padding-right:0;
-		}			
+		}
 		@media (min-width: 750px) {
 			display:table-cell;
 			vertical-align:top;
 		}
 
 	}
-	
 
-	
+
+
 	.homepage-main-text {
 		.body-copy {
 			margin-right:40px;
@@ -2085,7 +2085,7 @@ border-top-color:#fff ;
 	}
 	// @@
 	.homepage-recap {
-		background: url(homepage-recap.jpg) center center no-repeat;
+		background: url(/assets/homepage-recap.jpg) center center no-repeat;
 		background-size:323px;
 		width:323px;
 		height:285px;
@@ -2093,9 +2093,9 @@ border-top-color:#fff ;
 		background-size:291px;
 		width:291px;
 		height:257px;
-			
+
 		}
-		
+
 		position:relative;
 		margin-top:20px;
 
@@ -2104,8 +2104,8 @@ border-top-color:#fff ;
 			transition: border ease-in-out .6s;
 		}
 		a {
-			
-			
+
+
 			transition: all ease-in-out .1s;
 			background: rgba(0, 0, 0, 0.6) ;
 			opacity:.9;

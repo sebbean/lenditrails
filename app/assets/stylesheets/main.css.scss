@@ -2494,6 +2494,7 @@ border-top-color:#fff ;
 		@media (max-width: 550px) {
 			padding-left: 54px;
 		}
+<<<<<<< HEAD
 	}
 	footer .social li a i {
 		display: none;
@@ -2553,3 +2554,64 @@ border-top-color:#fff ;
 		width:205px; height:158px;
 		margin:0;
 	}
+=======
+	}
+	footer .social li a i {
+		display: none;
+	}
+	footer .social li a:hover {
+		text-decoration: none;
+		opacity: 1;
+	}
+	footer .social li a.twitter {
+		background-position: 0 -50px;
+		color: #00B8F0;
+	}
+	footer .social li a.googleplus {
+		background-position: 0 -100px;
+		color: #EF4B32;
+	}
+	footer .social li a.youtube {
+		background-position: 0 -150px;
+		color: #D4221E;
+	}
+	footer .social li a.email {
+		background-position: 0 -200px;
+		color: #808080;
+	}
+	footer .social li a.linkedin {
+		background-position: 0 -250px;
+		color: #808080;
+	}
+	// Contact Us
+	footer .contactus {
+		float: right;
+		list-style-type: none;
+		padding-left: 0;
+		margin-left: 0;
+		display: table;
+	}
+	footer .contactus li {
+		display: table-cell;
+		padding-top: 20px;
+		padding-left: 20px;
+		font-weight: 500;
+	}
+	// ============================================================
+	// @terms
+	.terms-of-use {
+		max-width: 1207px;
+		margin: auto;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	// ============================================================
+	// !IMPORTANT -- this is ONLY for the GLI Finance Limited logo -- if the
+	// placement changes, then we have to fix this:
+	.sponsors-platinum > section > div.image-container:first-of-type img {
+		width:205px; height:158px;
+		margin:0;
+	}
+>>>>>>> new_home

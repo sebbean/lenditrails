@@ -2,6 +2,14 @@ var app = app || {};
 
 $(document).ready(function() {
 
+  // toggle agenda
+  $('.pm').on('click', function(){
+    console.log('yay');
+  });
+  // $(".submit").on("click", app.createUser);
+
+  setInterval(app.watchUsers, 1000);
+
   // requires double tap for mobile
   $("#nav li:has(ul)").doubleTapToGo();
 

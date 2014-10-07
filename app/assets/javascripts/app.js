@@ -5,14 +5,14 @@ $(document).ready(function() {
   // toggle agenda
   $('.pm-button').on('click', function(e){
     e.preventDefault();
-    $('table.pm-agenda').removeClass('not-active');
-    $('table.am-agenda').addClass('not-active');
+    $('table.pm-agenda').removeClass('off');
+    $('table.am-agenda').addClass('off');
   });
 
   $('.am-button').on('click', function(e){
     e.preventDefault();
-    $('table.pm-agenda').addClass('not-active');
-    $('table.am-agenda').removeClass('not-active');
+    $('table.pm-agenda').addClass('off');
+    $('table.am-agenda').removeClass('off');
   });
 
 

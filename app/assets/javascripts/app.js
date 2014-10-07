@@ -3,10 +3,18 @@ var app = app || {};
 $(document).ready(function() {
 
   // toggle agenda
-  $('.pm').on('click', function(){
-    console.log('yay');
+  $('.pm-button').on('click', function(e){
+    e.preventDefault();
+    $('table.pm-agenda').removeClass('not-active');
+    $('table.am-agenda').addClass('not-active');
   });
-  // $(".submit").on("click", app.createUser);
+
+  $('.am-button').on('click', function(e){
+    e.preventDefault();
+    $('table.pm-agenda').addClass('not-active');
+    $('table.am-agenda').removeClass('not-active');
+  });
+
 
   setInterval(app.watchUsers, 1000);
 

@@ -12,13 +12,14 @@ LenditRails::Application.routes.draw do
   # 301 redirects with GA tracking codes
   get '/sharecast' => 'conferences#sharecast'
 
-   # get '/home' => 'welcome#home'
-   # get '/europe' => 'conferences#europe'
-   # get '/nyc' => 'conferences#nyc'
-   # get '/china' => 'conferences#china'
-   # get '/privacy' => 'welcome#privacy'
-   # get '/europe/sponsors' => 'sponsors#europe_sponsors'
-   # get '/test' => 'sponsors#test'
+  get '/home' => 'welcome#home'
+  get '/europe' => 'conferences#europe'
+  get '/nyc' => 'conferences#nyc'
+  get '/china' => 'conferences#china'
+  get '/privacy' => 'welcome#privacy'
+  get '/europe/attendees' => 'welcome#attendees'
+  # get '/europe/sponsors' => 'sponsors#europe_sponsors'
+  # get '/test' => 'sponsors#test'
 
   # See all redirects in WelcomeController
   # 301 redirects from old WP site

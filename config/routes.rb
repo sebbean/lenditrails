@@ -8,16 +8,16 @@ LenditRails::Application.routes.draw do
   get '/speakers/sign-up' => 'speakers#sign-up'
   get '/speakers/thank-you' => 'speakers#thank-you'
   get '/terms-of-use' => 'welcome#terms-of-use'
+  get '/privacy' => 'welcome#privacy'
+  get '/europe/attendees' => 'welcome#attendees'
 
   # 301 redirects with GA tracking codes
   get '/sharecast' => 'conferences#sharecast'
 
-  get '/home' => 'welcome#home'
-  get '/europe' => 'conferences#europe'
-  get '/nyc' => 'conferences#nyc'
-  get '/china' => 'conferences#china'
-  get '/privacy' => 'welcome#privacy'
-  get '/europe/attendees' => 'welcome#attendees'
+  # get '/home' => 'welcome#home'
+  # get '/europe' => 'conferences#europe'
+  # get '/nyc' => 'conferences#nyc'
+  # get '/china' => 'conferences#china'
   # get '/europe/sponsors' => 'sponsors#europe_sponsors'
   # get '/test' => 'sponsors#test'
 

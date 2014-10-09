@@ -7,12 +7,16 @@ $(document).ready(function() {
     e.preventDefault();
     $('table.pm-agenda').removeClass('off');
     $('table.am-agenda').addClass('off');
+    $('.am-button').removeClass('on');
+    $('.pm-button').addClass('on');
   });
 
   $('.am-button').on('click', function(e){
     e.preventDefault();
     $('table.pm-agenda').addClass('off');
     $('table.am-agenda').removeClass('off');
+    $('.pm-button').removeClass('on');
+    $('.am-button').addClass('on');
   });
 
 

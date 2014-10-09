@@ -1223,6 +1223,14 @@ border-top-color:#fff ;
 			margin-right:0;
 		}
 	}
+	.current-speakers a.current-speaker:nth-of-type(6) {
+		@media (min-width: 960px) {
+			margin-right:0;
+		}
+
+	}
+
+	
 	.current-speakers a.current-speaker .speaker .speaker-top {
 		@include clearfix;
 	}
@@ -1267,7 +1275,7 @@ border-top-color:#fff ;
 		color: #999;
 		margin-bottom: 8px;
 	}
-	.current-speakers a.current-speaker .speaker .speaker-top .speaker-top-info .speaker-company {
+	.current-speakers  .speaker-company {
 		font-size: 24px;
 		color: #999;
 		line-height: 24px;
@@ -1275,6 +1283,13 @@ border-top-color:#fff ;
 			font-size:22px;
 		}
 	}
+
+	a[href$="ClausLehmann"] {
+		 .speaker-company {
+			font-size:20px;
+		}
+	}
+	
 	.current-speakers a.current-speaker:hover {
 		background: #fff;
 		box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2) inset, -1px -1px 0 rgba(0, 0, 0, 0.2) inset;
@@ -2638,6 +2653,19 @@ border-top-color:#fff ;
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
+	// ============================================================
+	// @attendees visualizer
+	.attendees-visualizer {
+		max-width: 1207px;
+		margin: auto;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		background:#fff;
+		.visualizer {margin-left:-10px;}
+ 	}
+	
 	// ============================================================
 	// !IMPORTANT -- this is ONLY for the GLI Finance Limited logo -- if the
 	// placement changes, then we have to fix this:

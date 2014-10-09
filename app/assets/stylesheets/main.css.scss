@@ -647,7 +647,7 @@ border-top-color:#fff ;
 	display:table;
 	width:100%;
 	margin:0;
-	
+
 	h3 {
 		margin:0;
 		display:table-cell;
@@ -672,6 +672,14 @@ border-top-color:#fff ;
 	}
 }
 
+h3.on {
+  background:#ccc;
+}
+
+.off {
+  display: none;
+}
+
 .home-agenda {
 	table[class$="agenda"] {
 		border-bottom:1px solid #ddd;
@@ -683,14 +691,14 @@ border-top-color:#fff ;
 			padding-top:8px;
 			padding-bottom:8px;
 		}
-		
+
 		tr:first-of-type td {
 			padding-top:20px;
 		}
 		tr:last-of-type td {
 			padding-bottom:20px;
 		}
-		
+
 		td:first-of-type {
 			font-weight:200;
 			color:#999;
@@ -703,7 +711,7 @@ border-top-color:#fff ;
 		td:last-of-type {
 			padding-right:12px;
 			font-weight:600;
-		}		
+		}
 	}
 }
 

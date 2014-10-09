@@ -1081,10 +1081,10 @@ border-top-color:#fff ;
 		float: right;
 		width: 300px;
 		@media (max-width: 960px) {
+			margin-top:25px;
 			float: none;
 			width: auto;
 			&:before {
-				content: 'Preliminary Agenda';
 				font-size: 24px;
 				font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 				font-weight: 600;

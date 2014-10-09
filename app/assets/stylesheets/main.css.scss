@@ -624,19 +624,19 @@ border-top-color:#fff ;
 //@agenda
 
 .home-agenda {
-	padding-top:12px;
-> h2 {
-	margin-top:0;
-	text-align:center;
-	border-top:1px solid #ddd;
-	border-bottom:1px solid #ddd;
-	background:#f7f7f7;
-	padding-top:.5em;
-	padding-bottom:.5em;
-	margin:0;
+	border:2px solid #eee;
+
+	> h2 {
+		margin-top:0;
+		text-align:center;
+				border-bottom:1px solid #ddd;
+		background:#f7f7f7;
+		padding-top:.5em;
+		padding-bottom:.5em;
+		margin:0;
 
 
-}
+	}
 
 }
 
@@ -647,9 +647,9 @@ border-top-color:#fff ;
 	display:table;
 	width:100%;
 	margin:0;
-
 	h3 {
 		margin:0;
+		color:#89be2e;
 		display:table-cell;
 		width:50%;
 		vertical-align:middle;
@@ -664,17 +664,22 @@ border-top-color:#fff ;
 		cursor:hand;
 		border-left:1px solid #ddd;
 		&:hover {
-			background:#ccc;
+			background:#89be2e;
+			color:#fff;
+
 		}
 		&:first-of-type {
 			border-left:none;
 		}
+		&.on {
+			background:#fff;
+			border-bottom:none;
+			color:#333;
+			
+		}
 	}
 }
 
-h3.on {
-  background:#ccc;
-}
 
 .off {
   display: none;
@@ -682,9 +687,9 @@ h3.on {
 
 .home-agenda {
 	table[class$="agenda"] {
-		border-bottom:1px solid #ddd;
-		background:#f7f7f7;
-		box-sizing: border-box;
+		
+	
+			box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		td {
 			vertical-align:top;

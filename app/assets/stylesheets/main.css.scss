@@ -624,19 +624,19 @@ border-top-color:#fff ;
 //@agenda
 
 .home-agenda {
-	padding-top:12px;
-> h2 {
-	margin-top:0;
-	text-align:center;
-	border-top:1px solid #ddd;
-	border-bottom:1px solid #ddd;
-	background:#f7f7f7;
-	padding-top:.5em;
-	padding-bottom:.5em;
-	margin:0;
+	border:2px solid #eee;
+
+	> h2 {
+		margin-top:0;
+		text-align:center;
+				border-bottom:1px solid #ddd;
+		background:#f7f7f7;
+		padding-top:.5em;
+		padding-bottom:.5em;
+		margin:0;
 
 
-}
+	}
 
 }
 
@@ -647,9 +647,9 @@ border-top-color:#fff ;
 	display:table;
 	width:100%;
 	margin:0;
-
 	h3 {
 		margin:0;
+		color:#89be2e;
 		display:table-cell;
 		width:50%;
 		vertical-align:middle;
@@ -664,17 +664,22 @@ border-top-color:#fff ;
 		cursor:hand;
 		border-left:1px solid #ddd;
 		&:hover {
-			background:#ccc;
+			background:#89be2e;
+			color:#fff;
+
 		}
 		&:first-of-type {
 			border-left:none;
 		}
+		&.on {
+			background:#fff;
+			border-bottom:none;
+			color:#333;
+
+		}
 	}
 }
 
-h3.on {
-  background:#ccc;
-}
 
 .off {
   display: none;
@@ -682,9 +687,9 @@ h3.on {
 
 .home-agenda {
 	table[class$="agenda"] {
-		border-bottom:1px solid #ddd;
-		background:#f7f7f7;
-		box-sizing: border-box;
+
+
+			box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		td {
 			vertical-align:top;
@@ -1076,10 +1081,10 @@ h3.on {
 		float: right;
 		width: 300px;
 		@media (max-width: 960px) {
+			margin-top:25px;
 			float: none;
 			width: auto;
 			&:before {
-				content: 'Preliminary Agenda';
 				font-size: 24px;
 				font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 				font-weight: 600;
@@ -1231,6 +1236,14 @@ h3.on {
 			margin-right:0;
 		}
 	}
+	.current-speakers a.current-speaker:nth-of-type(6) {
+		@media (min-width: 960px) {
+			margin-right:0;
+		}
+
+	}
+
+
 	.current-speakers a.current-speaker .speaker .speaker-top {
 		@include clearfix;
 	}
@@ -1275,7 +1288,7 @@ h3.on {
 		color: #999;
 		margin-bottom: 8px;
 	}
-	.current-speakers a.current-speaker .speaker .speaker-top .speaker-top-info .speaker-company {
+	.current-speakers  .speaker-company {
 		font-size: 24px;
 		color: #999;
 		line-height: 24px;
@@ -1283,6 +1296,13 @@ h3.on {
 			font-size:22px;
 		}
 	}
+
+	a[href$="ClausLehmann"] {
+		 .speaker-company {
+			font-size:20px;
+		}
+	}
+
 	.current-speakers a.current-speaker:hover {
 		background: #fff;
 		box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2) inset, -1px -1px 0 rgba(0, 0, 0, 0.2) inset;
@@ -2646,6 +2666,19 @@ h3.on {
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
+	// ============================================================
+	// @attendees visualizer
+	.attendees-visualizer {
+		max-width: 1207px;
+		margin: auto;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		background:#fff;
+		.visualizer {margin-left:-10px;}
+ 	}
+
 	// ============================================================
 	// !IMPORTANT -- this is ONLY for the GLI Finance Limited logo -- if the
 	// placement changes, then we have to fix this:

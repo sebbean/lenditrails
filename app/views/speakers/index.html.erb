@@ -24,7 +24,7 @@
 								<div class="speaker-top-info">
 									<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
 									<div class="speaker-title"><%= speaker.title %></div>
-									<div class="speaker-company"><%= speaker.company_name %></div>
+									<div class="speaker-company"><%= raw speaker.company_name %></div>
 								</div>
 							</div>
 <!-- 							<div class="current-speaker-bio show-more-height">
@@ -44,7 +44,7 @@
 									<%= speaker.title %>
 								</div>
 								<div class="speaker-company">
-									<%= speaker.company_name %>
+									<%= raw speaker.company_name %>
 								</div>
 								<div class="speaker-bio-text">
 									<div class="speaker-bio-text-inner">

@@ -1241,8 +1241,26 @@ border-top-color:#fff ;
 			margin-right:0;
 		}
 
-	}
+	}	
+	.current-speakers a.current-speaker:nth-of-type(9) {
+		@media (min-width: 960px) {
+			margin-right:0;
+		}
 
+	}
+	.current-speakers a.current-speaker:nth-of-type(12) {
+		@media (min-width: 960px) {
+			margin-right:0;
+		}
+
+	}
+	
+	.current-speakers a.current-speaker:nth-of-type(15) {
+		@media (min-width: 960px) {
+			margin-right:0;
+		}
+
+	}
 	
 	.current-speakers a.current-speaker .speaker .speaker-top {
 		@include clearfix;

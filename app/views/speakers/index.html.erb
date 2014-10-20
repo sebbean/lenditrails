@@ -22,7 +22,7 @@
 							<div class="speaker-top">
 								<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
 								<div class="speaker-top-info">
-									<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
+									<div class="speaker-name"><%= raw speaker.first_name %> <%= speaker.last_name %></div>
 									<div class="speaker-title"><%= raw speaker.title %></div>
 									<div class="speaker-company"><%= raw speaker.company_name %></div>
 								</div>

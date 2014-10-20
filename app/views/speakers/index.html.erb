@@ -17,7 +17,7 @@
 
 			<section class="current-speakers">
 				<% @europe_speakers.each do |speaker| %>
-					<a class="current-speaker" href="#<%= speaker.first_name %><%= speaker.last_name %>">
+					<a class="current-speaker" href="#<%= raw speaker.first_name %><%= raw speaker.last_name %>">
 						<div class="speaker">
 							<div class="speaker-top">
 								<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
@@ -31,7 +31,7 @@
 						</div>
 					</a>
 					<div class="speaker-bio" style="/*temp styles*/display:none;">
-						<div id="<%= speaker.first_name %><%= speaker.last_name %>" class="speaker-container">
+						<div id="<%= raw speaker.first_name %><%= raw speaker.last_name %>" class="speaker-container">
 							<div class="speaker-colorbox-title">Current Speakers</div>
 							<div class="speaker-top-info">
 								<img src="<%= speaker.img_url %>" class="speaker-image-lg" alt="<%= speaker.first_name %> <%= speaker.last_name %>">

@@ -21,7 +21,7 @@ LenditRails::Application.routes.draw do
   # get '/europe/sponsors' => 'sponsors#europe_sponsors'
   # get '/test' => 'sponsors#test'
   # get '/europe/speakers' => 'speakers#europe'
-  get '/europe-test' => 'conferences#europe_test'
+  # get '/europe-test' => 'conferences#europe_test'
   # See all redirects in WelcomeController
   # 301 redirects from old WP site
   get '/speaker' => 'welcome#go_to_speakers'

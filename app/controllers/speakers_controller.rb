@@ -9,6 +9,7 @@ class SpeakersController < ApplicationController
     @past_speakers = Speaker.where(conference: 'LendIt 2014')
   end
 
+
   # GET /speakers/1
   # GET /speakers/1.json
   def show

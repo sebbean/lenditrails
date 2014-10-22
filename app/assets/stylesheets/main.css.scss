@@ -615,6 +615,80 @@ border-top-color:#fff ;
 		}
 	}
 
+	// begin Home Features
+
+	.feature-header {
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+font-size: 20px;
+font-weight:500;
+margin:0;
+
+		margin-top:0;
+		text-align:center;
+		background:#eee;
+		padding-top:.5em;
+		padding-bottom:.5em;
+		margin:0;
+
+
+		
+	}
+
+	ul.home-features {
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		@include clearfix;
+		display:table;
+		margin-bottom:20px;
+
+
+
+
+		
+		
+		li {
+			padding:0;
+			margin:0;
+			img {
+			width:100%;
+		}
+
+	@media (min-width: 550px) {
+			display:table-cell;
+			img {
+				max-width:269px;
+			}
+
+	}
+		
+			
+		}
+		li + li {
+			margin-top:1px;
+	@media (min-width: 550px) {
+			padding-left:1px;
+
+	}
+			
+		}
+	}
+
+	// end Home Features
+
+	// begin keynote-summaries
+
+	.keynote-summaries {
+
+		div > img {
+			max-width:137px;
+		}
+
+	}
+	// end keynote-summaries
+
+
+
 //@agenda
 
 .home-agenda {
@@ -2705,3 +2779,5 @@ border-top-color:#fff ;
 		width:205px; height:158px;
 		margin:0;
 	}
+
+

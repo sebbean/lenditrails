@@ -13,4 +13,7 @@ class ConferencesController < ApplicationController
   def nyc
   end
 
+  def europe_test
+  end
+
 end

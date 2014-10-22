@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require doubletaptogo
 //= require colorbox
+//= require isotope
 //= require bootstrap
 //= require validate
 //= require turbolinks

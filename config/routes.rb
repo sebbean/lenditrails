@@ -12,7 +12,7 @@ LenditRails::Application.routes.draw do
   get '/europe/attendees' => 'welcome#attendees'
 
   # 301 redirects with GA tracking codes
-  # get '/sharecast' => 'conferences#sharecast'
+  get '/sharecast' => 'conferences#sharecast'
 
   # get '/europe-test' => 'conferences#europe_test'
   # get '/home' => 'welcome#home'

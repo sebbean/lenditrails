@@ -16,10 +16,10 @@ LenditRails::Application.routes.draw do
   get '/europe' => 'conferences#europe'
 
 
-  # get '/europe-test' => 'conferences#europe_test'
-  # get '/home' => 'welcome#home'
-  # get '/nyc' => 'conferences#nyc'
-  # get '/china' => 'conferences#china'
+  get '/europe-test' => 'conferences#europe_test'
+  get '/home' => 'welcome#home'
+  get '/nyc' => 'conferences#nyc'
+  get '/china' => 'conferences#china'
   # get '/europe/sponsors' => 'sponsors#europe_sponsors'
   # get '/test' => 'sponsors#test'
   # get '/europe/speakers' => 'speakers#europe'

@@ -21,9 +21,7 @@ LenditRails::Application.routes.draw do
   get '/home' => 'welcome#home'
   get '/nyc' => 'conferences#nyc'
   get '/china' => 'conferences#china'
-  # get '/home' => 'welcome#home'
-  # get '/nyc' => 'conferences#nyc'
-  # get '/china' => 'conferences#china'
+  get '/home-test' => 'welcome#home_test'
 
   # get '/europe/sponsors' => 'sponsors#europe_sponsors'
   # get '/test' => 'sponsors#test'

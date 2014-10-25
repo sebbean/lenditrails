@@ -501,6 +501,7 @@ body.conferences {
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 }
+
 .conferences h1 {
 	margin-top: 0;
 	margin-bottom: .75em;
@@ -639,10 +640,26 @@ body.conferences header .container .header-buttons {
 // ============================================================
 
 
+// begin newhome-section
+.conferences section.newhome-section {
+	@media (max-width: 550px) {
+		padding-top:0;
+}
+
+
+}
+// end newhome-section
+
 // begin overall structure
 .newhome-container {
 	max-width:940px;
 	margin:auto;
+	@media (max-width: 960px) {
+		margin-left:10px;
+		margin-right:10px;
+		
+	}
+
 }
 // end overall structure 
 
@@ -654,6 +671,10 @@ body.conferences header .container .header-buttons {
 	font-size:18px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	p {
+		margin-top:1em;
+		margin-bottom:1em;
+	}
 	h1 {
 		text-align:center;
 	}
@@ -670,23 +691,23 @@ body.conferences header .container .header-buttons {
 	-moz-osx-font-smoothing: grayscale;
 	margin-top:15px;
 	text-align:center;
-
 	.register-button {
 		display:table;
+		margin:auto;
+	@media (min-width: 767px) {
+		
 		margin:2em auto;
-
+	}
 		a {
-
 			font-size: 18px;
 			font-weight: 600;
 			background: #fff;
+			line-height:1.2em;
 			border: 1px solid #89be2e;
 			display: block;
-			padding:4px 16px;
+			padding:6px 16px;
 			text-align:center;
-
 		}
-
 	}
 }
 // end bodytext-2
@@ -701,6 +722,15 @@ body.conferences header .container .header-buttons {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align:center;
+	a {
+		font-weight:600;
+
+	}
+	@media (max-width: 550px) {
+		padding-left:5px;
+		padding-right:5px;
+	}	
+
 }
 // end bodytext-3
 
@@ -709,28 +739,23 @@ body.conferences header .container .header-buttons {
 
 // begin hot topics
 .hot-topics-head {
-	
-
-		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-		font-size: 28px;
-		line-height:30px;
-		margin-top:0;
-		text-align:center;
-		padding-top:.5em;
-		padding-bottom:.5em;
-		margin:0;
-		text-align:center;
-		font-weight:500;
-	
-
+	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+	font-size: 28px;
+	line-height:30px;
+	margin-top:0;
+	text-align:center;
+	padding-top:.5em;
+	padding-bottom:.5em;
+	margin:0;
+	text-align:center;
+	font-weight:500;
 }
 .hot-topics {
 	font-size:18px;
 	margin-top:1em;
 	ul {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-		
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 		padding-left:0;
 		margin-left:20px;
 		list-style-type:square;
@@ -746,18 +771,35 @@ body.conferences header .container .header-buttons {
 		display:table-cell;
 		width:50%;
 
+	@media (max-width: 550px) {
+		display:block;
+		width:auto;
 
-
-}
+	}
+		
+	}
 	.hot-topics-list-col:first-child {
 		padding-right:30px;
 		padding-top:12px;
+
+	@media (max-width: 550px) {
+
+		padding:0 0 0 5px;
+	}
+		
+
+		
 	}
 	.hot-topics-list-col:last-child {
 		padding-left:30px;
 		padding-top:12px;
-	}
 
+	@media (max-width: 550px) {
+		padding:0 0 0 5px;
+
+	}
+		
+	}
 }
 // end hot topics
 
@@ -767,7 +809,6 @@ body.conferences header .container .header-buttons {
 // begin whos-coming
 .whos-coming {
 	.whos-coming-head {
-		
 		margin-top: 0;
 		padding-bottom: .8em;
 		margin: 0;
@@ -780,14 +821,12 @@ body.conferences header .container .header-buttons {
 		border:1px solid #89be2e;
 		display:table;
 		margin:auto;
-
-	img {
-		width:300px;
-		margin:auto;
-		display:block;
-		
+		img {
+			width:280px;
+			margin:auto;
+			display:block;
+		}
 	}
-}
 }
 // end whos-coming
 
@@ -799,6 +838,7 @@ body.conferences header .container .header-buttons {
 	.feature-header {
 		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 		font-size: 28px;
+		font-weight:500;
 		border-bottom:1px solid #ddd;
 		line-height:30px;
 		margin-top:0;
@@ -817,14 +857,18 @@ body.conferences header .container .header-buttons {
 			font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 			>div {
 				display:table;
+
+				
 				margin:5px 16px 5px 0 ;
 				width:auto;
 				span{
+					
 					display:table-cell;
 					vertical-align:middle;
 					line-height:1em ;
 					-webkit-font-smoothing: antialiased;
 					-moz-osx-font-smoothing: grayscale;
+					
 					img  {
 						max-width:62px;
 						margin-right:10px;
@@ -844,17 +888,25 @@ body.conferences header .container .header-buttons {
 	margin-top:1em;
 	display:table;
 	.new-home-col {
+	@media (min-width: 550px) {
 		display:table-cell;
 		vertical-align:top;
 		width:50%;
-		position:relative;
+		
+	}
+		
 	}
 	.new-home-col:first-child {
+	@media (min-width: 550px) {
 		padding-right:30px;
 		padding-bottom:20px;
 	}
+	}
 	.new-home-col:last-child {
+	@media (min-width: 550px) {
+
 		padding-left:30px;
+	}
 	}
 }
 // end new-home columns "A"
@@ -866,28 +918,31 @@ body.conferences header .container .header-buttons {
 .new-home-columns-b {
 	display:table;
 	.new-home-col {
-		display:table-cell;
 		vertical-align:middle;
 		position:relative;
-		width:50%;
 		padding:0;
-	padding-bottom:2em;
-	padding-top:1em;
-	margin-bottom:1em;
-	background:#fafafa;
-	border-top:1px solid #ddd;
-	border-bottom:1px solid #ddd;
-	
+		padding-bottom:2em;
+		padding-top:1em;
+		background:#fafafa;
+		border-top:1px solid #ddd;
+		border-bottom:1px solid #ddd;
+
+	@media (min-width: 767px) {
+		width:50%;
+		display:table-cell;
+		margin-bottom:1em;
 		
 	}
-
-
+		
+	}
 	.gutter {
+		min-height:1.5em;
+	@media (min-width: 767px) {
 		border:none;
 		background:#fff;
 		width:60px;
 	}
-	
+	}
 }
 // end new-home columns "B"
 
@@ -900,44 +955,55 @@ body.conferences header .container .header-buttons {
 		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 		font-size: 28px;
 		line-height:30px;
+		font-weight:500;
 		margin-top:0;
 		text-align:center;
 		padding-top:.5em;
-		padding-bottom:.5em;
+		padding-bottom:1em;
 		margin:0;
 		
+
 	}
-	.go-to-sponsors {
+	.go-to-speakers {
 		text-align:center;
 		padding-bottom:10px;
+		font-size:18px;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+		
+
+	a {
 		font-weight:600;
+
+	}
+		
 	}
 	.speakers {
-		margin-left:-15px;
 		display:table;
 		margin:auto;
-		width:100%;
+
+	@media (max-width: 550px) {
+		margin-left:-25px;
+		
+	}
 		
 	}
 	.item {
-		display:table-cell;
-			padding-left:15px;
+		float:left;
+		width:135px;
+		height:290px;
+		margin-left:25px; 
 
-			width:135px;
-			height:300px;
-			img {
-				max-width:135px;
-			}
+		img {
+			max-width:135px;
+		}
 	}
 	.item .name {
 		font-weight:600;
 		padding-top:10px;
 	}
-	.go-to-speakers {
-		text-align:center;
-		margin-bottom:2em;
-		
-	}
+
 }
 // end keynote-summaries
 

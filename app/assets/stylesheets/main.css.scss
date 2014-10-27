@@ -180,7 +180,7 @@ hr {
 
 
 
-// begin nav 
+// begin nav
 // ============================================================
 .nav-container {
 	background:#fff;
@@ -657,18 +657,18 @@ body.conferences header .container .header-buttons {
 	@media (max-width: 960px) {
 		margin-left:10px;
 		margin-right:10px;
-		
+
 	}
 
 }
-// end overall structure 
+// end overall structure
 
 
 
 
-// begin introduction 
+// begin introduction
 .newhome-container .introduction {
-	font-size:18px;
+	font-size:22px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	p {
@@ -684,7 +684,7 @@ body.conferences header .container .header-buttons {
 
 
 
-// begin bodytext-2 
+// begin bodytext-2
 .newhome-container .bodytext-2 {
 	font-size:18px;
 	-webkit-font-smoothing: antialiased;
@@ -695,7 +695,7 @@ body.conferences header .container .header-buttons {
 		display:table;
 		margin:auto;
 	@media (min-width: 767px) {
-		
+
 		margin:2em auto;
 	}
 		a {
@@ -729,7 +729,7 @@ body.conferences header .container .header-buttons {
 	@media (max-width: 550px) {
 		padding-left:5px;
 		padding-right:5px;
-	}	
+	}
 
 }
 // end bodytext-3
@@ -776,7 +776,7 @@ body.conferences header .container .header-buttons {
 		width:auto;
 
 	}
-		
+
 	}
 	.hot-topics-list-col:first-child {
 		padding-right:30px;
@@ -786,9 +786,9 @@ body.conferences header .container .header-buttons {
 
 		padding:0 0 0 5px;
 	}
-		
 
-		
+
+
 	}
 	.hot-topics-list-col:last-child {
 		padding-left:30px;
@@ -798,7 +798,7 @@ body.conferences header .container .header-buttons {
 		padding:0 0 0 5px;
 
 	}
-		
+
 	}
 }
 // end hot topics
@@ -850,7 +850,7 @@ body.conferences header .container .header-buttons {
 	ul {
 		list-style-type:none;
 		padding:0;
-		margin:0; 
+		margin:0;
 		li {
 			font-size:20px;
 			font-weight:100;
@@ -858,17 +858,17 @@ body.conferences header .container .header-buttons {
 			>div {
 				display:table;
 
-				
+
 				margin:5px 16px 5px 0 ;
 				width:auto;
 				span{
-					
+
 					display:table-cell;
 					vertical-align:middle;
 					line-height:1em ;
 					-webkit-font-smoothing: antialiased;
 					-moz-osx-font-smoothing: grayscale;
-					
+
 					img  {
 						max-width:62px;
 						margin-right:10px;
@@ -892,9 +892,9 @@ body.conferences header .container .header-buttons {
 		display:table-cell;
 		vertical-align:top;
 		width:50%;
-		
+
 	}
-		
+
 	}
 	.new-home-col:first-child {
 	@media (min-width: 550px) {
@@ -931,9 +931,9 @@ body.conferences header .container .header-buttons {
 		width:50%;
 		display:table-cell;
 		margin-bottom:1em;
-		
+
 	}
-		
+
 	}
 	.gutter {
 		min-height:1.5em;
@@ -961,7 +961,7 @@ body.conferences header .container .header-buttons {
 		padding-top:.5em;
 		padding-bottom:1em;
 		margin:0;
-		
+
 
 	}
 	.go-to-speakers {
@@ -971,13 +971,13 @@ body.conferences header .container .header-buttons {
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-		
+
 
 	a {
 		font-weight:600;
 
 	}
-		
+
 	}
 	.speakers {
 		display:table;
@@ -985,15 +985,15 @@ body.conferences header .container .header-buttons {
 
 	@media (max-width: 550px) {
 		margin-left:-25px;
-		
+
 	}
-		
+
 	}
 	.item {
 		float:left;
 		width:135px;
 		height:290px;
-		margin-left:25px; 
+		margin-left:25px;
 
 		img {
 			max-width:135px;

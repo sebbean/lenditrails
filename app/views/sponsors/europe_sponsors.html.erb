@@ -8,378 +8,434 @@
 			<h1>LendIt Europe Sponsors</h1>
 			<section class="sponsors-intro">
 
-				<p>The following sponsors have been confirmed for LendIt Europe 2014.</p>
-				<div class="sponsorship-packages"><a href="/assets/LendIt-Europe-Sponsorship-Packages.pdf" target="_blank"><button>Download Sponsorship Packages</button></a></div>
+				<p>The following sponsors have been confirmed for LendIt Europe 2014. <a href="#sponsors-read-more">Read More >></a></p>
 
 
-      </section>
+			</section>
+		</div>
+	</div>
+
+	<div class="sponsors-main">
+		<div class="container">
+			<div class="cols">
+				<div class="col1">
+					<h2>LendIt Europe, November 17, 2014</h2>
+					<div class="sponsors-highlevel sponsors-platinum">
+						<% if @platinum.any? %>
+						<h3>Platinum Sponsors</h3>
+						<section class="sponsor-images">
+							<% @platinum.each do |sponsor| %>
+							<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
+								<div class="image-container">
+									<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+								</div>
+							</a>
+
+							<div style="/*temp styles*/display:none;" class="speaker-bio">
+								<div id="sponsor-<%= sponsor.id %>" class="speaker-container">
+									<div class="speaker-colorbox-title">Sponsors</div>
+									<div class="speaker-top-info">
+										<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
+										<div class="speaker-name">LendIt Europe</div>
+										<div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
+										<% if sponsor.url != nil %>
+										<div class="speaker-company">
+											<a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
+										</div>
+										<% end %>
+									</div>
+									<div class="speaker-bio-text">
+										<div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
+									</div>
+									<div class="speaker-bio-mask"></div>
+								</div>
+							</div>
+
+							<% end %>
+						</section>
+						<% end %>
+					</div>
+
+					<div class="sponsors-highlevel sponsors-gold">
+						<% if @gold.any? %>
+						<h3>Gold Sponsors</h3>
+						<section class="sponsor-images">
+							<% @gold.each do |sponsor| %>
+							<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
+								<div class="image-container">
+									<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+								</div>
+							</a>
+
+							<div style="/*temp styles*/display:none;" class="speaker-bio">
+								<div id="sponsor-<%= sponsor.id %>" class="speaker-container">
+									<div class="speaker-colorbox-title">Sponsors</div>
+									<div class="speaker-top-info">
+										<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
+										<div class="speaker-name">LendIt Europe</div>
+										<div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
+										<% if sponsor.url != nil %>
+										<div class="speaker-company">
+											<a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
+										</div>
+										<% end %>
+									</div>
+									<div class="speaker-bio-text">
+										<div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
+									</div>
+									<div class="speaker-bio-mask"></div>
+								</div>
+							</div>
+
+							<% end %>
+						</section>
+						<% end %>
+					</div>
+
+					<div class="sponsors-highlevel sponsors-silver">
+						<% if @silver.any? %>
+						<h3>Silver Sponsors</h3>
+						<section class="sponsor-images">
+							<% @silver.each do |sponsor| %>
+							<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
+								<div class="image-container">
+									<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+								</div>
+							</a>
+
+							<div style="/*temp styles*/display:none;" class="speaker-bio">
+								<div id="sponsor-<%= sponsor.id %>" class="speaker-container">
+									<div class="speaker-colorbox-title">Sponsors</div>
+									<div class="speaker-top-info">
+										<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
+										<div class="speaker-name">LendIt Europe</div>
+										<div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
+										<% if sponsor.url != nil %>
+										<div class="speaker-company">
+											<a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
+										</div>
+										<% end %>
+									</div>
+									<div class="speaker-bio-text">
+										<div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
+									</div>
+									<div class="speaker-bio-mask"></div>
+								</div>
+							</div>
+							<% end %>
+						</section>
+						<% end %>
+					</div>
+
+					<div class="sponsors-highlevel sponsors-bronze">
+						<% if @bronze.any? %>
+						<h3>Bronze Sponsors</h3>
+						<section class="sponsor-images">
+							<% @bronze.each do |sponsor| %>
+							<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
+								<div class="image-container">
+									<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+								</div>
+							</a>
+
+							<div style="/*temp styles*/display:none;" class="speaker-bio">
+								<div id="sponsor-<%= sponsor.id %>" class="speaker-container">
+									<div class="speaker-colorbox-title">Sponsors</div>
+									<div class="speaker-top-info">
+										<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
+										<div class="speaker-name">LendIt Europe</div>
+										<div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
+										<% if sponsor.url != nil %>
+										<div class="speaker-company">
+											<a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
+										</div>
+										<% end %>
+									</div>
+									<div class="speaker-bio-text">
+										<div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
+									</div>
+									<div class="speaker-bio-mask"></div>
+								</div>
+							</div>
+
+							<% end %>
+						</section>
+						<% end %>
+					</div>
+
+					<div class="sponsors-other">
+						<% if @cocktails.any? %>
+						<h3>Cocktail Party Sponsors</h3>
+						<section class="sponsor-images">
+							<% @cocktails.each do |sponsor| %>
+							<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
+								<div class="image-container">
+									<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+								</div>
+							</a>
+
+							<div style="/*temp styles*/display:none;" class="speaker-bio">
+								<div id="sponsor-<%= sponsor.id %>" class="speaker-container">
+									<div class="speaker-colorbox-title">Sponsors</div>
+									<div class="speaker-top-info">
+										<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
+										<div class="speaker-name">LendIt Europe</div>
+										<div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
+										<% if sponsor.url != nil %>
+										<div class="speaker-company">
+											<a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
+										</div>
+										<% end %>
+									</div>
+									<div class="speaker-bio-text">
+										<div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
+									</div>
+									<div class="speaker-bio-mask"></div>
+								</div>
+							</div>
+
+							<% end %>
+						</section>
+						<% end %>
+					</div>
+
+					<div class="sponsors-other">
+						<% if @smartphone.any? %>
+						<h3>Smartphone App Sponsor</h3>
+						<section class="sponsor-images">
+							<% @smartphone.each do |sponsor| %>
+							<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
+								<div class="image-container">
+									<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+								</div>
+							</a>
+
+							<div style="/*temp styles*/display:none;" class="speaker-bio">
+								<div id="sponsor-<%= sponsor.id %>" class="speaker-container">
+									<div class="speaker-colorbox-title">Sponsors</div>
+									<div class="speaker-top-info">
+										<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
+										<div class="speaker-name">LendIt Europe</div>
+										<div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
+										<% if sponsor.url != nil %>
+										<div class="speaker-company">
+											<a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
+										</div>
+										<% end %>
+									</div>
+									<div class="speaker-bio-text">
+										<div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
+									</div>
+									<div class="speaker-bio-mask"></div>
+								</div>
+							</div>
+
+							<% end %>
+						</section>
+						<% end %>
+					</div>
+
+					<div class="sponsors-other">
+						<% if @breakfast.any? %>
+						<h3>Breakfast Sponsor</h3>
+						<section class="sponsor-images">
+							<% @breakfast.each do |sponsor| %>
+							<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
+								<div class="image-container">
+									<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+								</div>
+							</a>
+
+							<div style="/*temp styles*/display:none;" class="speaker-bio">
+								<div id="sponsor-<%= sponsor.id %>" class="speaker-container">
+									<div class="speaker-colorbox-title">Sponsors</div>
+									<div class="speaker-top-info">
+										<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
+										<div class="speaker-name">LendIt Europe</div>
+										<div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
+										<% if sponsor.url != nil %>
+										<div class="speaker-company">
+											<a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
+										</div>
+										<% end %>
+									</div>
+									<div class="speaker-bio-text">
+										<div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
+									</div>
+									<div class="speaker-bio-mask"></div>
+								</div>
+							</div>
+
+							<% end %>
+						</section>
+						<% end %>
+					</div>
+
+					<div class="sponsors-other">
+						<% if @lunch.any? %>
+						<h3>Lunch Sponsor</h3>
+						<section class="sponsor-images">
+							<% @lunch.each do |sponsor| %>
+							<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
+								<div class="image-container">
+									<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+								</div>
+							</a>
+
+							<div style="/*temp styles*/display:none;" class="speaker-bio">
+								<div id="sponsor-<%= sponsor.id %>" class="speaker-container">
+									<div class="speaker-colorbox-title">Sponsors</div>
+									<div class="speaker-top-info">
+										<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
+										<div class="speaker-name">LendIt Europe</div>
+										<div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
+										<% if sponsor.url != nil %>
+										<div class="speaker-company">
+											<a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
+										</div>
+										<% end %>
+									</div>
+									<div class="speaker-bio-text">
+										<div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
+									</div>
+									<div class="speaker-bio-mask"></div>
+								</div>
+							</div>
+
+							<% end %>
+						</section>
+						<% end %>
+					</div>
+
+					<div class="sponsors-other">
+						<% if @exhibitor.any? %>
+						<h3>Exhibitor</h3>
+						<section class="sponsor-images">
+							<% @exhibitor.each do |sponsor| %>
+							<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
+								<div class="image-container">
+									<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+								</div>
+							</a>
+
+							<div style="/*temp styles*/display:none;" class="speaker-bio">
+								<div id="sponsor-<%= sponsor.id %>" class="speaker-container">
+									<div class="speaker-colorbox-title">Sponsors</div>
+									<div class="speaker-top-info">
+										<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
+										<div class="speaker-name">LendIt Europe</div>
+										<div class="speaker-title"><%= sponsor.sponsor_level %></div>
+										<% if sponsor.url != nil %>
+										<div class="speaker-company">
+											<a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
+										</div>
+										<% end %>
+									</div>
+									<div class="speaker-bio-text">
+										<div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
+									</div>
+									<div class="speaker-bio-mask"></div>
+								</div>
+							</div>
+
+							<% end %>
+						</section>
+						<% end %>
+					</div>
+
+					<div class="sponsors-past" style="display: none;">
+						<h2>Past Sponsors</h2>
+						<section class="sponsor-images">
+							<% @past_sponsors.each do |sponsor| %>
+							<div class="image-container">
+								<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+							</div>
+							<% end %>
+						</section>
+					</div>
+				</div>
+				<div class="col2">
+					<section>
+						<h2>What previous sponsors are saying about LendIt</h2>
+						<div class="quote-container">
+							<div class="quote"> "The conference certainly did exceed our expectations at every level. The crowd, the speakers, the content, the events, and the networking all provided us, and I am sure your other sponsors and participants, with a first class conference and business opportunities. We told you last year that LendIt was our best conference experience ever, only to be surpassed by LendIt 2014." </div>
+							<div class="quote-speaker"> - Reggie Karas, Managing Director of Millennium Trust Company </div>
+						</div>
+						<div class="quote-container">
+							<div class="quote"> "The conference was both well organized and attended. The growth and improvement from last year's conference was eye opening. It speaks to both the growth of the industry as well as the sophistication and development of the market participants." </div>
+							<div class="quote-speaker"> - Adam Goller, VP of Lending, Cross River Bank </div>
+						</div>
+						<div class="quote-container">
+							<div class="quote"> "The event was put together very well and the content was exceptional." </div>
+							<div class="quote-speaker"> - Larry Chiavaro, Executive Vice President and Principal at First Associates Loan Servicing, LLC.  </div>
+						</div>
+						<div class="quote-container">
+							<div class="quote"> "Marketplace lending is arguably the hottest spot for financial innovation today and Lendit is right at its center, stoking the fires with great education, content, and networking. Lendit assembles all the key players, asks all the right questions, and creates the perfect forum to fire up ideas, spark connections, and facilitate deal making." </div>
+							<div class="quote-speaker"> - Penelope Holt, Chief Marketing Officer of BorrowersFirst </div>
+						</div>
+						<div class="quote-container">
+							<div class="quote"> "We thought that LendIt 2014 was a brilliant event. The quality of the people attending, and the content of the presentations, were awesome." </div>
+							<div class="quote-speaker"> - Christian Faes, Co-founder of LendInvest </div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<div id="sponsors-read-more">
+			<div class="container">
+				<div>
+					<h2>Who should sponsor?</h2>
+					<section>
+						<ul>
+							<li>Online lending platforms</li>
+							<li>Investment banks</li>
+							<li>Law firms</li>
+							<li>Accounting firms</li>
+							<li>Venture capital firms</li>
+							<li>Investment advisors & consultants</li>
+						</ul>
+		      </section>
+				</div>
+
+				<div>
+					<h2>Why sponsor</h2>
+					<section>
+						<ul>
+							<li>Increase brand and product awareness</li>
+							<li>Get face time with real decision makers</li>
+							<li>Launch new products</li>
+							<li>Raise capital</li>
+							<li>Educate the market</li>
+							<li>Uncover new partners</li>
+							<li>Be seen as an industry leader</li>
+						</ul>
+					</section>
+				</div>
+
+				<div>
+					<h2>Types of sponsorship participation</h2>
+					<section>
+						<p>LendIt sponsors receive extensive brand exposure to a core audience of prominent industry insiders and investment professionals before, during and after the event. </p>
+						<p>Key channels include:</p>
+						<ul>
+							<li>The LendIt website and blog</li>
+							<li>The exhibition</li>
+							<li>On-site recognition and signage</li>
+							<li>Event program exposure</li>
+							<li>Webcasts and videos</li>
+							<li>Joing press releases</li>
+							<li>Print advertising</li>
+						</ul>
+						<p>For more information on sponsorship and exhibitor opportunities, please email info@lendit.co</p>
+						<div class="sponsorship-packages"><a href="/assets/LendIt-Europe-Sponsorship-Packages.pdf" target="_blank"><button>Download Sponsorship Prospectus</button></a>
+					</section>
+
+				</div>
+
+
+
     </div>
-  </div>
+		</div>
 
-  <div class="sponsors-main">
-    <div class="container">
-     <div class="cols">
-      <div class="col1">
-       <h2>LendIt Europe, November 17, 2014</h2>
-       <div class="sponsors-highlevel sponsors-platinum">
-        <% if @platinum.any? %>
-        <h3>Platinum Sponsors</h3>
-        <section class="sponsor-images">
-          <% @platinum.each do |sponsor| %>
-          <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
-            <div class="image-container">
-              <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-            </div>
-          </a>
-
-          <div style="/*temp styles*/display:none;" class="speaker-bio">
-            <div id="sponsor-<%= sponsor.id %>" class="speaker-container">
-             <div class="speaker-colorbox-title">Sponsors</div>
-             <div class="speaker-top-info">
-              <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
-              <div class="speaker-name">LendIt Europe</div>
-              <div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
-              <% if sponsor.url != nil %>
-              <div class="speaker-company">
-                <a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
-              </div>
-              <% end %>
-            </div>
-            <div class="speaker-bio-text">
-              <div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
-            </div>
-            <div class="speaker-bio-mask"></div>
-          </div>
-        </div>
-
-        <% end %>
-      </section>
-      <% end %>
-    </div>
-
-    <div class="sponsors-highlevel sponsors-gold">
-      <% if @gold.any? %>
-      <h3>Gold Sponsors</h3>
-      <section class="sponsor-images">
-        <% @gold.each do |sponsor| %>
-        <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
-         <div class="image-container">
-          <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-        </div>
-      </a>
-
-      <div style="/*temp styles*/display:none;" class="speaker-bio">
-        <div id="sponsor-<%= sponsor.id %>" class="speaker-container">
-          <div class="speaker-colorbox-title">Sponsors</div>
-          <div class="speaker-top-info">
-            <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
-            <div class="speaker-name">LendIt Europe</div>
-            <div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
-            <% if sponsor.url != nil %>
-            <div class="speaker-company">
-              <a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
-            </div>
-            <% end %>
-          </div>
-          <div class="speaker-bio-text">
-            <div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
-          </div>
-          <div class="speaker-bio-mask"></div>
-        </div>
-      </div>
-
-      <% end %>
-    </section>
-    <% end %>
-  </div>
-
-  <div class="sponsors-highlevel sponsors-silver">
-    <% if @silver.any? %>
-    <h3>Silver Sponsors</h3>
-    <section class="sponsor-images">
-      <% @silver.each do |sponsor| %>
-      <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
-        <div class="image-container">
-          <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-        </div>
-      </a>
-
-      <div style="/*temp styles*/display:none;" class="speaker-bio">
-        <div id="sponsor-<%= sponsor.id %>" class="speaker-container">
-          <div class="speaker-colorbox-title">Sponsors</div>
-          <div class="speaker-top-info">
-            <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
-            <div class="speaker-name">LendIt Europe</div>
-            <div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
-            <% if sponsor.url != nil %>
-            <div class="speaker-company">
-              <a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
-            </div>
-            <% end %>
-          </div>
-          <div class="speaker-bio-text">
-            <div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
-          </div>
-          <div class="speaker-bio-mask"></div>
-        </div>
-      </div>
-      <% end %>
-    </section>
-    <% end %>
-  </div>
-
-  <div class="sponsors-highlevel sponsors-bronze">
-   <% if @bronze.any? %>
-   <h3>Bronze Sponsors</h3>
-   <section class="sponsor-images">
-     <% @bronze.each do |sponsor| %>
-     <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
-      <div class="image-container">
-       <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-     </div>
-   </a>
-
-   <div style="/*temp styles*/display:none;" class="speaker-bio">
-    <div id="sponsor-<%= sponsor.id %>" class="speaker-container">
-      <div class="speaker-colorbox-title">Sponsors</div>
-      <div class="speaker-top-info">
-        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
-        <div class="speaker-name">LendIt Europe</div>
-        <div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
-        <% if sponsor.url != nil %>
-        <div class="speaker-company">
-          <a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
-        </div>
-        <% end %>
-      </div>
-      <div class="speaker-bio-text">
-        <div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
-      </div>
-      <div class="speaker-bio-mask"></div>
-    </div>
-  </div>
-
-  <% end %>
-</section>
-<% end %>
-</div>
-
-<div class="sponsors-other">
- <% if @cocktails.any? %>
- <h3>Cocktail Party Sponsors</h3>
- <section class="sponsor-images">
-   <% @cocktails.each do |sponsor| %>
-   <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
-    <div class="image-container">
-      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-    </div>
-  </a>
-
-  <div style="/*temp styles*/display:none;" class="speaker-bio">
-    <div id="sponsor-<%= sponsor.id %>" class="speaker-container">
-      <div class="speaker-colorbox-title">Sponsors</div>
-      <div class="speaker-top-info">
-        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
-        <div class="speaker-name">LendIt Europe</div>
-        <div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
-        <% if sponsor.url != nil %>
-        <div class="speaker-company">
-          <a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
-        </div>
-        <% end %>
-      </div>
-      <div class="speaker-bio-text">
-        <div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
-      </div>
-      <div class="speaker-bio-mask"></div>
-    </div>
-  </div>
-
-  <% end %>
-</section>
-<% end %>
-</div>
-
-<div class="sponsors-other">
-  <% if @smartphone.any? %>
-  <h3>Smartphone App Sponsor</h3>
-  <section class="sponsor-images">
-    <% @smartphone.each do |sponsor| %>
-    <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
-     <div class="image-container">
-       <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-     </div>
-   </a>
-
-   <div style="/*temp styles*/display:none;" class="speaker-bio">
-    <div id="sponsor-<%= sponsor.id %>" class="speaker-container">
-      <div class="speaker-colorbox-title">Sponsors</div>
-      <div class="speaker-top-info">
-        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
-        <div class="speaker-name">LendIt Europe</div>
-        <div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
-        <% if sponsor.url != nil %>
-        <div class="speaker-company">
-          <a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
-        </div>
-        <% end %>
-      </div>
-      <div class="speaker-bio-text">
-        <div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
-      </div>
-      <div class="speaker-bio-mask"></div>
-    </div>
-  </div>
-
-  <% end %>
-</section>
-<% end %>
-</div>
-
-<div class="sponsors-other">
-  <% if @breakfast.any? %>
-  <h3>Breakfast Sponsor</h3>
-  <section class="sponsor-images">
-    <% @breakfast.each do |sponsor| %>
-    <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
-     <div class="image-container">
-       <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-     </div>
-   </a>
-
-   <div style="/*temp styles*/display:none;" class="speaker-bio">
-    <div id="sponsor-<%= sponsor.id %>" class="speaker-container">
-      <div class="speaker-colorbox-title">Sponsors</div>
-      <div class="speaker-top-info">
-        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
-        <div class="speaker-name">LendIt Europe</div>
-        <div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
-        <% if sponsor.url != nil %>
-        <div class="speaker-company">
-          <a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
-        </div>
-        <% end %>
-      </div>
-      <div class="speaker-bio-text">
-        <div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
-      </div>
-      <div class="speaker-bio-mask"></div>
-    </div>
-  </div>
-
-  <% end %>
-</section>
-<% end %>
-</div>
-
-<div class="sponsors-other">
-  <% if @lunch.any? %>
-  <h3>Lunch Sponsor</h3>
-  <section class="sponsor-images">
-    <% @lunch.each do |sponsor| %>
-    <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
-     <div class="image-container">
-       <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-     </div>
-   </a>
-
-   <div style="/*temp styles*/display:none;" class="speaker-bio">
-    <div id="sponsor-<%= sponsor.id %>" class="speaker-container">
-      <div class="speaker-colorbox-title">Sponsors</div>
-      <div class="speaker-top-info">
-        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
-        <div class="speaker-name">LendIt Europe</div>
-        <div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
-        <% if sponsor.url != nil %>
-        <div class="speaker-company">
-          <a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
-        </div>
-        <% end %>
-      </div>
-      <div class="speaker-bio-text">
-        <div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
-      </div>
-      <div class="speaker-bio-mask"></div>
-    </div>
-  </div>
-
-  <% end %>
-</section>
-<% end %>
-</div>
-
-<div class="sponsors-other">
- <% if @exhibitor.any? %>
- <h3>Exhibitor</h3>
- <section class="sponsor-images">
-  <% @exhibitor.each do |sponsor| %>
-  <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
-   <div class="image-container">
-    <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-  </div>
-</a>
-
-<div style="/*temp styles*/display:none;" class="speaker-bio">
-  <div id="sponsor-<%= sponsor.id %>" class="speaker-container">
-    <div class="speaker-colorbox-title">Sponsors</div>
-    <div class="speaker-top-info">
-      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
-      <div class="speaker-name">LendIt Europe</div>
-      <div class="speaker-title"><%= sponsor.sponsor_level %></div>
-      <% if sponsor.url != nil %>
-      <div class="speaker-company">
-        <a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
-      </div>
-      <% end %>
-    </div>
-    <div class="speaker-bio-text">
-      <div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
-    </div>
-    <div class="speaker-bio-mask"></div>
-  </div>
-</div>
-
-<% end %>
-</section>
-<% end %>
-</div>
-
-<div class="sponsors-past" style="display: none;">
- <h2>Past Sponsors</h2>
- <section class="sponsor-images">
-  <% @past_sponsors.each do |sponsor| %>
-  <div class="image-container">
-    <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-  </div>
-  <% end %>
-</section>
-</div>
-</div>
-<div class="col2">
-  <section>
-   <h2>What previous sponsors are saying about LendIt</h2>
-   <div class="quote-container">
-    <div class="quote"> "The conference certainly did exceed our expectations at every level. The crowd, the speakers, the content, the events, and the networking all provided us, and I am sure your other sponsors and participants, with a first class conference and business opportunities. We told you last year that LendIt was our best conference experience ever, only to be surpassed by LendIt 2014." </div>
-    <div class="quote-speaker"> - Reggie Karas, Managing Director of Millennium Trust Company </div>
-  </div>
-  <div class="quote-container">
-    <div class="quote"> "The conference was both well organized and attended. The growth and improvement from last year's conference was eye opening. It speaks to both the growth of the industry as well as the sophistication and development of the market participants." </div>
-    <div class="quote-speaker"> - Adam Goller, VP of Lending, Cross River Bank </div>
-  </div>
-  <div class="quote-container">
-    <div class="quote"> "The event was put together very well and the content was exceptional." </div>
-    <div class="quote-speaker"> - Larry Chiavaro, Executive Vice President and Principal at First Associates Loan Servicing, LLC.  </div>
-  </div>
-  <div class="quote-container">
-    <div class="quote"> "Marketplace lending is arguably the hottest spot for financial innovation today and Lendit is right at its center, stoking the fires with great education, content, and networking. Lendit assembles all the key players, asks all the right questions, and creates the perfect forum to fire up ideas, spark connections, and facilitate deal making." </div>
-    <div class="quote-speaker"> - Penelope Holt, Chief Marketing Officer of BorrowersFirst </div>
-  </div>
-  <div class="quote-container">
-    <div class="quote"> "We thought that LendIt 2014 was a brilliant event. The quality of the people attending, and the content of the presentations, were awesome." </div>
-    <div class="quote-speaker"> - Christian Faes, Co-founder of LendInvest </div>
-  </div>
-</section>
-</div>
-</div>
-</div>
-</main>
+	</main>

@@ -18,12 +18,12 @@ LenditRails::Application.routes.draw do
 
 
   # get '/europe-test' => 'conferences#europe_test'
-  get '/home' => 'welcome#home'
-  get '/nyc' => 'conferences#nyc'
+  # get '/home' => 'welcome#home'
+  # get '/nyc' => 'conferences#nyc'
   # get '/china' => 'conferences#china'
   # get '/home-test' => 'welcome#home_test'
 
-  get '/europe/sponsors' => 'sponsors#europe_sponsors'
+  # get '/europe/sponsors' => 'sponsors#europe_sponsors'
   # get '/test' => 'sponsors#test'
   # get '/europe/speakers' => 'speakers#europe'
   # See all redirects in WelcomeController

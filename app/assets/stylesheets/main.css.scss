@@ -501,7 +501,6 @@ body.conferences {
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 }
-
 .conferences h1 {
 	margin-top: 0;
 	margin-bottom: .75em;
@@ -646,11 +645,12 @@ body.conferences header .container .header-buttons {
 .conferences section.newhome-section {
 	@media (max-width: 550px) {
 		padding-top:0;
-}
-
-
+	}
 }
 // end newhome-section
+
+
+
 
 // begin overall structure
 .newhome-container {
@@ -659,9 +659,7 @@ body.conferences header .container .header-buttons {
 	@media (max-width: 960px) {
 		margin-left:10px;
 		margin-right:10px;
-
 	}
-
 }
 // end overall structure
 
@@ -696,10 +694,9 @@ body.conferences header .container .header-buttons {
 	.register-button {
 		display:table;
 		margin:auto;
-	@media (min-width: 767px) {
-
-		margin:2em auto;
-	}
+		@media (min-width: 767px) {
+			margin:2em auto;
+		}
 		a {
 			font-size: 18px;
 			font-weight: 600;
@@ -726,13 +723,11 @@ body.conferences header .container .header-buttons {
 	text-align:center;
 	a {
 		font-weight:600;
-
 	}
 	@media (max-width: 550px) {
 		padding-left:5px;
 		padding-right:5px;
 	}
-
 }
 // end bodytext-3
 
@@ -772,35 +767,24 @@ body.conferences header .container .header-buttons {
 	.hot-topics-list-col {
 		display:table-cell;
 		width:50%;
-
-	@media (max-width: 550px) {
-		display:block;
-		width:auto;
-
-	}
-
+		@media (max-width: 550px) {
+			display:block;
+			width:auto;
+		}
 	}
 	.hot-topics-list-col:first-child {
 		padding-right:30px;
 		padding-top:12px;
-
-	@media (max-width: 550px) {
-
-		padding:0 0 0 5px;
-	}
-
-
-
+		@media (max-width: 550px) {
+			padding:0 0 0 5px;
+		}
 	}
 	.hot-topics-list-col:last-child {
 		padding-left:30px;
 		padding-top:12px;
-
-	@media (max-width: 550px) {
-		padding:0 0 0 5px;
-
-	}
-
+		@media (max-width: 550px) {
+			padding:0 0 0 5px;
+		}
 	}
 }
 // end hot topics
@@ -859,18 +843,14 @@ body.conferences header .container .header-buttons {
 			font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 			>div {
 				display:table;
-
-
 				margin:5px 16px 5px 0 ;
 				width:auto;
 				span{
-
 					display:table-cell;
 					vertical-align:middle;
 					line-height:1em ;
 					-webkit-font-smoothing: antialiased;
 					-moz-osx-font-smoothing: grayscale;
-
 					img  {
 						max-width:62px;
 						margin-right:10px;
@@ -890,25 +870,22 @@ body.conferences header .container .header-buttons {
 	margin-top:1em;
 	display:table;
 	.new-home-col {
-	@media (min-width: 550px) {
-		display:table-cell;
-		vertical-align:top;
-		width:50%;
-
-	}
-
+		@media (min-width: 550px) {
+			display:table-cell;
+			vertical-align:top;
+			width:50%;
+		}
 	}
 	.new-home-col:first-child {
-	@media (min-width: 550px) {
-		padding-right:30px;
-		padding-bottom:20px;
-	}
+		@media (min-width: 550px) {
+			padding-right:30px;
+			padding-bottom:20px;
+		}
 	}
 	.new-home-col:last-child {
-	@media (min-width: 550px) {
-
-		padding-left:30px;
-	}
+		@media (min-width: 550px) {
+			padding-left:30px;
+		}
 	}
 }
 // end new-home columns "A"
@@ -928,22 +905,19 @@ body.conferences header .container .header-buttons {
 		background:#fafafa;
 		border-top:1px solid #ddd;
 		border-bottom:1px solid #ddd;
-
-	@media (min-width: 767px) {
-		width:50%;
-		display:table-cell;
-		margin-bottom:1em;
-
-	}
-
+		@media (min-width: 767px) {
+			width:50%;
+			display:table-cell;
+			margin-bottom:1em;
+		}
 	}
 	.gutter {
 		min-height:1.5em;
-	@media (min-width: 767px) {
-		border:none;
-		background:#fff;
-		width:60px;
-	}
+		@media (min-width: 767px) {
+			border:none;
+			background:#fff;
+			width:60px;
+		}
 	}
 }
 // end new-home columns "B"
@@ -963,40 +937,29 @@ body.conferences header .container .header-buttons {
 		padding-top:.5em;
 		padding-bottom:1em;
 		margin:0;
-
-
 	}
 	.go-to-speakers {
 		text-align:center;
 		padding-bottom:50px;
 		font-size:18px;
-
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-
-
-	a {
-		font-weight:600;
-
-	}
-
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		a {
+			font-weight:600;
+		}
 	}
 	.speakers {
 		display:table;
 		margin:auto;
-
-	@media (max-width: 550px) {
-		margin-left:-25px;
-
-	}
-
+		@media (max-width: 550px) {
+			margin-left:-25px;
+		}
 	}
 	.item {
 		float:left;
 		width:135px;
 		height:290px;
 		margin-left:25px;
-
 		img {
 			max-width:135px;
 		}
@@ -1005,7 +968,6 @@ body.conferences header .container .header-buttons {
 		font-weight:600;
 		padding-top:10px;
 	}
-
 }
 // end keynote-summaries
 
@@ -2251,180 +2213,190 @@ a[href$="ClausLehmann"] {
 	min-height: 300px;
 }
 // ============================================================
-// @sponsors
-.sponsors main section {
-	margin-bottom: 20px;
-}
-.sponsors main .sponsors-main {
-	background: #fff;
+
+
+// begin sponsors
+.sponsors-main {
+	background: white;
+	margin-top: 20px;
+	padding-top: 10px;
 	max-width: 1207px;
 	margin: auto;
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
-	@media (max-width: 960px) {
-		border-left: none;
-		border-right: none;
-	}
-}
-.sponsors-main > .container {
-	@media (max-width: 960px) {
-		padding: 0;
-	}
-}
-.sponsors main .sponsors-main h2 {
-	font-weight: 600;
-}
-.sponsors-intro .sponsorship-packages a {
-	font-size: 16px;
-	font-weight: 500;
-	background: #fff;
-	border: 1px solid #89be2e;
+	overflow: hidden;
 	display: block;
-	width: 247px;
 }
-.sponsors-intro .sponsorship-packages a button {
-	border: none;
-	background: none;
-	padding: 4px 10px;
-}
-.sponsors-intro .sponsorship-packages a:hover {
-	background: #89be2e;
-	color: #fff;
-}
-.sponsors .subhero {
-	font-size: 18px;
-}
-.sponsors main .cols {
-	margin-bottom: 30px;
-}
-.sponsors main .col1 {
-	width: 445px;
-	float: left;
+.sponsors-text-a {
+	max-width:940px;
+	margin: 0 auto 20px auto;
 	@media (max-width: 960px) {
-		float: none;
-		width: auto;
+		margin-left:10px;
+		margin-right:10px;
+	}
+	p {
+		font-size:18px;
+	}
+	.table {
+		display:table;
+		margin-bottom:0;
+		.cell {
+			display:table-cell;
+			vertical-align:top;
+		}
 	}
 }
-.sponsors main .col1 h2 {
-	margin-top: 0;
-	font-size: 20px;
-	font-family: 'Verlag A', 'Verlag B', verlag;
-	font-weight: 600;
-	text-transform: uppercase;
-	margin-top: 40px;
-	margin-bottom: 30px;
-	border-top:2px solid #ddd;
-	border-bottom:1px dotted #ccc;
-	background:#f7f7f7;
-	padding-top:20px;
-	padding-bottom:20px;
-	padding-left:10px;
-	margin-left:-10px;
-	margin-right:4px;
-	@media (max-width: 960px) {
-		margin-left: 16px;
-		margin-right:16px;
-	}
-}
-.sponsors main .col1 h3 {
-	margin-bottom:20px;
-	font-weight:500;
-	font-size:28px;
-}
-// other sponsors
-.sponsor-images {
-	margin-left:-10px;
+.sponsors-text-b {
 	@include clearfix;
+	max-width:940px;
+	margin:30px auto 40px;
+	margin-bottom:60px;
 	@media (max-width: 960px) {
-		display: table;
-		width: auto;
-		border: none;
-		margin-bottom: 0;
+		margin-left:10px;
+		margin-right:10px;
 	}
-}
-.sponsor-images .image-container {
-	border: 1px solid #ddd;
-	margin: 0 0 10px 10px;
-	float: left;
-}
-.sponsor-images .image-container img {
-	display: block;
-	width: 125px;
-	height: 95px;
-	margin: 5px;
-}
-.sponsors-other {
-	@media (max-width: 960px) {
-		margin-left:15px;
+	p {
+		font-size:18px;
 	}
-}
-// ! this is a divider being applied to the "Past Sponsors" only on the page
-// where this section comes below the Gold, Silver, Other, etc. Sponsors
-.sponsors-past {
-	h2 {
-		border-top:1px solid #bbb;
-		padding-top:20px;
-		@media (max-width: 960px) {
-			margin-right:15px;
-		}
-	}
-}
-.sponsors-past section {
-	@media (max-width: 960px) {
-		padding-left:15px;
-	}
-}
-// highlevel sponsors
-.sponsors-highlevel {
-	@media (max-width: 960px) {
-		margin-left:15px;
-	}
-	.sponsor-images {
-		margin-left:-17px;
-		@include clearfix;
-		@media (max-width: 960px) {
-			display: table;
-			width: auto;
-			border: none;
-			margin-bottom: 0;
-		}
-	}
-	.sponsor-images .image-container {
-		border: 1px solid #ddd;
-		margin: 0 0 17px 17px;
-		float: left;
-	}
-	.sponsor-images .image-container img {
-		display: block;
-		width: 195px;
-		height: 148px;
-		margin: 5px;
-	}
-}
-// col 2
-.sponsors main .col2 {
-	width: 420px;
-	float: right;
-	@media (max-width: 960px) {
-		padding-left: 15px;
-		padding-right: 15px;
-		width: auto;
-		float: none;
-	}
-}
-.sponsors main .col2 h2 {
-	margin-top: 38px;
-}
-// Modal sponsors
-.modal-sponsor-image {
-	max-width:160px;
-	border: 1px solid #ddd;
-	margin-bottom:20px;
 }
 .sponsorship-packages {
-	padding-top:20px;
-	padding-bottom:20px;
+	float:left;
+	margin-top:30px;
+	a {
+		font-size: 16px;
+		display:block;
+		font-weight: 500;
+		background: #fff;
+		border: 1px solid #89be2e;
+		white-space:nowrap;
+		button {
+			border: none;
+			background: none;
+			padding: 4px 10px;
+		}
+	}
 }
+
+
+// begin sponsors-a
+.sponsors-a {
+	.grouping {
+		max-width: 940px;
+		margin: auto;
+		background:#f7f7f7;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.grouping-platinum {
+		background:#eee;
+	}
+	.grouping-gold {
+		background:#f5f5f5;
+	}
+	.grouping-silver {
+		background:#f7f7f7;
+	}
+	.header {
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		text-align: left;
+		font-weight: 500;
+		font-size: 32px;
+		padding-bottom:5px;
+		margin-top: 4px;
+		padding-top:8px;
+		text-shadow: 1px 1px 0 #fff;
+	}
+	.group {
+		padding-bottom:8px;
+		display:table;
+	}
+	.item {
+		display:inline;
+	}
+	.item a {
+		margin:4px;
+		background-color: #fff;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+		display: inline-block;
+		width:282px;
+		height: 142px;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.2) ;
+	}
+	.item a:hover {
+		box-shadow:0 0 1px #000;
+	}
+}
+// end sponsors-a
+
+
+
+
+// begin sponsors-b
+.sponsors-b-header {
+	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+	font-weight: 500;
+	font-size: 32px;
+	padding-bottom:5px;
+	margin-top: 4px;
+	padding-top:8px;
+	text-shadow: 1px 1px 0 #fff;
+}
+.sponsors-b {
+	max-width:940px;
+	margin:auto;
+	background:#f7f7f7;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	.grouping {
+		display:inline;
+	}
+	.sponsor-section {
+		display:inline;
+	}
+	.header {
+		display:none;
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-size: 28px;
+		font-weight: 400;
+		margin-top: 4px;
+		padding-bottom:10px;
+		text-shadow: 1px 1px 0 #fff;
+	}
+	.group {
+		display:inline;
+	}
+	.item {
+		display:inline-block;
+		margin:0;
+	}
+	.item a {
+		background-color: #fff;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+		margin:5px;
+		border:1px solid #ddd;
+		display: block;
+		height: 132px;
+		width: 200px;
+	}
+	.item a:hover {
+		background-color: white;
+		border-color:#89be2e;
+	}
+	.item {
+		display: inline-block;
+	}
+}
+// end sponsors-b
+
+
+// end SPONSORS
+
+
 // ============================================================
 .homepage-container {
 	width: 940px;

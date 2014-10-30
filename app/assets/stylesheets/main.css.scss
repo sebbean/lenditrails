@@ -2355,16 +2355,16 @@ a[href$="ClausLehmann"] {
 		display:inline;
 	}
 	.sponsor-section {
-		display:inline;
+		display:inline-block;
 	}
 	.header {
-		display:none;
-		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-		font-size: 28px;
-		font-weight: 400;
-		margin-top: 4px;
-		padding-bottom:10px;
-		text-shadow: 1px 1px 0 #fff;
+		font-size:24px;
+		font-weight:500;
+		margin-bottom:0;
+		margin-left:4px;
+		font-family: 'Verlag Comp A', 'Verlag Comp B', 'verlag compressed';
+		
+		
 	}
 	.group {
 		display:inline-block;
@@ -2404,19 +2404,7 @@ a[href$="ClausLehmann"] {
 	.sponsors-b-header {
 		display:none;
 	}
-	.group:before {
-		content:"";
-		display:block;
-		font-size:24px;
-		font-weight:500;
-		margin-bottom:0;
-		margin-left:4px;
-		font-family: 'Verlag Comp A', 'Verlag Comp B', 'verlag compressed';
-	}
-	.cocktail .group:before { content: "Cocktail Party Sponsors"; }
-	.breakfast .group:before { content: "Breakfast Sponsor"; }
-	.lunch .group:before { content: "Lunch Sponsor"; }
-	.smartphone .group:before { content: "Smartphone Sponsor"; }
+	
 }
 // end Other
 
@@ -2430,6 +2418,7 @@ a[href$="ClausLehmann"] {
 	.sponsors-b-header {
 		padding-top:0;
 		display:block;
+		display:none;
 		font-size:24px;
 		font-weight:500;
 		margin-bottom:0;

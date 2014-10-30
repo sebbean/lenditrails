@@ -1185,6 +1185,7 @@ body.conferences header .container .header-buttons {
 }
 // button recap
 .button-recap {
+
 	margin-top: 10px;
 	background: rgba(0, 0, 0, 0.3);
 	@media (max-width: 960px) {
@@ -1619,16 +1620,6 @@ body.conferences header .container .header-buttons {
 	}
 }
 .current-speakers a.current-speaker:nth-of-type(39) {
-	@media (min-width: 960px) {
-		margin-right:0;
-	}
-}
-.current-speakers a.current-speaker:nth-of-type(42) {
-	@media (min-width: 960px) {
-		margin-right:0;
-	}
-}
-.current-speakers a.current-speaker:nth-of-type(45) {
 	@media (min-width: 960px) {
 		margin-right:0;
 	}
@@ -2379,16 +2370,16 @@ a[href$="ClausLehmann"] {
 		display:inline;
 	}
 	.sponsor-section {
-		display:inline;
+		display:inline-block;
 	}
 	.header {
-		display:none;
-		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-		font-size: 28px;
-		font-weight: 400;
-		margin-top: 4px;
-		padding-bottom:10px;
-		text-shadow: 1px 1px 0 #fff;
+		font-size:24px;
+		font-weight:500;
+		margin-bottom:0;
+		margin-left:4px;
+		font-family: 'Verlag Comp A', 'Verlag Comp B', 'verlag compressed';
+
+
 	}
 	.group {
 		display:inline-block;
@@ -2418,6 +2409,9 @@ a[href$="ClausLehmann"] {
 }
 // end sponsors-b
 
+
+
+
 // begin Other
 .other {
 	margin-top:4px;
@@ -2425,56 +2419,39 @@ a[href$="ClausLehmann"] {
 	.sponsors-b-header {
 		display:none;
 	}
-	.group:before {
-		content:"";
-		display:block;
-		font-size:24px;
-		font-weight:500;
-		margin-bottom:0;
-		margin-left:4px;
-			font-family: 'Verlag Comp A', 'Verlag Comp B', 'verlag compressed';
-
-	}
-	.cocktail .group:before { content: "Cocktail Party Sponsors"; }
-	.breakfast .group:before { content: "Breakfast Sponsor"; }
-	.lunch .group:before { content: "Lunch Sponsor"; }
-	.smartphone .group:before { content: "Smartphone Sponsor"; }
-	.media .group:before { content: "Media Partner"; }
-	.networking .group:before { content: "Networking Break Sponsor"; }
 
 }
-
 // end Other
+
+
 
 
 // begin Exhibitors
 .exhib {
 	margin-top:4px;
 	padding-top:12px;
-.sponsors-b-header {
-	padding-top:0;
+	.sponsors-b-header {
+		padding-top:0;
 		display:block;
+		display:none;
 		font-size:24px;
 		font-weight:500;
 		margin-bottom:0;
 		margin-left:4px;
-			font-family: 'Verlag Comp A', 'Verlag Comp B', 'verlag compressed';
-
-
+		font-family: 'Verlag Comp A', 'Verlag Comp B', 'verlag compressed';
+	}
 }
-}
-
 // end Exhibitors
 
 
+
+
 // begin MODAL styles
-
-		 .modal-sponsor-image {
-			 max-width:160px;
-		 }
-
-
+.modal-sponsor-image {
+	max-width:160px;
+}
 // end MODAL styles
+
 
 // end SPONSORS
 
@@ -2505,6 +2482,7 @@ a[href$="ClausLehmann"] {
 	}
 }
 .homepage-recap-area {
+
 	padding-left:10px;
 	padding-right:10px;
 	@media (min-width: 1017px) {
@@ -2535,6 +2513,7 @@ a[href$="ClausLehmann"] {
 	border-left:1px solid #ccc;
 	border-right:1px solid #ccc;
 }
+// begin homepage hero
 .homepage .hero {
 	display:table;
 	width:100%;
@@ -2559,7 +2538,7 @@ a[href$="ClausLehmann"] {
 		display:block;
 	}
 	li {
-		background-size:366px;
+		background-size:cover;
 		background-position:center center;
 		background-repeat:no-repeat;
 		display:table-cell;
@@ -2621,6 +2600,7 @@ a[href$="ClausLehmann"] {
 		}
 	}
 }
+// end homepage hero
 .homepage .conf-name {
 	font-size:38px;
 	font-weight:600;
@@ -2707,7 +2687,7 @@ a[href$="ClausLehmann"] {
 			position:absolute;
 			right:0;
 			bottom:0;
-			opacity:0;
+			opacity:1;
 		}
 		&:hover {
 			opacity:1;

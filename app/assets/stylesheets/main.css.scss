@@ -1185,6 +1185,7 @@ body.conferences header .container .header-buttons {
 }
 // button recap
 .button-recap {
+	
 	margin-top: 10px;
 	background: rgba(0, 0, 0, 0.3);
 	@media (max-width: 960px) {
@@ -2393,6 +2394,9 @@ a[href$="ClausLehmann"] {
 }
 // end sponsors-b
 
+
+
+
 // begin Other 
 .other {
 	margin-top:4px;
@@ -2407,47 +2411,43 @@ a[href$="ClausLehmann"] {
 		font-weight:500;
 		margin-bottom:0;
 		margin-left:4px;
-			font-family: 'Verlag Comp A', 'Verlag Comp B', 'verlag compressed';
-		
+		font-family: 'Verlag Comp A', 'Verlag Comp B', 'verlag compressed';
 	}
 	.cocktail .group:before { content: "Cocktail Party Sponsors"; }
 	.breakfast .group:before { content: "Breakfast Sponsor"; }
 	.lunch .group:before { content: "Lunch Sponsor"; }
 	.smartphone .group:before { content: "Smartphone Sponsor"; }
-
 }
-
 // end Other
+
+
 
 
 // begin Exhibitors 
 .exhib {
 	margin-top:4px;
 	padding-top:12px;
-.sponsors-b-header {
-	padding-top:0;
+	.sponsors-b-header {
+		padding-top:0;
 		display:block;
 		font-size:24px;
 		font-weight:500;
 		margin-bottom:0;
 		margin-left:4px;
-			font-family: 'Verlag Comp A', 'Verlag Comp B', 'verlag compressed';
-		
-
+		font-family: 'Verlag Comp A', 'Verlag Comp B', 'verlag compressed';
+	}
 }
-}
-
 // end Exhibitors
 
 
+
+
 // begin MODAL styles
-
-		 .modal-sponsor-image {
-			 max-width:160px;
-		 }
-
-
+.modal-sponsor-image {
+	max-width:160px;
+}
 // end MODAL styles
+
 
 // end SPONSORS
 
@@ -2478,6 +2478,7 @@ a[href$="ClausLehmann"] {
 	}
 }
 .homepage-recap-area {
+	
 	padding-left:10px;
 	padding-right:10px;
 	@media (min-width: 1017px) {
@@ -2508,6 +2509,7 @@ a[href$="ClausLehmann"] {
 	border-left:1px solid #ccc;
 	border-right:1px solid #ccc;
 }
+// begin homepage hero 
 .homepage .hero {
 	display:table;
 	width:100%;
@@ -2532,7 +2534,7 @@ a[href$="ClausLehmann"] {
 		display:block;
 	}
 	li {
-		background-size:366px;
+		background-size:cover;
 		background-position:center center;
 		background-repeat:no-repeat;
 		display:table-cell;
@@ -2594,6 +2596,7 @@ a[href$="ClausLehmann"] {
 		}
 	}
 }
+// end homepage hero 
 .homepage .conf-name {
 	font-size:38px;
 	font-weight:600;
@@ -2680,7 +2683,7 @@ a[href$="ClausLehmann"] {
 			position:absolute;
 			right:0;
 			bottom:0;
-			opacity:0;
+			opacity:1;
 		}
 		&:hover {
 			opacity:1;

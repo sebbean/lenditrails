@@ -8,8 +8,8 @@
 			<div class="table">
 				<div class="cell">
 			<h1>LendIt Europe Sponsors</h1>
-			<p>The following sponsors have been confirmed for LendIt Europe 2014.&nbsp; 
-			<a href="#" style="font-weight:500; "><span class="fa fa-arrow-circle-o-down"></span> More info below  </a></p>
+			<p>The following sponsors have been confirmed for LendIt Europe 2014.&nbsp;
+			<a href="#more-sponsors-info" style="font-weight:500; "><span class="fa fa-arrow-circle-o-down"></span> More info below  </a></p>
 				</div>
 				<div class="cell">
 				</div>
@@ -211,7 +211,7 @@
 						<% if @cocktails.any? %>
 							<div class="sponsor-section cocktail">
 								<div class="header">
-									Cocktail Party 
+									Cocktail Party
 								</div>
 								<div class="group">
 									<% @cocktails.each do |sponsor| %>
@@ -300,7 +300,7 @@
 								<% if @breakfast.any? %>
 									<div class="sponsor-section breakfast">
 										<div class="header">
-											Breakfast 
+											Breakfast
 										</div>
 										<div class="group">
 											<% @breakfast.each do |sponsor| %>
@@ -346,7 +346,7 @@
 								<% if @lunch.any? %>
 									<div class="sponsor-section lunch">
 										<div class="header">
-												Lunch 
+												Lunch
 										</div>
 										<div class="group">
 											<% @lunch.each do |sponsor| %>
@@ -385,14 +385,100 @@
 								<% end %>
 								<!-- end lunch -->
 
+
+								<!-- begin networking break -->
+								<% if @networking.any? %>
+									<div class="sponsor-section lunch">
+										<div class="header">
+												Networking Break
+										</div>
+										<div class="group">
+											<% @networking.each do |sponsor| %>
+												<div class="item">
+													<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)">
+													</a>
+
+
+													<!-- begin bio -->
+													<div style="/*temp styles*/display:none;" class="speaker-bio">
+														<div id="sponsor-<%= sponsor.id %>" class="speaker-container">
+															<div class="speaker-colorbox-title">Sponsors</div>
+															<div class="speaker-top-info">
+																<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
+																<div class="speaker-name">LendIt Europe</div>
+																<div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
+																<% if sponsor.url != nil %>
+																	<div class="speaker-company">
+																		<a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
+																	</div>
+																<% end %>
+															</div>
+															<div class="speaker-bio-text">
+																<div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
+															</div>
+															<div class="speaker-bio-mask"></div>
+														</div>
+													</div>
+													<!-- end bio -->
+
+
+												</div>
+											<% end %>
+										</div>
+									</div>
+								<% end %>
+								<!-- end networking break -->
+
+								<!-- begin networking break -->
+								<% if @networking.any? %>
+									<div class="sponsor-section lunch">
+										<div class="header">
+												Media Partner
+										</div>
+										<div class="group">
+											<% @media.each do |sponsor| %>
+												<div class="item">
+													<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)">
+													</a>
+
+
+													<!-- begin bio -->
+													<div style="/*temp styles*/display:none;" class="speaker-bio">
+														<div id="sponsor-<%= sponsor.id %>" class="speaker-container">
+															<div class="speaker-colorbox-title">Sponsors</div>
+															<div class="speaker-top-info">
+																<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
+																<div class="speaker-name">LendIt Europe</div>
+																<div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
+																<% if sponsor.url != nil %>
+																	<div class="speaker-company">
+																		<a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
+																	</div>
+																<% end %>
+															</div>
+															<div class="speaker-bio-text">
+																<div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
+															</div>
+															<div class="speaker-bio-mask"></div>
+														</div>
+													</div>
+													<!-- end bio -->
+
+
+												</div>
+											<% end %>
+										</div>
+									</div>
+								<% end %>
+								<!-- end networking break -->
 								</div>
 							</div>
 				<div class="sponsors-b exhib">
 					<div class="sponsors-b-header">Exhibitors</div>
-					
+
 					<div class="grouping">
 
-							
+
 
 
 
@@ -442,15 +528,15 @@
 						</div>
 						<!-- end SPONSORS-B -->
 
-						<div class="sponsors-text-b">
+						<div id="more-sponsors-info" class="sponsors-text-b">
 						<p> LendIt sponsors receive extensive brand exposure to a core audience of prominent industry insiders and investment professionals through a powerful combination of multiple media including: web presence, webcasts, e-marketing campaigns, print advertising, widespread on-site recognition, signage, event giveaways and program exposure. Sponsorship opportunities are enjoyed before, during and after the event. Brand sponsorship is open to financial, legal technology and professional service firms in addition to high-end consumer brands. </p>
 						<p> LendIt provides industry participants the opportunity to showcase their products and services at LendIt’s acclaimed exhibit hall, which is a focal point for extensive participant interaction. This is the ideal opportunity for market leaders and new entrants alike to exhibit to fund managers, asset allocators, family offices, venture capitalists, individual investors, industry veterans and members of the financial media. </p>
 						<p> For more information on sponsorship and exhibitor opportunities, please email <a href="mailto:info@lendit.co">info@lendit.co</a>. </p>
 
 					<div class="sponsorship-packages"><a href="/assets/LendIt-Europe-Sponsorship-Packages.pdf" target="_new"><button>Download Sponsorship Packages</button></a></div>
-						
-						
+
+
 					</div>
 
 					</main>
-					
+

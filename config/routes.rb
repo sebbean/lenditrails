@@ -3,13 +3,13 @@ LenditRails::Application.routes.draw do
   root 'conferences#europe'
   # root 'welcome#home'
   get '/about' => 'welcome#about'
-  get '/sponsors' => 'sponsors#index'
   get '/speakers' => 'speakers#index'
   get '/speakers/sign-up' => 'speakers#sign-up'
   get '/speakers/thank-you' => 'speakers#thank-you'
   get '/terms-of-use' => 'welcome#terms-of-use'
   get '/privacy' => 'welcome#privacy'
   get '/europe/attendees' => 'welcome#attendees'
+  get '/sponsors' => 'sponsors#europe_sponsors'
 
   # 301 redirects with GA tracking codes
   get '/sharecast' => 'conferences#sharecast'
@@ -17,13 +17,13 @@ LenditRails::Application.routes.draw do
 
 
 
+  # get '/europe/sponsors' => 'sponsors#europe_sponsors'
   # get '/europe-test' => 'conferences#europe_test'
   # get '/home' => 'welcome#home'
   # get '/nyc' => 'conferences#nyc'
   # get '/china' => 'conferences#china'
   # get '/home-test' => 'welcome#home_test'
 
-   # get '/europe/sponsors' => 'sponsors#europe_sponsors'
   # get '/test' => 'sponsors#test'
   # get '/europe/speakers' => 'speakers#europe'
   # See all redirects in WelcomeController

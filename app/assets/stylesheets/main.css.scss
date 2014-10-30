@@ -1185,7 +1185,7 @@ body.conferences header .container .header-buttons {
 }
 // button recap
 .button-recap {
-	
+
 	margin-top: 10px;
 	background: rgba(0, 0, 0, 0.3);
 	@media (max-width: 960px) {
@@ -1605,6 +1605,22 @@ body.conferences header .container .header-buttons {
 	}
 }
 .current-speakers a.current-speaker:nth-of-type(30) {
+	@media (min-width: 960px) {
+		margin-right:0;
+	}
+.current-speakers a.current-speaker:nth-of-type(33) {
+	@media (min-width: 960px) {
+		margin-right:0;
+	}
+.current-speakers a.current-speaker:nth-of-type(36) {
+	@media (min-width: 960px) {
+		margin-right:0;
+	}
+.current-speakers a.current-speaker:nth-of-type(39) {
+	@media (min-width: 960px) {
+		margin-right:0;
+	}
+.current-speakers a.current-speaker:nth-of-type(42) {
 	@media (min-width: 960px) {
 		margin-right:0;
 	}
@@ -2363,8 +2379,8 @@ a[href$="ClausLehmann"] {
 		margin-bottom:0;
 		margin-left:4px;
 		font-family: 'Verlag Comp A', 'Verlag Comp B', 'verlag compressed';
-		
-		
+
+
 	}
 	.group {
 		display:inline-block;
@@ -2397,21 +2413,21 @@ a[href$="ClausLehmann"] {
 
 
 
-// begin Other 
+// begin Other
 .other {
 	margin-top:4px;
 	padding-top:12px;
 	.sponsors-b-header {
 		display:none;
 	}
-	
+
 }
 // end Other
 
 
 
 
-// begin Exhibitors 
+// begin Exhibitors
 .exhib {
 	margin-top:4px;
 	padding-top:12px;
@@ -2467,7 +2483,7 @@ a[href$="ClausLehmann"] {
 	}
 }
 .homepage-recap-area {
-	
+
 	padding-left:10px;
 	padding-right:10px;
 	@media (min-width: 1017px) {
@@ -2498,7 +2514,7 @@ a[href$="ClausLehmann"] {
 	border-left:1px solid #ccc;
 	border-right:1px solid #ccc;
 }
-// begin homepage hero 
+// begin homepage hero
 .homepage .hero {
 	display:table;
 	width:100%;
@@ -2585,7 +2601,7 @@ a[href$="ClausLehmann"] {
 		}
 	}
 }
-// end homepage hero 
+// end homepage hero
 .homepage .conf-name {
 	font-size:38px;
 	font-weight:600;

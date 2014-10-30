@@ -1609,6 +1609,33 @@ body.conferences header .container .header-buttons {
 		margin-right:0;
 	}
 }
+.current-speakers a.current-speaker:nth-of-type(33) {
+	@media (min-width: 960px) {
+		margin-right:0;
+	}
+}
+.current-speakers a.current-speaker:nth-of-type(36) {
+	@media (min-width: 960px) {
+		margin-right:0;
+	}
+}
+.current-speakers a.current-speaker:nth-of-type(39) {
+	@media (min-width: 960px) {
+		margin-right:0;
+	}
+}
+.current-speakers a.current-speaker:nth-of-type(42) {
+	@media (min-width: 960px) {
+		margin-right:0;
+	}
+}
+.current-speakers a.current-speaker:nth-of-type(45) {
+	@media (min-width: 960px) {
+		margin-right:0;
+	}
+}
+
+
 .current-speakers a.current-speaker .speaker .speaker-top {
 	@include clearfix;
 }

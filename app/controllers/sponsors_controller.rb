@@ -13,6 +13,7 @@ class SponsorsController < ApplicationController
     @smartphone = @europe_sponsors.where(sponsor_level: 'Smartphone App')
     @breakfast = @europe_sponsors.where(sponsor_level: 'Breakfast')
     @lunch = @europe_sponsors.where(sponsor_level: 'Lunch')
+    @media = @europe_sponsors.where(sponsor_level: 'Media Partner')
     @exhibitor = @europe_sponsors.where(sponsor_level: 'Exhibitor')
     @other_sponsors = @europe_sponsors.where(sponsor_level: 'Other')
     @past_sponsors = Sponsor.where(conference: 'LendIt 2014')

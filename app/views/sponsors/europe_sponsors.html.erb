@@ -202,21 +202,21 @@
 
 
 				<!-- begin SPONSORS-B -->
-				<div class="sponsors-b">
+				<div class="sponsors-b other">
 					<div class="sponsors-b-header">Other</div>
 					<div class="grouping">
 
 
 						<!-- begin cocktails -->
 						<% if @cocktails.any? %>
-							<div class="sponsor-section">
+							<div class="sponsor-section cocktail">
 								<div class="header">
 									Cocktail Party 
 								</div>
 								<div class="group">
 									<% @cocktails.each do |sponsor| %>
 										<div class="item">
-											<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)">
+											<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)"></a>
 
 
 												<!-- begin bio -->
@@ -254,12 +254,12 @@
 
 							<!-- begin smartphone -->
 							<% if @smartphone.any? %>
-								<div class="sponsor-section">
+								<div class="sponsor-section smartphone">
 									<div class="header"> Smartphone App  </div>
 									<div class="group">
 										<% @smartphone.each do |sponsor| %>
 											<div class="item">
-												<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)">
+												<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)"></a>
 
 
 													<!-- begin bio -->
@@ -298,7 +298,7 @@
 
 								<!-- begin breakfast -->
 								<% if @breakfast.any? %>
-									<div class="sponsor-section">
+									<div class="sponsor-section breakfast">
 										<div class="header">
 											Breakfast 
 										</div>
@@ -344,7 +344,7 @@
 
 								<!-- begin lunch -->
 								<% if @lunch.any? %>
-									<div class="sponsor-section">
+									<div class="sponsor-section lunch">
 										<div class="header">
 												Lunch 
 										</div>
@@ -385,6 +385,14 @@
 								<% end %>
 								<!-- end lunch -->
 
+								</div>
+							</div>
+				<div class="sponsors-b exhib">
+					<div class="sponsors-b-header">Exhibitors</div>
+					
+					<div class="grouping">
+
+							
 
 
 

@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '1.9.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
@@ -39,7 +39,9 @@ end
 
 gem 'canonical-rails', github: 'jumph4x/canonical-rails'
 
-ruby '1.9.3'
+
+gem 'devise'
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 # gem 'font-awesome-sass'
 

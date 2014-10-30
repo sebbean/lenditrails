@@ -1,5 +1,8 @@
 LenditRails::Application.routes.draw do
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  devise_for :users
   root 'conferences#europe'
   # root 'welcome#home'
   get '/about' => 'welcome#about'
@@ -22,7 +25,7 @@ LenditRails::Application.routes.draw do
   # get '/home' => 'welcome#home'
   # get '/nyc' => 'conferences#nyc'
   # get '/china' => 'conferences#china'
-  # get '/home-test' => 'welcome#home_test'
+   get '/home-test' => 'welcome#home_test'
 
   # get '/test' => 'sponsors#test'
   # get '/europe/speakers' => 'speakers#europe'

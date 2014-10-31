@@ -9,7 +9,7 @@ LenditRails::Application.routes.draw do
   get '/terms-of-use' => 'welcome#terms-of-use'
   get '/privacy' => 'welcome#privacy'
   get '/europe/attendees' => 'welcome#europe14_attendees'
-  get '/lendit-2014/attendees' => 'welcome#sf14_attendees'
+  get '/san-francisco-2014/attendees' => 'welcome#sf14_attendees'
   get '/sponsors' => 'sponsors#europe_sponsors'
 
   # 301 redirects with GA tracking codes

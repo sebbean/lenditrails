@@ -1,7 +1,8 @@
 ActiveAdmin.register Speaker do
 
-	show do
-		render 'herd/assets/uploader'
+	show do |speaker|
+
+		render 'herd/assets/uploader', {object: speaker}
 	end
 
   # See permitted parameters documentation:

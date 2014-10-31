@@ -709,6 +709,11 @@ body.conferences header .container .header-buttons {
 		}
 	}
 }
+
+.newhome-container .bodytext-2 .register-button a:hover {
+	background: #89be2e;
+	color: #fff;
+}
 // end bodytext-2
 
 
@@ -2286,6 +2291,10 @@ a[href$="ClausLehmann"] {
 	p {
 		font-size:18px;
 	}
+}
+.sponsors-text-b a:hover {
+	background: #89be2e;
+	color: #fff;
 }
 .sponsorship-packages {
 	float:left;

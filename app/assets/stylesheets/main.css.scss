@@ -1226,10 +1226,10 @@ body.conferences header .container .header-buttons {
 		border-top:1px solid #ddd;
 		border-bottom:1px solid #ddd;
 		text-align:center;
-		
+
 		padding-top:6px;
 		padding-bottom:6px;
-		
+
 	}
 
 	p {
@@ -1244,7 +1244,7 @@ body.conferences header .container .header-buttons {
 		li {
 		font-size: 18px;
 		margin-bottom:8px;
-			
+
 		}
 	}
 }
@@ -1258,7 +1258,7 @@ body.conferences header .container .header-buttons {
 	ul:nth-of-type(1) {
 		margin-bottom:2em;
 	}
-	
+
 }
 
 
@@ -1276,13 +1276,13 @@ body.conferences header .container .header-buttons {
 			display:table-cell;
 			vertical-align:top;
 			width:50%;
-			
+
 		}
 		@media (max-width: 550px) {
 			margin-bottom:2em;
-			
+
 		}
-		
+
 	}
 	.nyc-home-col:first-child {
 		@media (min-width: 550px) {
@@ -2881,6 +2881,7 @@ a[href$="ClausLehmann"] {
 // begin MODAL styles
 .modal-sponsor-image {
 	max-width:160px;
+	border: 1px solid #DDDDDD;
 }
 // end MODAL styles
 

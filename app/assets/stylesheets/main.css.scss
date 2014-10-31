@@ -2493,6 +2493,10 @@ a[href$="ClausLehmann"] {
 	}
 }
 .homepage-main-text {
+	@media (min-width: 750px) {
+	padding-right:30px;
+}
+
 	padding-left:10px;
 	@media (min-width: 1017px) {
 		padding-left:0;

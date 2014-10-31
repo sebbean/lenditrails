@@ -389,17 +389,13 @@
 								<!-- begin networking break -->
 								<% if @networking.any? %>
 									<div class="sponsor-section networking">
-
 										<div class="header">
 												Networking Break
 										</div>
 										<div class="group">
 											<% @networking.each do |sponsor| %>
 												<div class="item">
-													<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)">
-													</a>
-
-
+													<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)"> </a>
 													<!-- begin bio -->
 													<div style="/*temp styles*/display:none;" class="speaker-bio">
 														<div id="sponsor-<%= sponsor.id %>" class="speaker-container">
@@ -432,17 +428,14 @@
 
 								<!-- begin media partner -->
 								<% if @media.any? %>
-									<div class="sponsor-section media">
+									<div class="sponsor-section ">
 										<div class="header">
 												Media Partner
 										</div>
 										<div class="group">
 											<% @media.each do |sponsor| %>
 												<div class="item">
-													<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)">
-													</a>
-
-
+													<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)"> </a>
 													<!-- begin bio -->
 													<div style="/*temp styles*/display:none;" class="speaker-bio">
 														<div id="sponsor-<%= sponsor.id %>" class="speaker-container">

@@ -2692,6 +2692,9 @@ a[href$="ClausLehmann"] {
 	max-width:940px;
 	margin:30px auto 40px;
 	margin-bottom:60px;
+	h3 {
+		font-weight:600;
+	}
 	@media (max-width: 960px) {
 		margin-left:10px;
 		margin-right:10px;
@@ -2767,10 +2770,10 @@ a[href$="ClausLehmann"] {
 		display: inline-block;
 		width:282px;
 		height: 142px;
-		box-shadow: 0 0 1px rgba(0, 0, 0, 0.2) ;
+		border:1px solid #ddd;
 	}
 	.item a:hover {
-		box-shadow:0 0 1px #000;
+		border-color:#89be2e;
 	}
 }
 // end sponsors-a

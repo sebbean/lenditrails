@@ -1276,7 +1276,13 @@ body.conferences header .container .header-buttons {
 			display:table-cell;
 			vertical-align:top;
 			width:50%;
+			
 		}
+		@media (max-width: 550px) {
+			margin-bottom:2em;
+			
+		}
+		
 	}
 	.nyc-home-col:first-child {
 		@media (min-width: 550px) {

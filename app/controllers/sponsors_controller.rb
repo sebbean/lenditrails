@@ -17,6 +17,9 @@ class SponsorsController < ApplicationController
     @media = @europe_sponsors.where(sponsor_level: 'Media Partner')
     @exhibitor = @europe_sponsors.where(sponsor_level: 'Exhibitor')
     @other_sponsors = @europe_sponsors.where(sponsor_level: 'Other')
+  end
+
+  def lendit2014
     @past_sponsors = Sponsor.where(conference: 'LendIt 2014')
   end
 

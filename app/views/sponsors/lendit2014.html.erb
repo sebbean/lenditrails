@@ -4,49 +4,17 @@
 <%= canonical_tag -%>
 
 <main class="sponsors-page">
-	<div class="sponsors-main">
-		<div class="sponsors-text-a">
-			<div class="table">
-				<div class="cell">
-					<h1>LendIt 2014 Sponsors</h1>
-				</div>
-				<div class="cell">
-				</div>
-			</div>
-		</div>
+  <div class="sponsors-main">
+    <h1>LendIt 2014 Sponsors</h1>
 
+    <section class="past-sponsors">
 
+      <% @past_sponsors.each do |sponsor| %>
 
+        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
 
+      <% end %>
+    </section>
 
-		<!-- begin SPONSORS-B -->
-
-
-		<div class="sponsors-b exhib">
-			<div class="sponsors-b-header"></div>
-
-
-			<!-- begin past sponsors -->
-			<div class="sponsor-section">
-				<div class="header"></div>
-				<div class="group">
-
-					<% @past_sponsors.each do |sponsor| %>
-					<div class="item">
-						<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)">
-						</a>
-					</div>
-					<% end %>
-
-				</div>
-			</div>
-
-			<!-- end past sponsors -->
-
-
-		</div>
-		<!-- end SPONSORS-B -->
-
-
-	</div>
+  </div>
 </main>

@@ -16,8 +16,8 @@ LenditRails::Application.routes.draw do
   get '/sharecast' => 'conferences#sharecast'
   get '/europe' => 'conferences#europe'
 
-  get '/home' => 'welcome#home'
-  get '/nyc' => 'conferences#nyc'
+  # get '/home' => 'welcome#home'
+  # get '/nyc' => 'conferences#nyc'
   get '/san-francisco-2014/sponsors' => 'sponsors#lendit2014'
 
   # get '/europe/sponsors' => 'sponsors#europe_sponsors'

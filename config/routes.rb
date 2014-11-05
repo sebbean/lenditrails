@@ -16,16 +16,16 @@ LenditRails::Application.routes.draw do
   get '/sharecast' => 'conferences#sharecast'
   get '/europe' => 'conferences#europe'
 
-  # get '/home' => 'welcome#home'
-  # get '/nyc' => 'conferences#nyc'
-  # get '/san-francisco-2014/sponsors' => 'sponsors#lendit2014'
+  get '/home' => 'welcome#home'
+  get '/nyc' => 'conferences#nyc'
+  get '/san-francisco-2014/sponsors' => 'sponsors#lendit2014'
 
   # get '/europe/sponsors' => 'sponsors#europe_sponsors'
   # get '/europe-test' => 'conferences#europe_test'
   # get '/china' => 'conferences#china'
   # get '/home-test' => 'welcome#home_test'
 
-  # get '/test' => 'sponsors#test'
+  get '/test' => 'sponsors#test'
   # get '/europe/speakers' => 'speakers#europe'
   # See all redirects in WelcomeController
   # 301 redirects from old WP site

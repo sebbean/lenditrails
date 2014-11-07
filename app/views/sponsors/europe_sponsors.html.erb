@@ -428,6 +428,50 @@
 						<!-- end webcast break -->
 
 
+						<!-- begin wifi -->
+						<% if @networking.any? %>
+							<div class="sponsor-section wifi">
+								<div class="header">
+									Wifi
+								</div>
+								<div class="group">
+									<% @wifi.each do |sponsor| %>
+										<div class="item">
+											<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)"> </a>
+
+
+											<!-- begin bio -->
+											<div style="/*temp styles*/display:none;" class="speaker-bio">
+												<div id="sponsor-<%= sponsor.id %>" class="speaker-container">
+													<div class="speaker-colorbox-title">Sponsors</div>
+													<div class="speaker-top-info">
+														<img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
+														<div class="speaker-name">LendIt Europe</div>
+														<div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
+														<% if sponsor.url != nil %>
+															<div class="speaker-company">
+																<a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
+															</div>
+														<% end %>
+													</div>
+													<div class="speaker-bio-text">
+														<div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
+													</div>
+													<div class="speaker-bio-mask"></div>
+												</div>
+											</div>
+											<!-- end bio -->
+
+
+										</div>
+									<% end %>
+								</div>
+							</div>
+						<% end %>
+						<!-- end wifi -->
+
+
+
 						<!-- begin networking break -->
 						<% if @networking.any? %>
 							<div class="sponsor-section networking">

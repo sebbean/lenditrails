@@ -2029,6 +2029,15 @@ a[href$="ClausLehmann"] {
 		font-size:20px;
 	}
 }
+a[href$="DanielRajkumar"] {
+	.speaker-company {
+		font-size:20px;
+		font-family: 'Verlag Comp A', 'Verlag Comp B', 'verlag compressed';
+		
+
+	}
+}
+
 .current-speakers a.current-speaker:hover {
 	background: #fff;
 	box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2) inset, -1px -1px 0 rgba(0, 0, 0, 0.2) inset;
@@ -2497,6 +2506,7 @@ a[href$="ClausLehmann"] {
 		background: none;
 	}
 }
+
 // ============================================================
 // @signup
 // speaker signup

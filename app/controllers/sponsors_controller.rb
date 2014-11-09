@@ -34,6 +34,7 @@ class SponsorsController < ApplicationController
     @smartphone = @europe_sponsors.where(sponsor_level: 'Smartphone App')
     @breakfast = @europe_sponsors.where(sponsor_level: 'Breakfast')
     @lunch = @europe_sponsors.where(sponsor_level: 'Lunch')
+    @namebadge = @europe_sponsors.where(sponsor_level: 'Name Badge')
     @webcast = @europe_sponsors.where(sponsor_level: 'Webcast')
     @wifi = @europe_sponsors.where(sponsor_level: 'Wifi')
     @networking = @europe_sponsors.where(sponsor_level: 'Networking Break')

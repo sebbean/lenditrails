@@ -17,11 +17,12 @@ LenditRails::Application.routes.draw do
   get '/europe' => 'conferences#europe'
 
   get '/europe/agenda' => 'agendas#europe'
+  get '/live' => 'videos#live'
 
-  # get '/home' => 'welcome#home'
-  # get '/nyc' => 'conferences#nyc'
-  # get '/san-francisco-2014/sponsors' => 'sponsors#lendit2014'
-  # get '/test' => 'sponsors#test'
+  get '/home' => 'welcome#home'
+  get '/nyc' => 'conferences#nyc'
+  get '/san-francisco-2014/sponsors' => 'sponsors#lendit2014'
+  get '/test' => 'sponsors#test'
 
   # get '/europe/sponsors' => 'sponsors#europe_sponsors'
   # get '/europe-test' => 'conferences#europe_test'

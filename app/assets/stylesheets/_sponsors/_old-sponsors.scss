@@ -1,0 +1,251 @@
+// ============================================================
+
+
+
+// begin sponsors
+.sponsors-main {
+	background: white;
+	margin-top: 20px;
+	padding-top: 10px;
+	max-width: 1207px;
+	margin: auto;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	overflow: hidden;
+	display: block;
+
+	h1, h2, h3, h4 {
+		font-family: 'Verlag A', 'Verlag B', verlag;
+		
+	}
+}
+.sponsors-text-a {
+	max-width:940px;
+	margin: 0 auto 20px auto;
+	@media (max-width: 960px) {
+		margin-left:10px;
+		margin-right:10px;
+	}
+	p {
+		font-size:18px;
+	}
+	.table {
+		display:table;
+		margin-bottom:0;
+		.cell {
+			display:table-cell;
+			vertical-align:top;
+		}
+	}
+}
+.sponsors-text-b {
+	@include clearfix;
+	max-width:940px;
+	margin:30px auto 40px;
+	margin-bottom:60px;
+	h3 {
+		font-weight:600;
+	}
+	@media (max-width: 960px) {
+		margin-left:10px;
+		margin-right:10px;
+	}
+	p {
+		font-size:18px;
+	}
+}
+.sponsors-text-b a:hover {
+	background: #89be2e;
+	color: #fff;
+}
+.sponsorship-packages {
+	float:left;
+	margin-top:30px;
+	a {
+		font-size: 16px;
+		display:block;
+		font-weight: 500;
+		background: #fff;
+		border: 1px solid #89be2e;
+		white-space:nowrap;
+		button {
+		font-family: 'Verlag A', 'Verlag B', verlag;
+			border: none;
+			background: none;
+			padding: 4px 10px;
+		color:$linkcolor;
+			margin-bottom:0;
+		}
+		&:hover button {
+
+			color:#fff;
+		}
+	}
+}
+
+
+// begin sponsors-a
+.sponsors-a {
+	.grouping {
+		max-width: 940px;
+		margin: auto;
+		background:#f7f7f7;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.grouping-platinum {
+		background:#eee;
+	}
+	.grouping-gold {
+		background:#f5f5f5;
+	}
+	.grouping-silver {
+		background:#f7f7f7;
+	}
+	.header {
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		text-align: left;
+		font-weight: 500;
+		font-size: 32px;
+		padding-bottom:5px;
+		margin-top: 4px;
+		padding-top:8px;
+		text-shadow: 1px 1px 0 #fff;
+	}
+	.group {
+		padding-bottom:8px;
+		display:table;
+	}
+	.item {
+		display:inline;
+	}
+	.item a {
+		margin:4px;
+		background-color: #fff;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+		display: inline-block;
+		width:282px;
+		height: 142px;
+		border:1px solid #ddd;
+	}
+	.item a:hover {
+		border-color:#89be2e;
+	}
+}
+// end sponsors-a
+
+
+
+
+// begin sponsors-b
+.sponsors-b-header {
+	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+	font-weight: 500;
+	font-size: 32px;
+	padding-bottom:5px;
+	margin-top: 4px;
+	padding-top:8px;
+	text-shadow: 1px 1px 0 #fff;
+}
+.sponsors-b {
+	max-width:940px;
+	margin:auto;
+	background:#f7f7f7;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	.grouping {
+		display:inline;
+	}
+	.sponsor-section {
+		display:inline-block;
+	}
+	.header {
+		font-size:24px;
+		font-weight:500;
+		margin-bottom:0;
+		margin-left:4px;
+		font-family: 'Verlag Comp A', 'Verlag Comp B', 'verlag compressed';
+
+
+	}
+	.group {
+		display:inline-block;
+	}
+	.item {
+		display:inline-block;
+		margin:0;
+	}
+	.item a {
+		background-color: #fff;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+		margin:5px;
+		border:1px solid #ddd;
+		display: block;
+		height: 132px;
+		width: 200px;
+	}
+	.item a:hover {
+		background-color: white;
+		border-color:#89be2e;
+	}
+	.item {
+		display: inline-block;
+	}
+}
+// end sponsors-b
+
+
+
+
+// begin Other
+.other {
+	margin-top:4px;
+	padding-top:12px;
+	.sponsors-b-header {
+		display:none;
+	}
+
+}
+// end Other
+
+
+
+
+// begin Exhibitors
+.exhib {
+	margin-top:4px;
+	padding-top:12px;
+	.sponsors-b-header {
+		padding-top:0;
+		display:block;
+		display:none;
+		font-size:24px;
+		font-weight:500;
+		margin-bottom:0;
+		margin-left:4px;
+		font-family: 'Verlag Comp A', 'Verlag Comp B', 'verlag compressed';
+	}
+}
+// end Exhibitors
+
+
+
+
+// begin MODAL styles
+.modal-sponsor-image {
+	max-width:160px;
+	border: 1px solid #DDDDDD;
+	margin-bottom:20px;
+}
+// end MODAL styles
+
+
+// end SPONSORS
+
+
+

@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require doubletaptogo
 //= require colorbox
 //= require isotope
@@ -19,3 +20,5 @@
 //= require validate
 //= require turbolinks
 //= require_tree .
+
+$(function(){ $(document).foundation(); });

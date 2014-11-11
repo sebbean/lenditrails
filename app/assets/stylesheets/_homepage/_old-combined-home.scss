@@ -1,0 +1,252 @@
+
+
+// ============================================================
+.homepage-container {
+	width: 940px;
+	margin: 0 auto;
+	padding-top:1px;
+	@include clearfix;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	@media (min-width: 550px) {
+		display:table;
+	}
+	@media (max-width: 960px) {
+		width: auto;
+	}
+}
+.homepage-main-text {
+	@media (min-width: 750px) {
+	padding-right:30px;
+}
+
+	padding-left:10px;
+	@media (min-width: 1017px) {
+		padding-left:0;
+	}
+	@media (min-width: 750px) {
+		display:table-cell;
+		vertical-align:top;
+	}
+}
+.homepage-recap-area {
+
+	padding-left:10px;
+	padding-right:10px;
+	@media (min-width: 1017px) {
+		padding-right:0;
+	}
+	@media (min-width: 750px) {
+		display:table-cell;
+		vertical-align:top;
+	}
+}
+.homepage-main-text {
+	.body-copy {
+		margin-right:40px;
+	}
+}
+.homepage .lendit-intro {
+	max-width:1207px;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	background:#fff;
+	margin:auto ;
+	padding-bottom:50px;
+}
+.homepage header {
+	max-width:1207px;
+	margin:auto;
+	background:#fff;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+// begin homepage hero
+.homepage .hero {
+	display:table;
+	width:100%;
+	max-width:1100px;
+	margin: auto ;
+	text-align:center;
+	list-style-type:none;
+	padding:0;
+	border-spacing:2px;
+	padding-bottom:35px;
+	@media (min-width: 1017px) {
+		padding-top:40px;
+		padding-left:30px;
+		padding-right:30px;
+	}
+	@media (max-width: 960px) {
+		padding-top:0;
+		padding-left:0;
+		padding-right:0;
+	}
+	@media (max-width: 550px) {
+		display:block;
+	}
+	li {
+		background-size:cover;
+		background-position:center center;
+		background-repeat:no-repeat;
+		display:table-cell;
+		vertical-align:middle;
+		height:260px;
+		width:33%;
+		position:relative;
+		@media (max-width: 550px) {
+			width:auto;
+			max-width:366px;
+			display:block;
+		}
+		&.london {
+			background-image:url(https://s3-us-west-2.amazonaws.com/lendit/conf-thumb-london.jpg);
+		}
+		&.newyork {
+			background-image:url(https://s3-us-west-2.amazonaws.com/lendit/conf-thumb-newyork.jpg);
+		}
+		&.shanghai {
+			background-image:url(https://s3-us-west-2.amazonaws.com/lendit/conf-thumb-shanghai.jpg);
+		}
+		> a {
+			height:260px;
+			display:block;
+			padding-top:130px;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			background: rgba(0, 0, 0, 0.5) ;
+			text-shadow:2px 2px 2px rgba(0, 0, 0, 0.4) ;
+			color:#fff;
+			opacity:.9;
+			transition: all ease-in-out .1s;
+			.conf-date {
+				display:table;
+				margin:10px auto;
+				&:after {
+					content:'\00A0 \f105';
+					font-family:FontAwesome;
+					color:rgba(146, 211, 96, 1);
+					opacity:0;
+					width:0;
+					overflow:hidden;
+					float:right;
+					transition: opacity ease-in-out .8s;
+				}
+			}
+			&:hover {
+				opacity:1;
+				background:rgba(20, 20, 20, 0.7)  ;
+				.conf-date {
+					color:rgba(146, 211, 96, 1);
+					&:after {
+						opacity:1;
+						width:12px;
+						transition: width ease-in-out .2s;
+					}
+				}
+			}
+		}
+	}
+}
+// end homepage hero
+.homepage .conf-name {
+	font-size:38px;
+	font-weight:600;
+	text-rendering: optimizeLegibility;
+}
+.homepage .conf-date {
+	margin-top:10px;
+	font-size:18px;
+}
+.homepage .conf-register {
+	position:absolute;
+	margin-top:-40px;
+	right:0;
+	font-weight:500;
+	text-transform:uppercase;
+	line-height:20px;
+	a {
+		display:block;
+		background:#eee;
+		padding:10px 18px;
+		transition: all ease-in-out .1s;
+		background:#fff;
+		color: rgba(139, 191, 40, 1);
+		&:hover {
+			background: rgba(139, 191, 40, 1);
+			color:#fff;
+		}
+	}
+}
+// @@
+.homepage-recap {
+	background: url(https://s3-us-west-2.amazonaws.com/lendit/homepage-recap.jpg) center center no-repeat;
+	background-size:323px;
+	width:323px;
+	height:285px;
+	@media (max-width: 480px) {
+		background-size:291px;
+		width:291px;
+		height:257px;
+	}
+	position:relative;
+	margin-top:20px;
+	&:hover {
+		transition: border ease-in-out .6s;
+	}
+	a {
+		transition: all ease-in-out .1s;
+		background: rgba(0, 0, 0, 0.6) ;
+		opacity:.9;
+		display:block;
+		height:100%;
+		width:100%;
+		font-size:32px;
+		font-weight:500;
+		text-rendering: optimizeLegibility;
+		color:#fff;
+		text-align:center;
+		padding-top:155px;
+		text-shadow:2px 2px 2px rgba(0, 0, 0, 0.4) ;
+		b {
+			font-weight:500;
+			display:table;
+			margin:auto;
+			&:after {
+				content:'\00A0 \f105';
+				font-family:FontAwesome;
+				color:rgba(146, 211, 96, 1);
+				font-size:30px;
+				opacity:0;
+				width:0;
+				overflow:hidden;
+				float:right;
+				transition: opacity ease-in-out .8s;
+				margin-top:5px;
+				font-weight:100;
+			}
+		}
+		&:after {
+			background: url(homepage-recap-youtube.png) center center no-repeat;
+			content:'';
+			height:48px;
+			width:48px;
+			display:block;
+			position:absolute;
+			right:0;
+			bottom:0;
+			opacity:1;
+		}
+		&:hover {
+			opacity:1;
+			background: rgba(0, 0, 0, 0.6) ;
+			color:rgba(146, 211, 96, 1);
+			b:after {
+				opacity:1;
+				width:22px;
+				transition: width ease-in-out .2s;
+			}
+		}
+	}
+}
+// ============================================================

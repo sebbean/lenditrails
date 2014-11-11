@@ -1,0 +1,72 @@
+
+// -------------------------------------------
+* {
+	outline: none;
+}
+
+
+
+
+// ============================================================
+
+
+// begin general
+body {
+	padding: 0 0 0 0;
+	font-family: 'Verlag A', 'Verlag B', verlag;
+	background: #f0f0f0;
+	font-weight: 200;
+	letter-spacing: .3pt;
+	font-size: 16px;
+	color: #333;
+	position: relative;
+	padding-bottom: 100px;
+	@include clearfix;
+	@media (max-width: 767px) {
+		padding: 0 0 0 0;
+	}
+	@media (max-width: 550px) {
+		padding: 0 0 0 0;
+		padding-bottom: 0;
+	}
+}
+p, li {
+	line-height: 1.5em;
+}
+p.intro {
+	@media (max-width: 550px) {
+		font-size: 18px;
+		line-height: 130%;
+		font-weight: 400;
+		margin: 1em 0;
+	}
+}
+p.intro + hr {
+	@media (max-width: 550px) {
+		display: none;
+	}
+}
+h1 {
+	font-family: 'Verlag A', 'Verlag B', verlag;
+	font-size: 32px;
+	font-weight: 600;
+	top: 0;
+}
+h1 {
+	text-rendering: optimizeLegibility;
+}
+h2 {
+	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+	font-size: 28px;
+}
+a {
+	color: #89be2e;
+}
+a:hover {
+	color: #86bd33;
+}
+
+hr {
+	border-top: 1px solid #ccc;
+}
+

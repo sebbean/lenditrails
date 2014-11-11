@@ -8,11 +8,26 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- //= require foundation_and_overrides
 
 */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "mixins";
-@import "./main";
 @import "foundation_and_overrides";
+@import "_general/variables";
+@import "_general/mixins";
+@import "_general/general";
+@import "_general/footer";
+@import "_terms/old-terms";
+@import "_attendees-visualizer/old-attendees-visualizer";
+@import "_general/form-elements";
+@import "_general/old-column-styles";
+@import "_general/old-subhero";
+@import "_general/old-nav";
+@import "_homepage/old-london-home1";
+@import "_homepage/old-london-home2";
+@import "_homepage/old-london-home-shared-objects";
+@import "_homepage/old-combined-home";
+@import "_homepage/nyc2015";
+@import "_speakers/old-london-speakers";
+@import "_sponsors/old-sponsors";
+@import "_about/old-about-page";

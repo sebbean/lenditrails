@@ -1,0 +1,7 @@
+$screen-sm:                  768px !default;
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-sm-min:              $screen-sm !default;
+
+$linkcolor: #89be2e;

@@ -1,0 +1,17 @@
+.subhero {
+	background: white url(brillant.png) center center repeat;
+	margin-top: 20px;
+	padding-top: 10px;
+	max-width: 1207px;
+	margin: auto;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	display: block;
+	@media (max-width: 960px) {
+		border-left: none;
+		border-right: none;
+	}
+}
+

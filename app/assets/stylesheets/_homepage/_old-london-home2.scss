@@ -1,0 +1,342 @@
+// begin new-home
+// ============================================================
+
+
+// begin newhome-section
+.conferences section.newhome-section {
+	@media (max-width: 550px) {
+		padding-top:0;
+	}
+}
+// end newhome-section
+
+
+
+
+// begin overall structure
+.newhome-container {
+	max-width:940px;
+	margin:auto;
+	@media (max-width: 960px) {
+		margin-left:10px;
+		margin-right:10px;
+	}
+}
+// end overall structure
+
+
+
+
+// begin introduction
+.newhome-container .introduction {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	p {
+	font-size:22px;
+		margin-top:1em;
+		margin-bottom:1em;
+	}
+	h1 {
+		text-align:center;
+	}
+}
+// end introduction
+
+
+
+
+// begin bodytext-2
+.newhome-container .bodytext-2 {
+	font-size:18px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin-top:15px;
+	text-align:center;
+	.register-button {
+		display:table;
+		margin:auto;
+		@media (min-width: 767px) {
+			margin:2em auto;
+		}
+		a {
+			font-size: 18px;
+			font-weight: 600;
+			background: #fff;
+			line-height:1.2em;
+			border: 1px solid #89be2e;
+			display: block;
+			padding:6px 16px;
+			text-align:center;
+		}
+	}
+}
+
+.newhome-container .bodytext-2 .register-button a:hover {
+	background: #89be2e;
+	color: #fff;
+}
+// end bodytext-2
+
+
+
+
+// begin bodytext-3
+.newhome-container .bodytext-3 {
+	margin-bottom:1em;
+	font-size:18px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align:center;
+	a {
+		font-weight:600;
+	}
+	@media (max-width: 550px) {
+		padding-left:5px;
+		padding-right:5px;
+	}
+}
+// end bodytext-3
+
+
+
+
+// begin hot topics
+.hot-topics-head {
+	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+	font-size: 28px;
+	line-height:30px;
+	margin-top:0;
+	text-align:center;
+	padding-top:.5em;
+	padding-bottom:.5em;
+	margin:0;
+	text-align:center;
+	font-weight:500;
+}
+.hot-topics {
+	font-size:18px;
+	margin-top:1em;
+	ul {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		padding-left:0;
+		margin-left:20px;
+		list-style-type:square;
+		li {
+			margin-bottom:.5em;
+			padding-left:0;
+		}
+	}
+}
+.hot-topics-list {
+	display:table;
+	.hot-topics-list-col {
+		display:table-cell;
+		width:50%;
+		@media (max-width: 550px) {
+			display:block;
+			width:auto;
+		}
+	}
+	.hot-topics-list-col:first-child {
+		padding-right:30px;
+		padding-top:12px;
+		@media (max-width: 550px) {
+			padding:0 0 0 5px;
+		}
+	}
+	.hot-topics-list-col:last-child {
+		padding-left:30px;
+		padding-top:12px;
+		@media (max-width: 550px) {
+			padding:0 0 0 5px;
+		}
+	}
+}
+// end hot topics
+
+
+
+
+// begin whos-coming
+.whos-coming {
+	.whos-coming-head {
+		margin-top: 0;
+		padding-bottom: .8em;
+		margin: 0;
+		font-size: 16px;
+		text-align:center;
+		font-weight:600;
+		text-transform:uppercase;
+	}
+	a {
+		border:1px solid #89be2e;
+		display:table;
+		margin:auto;
+		img {
+			width:280px;
+			margin:auto;
+			display:block;
+		}
+	}
+}
+// end whos-coming
+
+
+
+
+// begin features
+.newhome-container .features {
+	.feature-header {
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-size: 28px;
+		font-weight:500;
+		border-bottom:1px solid #ddd;
+		line-height:30px;
+		margin-top:0;
+		text-align:center;
+		padding-top:.5em;
+		padding-bottom:.5em;
+		margin:0;
+	}
+	ul {
+		list-style-type:none;
+		padding:0;
+		margin:0;
+		li {
+			font-size:20px;
+			font-weight:100;
+			font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+			>div {
+				display:table;
+				margin:5px 16px 5px 0 ;
+				width:auto;
+				span{
+					display:table-cell;
+					vertical-align:middle;
+					line-height:1em ;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					img  {
+						max-width:62px;
+						margin-right:10px;
+					}
+				}
+			}
+		}
+	}
+}
+// end FEATURES
+
+
+
+
+// begin new-home columns "A"
+.new-home-columns {
+	margin-top:1em;
+	display:table;
+	.new-home-col {
+		@media (min-width: 550px) {
+			display:table-cell;
+			vertical-align:top;
+			width:50%;
+		}
+	}
+	.new-home-col:first-child {
+		@media (min-width: 550px) {
+			padding-right:30px;
+			padding-bottom:20px;
+		}
+	}
+	.new-home-col:last-child {
+		@media (min-width: 550px) {
+			padding-left:30px;
+		}
+	}
+}
+// end new-home columns "A"
+
+
+
+
+// begin new-home columns "B"
+.new-home-columns-b {
+	display:table;
+	.new-home-col {
+		vertical-align:middle;
+		position:relative;
+		padding:0;
+		padding-bottom:2em;
+		padding-top:1em;
+		background:#fafafa;
+		border-top:1px solid #ddd;
+		border-bottom:1px solid #ddd;
+		@media (min-width: 767px) {
+			width:50%;
+			display:table-cell;
+			margin-bottom:1em;
+		}
+	}
+	.gutter {
+		min-height:1.5em;
+		@media (min-width: 767px) {
+			border:none;
+			background:#fff;
+			width:60px;
+		}
+	}
+}
+// end new-home columns "B"
+
+
+
+
+// begin keynote-summaries
+.keynote-summaries {
+	.feature-header {
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-size: 28px;
+		line-height:30px;
+		font-weight:500;
+		margin-top:0;
+		text-align:center;
+		padding-top:.5em;
+		padding-bottom:1em;
+		margin:0;
+	}
+	.go-to-speakers {
+		text-align:center;
+		padding-bottom:50px;
+		font-size:18px;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		a {
+			font-weight:600;
+		}
+	}
+	.speakers {
+		display:table;
+		margin:auto;
+		@media (max-width: 550px) {
+			margin-left:-25px;
+		}
+	}
+	.item {
+		float:left;
+		width:135px;
+		height:290px;
+		margin-left:25px;
+		img {
+			max-width:135px;
+		}
+	}
+	.item .name {
+		font-weight:600;
+		padding-top:10px;
+	}
+}
+// end keynote-summaries
+
+
+// end new-home
+

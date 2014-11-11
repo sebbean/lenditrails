@@ -19,3 +19,5 @@
 .sass-cache/*
 
 config.codekit
+
+/config/initializers/flickr.rb

@@ -18,6 +18,7 @@ LenditRails::Application.routes.draw do
 
   get '/europe/agenda' => 'agendas#europe'
   get '/live' => 'videos#live'
+  get '/photos' => 'photos#index'
 
   get '/home' => 'welcome#home'
   get '/nyc' => 'conferences#nyc'

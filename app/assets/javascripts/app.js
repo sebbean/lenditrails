@@ -2,6 +2,8 @@ var app = app || {};
 
 $(document).ready(function() {
 
+  $(document).foundation();
+
   // toggle agenda
   $('.pm-button').on('click', function(e){
     e.preventDefault();
@@ -36,6 +38,10 @@ $(document).ready(function() {
 
   // colorbox for the past speakers
   $('.past-speaker').colorbox({inline:true, innerWidth:"780px", innerHeight:"430px", rel:'past-speaker'});
+
+  // colorbox for photos gallery in conference pages
+  // colorbox for sponsors
+  $('.sponsor-top').colorbox({inline:true, rel:'current-speaker', innerWidth:"780px", innerHeight:"430px",});
 
   // BEGIN Get Updates script from MailChimp
   var fnames = new Array();var ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';

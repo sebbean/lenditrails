@@ -7,6 +7,12 @@ body.conferences header .container {
 
 }
 
+body.conferences header.nyc .container  {
+	@media (min-width:1000px) {
+	width:1000px;
+}
+}
+
 .ny15 {
 	color:#666;
 	-webkit-font-smoothing: antialiased;
@@ -161,5 +167,60 @@ ul.ny15-icon li {
 	text-align:center;
 	font-size:1.1em;
 	font-weight:400;
+	text-align:center;
+	margin-bottom:1.3em;
 }
 
+.ny15-prospectus-link {
+	a {
+		display:block;
+		background:url(https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-lattice-light.jpg) center center no-repeat;
+			background-size:cover;
+		border:1px solid lighten($linkcolor,10%);
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+			line-height:1.2em;
+			font-weight:600;
+		
+			padding:10px;
+		@media (min-width:641px) {
+			@include box-sizing;
+			text-align:center;
+			img {
+			}
+.ny15-prospectus-link-text {
+			
+				display:block;
+				padding-top:.45em;
+			}
+		}
+		@media (max-width:640px) {
+			
+			margin-bottom:1.2em;
+			display:table;
+
+			img {
+
+
+				max-width:100px;
+			}
+			span {
+				display:table-cell;
+				vertical-align:middle;
+			}
+		}		
+		&:hover {
+			border:1px solid $linkcolor;
+		}
+
+
+
+	}
+}
+.ny15-prospectus-link-text {
+
+		@media (max-width:640px) {
+			padding-left:10px;
+		}
+}

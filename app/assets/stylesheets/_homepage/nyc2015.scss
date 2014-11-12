@@ -1,4 +1,12 @@
 
+body.conferences header .container {
+	@media (max-width: 550px) {
+		background-position:center 90px;
+
+	}
+
+}
+
 			.ny15 {
 				color:#666;
 				-webkit-font-smoothing: antialiased;

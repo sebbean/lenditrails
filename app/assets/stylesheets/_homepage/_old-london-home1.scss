@@ -89,23 +89,23 @@ body.conferences header .container {
 		padding-right: 0;
 		padding-left: 0;
 		height: 380px;
-		background: url(https://s3-us-west-2.amazonaws.com/lendit/LendIt-tagline-white.png) 20px 80px no-repeat;
+		background: url(LendIt-tagline-white-2.png) 20px 80px no-repeat;
 		// background: url(https://s3-us-west-2.amazonaws.com/lendit/LendIt-tagline.png) 20px 80px no-repeat;
-		background-size: 374px 116px;
+		background-size: 374px ;
 		width: auto;
 		padding-top: 0;
 	}
 	@media (max-width: 550px) {
 		background-position: center 60px;
-		background-size: 300px 93px;
+		background-size: 300px ;
 		height: 350px;
 	}
 }
 body.conferences header .container .logo {
-	margin-top: 100px;
-	background: url(https://s3-us-west-2.amazonaws.com/lendit/LendIt-tagline-white.png) left center no-repeat;
+	margin-top: 110px;
+	background: url(LendIt-tagline-white-2.png) left center no-repeat;
 	// background: url(https://s3-us-west-2.amazonaws.com/lendit/LendIt-tagline.png) left center no-repeat;
-	background-size: 415px 132px;
+	background-size: 415px ;
 	padding-left: 210px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;

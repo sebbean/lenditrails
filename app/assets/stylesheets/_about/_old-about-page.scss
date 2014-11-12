@@ -1,5 +1,16 @@
+.welcome {
+	h1, h2, h3, h4 {
+	font-family: 'Verlag A', 'Verlag B', verlag;
+		
+	}
+}
 .welcome main .cols {
 	@include clearfix;
+	@media (min-width: 940px) {
+		display:table;
+		width:100%;
+		float:none;
+	}
 }
 // @about
 .welcome h2 {
@@ -13,7 +24,6 @@
 // subhero col1
 // subhero col2
 .welcome .subhero .col2 p {
-	font-size: 16px;
 }
 // main
 .welcome main .main-about {
@@ -24,21 +34,27 @@
 }
 .main-about {
 	max-width: 1207px;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
 	margin: auto;
 	background: #fff;
 	@media (max-width: 550px) {
 		border: none;
 	}
+	@media (min-width:940px) {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+		
+	}
 }
 // main col1
-.welcome main .col1 {
-	width: 540px;
-	float: left;
-	@media (max-width: 550px) {
-		width: auto;
+.welcome .col1 {
+
+	@media (min-width: 940px) {
+		display:table-cell;
+		padding-right:40px;
+		
 	}
+	
+
 }
 .main-about .col1 h2 {
 	font-size: 18px;
@@ -63,11 +79,12 @@
 	}
 }
 // main col2
-.welcome main .col2 {
-	width: 300px;
-	float: right;
-	@media (max-width: 550px) {
-		width: auto;
+.welcome  .col2 {
+
+	@media (min-width: 940px) {
+		display:table-cell;
+		width:320px;
+		
 	}
 }
 .quote-container {

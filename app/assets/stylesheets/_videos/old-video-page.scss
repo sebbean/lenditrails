@@ -1,0 +1,56 @@
+.ny15-video-page {
+	main > div {
+		max-width: 1207px;
+		margin: auto;
+		background: #fff;
+		@media (max-width: 550px) {
+			border: none;
+		}
+		@media (min-width:940px) {
+			border-left: 1px solid #ccc;
+			border-right: 1px solid #ccc;
+		}
+	}
+	h1 {
+		padding-top: 40px;
+		font-family: 'Verlag A', 'Verlag B', verlag;
+
+	}
+	p {
+		font-family: 'Verlag A', 'Verlag B', verlag;
+
+	}
+	.livestream-area {
+		margin-bottom:40px;
+		position:relative;
+		min-height:40px;
+		&:after {
+			position:absolute;
+			top:0;
+			font-size:1.2em;
+
+			z-index:-1;
+
+			content:'Loading...';
+			display:block;
+
+		}
+	}
+	.pi-widget {
+		margin-top:0;
+		margin-bottom:0;
+	}
+}
+
+.ny15-video-sponsor {
+	
+
+	display:table;
+	margin:auto;
+	margin-top:30px;
+	font-size:18px;
+	img {
+		max-width:200px;
+	}
+
+}

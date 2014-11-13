@@ -1,0 +1,434 @@
+body.conferences header .container {
+	@media (max-width: 550px) {
+		background-position:center 90px;
+	}
+}
+body.conferences header.nyc .container  {
+	@media (min-width:1000px) {
+		width:1000px;
+	}
+}
+.eu14 {
+	color:#666;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Open Sans', sans-serif;
+}
+.eu14-h1 {
+	color:#666;
+	font-size:46px;
+	line-height:1.1em;
+	margin-bottom:.5em;
+	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+	font-weight:400;
+}
+.eu14-attendperyr { width:100%; }
+.eu14-icon {
+	min-height:47px; 
+	background-size:70px;
+	background-repeat:no-repeat;
+	background-attachment:0 0;
+	padding-left:85px;
+	line-height:1.2em;
+	box-sizing:border-box;
+	padding-right:30px;
+}
+p.eu14-icon {
+	display:table;
+	font-weight:700;
+	font-size:1.1em;
+	margin:1.4em 0 0 0;
+}
+p.eu14-icon:first-of-type {
+	margin-top:0;
+}
+p.eu14-icon span {
+	display:table-cell;
+	vertical-align:middle;
+	height:70px;
+}
+ul.eu14-icon {
+	padding-left:98px;
+	margin-left:0;
+	list-style-type:square;
+}
+ul.eu14-icon > div {
+	font-weight:700;
+	color:#9CC83D;
+	margin-left:-18px;
+	padding-top:1em;
+	font-size:1.1em;
+	margin-bottom:1.2em;
+}
+ul.eu14-icon li {
+	margin-bottom:.85em;
+	font-size:1.1em;
+	font-weight:500;
+}
+.eu14 .icon {
+	background-color:#f5f9ea;
+	
+	background-size:cover;
+	-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+border-radius: 100%;
+margin-bottom:.5em;
+border:4px solid #DBEDB8;
+}
+.eu14 .icon {
+	max-width:70%;
+}
+
+.eu14 .inspir .icon { background-image: url(/assets/feature-inspir.png); }
+.eu14 .interac .icon { background-image: url(/assets/feature-interac.png); }
+.eu14 .demo .icon { background-image: url(/assets/feature-demo.png); }
+.eu14 .off-the .icon { background-image: url(/assets/feature-off-the.png); }
+.eu14 .exhib .icon { background-image: url(/assets/feature-exhib.png); }
+.eu14 .exten .icon { background-image: url(/assets/feature-exten.png); }
+.eu14 .cocktail .icon { background-image: url(/assets/feature-cocktail.png); }
+
+
+
+
+
+
+
+
+
+
+
+
+.eu14-header {
+	text-align:center;
+
+	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+font-size: 28px;
+font-weight: 500;
+line-height: 30px;
+margin-top: 0;
+padding-top: 14px;
+padding-bottom: 14px;
+margin: 0;
+
+color:#222;
+
+
+}
+.eu14-callouts {
+	margin-top:.5em;
+	margin-bottom:.5em;
+}
+.eu14-callout-image {
+	background:url(https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-lattice-light.jpg) center center no-repeat;
+	background-size:cover;
+	padding:10px;
+}
+.eu14-intro {
+}
+.eu14-intro p {
+	font-size:18px;
+}
+.eu14-attendee-map-link {
+	background:url(https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-lattice-light.jpg) center center no-repeat;
+}
+.eu14-attendee-map-link a {
+	display:block;
+	border:1px solid #fff;
+	position:relative;
+	padding:10px;
+	border:1px solid lighten(#9CC83D, 20%);
+	
+}
+.eu14-attendee-map-link img {
+	max-width:80%;
+	margin:auto;
+	display:block;
+	opacity:.9;
+}
+.eu14-attendee-map-link a:hover {
+	border:1px solid #9CC83D;
+}
+.eu14-attendee-map-link a:hover img {
+	opacity:1;
+}
+.eu14-attendee-map-link a:after {
+	content:'Click to View';
+	padding:4px 12px;
+	font-size:14px;
+	color:#9CC83D;
+	border:1px solid #9CC83D;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	right:3px;
+	bottom:3px;
+	display:block;
+	position:absolute;
+	background:#fff;
+	font-weight:400;
+	font-family: 'Open Sans', sans-serif;
+}
+.eu14-attendee-map-link a:hover:after {
+	background:#9CC83D;
+	color:#fff;
+}
+.eu14-wide-quote {
+	background:#f5f9ea;
+	padding:1.5em;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	margin-bottom:1.5em;
+}
+.eu14-wide-quote-strong {
+	font-weight:700;
+	margin-bottom:6px;
+}
+.eu14-wide-quote-attribute {
+	text-align:right;
+	margin-top:12px;
+	line-height:1.2em;
+	font-weight:400;
+}
+.eu14-moreinfo {
+	background:#fafafa;
+	padding-top:1em;
+	padding-bottom:1em;
+	text-align:center;
+	font-size:1.1em;
+	font-weight:400;
+	text-align:center;
+	margin-bottom:1.3em;
+}
+.eu14-showguide-link {
+	a {
+		display:block;
+		background:url(https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-lattice-light.jpg) center center no-repeat;
+		background-size:cover;
+		border:1px solid lighten($linkcolor,10%);
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		line-height:1.2em;
+		font-weight:600;
+		padding:10px;
+		@media (min-width:641px) {
+			@include box-sizing;
+			text-align:center;
+			img {
+			}
+			.eu14-showguide-link-text {
+				display:block;
+				padding-top:.45em;
+			}
+		}
+		@media (max-width:640px) {
+			margin-bottom:1.2em;
+			display:table;
+			img {
+				max-width:100px;
+			}
+			span {
+				display:table-cell;
+				vertical-align:middle;
+			}
+		}		
+		&:hover {
+			border:1px solid $linkcolor;
+		}
+	}
+}
+.eu14-showguide-link-text {
+	@media (max-width:640px) {
+		padding-left:10px;
+	}
+}
+.eu14-keynotes {
+
+
+	font-family: 'Verlag A', 'Verlag B', verlag;
+	.item .name {
+		font-weight:600;
+		padding-top:10px;
+	}
+	
+}
+
+.eu14-comprised {
+	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+	
+	font-size:18px;
+	font-weight:400;
+	text-align:center;
+
+	ul div {
+	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+	font-size:19px;
+	font-weight:500;
+	
+		
+	line-height:1.1em;
+}
+	
+}
+
+
+
+//@agenda
+.eu14-agenda {
+	> h2 {
+		margin-top:0;
+		text-align:center;
+		border-bottom:1px solid #ddd;
+		padding-top:.5em;
+		padding-bottom:.5em;
+		margin:0;
+	}
+
+}
+.home-agenda-tabs {
+	display:table;
+	width:100%;
+	margin:0;
+	h3 {
+		font-family: 'Verlag A', 'Verlag B', verlag;
+		margin:0;
+		color:#89be2e;
+		display:table-cell;
+		width:50%;
+		vertical-align:middle;
+		text-align:center;
+		text-transform:uppercase;
+		font-size:16px;
+		font-weight:600;
+		padding:10px 12px;
+		border-bottom:1px solid #ddd;
+		background:#eee;
+		cursor:pointer;
+		cursor:hand;
+		border-left:1px solid #ddd;
+		&:hover {
+			background:#89be2e;
+			color:#fff;
+		}
+		&:first-of-type {
+			border-left:none;
+		}
+		&.on {
+			background:#fff;
+			border-bottom:none;
+			color:#333;
+		}
+	}
+}
+.off {
+	display: none;
+}
+.eu14-agenda {
+	table[class$="agenda"] {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		border:none;
+		tr {
+			background:none;
+		}
+		td {
+		font-family: 'Verlag A', 'Verlag B', verlag;
+			
+			
+			vertical-align:top;
+			padding-top:10px;
+			padding-bottom:10px;
+			font-size:1em;
+			line-height:1.4em;
+
+		}
+		tr:first-of-type td {
+			padding-top:20px;
+		}
+		tr:last-of-type td {
+			padding-bottom:20px;
+		}
+		td:first-of-type {
+			font-weight:400;
+			white-space:nowrap;
+			color:#999;
+			min-width:90px;
+			text-align:right;
+			padding-right:12px;
+		}
+		td:last-of-type {
+			padding-right:12px;
+			font-weight:600;
+		}
+	}
+}
+
+
+.eu14-keynote-header {
+	padding-bottom:1em;
+}
+
+.eu14-moreinfo {
+		font-family: 'Verlag A', 'Verlag B', verlag;
+			
+	
+}
+
+.eu14-download-agenda {
+	padding-top:.5em;
+	padding-bottom:.25em;
+	color:#999;
+		font-family: 'Verlag A', 'Verlag B', verlag;
+		font-size:18px;
+		font-weight:600;
+}
+.eu14-comprised .eu14-header {
+	padding-top:20px;
+}
+
+
+
+
+
+.eu14 {
+	.eu14-register-area {
+		
+		
+
+	.register-button {
+
+		margin-top:10px;
+		@media (min-width: 767px) {
+		}
+		a {
+			font-size: 18px;
+			font-weight: 600;
+			background: #fff;
+			line-height:1.2em;
+			border: 1px solid #89be2e;
+			display: block;
+			padding:6px 16px;
+			text-align:center;
+
+			&:hover {
+				text-decoration:none;
+				background:$linkcolor;
+				color:#fff;
+
+			}
+		}
+	}
+
+	}
+}
+
+.eu14-register-area {
+	margin-top:2em;
+}
+.eu14-register:first-of-type {
+	text-align:left;
+	font-size:20px;
+	font-weight:500;
+	color:#222;
+}

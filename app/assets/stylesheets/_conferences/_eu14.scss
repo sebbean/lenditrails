@@ -15,7 +15,7 @@ body.conferences header.nyc .container  {
 	font-family: 'Open Sans', sans-serif;
 }
 .eu14-h1 {
-	color:#666;
+	color:#222;
 	font-size:46px;
 	line-height:1.1em;
 	margin-bottom:.5em;
@@ -67,18 +67,16 @@ ul.eu14-icon li {
 }
 .eu14 .icon {
 	background-color:#f5f9ea;
-	
 	background-size:cover;
 	-webkit-border-radius: 100%;
--moz-border-radius: 100%;
-border-radius: 100%;
-margin-bottom:.5em;
-border:4px solid #DBEDB8;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	margin-bottom:.5em;
+	border:4px solid #DBEDB8;
 }
 .eu14 .icon {
 	max-width:70%;
 }
-
 .eu14 .inspir .icon { background-image: url(/assets/feature-inspir.png); }
 .eu14 .interac .icon { background-image: url(/assets/feature-interac.png); }
 .eu14 .demo .icon { background-image: url(/assets/feature-demo.png); }
@@ -86,33 +84,28 @@ border:4px solid #DBEDB8;
 .eu14 .exhib .icon { background-image: url(/assets/feature-exhib.png); }
 .eu14 .exten .icon { background-image: url(/assets/feature-exten.png); }
 .eu14 .cocktail .icon { background-image: url(/assets/feature-cocktail.png); }
-
-
-
-
-
-
-
-
-
-
-
-
 .eu14-header {
-	text-align:center;
-
 	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-font-size: 28px;
-font-weight: 500;
-line-height: 30px;
-margin-top: 0;
-padding-top: 14px;
-padding-bottom: 14px;
-margin: 0;
-
-color:#222;
-
-
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 30px;
+	margin-top: 0;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	margin: 0;
+	color:#222;
+}
+.eu14-header2 {
+	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+	font-size: 18px;
+	text-transform:uppercase;
+	font-weight: 500;
+	line-height: 30px;
+	margin-top: 0;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	margin: 0;
+	color:#222;
 }
 .eu14-callouts {
 	margin-top:.5em;
@@ -137,7 +130,6 @@ color:#222;
 	position:relative;
 	padding:10px;
 	border:1px solid lighten(#9CC83D, 20%);
-	
 }
 .eu14-attendee-map-link img {
 	max-width:80%;
@@ -244,47 +236,35 @@ color:#222;
 	}
 }
 .eu14-keynotes {
-
-
 	font-family: 'Verlag A', 'Verlag B', verlag;
 	.item .name {
 		font-weight:600;
 		padding-top:10px;
 	}
-	
 }
-
 .eu14-comprised {
 	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-	
 	font-size:18px;
 	font-weight:400;
 	text-align:center;
-
 	ul div {
-	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-	font-size:19px;
-	font-weight:500;
-	
-		
-	line-height:1.1em;
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-size:19px;
+		font-weight:500;
+		line-height:1.1em;
+	}
 }
-	
-}
-
-
-
 //@agenda
 .eu14-agenda {
 	> h2 {
 		margin-top:0;
 		text-align:center;
 		border-bottom:1px solid #ddd;
+		font-size:32px;
 		padding-top:.5em;
 		padding-bottom:.5em;
 		margin:0;
 	}
-
 }
 .home-agenda-tabs {
 	display:table;
@@ -326,22 +306,20 @@ color:#222;
 }
 .eu14-agenda {
 	table[class$="agenda"] {
+		width:100%;
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		border:none;
+		border-bottom:1px solid #ddd;
 		tr {
-			background:none;
 		}
 		td {
-		font-family: 'Verlag A', 'Verlag B', verlag;
-			
-			
+			font-family: 'Verlag A', 'Verlag B', verlag;
 			vertical-align:top;
 			padding-top:10px;
 			padding-bottom:10px;
-			font-size:1em;
+			font-size:1.2em;
 			line-height:1.4em;
-
 		}
 		tr:first-of-type td {
 			padding-top:20px;
@@ -359,70 +337,82 @@ color:#222;
 		}
 		td:last-of-type {
 			padding-right:12px;
-			font-weight:600;
+			font-weight:400;
 		}
 	}
 }
-
-
 .eu14-keynote-header {
 	padding-bottom:1em;
 }
-
 .eu14-moreinfo {
-		font-family: 'Verlag A', 'Verlag B', verlag;
-			
-	
-}
-
-.eu14-download-agenda {
-	padding-top:.5em;
-	padding-bottom:.25em;
-	color:#999;
-		font-family: 'Verlag A', 'Verlag B', verlag;
-		font-size:18px;
-		font-weight:600;
+	font-family: 'Verlag A', 'Verlag B', verlag;
 }
 .eu14-comprised .eu14-header {
 	padding-top:20px;
 }
+.eu14-header-area {
+	margin-top:30px;
+	padding-bottom:10px;
+	border-bottom:1px solid #999;
+	@include clearfix;
+	.eu14-header {
+		margin:0;
+		padding:0;
+			@media (min-width: 641px) {
+		
+		float:left;
+	}
+	}
+}
+.eu14-download-agenda {
+	color:#999;
+	margin-top:8px;
+	font-family: 'Verlag A', 'Verlag B', verlag;
+	font-size:18px;
+	font-weight:600;
+			@media (min-width: 641px) {
+	
+	float:right;
+			}
+}
 
-
-
+.eu14-view-all-speakers {
+	color:#999;
+	margin-top:8px;
+	font-family: 'Verlag A', 'Verlag B', verlag;
+	font-size:18px;
+	font-weight:600;
+			@media (min-width: 641px) {
+	
+	float:right;
+			}
+}
 
 
 .eu14 {
 	.eu14-register-area {
-		
-		
-
-	.register-button {
-
-		margin-top:10px;
-		@media (min-width: 767px) {
-		}
-		a {
-			font-size: 18px;
-			font-weight: 600;
-			background: #fff;
-			line-height:1.2em;
-			border: 1px solid #89be2e;
-			display: block;
-			padding:6px 16px;
-			text-align:center;
-
-			&:hover {
-				text-decoration:none;
-				background:$linkcolor;
-				color:#fff;
-
+		.register-button {
+			margin-top:10px;
+			@media (min-width: 767px) {
+			}
+			a {
+				font-size: 18px;
+				font-weight: 600;
+				background: #fff;
+				line-height:1.2em;
+				border: 1px solid #89be2e;
+				display: block;
+				padding:6px 16px;
+				text-align:center;
+				&:hover {
+					text-decoration:none;
+					background:$linkcolor;
+					color:#fff;
+				}
 			}
 		}
 	}
-
-	}
 }
-
 .eu14-register-area {
 	margin-top:2em;
 }

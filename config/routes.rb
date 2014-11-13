@@ -15,7 +15,7 @@ LenditRails::Application.routes.draw do
   # 301 redirects with GA tracking codes
   get '/sharecast' => 'conferences#sharecast'
   get '/europe' => 'conferences#europe'
-  # get '/europe/agenda' => 'agendas#europe'
+  get '/europe/agenda' => 'agendas#europe'
 
   get '/live' => 'videos#live'
   get '/photos', to: redirect("https://www.flickr.com/photos/lenditconference")

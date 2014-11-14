@@ -242,8 +242,7 @@ ul.eu14-icon li {
 	}
 	.item .name {
 		font-size:24px;
-	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 		color:#222;
 		padding-top:10px;
 	}
@@ -254,10 +253,9 @@ ul.eu14-icon li {
 		padding-bottom:8px;
 	}
 	.item .company {
-	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 		font-size:20px;
 		color:#999;
-		
 	}
 }
 .eu14-comprised {
@@ -300,7 +298,6 @@ ul.eu14-icon li {
 		font-size:16px;
 		font-weight:600;
 		padding:15px 12px;
-		
 		border-bottom:1px solid #ddd;
 		background:#eee;
 		cursor:pointer;
@@ -336,10 +333,10 @@ ul.eu14-icon li {
 			vertical-align:top;
 			padding-top:10px;
 			padding-bottom:10px;
-		@media (min-width: 641px) {
-			padding-top:15px;
-			padding-bottom:15px;
-		}
+			@media (min-width: 641px) {
+				padding-top:15px;
+				padding-bottom:15px;
+			}
 			font-size:1em;
 			line-height:1.2em;
 		}
@@ -358,19 +355,17 @@ ul.eu14-icon li {
 			padding-right:12px;
 			font-weight:400;
 			line-height:1.4em;
-		@media (min-width: 641px) {
-			font-size:18px;
-		}
-			
+			@media (min-width: 641px) {
+				font-size:18px;
+			}
 		}
 		td:last-of-type {
 			padding-right:12px;
 			font-weight:400;
 			line-height:1.4em;
-			
-		@media (min-width: 641px) {
-			font-size:18px;
-		}
+			@media (min-width: 641px) {
+				font-size:18px;
+			}
 		}
 	}
 }
@@ -446,10 +441,10 @@ ul.eu14-icon li {
 		width:48%;
 		text-align:center;
 		vertical-align:middle;
-	@media (max-width: 640px) {
-		width:auto;
-		display:block;
-	}		
+		@media (max-width: 640px) {
+			width:auto;
+			display:block;
+		}		
 		.register-button {
 			margin-top:10px;
 			a {
@@ -489,3 +484,20 @@ ul.eu14-icon li {
 	padding-top:.5em;
 	padding-bottom:.5em;
 }
+
+
+// begin register-livestream
+
+.button-eu14-register-livestream a:before {
+	height:110px;
+
+	
+}
+.eu14-sponsor-livestream {
+	padding-top:10px;
+}
+
+
+// end register-livestream
+
+

@@ -11,23 +11,28 @@ LenditRails::Application.routes.draw do
   get '/speakers/thank-you' => 'speakers#thank-you'
   get '/terms-of-use' => 'welcome#terms-of-use'
   get '/privacy' => 'welcome#privacy'
-  get '/europe/attendees' => 'welcome#attendees'
+  get '/europe/attendees' => 'welcome#europe14_attendees'
+  get '/san-francisco-2014/attendees' => 'welcome#sf14_attendees'
   get '/sponsors' => 'sponsors#europe_sponsors'
 
   # 301 redirects with GA tracking codes
   get '/sharecast' => 'conferences#sharecast'
   get '/europe' => 'conferences#europe'
+  get '/europe/agenda' => 'agendas#europe'
 
+  get '/live' => 'videos#live'
+  get '/photos', to: redirect("https://www.flickr.com/photos/lenditconference")
 
+  get '/home' => 'welcome#home'
+  get '/nyc' => 'conferences#nyc'
+  get '/san-francisco-2014/sponsors' => 'sponsors#lendit2014'
+  get '/test' => 'sponsors#test'
 
-   get '/europe/sponsors' => 'sponsors#europe_sponsors'
+  # get '/europe/sponsors' => 'sponsors#europe_sponsors'
   # get '/europe-test' => 'conferences#europe_test'
-  # get '/home' => 'welcome#home'
-  # get '/nyc' => 'conferences#nyc'
   # get '/china' => 'conferences#china'
    get '/home-test' => 'welcome#home_test'
 
-  # get '/test' => 'sponsors#test'
   # get '/europe/speakers' => 'speakers#europe'
   # See all redirects in WelcomeController
   # 301 redirects from old WP site
@@ -42,6 +47,7 @@ LenditRails::Application.routes.draw do
   get '/presentations/Michael-Barr-LendiIt-2014.pdf' => 'welcome#barr_2014_deck'
   get '/presentations/Chales-Moldow-Foundation-Capital-LendIt-2014.pdf' => 'welcome#moldow_2014_deck'
   get '/presentations/Securitization-Panel-LendIt-2014.pdf' => 'welcome#securitization_panel_2014_deck'
+  get '/blog', to: redirect("http://blog.lendit.co")
 
 
   # 302 redirect to be updated to 301 once Wistia is configured

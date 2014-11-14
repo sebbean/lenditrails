@@ -1,0 +1,79 @@
+// ============================================================
+// @signup
+// speaker signup
+.speaker-signup {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	max-width: 1207px;
+	margin: auto;
+}
+.speaker-signup .ss-required-asterisk {
+	color: #f00;
+}
+.speaker-signup .required-message {
+	display: none;
+	color: #f00;
+	opacity: .5;
+}
+.speaker-signup h1 {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.speaker-signup #ss-submit {
+	border: 1px solid #777;
+	background: #777;
+	color: #fff;
+	font-size: 18px;
+	padding: 6px 20px;
+	letter-spacing: .3pt;
+	font-weight: 500;
+}
+.speaker-signup #ss-submit:hover {
+	border: 1px solid #89be2e;
+	background: #89be2e;
+	color: #fff;
+}
+.speaker-signup .ss-q-title {
+	font-size: 18px;
+}
+.speaker-signup select {
+	display: block;
+	width: 300px;
+}
+.speaker-signup textarea {
+	width: 100%;
+}
+.speaker-signup .ss-form-entry {
+	margin-bottom: 20px;
+}
+.speaker-signup .ss-secondary-text {
+	font-weight: 300;
+}
+.speaker-signup .floating-fields {
+	display: table;
+	width: 970px;
+	margin-left: -18px;
+	@media (max-width: 960px) {
+		width: auto;
+	}
+}
+.speaker-signup .floating-fields .ss-form-question {
+	float: left;
+	margin-left: 18px;
+}
+.speaker-signup .floating-fields .ss-form-question input {
+	width: 298px;
+	padding: 4px 6px;
+}
+.thank-you-speaker {
+	background: #fff;
+	max-width: 1207px;
+	margin: auto;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	min-height: 300px;
+}

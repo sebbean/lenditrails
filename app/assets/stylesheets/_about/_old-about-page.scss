@@ -1,0 +1,119 @@
+.welcome {
+	h1, h2, h3, h4 {
+	font-family: 'Verlag A', 'Verlag B', verlag;
+		
+	}
+}
+.welcome main .cols {
+	@include clearfix;
+	@media (min-width: 940px) {
+		display:table;
+		width:100%;
+		float:none;
+	}
+}
+// @about
+.welcome h2 {
+	margin-top: 30px;
+	font-weight: 600;
+}
+// subhero
+.welcome main .subhero .container {
+	padding-bottom: 30px;
+}
+// subhero col1
+// subhero col2
+.welcome .subhero .col2 p {
+}
+// main
+.welcome main .main-about {
+	padding-bottom: 40px;
+}
+.welcome main .main-about h2 {
+	font-weight: 600;
+}
+.main-about {
+	max-width: 1207px;
+	margin: auto;
+	background: #fff;
+	@media (max-width: 550px) {
+		border: none;
+	}
+	@media (min-width:940px) {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+		
+	}
+}
+// main col1
+.welcome .col1 {
+
+	@media (min-width: 940px) {
+		display:table-cell;
+		padding-right:40px;
+		
+	}
+	
+
+}
+.main-about .col1 h2 {
+	font-size: 18px;
+	font-family: 'Verlag A', 'Verlag B', verlag;
+	font-weight: 600;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+.about-event {
+	margin-bottom: 40px;
+}
+.event-image {
+	margin-bottom: 12px;
+}
+.event-image img {
+	width: 540px;
+	height: 200px;
+	@media (max-width: 550px) {
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+}
+// main col2
+.welcome  .col2 {
+
+	@media (min-width: 940px) {
+		display:table-cell;
+		width:320px;
+		
+	}
+}
+.quote-container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.quote-container:nth-child(even) {
+	color: #3A8E02;
+}
+.quote-container:nth-child(odd) {
+	color: #444;
+}
+.quote-container:before {
+	color: #ccc;
+	padding-bottom: 20px;
+	content: '\f006 \f006 \f006';
+	font-family: fontawesome;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: block;
+	text-align: center;
+}
+.quote-container:first-of-type:before {
+	display: none;
+}
+.quote {
+	font-weight: 600;
+	font-size: 18px;
+}
+.quote-speaker {
+	margin-top: 12px;
+}

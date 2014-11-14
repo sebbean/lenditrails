@@ -1,0 +1,208 @@
+// begin nav =====================================
+
+
+// begin navbar-area 
+.navbar-area {
+	background:#fff;
+	border-bottom:1px solid #ccc;
+}
+// end navbar-area 
+
+
+
+
+// begin navbar navbar-default
+.navbar-default {
+	background:#fff;
+	border-bottom:none;
+	margin-bottom:0;
+	border-top:none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	@media only screen and ( min-width: $screen-sm-min ) {
+		max-width:1207px;
+		margin:auto;
+		border-left:1px solid #ccc;
+		border-right:1px solid #ccc;
+	}
+	@media only screen and ( max-width: $screen-sm-min ) {
+		border:none;
+	}
+}
+// end navbar navbar-default
+
+
+
+
+// begin container-fluid
+// end container-fluid
+
+
+
+
+// begin logo-area
+// end logo-area
+
+
+
+
+// begin nav-logo
+.nav-logo {
+	float:left;
+	width:100px;
+	height:80px;
+	
+	background:#fff url(lendit_new_logo_grey.png) 0 center no-repeat;
+	background-size:100px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:15px;
+	@media only screen and ( max-width: ($screen-sm-min) ) {
+		display:none;
+	}
+}
+// end nav-logo
+
+
+
+
+// begin navbar-header
+.navbar-header {
+	@media (min-width: $screen-sm-min) {
+		float:right;
+	}
+}
+// end navbar-header
+
+
+
+
+// begin button
+.navbar-default .navbar-toggle {
+	border:none;
+	border-radius:0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color:#89BE2E;
+}
+.navbar-default .navbar-toggle:focus {
+	background-color:#eee;
+}
+.navbar-default .navbar-toggle:focus .icon-bar {
+	background-color:#89BE2E;
+}
+.navbar-default .navbar-toggle:hover {
+	background-color:#89BE2E;
+}
+.navbar-default .navbar-toggle:hover .icon-bar {
+	background-color:#fff;
+}
+// end button
+
+
+
+
+// begin navbar-collapse collapse
+.navbar-collapse {
+	@media only screen and ( min-width: $screen-sm-min ) {
+		margin-top:25px;
+		padding-left:0;
+		padding-right:0;
+	}
+	@media only screen and ( max-width: $screen-sm-min ) {
+		border-top:none;
+	}
+}	
+// end navbar-collapse collapse
+
+
+
+
+// begin ul.nav.navbar-nav
+// end ul.nav.navbar-nav
+
+
+
+
+// begin navbar-nav li
+// end navbar-nav li
+
+
+
+
+// begin navbar-nav li a
+.navbar-default .navbar-nav > li > a {
+	color:#89BE2E;
+	@media only screen and ( min-width: $screen-sm-min ) {
+		margin-right:0;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+	}
+	@media only screen and ( min-width: $screen-sm-min ) {
+		font-size:20px;
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		margin-right:1px;
+	}
+	@media only screen and ( min-width: 910px ) {
+		font-family: 'Verlag A', 'Verlag B', 'verlag';
+		font-size:20px;
+		margin-right:10px;
+	}
+}
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
+	background:#89BE2E;
+	color:#fff;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+	color:#aaa;
+	background:#f7f7f7;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+	background:#89BE2E;
+	color:#fff;
+	-webkit-border-bottom-right-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-radius-bottomright: 0;
+	-moz-border-radius-bottomleft: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+	@media only screen and ( max-width: $screen-sm-min ) {
+		color:#89BE2E;
+		background:#f0f0f0;
+	}
+}
+.navbar-nav .caret {
+}
+// end navbar-nav li a
+
+
+
+
+// begin dropdown-menu
+.navbar-nav .open .dropdown-menu {
+	@media only screen and ( max-width: $screen-sm-min ) {
+		background:#fafafa;
+		box-shadow:0 0 2px #ccc;
+	}
+}
+// end dropdown-menu
+
+
+// end nav ================================
+
+
+.conferences {
+	.nav-logo {
+		background:none;
+	}
+}

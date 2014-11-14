@@ -1,0 +1,272 @@
+// ============================================================
+// @footer
+footer {
+	margin: 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	@media (max-width: 960px) {
+		border-bottom: none;
+	}
+}
+// •div.footer-inside
+footer .footer-inside {
+	background: #fafafa;
+	border-left: 1px solid #ccc;
+	max-width: 1207px;
+	margin: auto;
+	border-right: 1px solid #ccc;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	@media (max-width: 960px) {
+		border-left: none;
+		border-right: none;
+	}
+	@media (max-width: 550px) {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+// •div.container
+footer .container {
+	width: 960px;
+	margin: auto;
+	@media (max-width: 960px) {
+		width: auto;
+	}
+}
+// •div.column1
+footer .column1 {
+	width: 430px;
+	float: left;
+	@media (max-width: 960px) {
+		float: none;
+		margin-bottom: 30px;
+		width: auto;
+	}
+}
+// •div.get-updates
+.get-updates {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+// •div#mc_embed_signup
+// •form.validate
+// •h2
+footer .column1 h2 {
+	margin-top: 0;
+	font-size: 20px;
+	font-family: 'Verlag A', 'Verlag B', verlag;
+	font-weight: 600;
+	margin-bottom: 20px;
+	@media (max-width: 550px) {
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-size: 23px;
+	}
+}
+// •div.split
+.get-updates #mc_embed_signup .split {
+	padding-bottom: 10px;
+	display: table;
+}
+// •div.mc-field-group (inputs)
+.get-updates #mc_embed_signup .split .mc-field-group input[type=text] {
+	padding: 6px 0 6px 6px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	@media (max-width: 550px) {
+		width: 140px;
+	}
+}
+.get-updates #mc_embed_signup .split + .mc-field-group input[type=email] {
+	float: none;
+	width: 316px;
+	padding: 6px 0 6px 6px;
+	@media (max-width: 550px) {
+		width: 195px;
+	}
+}
+// •div.mc-field-group ("First")
+.get-updates #mc_embed_signup .split .mc-field-group:nth-child(1) {
+	display: table-cell;
+}
+.get-updates #mc_embed_signup .split .mc-field-group:nth-child(1):before {
+	font-size: 14px;
+	content: 'First';
+	text-transform: uppercase;
+	font-weight: 400;
+}
+// •div.mc-field-group ("Last")
+.get-updates #mc_embed_signup .split .mc-field-group:nth-child(2) {
+	display: table-cell;
+	padding-left: 9px;
+}
+.get-updates #mc_embed_signup .split .mc-field-group:nth-child(2):before {
+	font-size: 14px;
+	content: 'Last';
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.get-updates #mc_embed_signup .split .mc-field-group {
+	margin-right: 10px;
+}
+// •div.mc-field-group ("Email")
+.get-updates #mc_embed_signup .split + .mc-field-group {
+	display: table;
+	float: none;
+}
+.get-updates #mc_embed_signup .split + .mc-field-group:before {
+	font-size: 14px;
+	content: 'Email';
+	text-transform: uppercase;
+	font-weight: 400;
+	position: relative;
+}
+// •div.mc-field-group
+// •input[type="text"]
+// •div.mc-field-group
+// •input[type="email"].required.email
+// •div.get-updates-responses
+.get-updates .get-updates-responses {
+	display: none;
+	float: left;
+	padding-top: 20px;
+}
+// •div#mce-responses
+.get-updates #mce-responses {
+	float: left;
+	padding-top: 20px;
+}
+// •div.response
+// •div.response
+// •div
+// •input[type="text"]
+// •div.clear
+.get-updates #mc_embed_signup .clear {
+	position: relative;
+}
+// •input[type="submit"].button
+.get-updates #mc_embed_signup .clear .button {
+	margin-right: 20px;
+	border: 1px solid #89be2e;
+		font-family: 'Verlag A', 'Verlag B', verlag;
+
+	
+	color: #89be2e;
+	background: #fff;
+	padding: 4px 10px;
+	position: absolute;
+	left: 325px;
+	top: -35px;
+	letter-spacing: .3pt;
+	font-weight: 500;
+	@media (max-width: 550px) {
+		left: 204px;
+	}
+}
+.get-updates #mc_embed_signup .clear .button:hover {
+	background: #89be2e;
+	color: #fff;
+}
+//
+// •div.column2
+footer .column2 {
+	float: right;
+	width: 430px;
+	@media (max-width: 960px) {
+		float: none;
+		width: auto;
+	}
+}
+// •h2
+footer .column2 h2 {
+	font-size: 20px;
+	font-family: 'Verlag A', 'Verlag B', verlag;
+	font-weight: 600;
+	margin-top: 0;
+	margin-bottom: 20px;
+	@media (max-width: 550px) {
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-size: 23px;
+	}
+}
+// •strong
+// •ul.social
+footer .social {
+	border-bottom: 1px dotted #ccc;
+	width: 100%;
+	display: table;
+	list-style-type: none;
+	margin: 0;
+	padding: 6px 0 0 0;
+}
+// •li
+footer .social li {
+	text-transform: uppercase;
+	padding: 0 0 20px 0;
+	float: left;
+}
+// (social links)
+footer .social li a {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	color: #6775B6;
+	padding-left: 55px;
+	padding-top: 14px;
+	font-size: 16px;
+	font-family: 'Verlag A', 'Verlag B', verlag;
+	font-weight: 600;
+	width: 50px;
+	float: left;
+	height: 48px;
+	margin-bottom: 2px;
+	display: block;
+	background: url(social.png) 0 0 no-repeat;
+	opacity: .8;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	@media (max-width: 550px) {
+		padding-left: 54px;
+	}
+}
+footer .social li a i {
+	display: none;
+}
+footer .social li a:hover {
+	text-decoration: none;
+	opacity: 1;
+}
+footer .social li a.twitter {
+	background-position: 0 -50px;
+	color: #00B8F0;
+}
+footer .social li a.googleplus {
+	background-position: 0 -100px;
+	color: #EF4B32;
+}
+footer .social li a.youtube {
+	background-position: 0 -150px;
+	color: #D4221E;
+}
+footer .social li a.email {
+	background-position: 0 -200px;
+	color: #808080;
+}
+footer .social li a.linkedin {
+	background-position: 0 -250px;
+	color: #808080;
+}
+// Contact Us
+footer .contactus {
+	float: right;
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+	display: table;
+}
+footer .contactus li {
+	display: table-cell;
+	padding-top: 20px;
+	padding-left: 20px;
+	font-weight: 500;
+}

@@ -8,8 +8,28 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
+
 */
+@import "bootstrap-sprockets";
 @import "bootstrap";
-@import "mixins";
-@import "./main";
+@import "foundation_and_overrides";
+@import "_general/variables";
+@import "_general/mixins";
+@import "_general/general";
+@import "_general/footer";
+@import "_terms/old-terms";
+@import "_attendees-visualizer/old-attendees-visualizer";
+@import "_general/form-elements";
+@import "_general/old-column-styles";
+@import "_general/old-subhero";
+@import "_general/old-nav";
+@import "_homepage/old-combined-home";
+@import "_conferences/eu14-old0";
+@import "_conferences/eu14-old1";
+@import "_conferences/eu14-old2";
+@import "_conferences/eu14";
+@import "_conferences/ny15";
+@import "_speakers/old-london-speakers";
+@import "_sponsors/old-sponsors";
+@import "_about/old-about-page";
+@import "_videos/old-video-page";

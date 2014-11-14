@@ -1,0 +1,24 @@
+.container {
+	width: 960px;
+	margin: auto;
+	@media (max-width: 960px) {
+		width: auto;
+	}
+}
+.cols {
+	@include clearfix;
+	margin-top:20px;
+}
+.cols p {
+	color: #000;
+	font-size: 18px;
+	margin-bottom:1em;
+}
+.cols ul {
+	padding-left:18px;
+}
+.cols li {
+	padding-left:0;
+	font-size: 18px;
+	margin-bottom:.5em;
+}

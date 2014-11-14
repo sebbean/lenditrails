@@ -1,0 +1,68 @@
+// begin Form elements
+input[type=text], input[type=email], textarea {
+	display: block;
+	margin: 0;
+	padding: 3px 0 1px 4px;
+	border: 1px solid #999;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #e5e5e5;
+	border-left: 1px solid #ddd;
+	letter-spacing: .3pt;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset;
+	color: #444;
+	font-weight: 400;
+	font-size: 18px;
+	text-overflow: ellipsis;
+	line-height: 20px;
+}
+input[type=text]:hover, input[type=email]:hover {
+	border-top: 1px solid #999;
+	border-right: 1px solid #aaa;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #aaa;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+}
+input[type=text]:focus, input[type=email]:focus {
+	outline: 0;
+	border-top: 1px solid #666;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #aaa;
+	border-left: 1px solid #999;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) inset;
+}
+input[type=text]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder {
+	color: #d5d5d5;
+	padding-top: 1px;
+}
+input[type=text]:focus::-webkit-input-placeholder, input[type=email]:focus::-webkit-input-placeholder {
+	color: #ccc;
+}
+input[type=text]:-moz-placeholder, input[type=email]:-moz-placeholder {
+	color: #d5d5d5;
+	padding-top: 1px;
+}
+input[type=text]:focus:-moz-placeholder, input[type=email]:focus:-moz-placeholder {
+	color: #ccc;
+}
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder {
+	color: #d5d5d5;
+	padding-top: 1px;
+}
+input[type=text]:focus::-moz-placeholder, input[type=email]:focus::-moz-placeholder {
+	color: #ccc;
+}
+input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder {
+	color: #d5d5d5;
+	padding-top: 1px;
+}
+input[type=text]:focus:-ms-input-placeholder, input[type=email]:focus:-ms-input-placeholder {
+	color: #ccc;
+}
+button {
+	letter-spacing: .3pt;
+}
+// end Form elements

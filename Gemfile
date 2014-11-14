@@ -8,14 +8,7 @@ gem 'sass-rails', '~> 4.0.0'
 gem 'autoprefixer-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
-<<<<<<< HEAD
-gem 'jquery-ui-rails', '~> 4.2.1'
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
 
-# Use jquery as the JavaScript library
-=======
->>>>>>> 4c3482dbc72d793092c3ede140f54ffc3730a31c
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
@@ -23,7 +16,7 @@ gem 'canonical-rails', github: 'jumph4x/canonical-rails'
 gem 'foundation-rails'
 gem "flickr-objects"
 
-gem 'herd', git: 'git@github.com:ginlane/herd', branch: 'feature/jquery-update'
+gem 'herd', git: 'git@github.com:ginlane/herd', branch: 'feature/typheous'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -35,10 +28,8 @@ group :production do
 end
 
 
-<<<<<<< HEAD
-
 gem 'devise'
-gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'activeadmin', github: 'activeadmin/activeadmin'
 
 # gem 'font-awesome-sass'
 
@@ -54,6 +45,3 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem 'pry'
-=======
-ruby '1.9.3'
->>>>>>> 4c3482dbc72d793092c3ede140f54ffc3730a31c

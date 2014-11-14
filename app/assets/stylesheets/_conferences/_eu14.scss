@@ -75,7 +75,7 @@ ul.eu14-icon li {
 	border:4px solid #DBEDB8;
 }
 .eu14 .icon {
-	max-width:80%;
+	max-width:60%;
 }
 .eu14 .inspir .icon { background-image: url(/assets/feature-inspir.png); }
 .eu14 .interac .icon { background-image: url(/assets/feature-interac.png); }
@@ -86,7 +86,7 @@ ul.eu14-icon li {
 .eu14 .cocktail .icon { background-image: url(/assets/feature-cocktail.png); }
 .eu14-header {
 	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-	font-size: 36px;
+	font-size: 32px;
 	font-weight: 500;
 	line-height: 30px;
 	margin-top: 0;
@@ -237,7 +237,12 @@ ul.eu14-icon li {
 }
 .eu14-keynotes {
 	font-family: 'Verlag A', 'Verlag B', verlag;
+	div {
+		font-weight:400;
+		font-size:1.025em;
+	}
 	.item .name {
+		color:#222;
 		font-weight:600;
 		padding-top:10px;
 	}
@@ -316,9 +321,9 @@ ul.eu14-icon li {
 		td {
 			font-family: 'Verlag A', 'Verlag B', verlag;
 			vertical-align:top;
-			padding-top:10px;
-			padding-bottom:10px;
-			font-size:1.2em;
+			padding-top:15px;
+			padding-bottom:15px;
+			font-size:1.1em;
 			line-height:1.4em;
 		}
 		tr:first-of-type td {
@@ -366,7 +371,7 @@ ul.eu14-icon li {
 }
 .eu14-download-agenda {
 	color:#999;
-	margin-top:8px;
+	margin-top:6px;
 	font-family: 'Verlag A', 'Verlag B', verlag;
 	font-size:18px;
 	font-weight:600;
@@ -378,7 +383,7 @@ ul.eu14-icon li {
 
 .eu14-view-all-speakers {
 	color:#999;
-	margin-top:8px;
+	margin-top:6px;
 	font-family: 'Verlag A', 'Verlag B', verlag;
 	font-size:18px;
 	font-weight:600;

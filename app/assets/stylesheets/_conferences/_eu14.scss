@@ -75,7 +75,7 @@ ul.eu14-icon li {
 	border:4px solid #DBEDB8;
 }
 .eu14 .icon {
-	max-width:60%;
+	max-width:80%;
 }
 .eu14 .inspir .icon { background-image: url(/assets/feature-inspir.png); }
 .eu14 .interac .icon { background-image: url(/assets/feature-interac.png); }
@@ -97,8 +97,8 @@ ul.eu14-icon li {
 }
 .eu14-header2 {
 	font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-	font-size: 18px;
-	text-transform:uppercase;
+	font-size: 24px;
+	text-align:center;
 	font-weight: 500;
 	line-height: 30px;
 	margin-top: 0;
@@ -122,23 +122,22 @@ ul.eu14-icon li {
 	font-size:18px;
 }
 .eu14-attendee-map-link {
-	background:url(https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-lattice-light.jpg) center center no-repeat;
 }
 .eu14-attendee-map-link a {
-	display:block;
-	border:1px solid #fff;
+	background:#D9E6B6;
+	display:table;
+	margin: auto;
 	position:relative;
 	padding:10px;
-	border:1px solid lighten(#9CC83D, 20%);
+	max-width:80%;
 }
 .eu14-attendee-map-link img {
-	max-width:80%;
 	margin:auto;
 	display:block;
 	opacity:.9;
 }
 .eu14-attendee-map-link a:hover {
-	border:1px solid #9CC83D;
+	background:#D9E6B6 ;
 }
 .eu14-attendee-map-link a:hover img {
 	opacity:1;
@@ -157,8 +156,8 @@ ul.eu14-icon li {
 	display:block;
 	position:absolute;
 	background:#fff;
-	font-weight:400;
-	font-family: 'Open Sans', sans-serif;
+	font-weight:600;
+	font-size:18px;
 }
 .eu14-attendee-map-link a:hover:after {
 	background:#9CC83D;
@@ -286,7 +285,7 @@ ul.eu14-icon li {
 		text-transform:uppercase;
 		font-size:16px;
 		font-weight:600;
-		padding:10px 12px;
+		padding:15px 12px;
 		border-bottom:1px solid #ddd;
 		background:#eee;
 		cursor:pointer;
@@ -300,7 +299,7 @@ ul.eu14-icon li {
 			border-left:none;
 		}
 		&.on {
-			background:#fff;
+			background:#fafafa;
 			border-bottom:none;
 			color:#333;
 		}
@@ -315,16 +314,17 @@ ul.eu14-icon li {
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		border:none;
-		border-bottom:1px solid #ddd;
+		background:#fafafa;
 		tr {
+			background:none;
 		}
 		td {
 			font-family: 'Verlag A', 'Verlag B', verlag;
 			vertical-align:top;
-			padding-top:15px;
-			padding-bottom:15px;
-			font-size:1.1em;
-			line-height:1.4em;
+			padding-top:8px;
+			padding-bottom:8px;
+			font-size:1em;
+			line-height:1.2em;
 		}
 		tr:first-of-type td {
 			padding-top:20px;
@@ -342,7 +342,7 @@ ul.eu14-icon li {
 		}
 		td:last-of-type {
 			padding-right:12px;
-			font-weight:400;
+			font-weight:600;
 		}
 	}
 }
@@ -362,52 +362,79 @@ ul.eu14-icon li {
 	@include clearfix;
 	.eu14-header {
 		margin:0;
+		line-height:32px;
 		padding:0;
-			@media (min-width: 641px) {
-		
-		float:left;
-	}
+		padding-bottom:6px;
+		@media (min-width: 641px) {
+			float:left;
+		}
 	}
 }
 .eu14-download-agenda {
 	color:#999;
-	margin-top:6px;
+	margin-bottom:0;
 	font-family: 'Verlag A', 'Verlag B', verlag;
+	margin-top:5px;
+	line-height:32px;
 	font-size:18px;
 	font-weight:600;
-			@media (min-width: 641px) {
-	
-	float:right;
-			}
+	@media (min-width: 641px) {
+		float:right;
+	}
 }
-
 .eu14-view-all-speakers {
 	color:#999;
-	margin-top:6px;
+	margin-top:5px;
 	font-family: 'Verlag A', 'Verlag B', verlag;
 	font-size:18px;
 	font-weight:600;
-			@media (min-width: 641px) {
-	
-	float:right;
-			}
+	@media (min-width: 641px) {
+		float:right;
+	}
 }
-
-
-.eu14 {
-	.eu14-register-area {
+.eu14-register-area {
+	margin-top:2em;
+	max-width:300px;
+	margin:auto;
+	text-align:center;
+}
+.eu14-bottom-callouts {
+	margin-top:1.2em;
+	list-style-type:none;
+	margin-left:0;
+	margin-bottom:0;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	width:100%;
+	li {
+		padding-bottom:30px;
+		font-family: 'Verlag A', 'Verlag B', verlag;
+		font-size:18px;
+	}
+	display:table;
+	li {
+		display:table-cell;
+		background:#F5F9EA;
+		width:48%;
+		text-align:center;
+		vertical-align:middle;
+	@media (max-width: 640px) {
+		width:auto;
+		display:block;
+	}		
 		.register-button {
 			margin-top:10px;
-			@media (min-width: 767px) {
-			}
 			a {
+				margin:auto;
+				max-width:80%;
 				font-size: 18px;
 				font-weight: 600;
-				background: #fff;
+				background: $linkcolor;
+				color:#fff;
 				line-height:1.2em;
-				border: 1px solid #89be2e;
 				display: block;
-				padding:6px 16px;
+				font-family: 'Verlag A', 'Verlag B', verlag;
+				padding:8px 16px;
 				text-align:center;
 				&:hover {
 					text-decoration:none;
@@ -417,13 +444,20 @@ ul.eu14-icon li {
 			}
 		}
 	}
+	li.eu14-divider {
+		width:2%;
+		background:#fff;
+	}
 }
-.eu14-register-area {
-	margin-top:2em;
-}
-.eu14-register:first-of-type {
-	text-align:left;
+.eu14-register-copy {
 	font-size:20px;
-	font-weight:500;
-	color:#222;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:20px;
+}
+.eu14-attendees-map-header {
+	font-size:20px;
+	font-weight:normal;
+	padding-top:.5em;
+	padding-bottom:.5em;
 }

@@ -1,7 +1,9 @@
 LenditRails::Application.routes.draw do
 
-  root 'conferences#europe'
+  root 'welcome#home'
   # root 'welcome#home'
+  get '/europe' => 'conferences#europe'
+  get '/nyc' => 'conferences#nyc'
   get '/about' => 'welcome#about'
   get '/speakers' => 'speakers#index'
   get '/speakers/sign-up' => 'speakers#sign-up'
@@ -11,20 +13,17 @@ LenditRails::Application.routes.draw do
   get '/europe/attendees' => 'welcome#europe14_attendees'
   get '/san-francisco-2014/attendees' => 'welcome#sf14_attendees'
   get '/sponsors' => 'sponsors#europe_sponsors'
-
-  # 301 redirects with GA tracking codes
-  get '/sharecast' => 'conferences#sharecast'
-  get '/europe' => 'conferences#europe'
-  get '/europe/agenda' => 'agendas#europe'
-
   get '/live' => 'videos#live'
   get '/photos', to: redirect("https://www.flickr.com/photos/lenditconference")
 
-  get '/home' => 'welcome#home'
-  get '/nyc' => 'conferences#nyc'
-  get '/san-francisco-2014/sponsors' => 'sponsors#lendit2014'
-  get '/test' => 'sponsors#test'
+  # 301 redirects with GA tracking codes
+  get '/sharecast' => 'conferences#sharecast'
 
+  # get '/home' => 'welcome#home'
+  # get '/san-francisco-2014/sponsors' => 'sponsors#lendit2014'
+  # get '/test' => 'sponsors#test'
+
+  # get '/europe/agenda' => 'agendas#europe'
   # get '/europe/sponsors' => 'sponsors#europe_sponsors'
   # get '/europe-test' => 'conferences#europe_test'
   # get '/china' => 'conferences#china'

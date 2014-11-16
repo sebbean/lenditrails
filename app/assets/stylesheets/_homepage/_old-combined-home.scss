@@ -42,8 +42,16 @@
 	}
 }
 .homepage-main-text {
+	h1 {
+		line-height:1.1em;
+		margin-bottom:.75em;
+	}
 	.body-copy {
 		margin-right:40px;
+		padding-bottom:.4em;
+		p {
+		font-size:18px;
+	}
 	}
 }
 .homepage .lendit-intro {
@@ -90,14 +98,16 @@
 		background-position:center center;
 		background-repeat:no-repeat;
 		display:table-cell;
-		vertical-align:middle;
+		vertical-align:top;
 		height:260px;
 		width:33%;
 		position:relative;
+
 		@media (max-width: 550px) {
 			width:auto;
 			max-width:366px;
 			display:block;
+			margin-bottom:1em;
 		}
 		&.london {
 			background-image:url(https://s3-us-west-2.amazonaws.com/lendit/conf-thumb-london.jpg);
@@ -111,7 +121,7 @@
 		> a {
 			height:260px;
 			display:block;
-			padding-top:130px;
+			padding-top:110px;
 			box-sizing: border-box;
 			-moz-box-sizing: border-box;
 			background: rgba(0, 0, 0, 0.5) ;
@@ -119,6 +129,7 @@
 			color:#fff;
 			opacity:.9;
 			transition: all ease-in-out .1s;
+			
 			.conf-date {
 				display:table;
 				margin:10px auto;
@@ -136,6 +147,7 @@
 			&:hover {
 				opacity:1;
 				background:rgba(20, 20, 20, 0.7)  ;
+				text-decoration:none;
 				.conf-date {
 					color:rgba(146, 211, 96, 1);
 					&:after {
@@ -158,26 +170,59 @@
 	margin-top:10px;
 	font-size:18px;
 }
-.homepage .conf-register {
+.homepage .conf-hero-buttons {
+	
+	width:100%;
 	position:absolute;
+	margin:auto;
 	margin-top:-40px;
-	right:0;
 	font-weight:500;
-	text-transform:uppercase;
+		text-transform:uppercase;
+
+	
 	line-height:20px;
+	display:table;
+
+	border-collapse: collapse;
+    border-spacing: 0;
+	
+	div {
+		display:table-cell;
+		width:50%;
+		
+
+	}
+
 	a {
 		display:block;
-		background:#eee;
-		padding:10px 18px;
+		white-space:nowrap;
+		
+		text-shadow:0 1px 2px rgba(0, 0, 0, 0.5) ; 
+
+		background: rgba(139, 191, 40, 1);
+		color:#fff;
+		padding:10px 10px;
 		transition: all ease-in-out .1s;
-		background:#fff;
-		color: rgba(139, 191, 40, 1);
 		&:hover {
-			background: rgba(139, 191, 40, 1);
-			color:#fff;
+			text-decoration:none;
+			color: rgba(139, 191, 40, 1);
+			background:#fff;
+		text-shadow:none; 
+		}
+	}
+	.watch-live {
+		background:orange;
+		color:#fff;
+		border-right:1px solid #3A536C;
+		
+		&:hover {
+			color:orange;
 		}
 	}
 }
+
+
+
 // @@
 .homepage-recap {
 	background: url(https://s3-us-west-2.amazonaws.com/lendit/homepage-recap.jpg) center center no-repeat;
@@ -250,3 +295,7 @@
 	}
 }
 // ============================================================
+.homepage .ny15-wide-quote {
+	padding:10px;
+	margin-left:-10px;
+}

@@ -577,6 +577,9 @@ ul.eu14-icon li {
 		width:auto;
 	}
 	a {
+		@media (max-width: 960px) {
+			background:orange;
+		}
 		@media (min-width: 961px) {
 			span:first-of-type {
 				color: orange;
@@ -600,7 +603,7 @@ ul.eu14-icon li {
 		&:hover:before {
 			background-color:orange;
 			box-shadow:none;
-			
+
 		}
 		u {
 			text-decoration:none;

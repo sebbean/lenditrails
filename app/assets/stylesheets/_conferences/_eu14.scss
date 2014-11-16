@@ -487,47 +487,6 @@ ul.eu14-icon li {
 
 
 // begin register-livestream
-.watchlive-option2 {
-	@media (max-width: 767px) {
-		width:auto;
-	}
-	a {
-		@media (max-width: 960px) {
-		}
-		span {
-			
-		}	
-		strong {
-			@media (max-width: 960px) {
-				font-size:30px;
-				font-weight:500;
-				padding-top:3px;
-			}
-		}	
-		&:before {
-			height:110px;
-		}
-		&:hover:before {
-		}
-		u {
-			text-decoration:none;
-		}
-		&:hover u {
-		}
-		&:hover {
-			@media (max-width: 960px) {
-				strong {
-				}
-				span {
-				}
-			}
-		}
-	}
-
-	span.sponsored-by {
-		padding-top:10px;
-	}
-}
 .watchlive-option1 {
 	@media (max-width: 767px) {
 		width:auto;
@@ -566,6 +525,93 @@ ul.eu14-icon li {
 				background:black;
 				span {
 					color:#fff;
+				}
+			}
+		}
+	}
+	span.sponsored-by {
+		padding-top:10px;
+	}
+}
+.watchlive-option2 {
+	@media (max-width: 767px) {
+		width:auto;
+	}
+	a {
+		@media (max-width: 960px) {
+		}
+		span {
+		}	
+		strong {
+			@media (max-width: 960px) {
+				font-size:30px;
+				font-weight:500;
+				padding-top:3px;
+			}
+		}	
+		&:before {
+			height:110px;
+		}
+		&:hover:before {
+		}
+		u {
+			text-decoration:none;
+		}
+		&:hover u {
+		}
+		&:hover {
+			@media (max-width: 960px) {
+				strong {
+				}
+				span {
+				}
+			}
+		}
+	}
+	span.sponsored-by {
+		padding-top:10px;
+	}
+}
+.watchlive-option3 {
+	@media (max-width: 767px) {
+		width:auto;
+	}
+	a {
+		@media (min-width: 961px) {
+			span:first-of-type {
+				color: orange;
+			}	
+			strong{
+				color:orange;
+			}
+		}
+		strong {
+			@media (max-width: 960px) {
+				font-size:30px;
+				font-weight:500;
+				padding-top:3px;
+			}
+		}	
+		&:before {
+			height:110px;
+			background-color:orange;
+			background-position:18px center;
+		}
+		&:hover:before {
+			background-color:orange;
+			box-shadow:none;
+			
+		}
+		u {
+			text-decoration:none;
+		}
+		&:hover u {
+		}
+		&:hover {
+			@media (max-width: 960px) {
+				strong {
+				}
+				span {
 				}
 			}
 		}

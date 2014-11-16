@@ -2,7 +2,11 @@ var app = app || {};
 
 $(document).ready(function() {
 
-  $(document).foundation();
+  $('.menu-item-has-children').on("click", function(e){
+    e.preventDefault();
+    $('.menu-item-has-children').addClass('open');
+  });
+
 
   // toggle agenda
   $('.pm-button').on('click', function(e){

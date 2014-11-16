@@ -2,8 +2,7 @@ var app = app || {};
 
 $(document).ready(function() {
 
-  $('.menu-item-has-children').on("click", function(e){
-    e.preventDefault();
+  $('.menu-item-has-children').on("click", function(){
     $('.menu-item-has-children').toggleClass('open');
   });
 

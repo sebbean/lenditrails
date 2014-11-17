@@ -143,12 +143,14 @@
 	@media only screen and ( min-width: $screen-sm-min ) {
 		font-size:20px;
 		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-		margin-right:1px;
+		margin-right:0;
+		padding-left:9px;
+		padding-right:9px;
 	}
-	@media only screen and ( min-width: 910px ) {
+	@media only screen and ( min-width: 980px ) {
 		font-family: 'Verlag A', 'Verlag B', 'verlag';
 		font-size:20px;
-		margin-right:10px;
+		margin-right:5px;
 	}
 }
 .navbar-default .navbar-nav > li > a:hover, 

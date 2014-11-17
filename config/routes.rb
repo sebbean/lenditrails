@@ -14,7 +14,7 @@ LenditRails::Application.routes.draw do
   get '/san-francisco-2014/attendees' => 'welcome#sf14_attendees'
   get '/sponsors' => 'sponsors#europe_sponsors'
   get '/live' => 'videos#live'
-  get '/photos', to: redirect("https://www.flickr.com/photos/lenditconference")
+  get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
 
   # 301 redirects with GA tracking codes
   get '/sharecast' => 'conferences#sharecast'

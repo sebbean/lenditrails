@@ -20,6 +20,7 @@ LenditRails::Application.routes.draw do
   get '/sharecast' => 'conferences#sharecast'
 
   get '/videos/index' => 'videos#index'
+  get '/videos/:id' => 'videos#show'
 
   # get '/home' => 'welcome#home'
   # get '/san-francisco-2014/sponsors' => 'sponsors#lendit2014'

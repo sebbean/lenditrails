@@ -4,7 +4,7 @@ class VideosController < ApplicationController
   end
 
   def index
-    @videos = Video.all
+    @videos = Video.where(conference_id: 1)
   end
 
 

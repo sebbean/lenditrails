@@ -16,7 +16,7 @@
 					<% @videos.each do |video| %>
 						<li>
 							<div class="video-embed">
-								<%= raw video.video_embed %>
+								<img src="<%= raw video.img %>">
 							</div>
 							<div class="video-title">
 								<%= video.title %>

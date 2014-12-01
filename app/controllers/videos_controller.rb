@@ -7,5 +7,10 @@ class VideosController < ApplicationController
     @videos = Video.where(conference_id: 1)
   end
 
+  def show
+    @video = Video.find(params[:id])
+  end
+
+
 
 end

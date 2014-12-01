@@ -3,10 +3,31 @@
 <% meta_keywords "p2p, online lending, peer-to-peer, LendIt, videos, presentations" %>
 <%= canonical_tag -%>
 
-<h1>Videos</h1>
-
-<% @videos.each do |video| %>
-  <%= raw video.video_embed %><br />
-  <h3><%= video.title %><br /></h3>
-  <p><%= raw video.description %><br /></p>
-<% end %>
+<div class="page-videos">
+	<div class="videos-main">
+		<div class="row">
+			<div class="columns large-12">
+				<h1>Videos</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="columns large-12">
+				<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
+					<% @videos.each do |video| %>
+						<li>
+							<div class="video-embed">
+								<%= raw video.video_embed %>
+							</div>
+							<div class="video-title">
+								<%= video.title %>
+							</div>
+							<div class="video-description">
+								<%= raw video.description %>
+							</div>
+						</li>
+					<% end %>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

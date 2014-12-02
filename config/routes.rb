@@ -1,5 +1,6 @@
 LenditRails::Application.routes.draw do
 
+
   root 'welcome#home'
   # root 'welcome#home'
   get '/europe' => 'conferences#europe'
@@ -19,9 +20,7 @@ LenditRails::Application.routes.draw do
   # 301 redirects with GA tracking codes
   get '/sharecast' => 'conferences#sharecast'
 
-  get '/videos/index' => 'videos#index'
-  get '/videos/:id' => 'videos#show'
-
+  resources :videos, only: [:index, :show]
   # get '/home' => 'welcome#home'
   # get '/san-francisco-2014/sponsors' => 'sponsors#lendit2014'
   # get '/test' => 'sponsors#test'
@@ -55,7 +54,7 @@ LenditRails::Application.routes.draw do
   get '/event/:id', to: redirect('/about', status: 302)
   get '/lendit2013', to: redirect('/about', status: 302)
   get '/lendit-spring-2014', to: redirect('/about', status: 302)
-  get '/videos', to: redirect("https://www.youtube.com/user/LendItConference", status: 302)
+  # get '/videos', to: redirect("https://www.youtube.com/user/LendItConference", status: 302)
   get '/videos-2', to: redirect("http://lendit.tv", status: 302)
 
   #302 redirect to be changed when the LendIt 2015 pages are done

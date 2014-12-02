@@ -1,4 +1,14 @@
-<h2><%= @video.title %></h2>
+<%= link_to '<< Videos', videos_path %>
 
-<%= raw @video.video_embed %>
-<%= raw @video.description %>
+<div style="width: 600px;">
+  <%= raw @video.embed %>
+</div>
+
+<div>
+  <%= @video.title %><br />
+  <%= @video.conference_id %>
+</div>
+
+<div>
+  <%= @video.description %>
+</div>

@@ -1,14 +1,25 @@
-<%= link_to '<< Videos', videos_path %>
 
-<div style="width: 600px;">
-  <%= raw @video.embed %>
-</div>
-
-<div>
-  <%= @video.title %><br />
-  <%= @video.conference_id %>
-</div>
-
-<div>
-  <%= raw @video.description %>
+<div class="page-video">
+	<div class="video-main">
+		<div class="row">
+			<div class="columns">
+				<div class="link-back-to-videos">
+					<%= link_to 'Videos', videos_path %>
+				</div>
+				<div class="video-embed">
+					<!-- can we make this embed width 100%? -->
+					<%= raw @video.embed %>
+				</div>
+				<div class="video-title">
+					<%= @video.title %>
+				</div>
+				<div class="conf-id">
+					<%= @video.conference_id %>
+				</div>
+				<div class="video-description">
+					<%= raw @video.description %>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

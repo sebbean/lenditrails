@@ -4,28 +4,70 @@
 <%= canonical_tag -%>
 
 <div class="page-videos">
-  <div class="videos-main">
-    <div class="row">
-      <div class="columns large-12">
-        <h1>LendIt Europe Videos</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="columns large-12">
-        <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
-          <% @euvideos.each do |video| %>
-            <li>
-            <%= link_to video do %>
-            <div><img src="<%= video.img %>" alt="<%= video.title %>" style="width: 250px;"></div>
-            <div><%= video.title %></div>
-            <% end %>
-            </li>
-          <% end %>
-        </ul>
-      </div>
-    </div>
-  </div>
+	<div class="videos-main">
+		<div class="row">
+			<div class="columns large-12">
+				<h1>LendIt Europe Videos</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="columns large-12">
+				<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
+					<li>
+						<a href="http://localhost:3000/videos/lendit-europe-2014-bryan-zhang" class="video-item">
+							<div class="video-image">
+								<img src="/assets/2014-eu-cleech-keynote.psd.jpeg" />
+							</div>
+							<div class="video-title">
+								Cormac Leech Keynote
+							</div>
+							<div class="video-description">
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.
+							</div>
+						</a>
+
+					</li>
+					<li>
+						<a href="http://localhost:3000/videos/lendit-europe-2014-bryan-zhang" class="video-item">
+							<div class="video-image">
+								<img src="/assets/2014-eu-rlewis-keynote.psd.jpeg" />
+							</div>
+							<div class="video-title">
+								Ryhdian Lewis Keynote
+							</div>
+							<div class="video-description">
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.
+							</div>
+						</a>
+
+					</li>
+					<li>
+						<a href="http://localhost:3000/videos/lendit-europe-2014-bryan-zhang" class="video-item">
+							<div class="video-image">
+								<img src="/assets/2014-eu-sdesai-keynote.psd.jpeg" />
+							</div>
+							<div class="video-title">
+								Samir Desai Keynote
+							</div>
+							<div class="video-description">
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.
+							</div>
+						</a>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </div>
 
 
 
+<!-- temporarily hiding this:
+<% @euvideos.each do |video| %>
+	<%= link_to video do %>
+		<img src="<%= video.img %>" alt="<%= video.title %>" >
+		<%= video.title %>
+	<% end %>
+<% end %>
+-->

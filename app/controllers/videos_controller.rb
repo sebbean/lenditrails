@@ -4,9 +4,8 @@ class VideosController < ApplicationController
   end
 
   def index
-    # @videos = Video.all
-    @europe = Conference.where(title: 'LendIt Europe 2014').first
-    @euvideos = @europe.videos
+    eu = Conference.where(title: 'LendIt Europe 2014').first
+    @eu14videos = eu.videos
   end
 
   def show

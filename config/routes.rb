@@ -16,6 +16,7 @@ LenditRails::Application.routes.draw do
   get '/sponsors' => 'sponsors#europe_sponsors'
   get '/live', to: redirect('/videos', status: 301)
   get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
+  get '/2014/europe/photos' => 'photos#eu14'
 
   # 301 redirects with GA tracking codes
   get '/sharecast' => 'conferences#sharecast'

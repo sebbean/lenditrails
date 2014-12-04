@@ -1,6 +1,8 @@
 class PhotosController < ApplicationController
-  def index
-    person = Flickr.people.find("129324015@N07")
-    @photos = person.public_photos(sizes: true).map(&:medium500!)
+
+  def eu14
+    eu14 = Conference.where(title: 'LendIt Europe 2014').first
+    @eu14photos = eu14.photos
   end
+
 end

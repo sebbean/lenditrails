@@ -15,6 +15,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'canonical-rails', github: 'jumph4x/canonical-rails'
 gem 'foundation-rails'
 gem "flickr-objects"
+gem 'friendly_id', '~> 5.0.0'
 
 gem 'herd', git: 'git@github.com:ginlane/herd', branch: 'feature/typheous'
 

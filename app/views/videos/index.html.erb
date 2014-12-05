@@ -1,1 +1,33 @@
-<h1>Videos</h1>
+<%= title "LendIt Conference Videos" %>
+<% meta_description "Videos of the LendIt Peer-to-Peer and Online Lending Conference" %>
+<% meta_keywords "p2p, online lending, peer-to-peer, LendIt, videos, presentations" %>
+<%= canonical_tag -%>
+
+<div class="page-videos">
+	<div class="videos-main">
+		<div class="row">
+			<div class="columns large-12">
+				<h1>LendIt Europe Videos</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="columns large-12">
+				<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
+					<% @eu14videos.each do |video| %>
+						<li>
+							<%= link_to video, class: 'video-item' do %>
+								<div class="video-image">
+									<img src="<%= video.img %>" alt="<%= video.title %>">
+								</div>
+								<div class="video-title">
+									<%= video.title %>
+								</div>
+							<% end %>
+						</li>
+					<% end %>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+

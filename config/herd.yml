@@ -1,0 +1,18 @@
+---
+transforms:
+  Speaker:
+    uploader.index:
+      Magick:
+        options:
+          resize: 800x
+    list:
+      Magick:
+        options:
+          crop: 600x650+100+75
+          resize: 300x
+
+defaults:
+  Magick:
+    options:
+      quality: 70
+      format: jpg

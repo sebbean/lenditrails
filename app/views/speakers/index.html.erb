@@ -20,7 +20,7 @@
 					<a class="current-speaker" href="#<%= raw speaker.first_name %><%= raw speaker.last_name %>">
 						<div class="speaker">
 							<div class="speaker-top">
-								<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+								<%= herd_tag speaker.asset.n('list'), class: 'speaker-image', alt: "#{speaker.first_name} #{speaker.last_name}" %>
 								<div class="speaker-top-info">
 									<div class="speaker-name"><%= raw speaker.first_name %> <%= raw speaker.last_name %></div>
 									<div class="speaker-title"><%= raw speaker.title %></div>
@@ -62,25 +62,3 @@
 <%#= render 'speakers/past_speakers' %>
 
 </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

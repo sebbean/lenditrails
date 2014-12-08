@@ -210,8 +210,7 @@
 	@include clearfix;
 }
 .current-speakers a.current-speaker .speaker .speaker-top .speaker-image {
-	width: 130px;
-	height: 157px;
+	max-width: 130px;
 	margin-right: 10px;
 	float:left;
 	@media (max-width: 550px) {

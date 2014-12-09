@@ -1,5 +1,5 @@
 class DropVideosTable < ActiveRecord::Migration
-  def down
+  def change
     drop_table :videos
   end
 end

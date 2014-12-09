@@ -22,15 +22,10 @@ LenditRails::Application.routes.draw do
   get '/sharecast' => 'conferences#sharecast'
 
   resources :videos, only: [:index, :show]
+
   # get '/home' => 'welcome#home'
   # get '/san-francisco-2014/sponsors' => 'sponsors#lendit2014'
   # get '/test' => 'sponsors#test'
-
-  # get '/europe/agenda' => 'agendas#europe'
-  # get '/europe/sponsors' => 'sponsors#europe_sponsors'
-  # get '/europe-test' => 'conferences#europe_test'
-  # get '/china' => 'conferences#china'
-  # get '/home-test' => 'welcome#home_test'
 
   # get '/europe/speakers' => 'speakers#europe'
   # See all redirects in WelcomeController

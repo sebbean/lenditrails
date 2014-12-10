@@ -7,6 +7,7 @@
 		font-size:18px;
 
 		a {
+
 		&:before {
 			content: '\f104 ';
 			font-family:FontAwesome;
@@ -14,6 +15,9 @@
 			
 			
 		}	
+		&:hover,&:active,&:focus {
+			text-decoration:none;
+		}
 	}
 
 	}
@@ -64,9 +68,9 @@
 
 	.video-title {
 		font-size: 20px;
-		margin-bottom: 1em;
 		font-weight: 400;
 		margin-top:1em;
+		min-height:72px;
 	}
 
 	#wistia_13_requireEmail_first_name {

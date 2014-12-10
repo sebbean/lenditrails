@@ -1,6 +1,6 @@
 class CreateVideos < ActiveRecord::Migration
   def change
-    create_table :videos do |t|
+    create_table(:videos, force: true) do |t|
       t.string :title
       t.text :description
       t.string :slug

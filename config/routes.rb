@@ -23,9 +23,9 @@ LenditRails::Application.routes.draw do
 
   resources :videos, only: [:index, :show]
 
-  # get '/home' => 'welcome#home'
-  # get '/san-francisco-2014/sponsors' => 'sponsors#lendit2014'
-  # get '/test' => 'sponsors#test'
+
+  # LendIt USA 2015
+  get '/2015/USA/start-up-zone' => 'conferences#nyc15_startup'
 
   # get '/europe/speakers' => 'speakers#europe'
   # See all redirects in WelcomeController

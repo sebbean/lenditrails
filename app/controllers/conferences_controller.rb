@@ -13,6 +13,9 @@ class ConferencesController < ApplicationController
   def nyc
   end
 
+  def nyc15_startup
+  end
+
   def europe_test
   end
 

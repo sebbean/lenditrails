@@ -22,4 +22,9 @@ module ApplicationHelper
       content_for?(:meta_description) ? content_for(:meta_description) : APP_CONFIG['meta_description']
     end
   end
+
+  def body_class(class_name = "default-class")
+    content_for :body_class, class_name
+  end
+
 end

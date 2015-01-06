@@ -15,7 +15,7 @@ LenditRails::Application.routes.draw do
   get '/privacy' => 'welcome#privacy'
   get '/europe/attendees' => 'welcome#europe14_attendees'
   get '/san-francisco-2014/attendees' => 'welcome#sf14_attendees'
-  get '/sponsors' => 'sponsors#europe_sponsors'
+  get '/sponsors' => 'sponsors#eu14'
   get '/live', to: redirect('/videos', status: 301)
   get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
   get '/2014/europe/photos' => 'photos#eu14'

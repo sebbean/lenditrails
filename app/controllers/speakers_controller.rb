@@ -1,6 +1,11 @@
 class SpeakersController < ApplicationController
   before_action :set_speaker, only: [:show, :edit, :update, :destroy]
 
+
+  def index
+    redirect_to ('/europe/2014/speakers'), :status => 301
+  end
+
   # GET /speakers
   # GET /speakers.json
   def eu14

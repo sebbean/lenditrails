@@ -5,8 +5,10 @@ class WelcomeController < ApplicationController
     redirect_to speakers_path, :status => 301
   end
 
-  def speakers
-    redirect_to ('/europe/2014/speakers'), :status => 301
+
+
+  def sponsors
+
   end
 
   # 301 permanent redirect to /

@@ -3,7 +3,7 @@ class SpeakersController < ApplicationController
 
   # GET /speakers
   # GET /speakers.json
-  def index
+  def eu14
     @europe_speakers = Speaker.where(conference: 'LendIt Europe 2014')
     @europe_speakers.sort_by! { |speaker| speaker['last_name'] }
     @past_speakers = Speaker.where(conference: 'LendIt 2014')

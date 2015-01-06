@@ -5,12 +5,6 @@ class WelcomeController < ApplicationController
     redirect_to speakers_path, :status => 301
   end
 
-
-
-  def sponsors
-
-  end
-
   # 301 permanent redirect to /
   def go_to_root
     redirect_to root_path, :status => 301

@@ -8,7 +8,7 @@ LenditRails::Application.routes.draw do
   get '/europe' => 'conferences#europe'
   get '/nyc' => 'conferences#nyc'
   get '/about' => 'welcome#about'
-  get '/speakers' => 'welcome#speakers'
+  get '/speakers' => 'speakers#index'
   get '/speakers/sign-up' => 'speakers#sign-up'
   get '/speakers/thank-you' => 'speakers#thank-you'
   get '/terms-of-use' => 'welcome#terms-of-use'

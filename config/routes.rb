@@ -6,7 +6,6 @@ LenditRails::Application.routes.draw do
   root 'welcome#home'
   # root 'welcome#home'
   get '/europe' => 'conferences#europe'
-  get '/usa' => 'conferences#usa15'
   get '/about' => 'welcome#about'
   get '/speakers' => 'speakers#index'
   get '/speakers/sign-up' => 'speakers#sign-up'
@@ -24,9 +23,11 @@ LenditRails::Application.routes.draw do
 
 
   # LendIt USA 2015
+  get '/usa' => 'conferences#usa15'
   get '/usa/2015/start-up-zone' => 'conferences#usa15_startup'
   get '/usa/2015/sponsors' => 'sponsors#usa15'
   get '/usa/2015/speakers' => 'speakers#usa15'
+  get '/usa/2015/agenda' => 'agendas#usa15'
 
   # get '/europe/speakers' => 'speakers#europe'
   # See all redirects in WelcomeController

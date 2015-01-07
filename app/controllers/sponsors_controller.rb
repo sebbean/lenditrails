@@ -1,30 +1,16 @@
 class SponsorsController < ApplicationController
   before_action :set_sponsor, only: [:show, :edit, :update, :destroy]
 
-  # GET /sponsors
-  # GET /sponsors.json
+
   def index
-    @europe_sponsors = Sponsor.where(conference: 'LendIt Europe 2014')
-    @platinum = @europe_sponsors.where(sponsor_level: 'Platinum')
-    @gold = @europe_sponsors.where(sponsor_level: 'Gold')
-    @silver = @europe_sponsors.where(sponsor_level: 'Silver')
-    @bronze = @europe_sponsors.where(sponsor_level: 'Bronze')
-    @cocktails = @europe_sponsors.where(sponsor_level: 'Cocktail Party')
-    @smartphone = @europe_sponsors.where(sponsor_level: 'Smartphone App')
-    @breakfast = @europe_sponsors.where(sponsor_level: 'Breakfast')
-    @lunch = @europe_sponsors.where(sponsor_level: 'Lunch')
-    @webcast = @europe_sponsors.where(sponsor_level: 'Webcast')
-    @networking = @europe_sponsors.where(sponsor_level: 'Networking Break')
-    @media = @europe_sponsors.where(sponsor_level: 'Media Partner')
-    @exhibitor = @europe_sponsors.where(sponsor_level: 'Exhibitor')
-    @other_sponsors = @europe_sponsors.where(sponsor_level: 'Other')
+    redirect_to ('/europe/2014/sponsors'), :status => 301
   end
 
   def lendit2014
     @past_sponsors = Sponsor.where(conference: 'LendIt 2014')
   end
 
-  def europe_sponsors
+  def eu14
     @europe_sponsors = Sponsor.where(conference: 'LendIt Europe 2014')
     @platinum = @europe_sponsors.where(sponsor_level: 'Platinum')
     @gold = @europe_sponsors.where(sponsor_level: 'Gold')

@@ -1,9 +1,14 @@
 class SpeakersController < ApplicationController
   before_action :set_speaker, only: [:show, :edit, :update, :destroy]
 
+
+  def index
+    redirect_to ('/europe/2014/speakers'), :status => 301
+  end
+
   # GET /speakers
   # GET /speakers.json
-  def index
+  def eu14
     @europe_speakers = Speaker.where(conference: 'LendIt Europe 2014')
     @europe_speakers.sort_by! { |speaker| speaker['last_name'] }
     @past_speakers = Speaker.where(conference: 'LendIt 2014')

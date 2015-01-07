@@ -10,7 +10,7 @@ class ConferencesController < ApplicationController
   def europe
   end
 
-  def nyc
+  def usa15
   end
 
   def nyc15_startup

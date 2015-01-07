@@ -1,0 +1,86 @@
+<%= title "LendIt USA 2015 Speakers Page" %>
+<% meta_description "LendIt USA 2015 Conference speakers are esteemed leaders in the peer-to-peer industry." %>
+<% meta_keywords "p2p, online lending, peer-to-peer, LendIt, speakers, presenters, USA" %>
+<%= canonical_tag -%>
+
+<main>
+  <div class="subhero">
+    <div class="container">
+      <h1>LendIt USA Speakers</h1>
+      <section class="speakers-intro">
+
+        <p>The following speakers have been confirmed for LendIt USA 2015.</p>
+        <div class="speakers-signup"><a href="/speakers/sign-up"><button>Sign Up To Be A Speaker for LendIt 2015</button></a></div>
+      </section>
+
+
+
+      <section class="current-speakers">
+        <% @usa15_speakers.each do |speaker| %>
+          <a class="current-speaker" href="#<%= raw speaker.first_name %><%= raw speaker.last_name %>">
+            <div class="speaker">
+              <div class="speaker-top">
+                <img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+                <div class="speaker-top-info">
+                  <div class="speaker-name"><%= raw speaker.first_name %> <%= raw speaker.last_name %></div>
+                  <div class="speaker-title"><%= raw speaker.title %></div>
+                  <div class="speaker-company"><%= raw speaker.company_name %></div>
+                </div>
+              </div>
+
+            </div>
+          </a>
+          <div class="speaker-bio" style="/*temp styles*/display:none;">
+            <div id="<%= raw speaker.first_name %><%= raw speaker.last_name %>" class="speaker-container">
+              <div class="speaker-colorbox-title">Current Speakers</div>
+              <div class="speaker-top-info">
+                <img src="<%= speaker.img_url %>" class="speaker-image-lg" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+                <div class="speaker-name">
+                  <%= raw speaker.first_name %> <%= raw speaker.last_name %>
+                </div>
+                <div class="speaker-title">
+                  <%= raw speaker.title %>
+                </div>
+                <div class="speaker-company">
+                  <%= raw speaker.company_name %>
+                </div>
+                <div class="speaker-bio-text">
+                  <div class="speaker-bio-text-inner">
+                    <%= raw speaker.bio %>
+                  </div>
+                </div>
+                <div class="speaker-bio-mask"></div>
+              </div>
+            </div>
+          </div>
+
+        <% end %>
+      </section>
+    </div>
+  </div>
+
+<%#= render 'speakers/past_speakers' %>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

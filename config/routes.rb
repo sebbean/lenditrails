@@ -26,6 +26,7 @@ LenditRails::Application.routes.draw do
   # LendIt USA 2015
   get '/usa/2015/start-up-zone' => 'conferences#usa15_startup'
   get '/usa/2015/sponsors' => 'sponsors#usa15'
+  get '/usa/2015/speakers' => 'speakers#usa15'
 
   # get '/europe/speakers' => 'speakers#europe'
   # See all redirects in WelcomeController

@@ -6,6 +6,11 @@ class SpeakersController < ApplicationController
     redirect_to ('/europe/2014/speakers'), :status => 301
   end
 
+  def usa15
+    @usa15_speakers = Speaker.where(conference: 'LendIt USA 2015')
+    @usa15_speakers.sort_by! { |speaker| speaker['last_name'] }
+  end
+
   # GET /speakers
   # GET /speakers.json
   def eu14

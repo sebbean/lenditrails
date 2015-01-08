@@ -1,8 +1,7 @@
 LenditRails::Application.routes.draw do
 
 
-  resources :videos
-  # , only: [:index, :show]
+  resources :videos, only: [:show]
   root 'welcome#home'
   # root 'welcome#home'
   get '/europe' => 'conferences#europe'
@@ -20,6 +19,7 @@ LenditRails::Application.routes.draw do
   get '/europe/2014/photos' => 'photos#eu14'
   # 301 redirects with GA tracking codes
   get '/sharecast' => 'conferences#sharecast'
+  get '/videos' => 'videos#eu14'
 
 
   # LendIt USA 2015

@@ -23,13 +23,14 @@ LenditRails::Application.routes.draw do
 
 
   # LendIt USA 2015
+  get '/nyc' => 'conferences#go_to_usa15'
   get '/usa' => 'conferences#usa15'
   get '/usa/2015/start-up-zone' => 'conferences#usa15_startup'
   get '/usa/2015/sponsors' => 'sponsors#usa15'
   get '/usa/2015/speakers' => 'speakers#usa15'
   get '/usa/2015/agenda' => 'agendas#usa15'
 
-  # get '/europe/speakers' => 'speakers#europe'
+  #
   # See all redirects in WelcomeController
   # 301 redirects from old WP site
   get '/speaker' => 'welcome#go_to_speakers'

@@ -1,28 +1,16 @@
 LenditRails::Application.routes.draw do
 
 
-  # resources :videos, only: [:index]
   root 'welcome#home'
-  # root 'welcome#home'
-  get '/europe' => 'conferences#europe'
+
   get '/about' => 'welcome#about'
   get '/speakers' => 'speakers#index'
   get '/speakers/sign-up' => 'speakers#sign-up'
   get '/speakers/thank-you' => 'speakers#thank-you'
   get '/terms-of-use' => 'welcome#terms-of-use'
-  get '/privacy' => 'welcome#privacy'
-  get '/europe/attendees' => 'welcome#europe14_attendees'
-  get '/san-francisco-2014/attendees' => 'welcome#sf14_attendees'
-  get '/sponsors' => 'sponsors#index'
-  get '/live', to: redirect('/videos', status: 301)
-  get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
-  get '/europe/2014/photos' => 'photos#eu14'
-
-  # 301 redirects with GA tracking codes
-  get '/sharecast' => 'conferences#sharecast'
   get '/videos' => 'videos#go_to_eu14'
-  get '/europe/2014/videos' => 'videos#eu14'
-  get '/europe/2014/videos/:id' => 'videos#show_eu14', via: :get, as: :eu14_video
+  get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
+
 
   # LendIt USA 2015
   get '/nyc' => 'conferences#go_to_usa15'
@@ -32,14 +20,28 @@ LenditRails::Application.routes.draw do
   get '/usa/2015/speakers' => 'speakers#usa15'
   get '/usa/2015/agenda' => 'agendas#usa15'
 
-  #
+  #LendIt Europe 2014
+  get '/europe' => 'conferences#europe'
+  get '/europe/2014/photos' => 'photos#eu14'
+  get '/privacy' => 'welcome#privacy'
+  get '/europe/attendees' => 'welcome#europe14_attendees'
+  get '/san-francisco-2014/attendees' => 'welcome#sf14_attendees'
+  get '/sponsors' => 'sponsors#index'
+  get '/live', to: redirect('/videos', status: 301)
+  get '/europe/2014/videos' => 'videos#eu14'
+  get '/europe/2014/videos/:id' => 'videos#show_eu14', via: :get, as: :eu14_video
+  get '/europe/2014/speakers' => 'speakers#eu14'
+  get '/europe/2014/sponsors' => 'sponsors#eu14'
+
+  # 301 redirects with GA tracking codes
+  get '/sharecast' => 'conferences#sharecast'
+
+
   # See all redirects in WelcomeController
   # 301 redirects from old WP site
   get '/speaker' => 'welcome#go_to_speakers'
   get '/speaker/:id' => 'welcome#go_to_speakers'
   get '/2014' => 'welcome#go_to_root'
-  get '/europe/2014/speakers' => 'speakers#eu14'
-  get '/europe/2014/sponsors' => 'sponsors#eu14'
   get '/lendit-2014-san-francisco-presentations' => 'welcome#go_to_about'
   get '/presentations/Renaud-Laplanche-Lending-Club-LendIt-2014-keynote.pdf' => 'welcome#renaud_2014_keynote'
   get '/presentations/Peter-Renton-Lend-Academy-LendIt-2014-presentation.pdf' => 'welcome#renton_2014_deck'
@@ -59,9 +61,6 @@ LenditRails::Application.routes.draw do
   get '/lendit-spring-2014', to: redirect('/about', status: 302)
   # get '/videos', to: redirect("https://www.youtube.com/user/LendItConference", status: 302)
   get '/videos-2', to: redirect("http://lendit.tv", status: 302)
-
-  #302 redirect to be changed when the LendIt 2015 pages are done
-  # get '/europe', to: redirect("/", status: 302)
 
 
 end

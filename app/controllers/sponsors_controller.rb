@@ -6,8 +6,14 @@ class SponsorsController < ApplicationController
     redirect_to ('/europe/2014/sponsors'), :status => 301
   end
 
-  def lendit2014
-    @past_sponsors = Sponsor.where(conference: 'LendIt 2014')
+  def usa15
+    @usa15_sponsors = Sponsor.where(conference: 'LendIt USA 2015')
+    @title = @usa15_sponsors.where(sponsor_level: 'Title')
+    @platinum = @usa15_sponsors.where(sponsor_level: 'Platinum')
+    @gold = @usa15_sponsors.where(sponsor_level: 'Gold')
+    @silver = @usa15_sponsors.where(sponsor_level: 'Silver')
+    @bronze = @usa15_sponsors.where(sponsor_level: 'Bronze')
+    @exhibitor = @usa15_sponsors.where(sponsor_level: 'Exhibitor')
   end
 
   def eu14
@@ -27,6 +33,10 @@ class SponsorsController < ApplicationController
     @media = @europe_sponsors.where(sponsor_level: 'Media Partner')
     @exhibitor = @europe_sponsors.where(sponsor_level: 'Exhibitor')
     @other_sponsors = @europe_sponsors.where(sponsor_level: 'Other')
+    @past_sponsors = Sponsor.where(conference: 'LendIt 2014')
+  end
+
+  def lendit2014
     @past_sponsors = Sponsor.where(conference: 'LendIt 2014')
   end
 

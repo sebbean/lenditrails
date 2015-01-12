@@ -8,9 +8,17 @@
 	border-right: 1px solid #ccc;
 	max-width: 1207px;
 	margin: auto;
+	background:#fff;
+}
+.speaker-signup ol {
+	margin-left:0;
+}
+.speaker-signup label {
+	display:inline-block;
 }
 .speaker-signup .ss-required-asterisk {
 	color: #f00;
+	
 }
 .speaker-signup .required-message {
 	display: none;
@@ -76,4 +84,14 @@
 	padding-top: 40px;
 	padding-bottom: 40px;
 	min-height: 300px;
+}
+
+.speaker-signup #navigation-table  {
+	border:none;
+}
+.speaker-signup #navigation-table td {
+	padding:0;
+}
+.speaker-signup #navigation-table td#progress-container {
+	padding-left:20px;
 }

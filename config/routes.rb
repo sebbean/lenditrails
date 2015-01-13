@@ -19,6 +19,7 @@ LenditRails::Application.routes.draw do
   get '/usa/2015/sponsors' => 'sponsors#usa15'
   get '/usa/2015/speakers' => 'speakers#usa15'
   get '/usa/2015/agenda' => 'agendas#usa15'
+  get '/usa/2015/floorplan' => 'welcome#usa15_floorplan'
 
   #LendIt Europe 2014
   get '/europe' => 'conferences#europe'

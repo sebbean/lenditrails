@@ -2,344 +2,153 @@
 <% meta_description "Sponsors of the LendIt USA 2015 Peer-to-Peer and Online Lending Conference." %>
 <% meta_keywords "p2p, online lending, peer-to-peer, LendIt, sponsors" %>
 <%= canonical_tag -%>
+<% body_class "usa15-sponsors" %>
+<div class="general-background">
+	<div class="row">
+		<div class="columns large-24">
+			<div class="sponsors-header">
+				LendIt USA Sponsors
+			</div>
+			<p class="sponsors-intro-text">The following sponsors have been confirmed for LendIt USA 2015.&nbsp;
+				<a href="#more-sponsors-info" style="font-weight:500; "><span class="fa fa-arrow-circle-o-down"></span> More info below	</a>
+			</p>
+			<div class="sponsors-section">
+				<div class="sponsors-section-head">
+					Title Sponsor
+				</div>
+				<ul class="small-block-grid-2 large-block-grid-3">
+					<li>
+						<a href="#" class="sponsors-thumb">
+							<img src="/assets/usa-sponsors/lending.psd-th.jpeg" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sponsors-section">
+				<div class="sponsors-section-head">
+					Platinum Sponsors
+				</div>
+				<ul class="small-block-grid-2 large-block-grid-3">
+					<li>
+						<a href="#" class="sponsors-thumb"><img src="/assets/usa-sponsors/gli.psd-th.jpeg" /></a>
+					</li>
+					<li>
+						<a href="#" class="sponsors-thumb"><img src="/assets/usa-sponsors/avant.psd-th.jpeg" /></a>
+					</li>
+				</ul>
+			</div>
+			<div class="sponsors-section">
+				<div class="sponsors-section-head">
+					Gold Sponsors
+				</div>
+				<ul class="small-block-grid-2 large-block-grid-3">
+					<li><a href="#" class="sponsors-thumb"><img src="/assets/usa-sponsors/cross.psd-th.jpeg" /></a></li>
+					<li><a href="#" class="sponsors-thumb"><img src="/assets/usa-sponsors/ondeck.psd-th.jpeg" /></a></li>
+					<li><a href="#" class="sponsors-thumb"><img src="/assets/usa-sponsors/funding.psd-th.jpeg" /></a></li>
+				</ul>
+			</div>
+			<div class="sponsors-section">
+				<div class="sponsors-section-head">
+					Silver Sponsors
+				</div>
+				<ul class="small-block-grid-2 large-block-grid-3">
+					<li><a href="#" class="sponsors-thumb"><img src="/assets/usa-sponsors/theinterface.psd-th.jpeg" /></a></li>
+					<li><a href="#" class="sponsors-thumb"><img src="/assets/usa-sponsors/upstart.psd-th.jpeg" /></a></li>
+				</ul>
+			</div>
+			<div class="sponsors-section">
+				<div class="sponsors-section-head">
+					
+					Bronze Sponsors
+				</div>
+				<ul class="small-block-grid-2 large-block-grid-3">
+					<li><a href="#" class="sponsors-thumb"><img src="/assets/usa-sponsors/direct.psd-th.jpeg" /></a></li>
+					<li><a href="#" class="sponsors-thumb"><img src="/assets/usa-sponsors/assetz.psd-th.jpeg" /></a></li>
+					<li><a href="#" class="sponsors-thumb"><img src="/assets/usa-sponsors/blue.psd-th.jpeg" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-24 columns">
+					<div id="more-sponsors-info"></div>
+					<div class="sponsors-info-head">Sponsorship Info</div>
+			
+		</div>
+	</div>
+		<div class="row">
+			<div class="large-15 columns">
+				<div class="sponsors-sidebar">
 
-<main class="sponsors-page">
-  <div class="sponsors-main">
-    <div class="sponsors-text-a">
-      <div class="table">
-        <div class="cell">
-          <h1>LendIt USA Sponsors</h1>
-          <p>The following sponsors have been confirmed for LendIt USA 2015.&nbsp;
-            <a href="#more-sponsors-info" style="font-weight:500; "><span class="fa fa-arrow-circle-o-down"></span> More info below  </a></p>
-        </div>
-        <div class="cell">
-        </div>
-      </div>
-    </div>
-
-
-    <!-- begin SPONSORS A -->
-    <div class="sponsors-a">
-
-      <!-- begin TITLE -->
-      <div class="grouping">
-        <% if @title.any? %>
-          <div class="header"> Title Sponsor </div>
-          <div class="group">
-            <% @title.each do |sponsor| %>
-              <div class="item">
-                <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)">
-                </a>
-
-
-                <!-- begin bio -->
-                <div style="display:none;" class="speaker-bio">
-                  <div id="sponsor-<%= sponsor.id %>" class="speaker-container">
-                    <div class="speaker-colorbox-title">Sponsors</div>
-                    <div class="speaker-top-info">
-                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
-                      <div class="speaker-name">LendIt USA</div>
-                      <div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
-                      <% if sponsor.url != nil %>
-                        <div class="speaker-company">
-                          <a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
-                        </div>
-                      <% end %>
-                    </div>
-                    <div class="speaker-bio-text">
-                      <div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
-                    </div>
-                    <div class="speaker-bio-mask"></div>
-                  </div>
-                </div>
-                <!-- end bio -->
-
-
-              </div>
-            <% end %>
-          </div>
-        <% end %>
-      </div>
-      <!-- end TITLE -->
-
-
-
-      <!-- begin PLATINUM -->
-      <div class="grouping grouping-platinum">
-        <% if @platinum.any? %>
-          <div class="header"> Platinum Sponsors </div>
-          <div class="group">
-            <% @platinum.each do |sponsor| %>
-              <div class="item">
-                <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)">
-                </a>
-
-
-                <!-- begin bio -->
-                <div style="display:none;" class="speaker-bio">
-                  <div id="sponsor-<%= sponsor.id %>" class="speaker-container">
-                    <div class="speaker-colorbox-title">Sponsors</div>
-                    <div class="speaker-top-info">
-                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
-                      <div class="speaker-name">LendIt Europe</div>
-                      <div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
-                      <% if sponsor.url != nil %>
-                        <div class="speaker-company">
-                          <a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
-                        </div>
-                      <% end %>
-                    </div>
-                    <div class="speaker-bio-text">
-                      <div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
-                    </div>
-                    <div class="speaker-bio-mask"></div>
-                  </div>
-                </div>
-                <!-- end bio -->
-
-
-              </div>
-            <% end %>
-          </div>
-        <% end %>
-      </div>
-      <!-- end PLATINUM -->
-
-
-
-
-      <!-- begin GOLD -->
-      <div class="grouping grouping-gold">
-        <% if @gold.any? %>
-          <div class="header"> Gold Sponsors </div>
-          <div class="group">
-            <% @gold.each do |sponsor| %>
-              <div class="item">
-                <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)"> </a>
-
-
-                <!-- begin bio -->
-                <div style="display:none;" class="speaker-bio">
-                  <div id="sponsor-<%= sponsor.id %>" class="speaker-container">
-                    <div class="speaker-colorbox-title">Sponsors</div>
-                    <div class="speaker-top-info">
-                      <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
-                      <div class="speaker-name">LendIt Europe</div>
-                      <div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
-                      <% if sponsor.url != nil %>
-                        <div class="speaker-company">
-                          <a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
-                        </div>
-                      <% end %>
-                    </div>
-                    <div class="speaker-bio-text">
-                      <div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
-                    </div>
-                    <div class="speaker-bio-mask"></div>
-                  </div>
-                </div>
-                <!-- end bio -->
-
-
-              </div>
-            <% end %>
-          </div>
-        <% end %>
-      </div>
-      <!-- end GOLD -->
-
-
-
-
-      <!-- begin SILVER -->
-      <div class="grouping grouping-silver">
-        <% if @silver.any? %>
-          <div class="header">
-            Silver Sponsors
-          </div>
-          <div class="group">
-            <% @silver.each do |sponsor| %>
-              <div class="item">
-                <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)"></a>
-
-
-                  <!-- begin bio -->
-                  <div style="display:none;" class="speaker-bio">
-                    <div id="sponsor-<%= sponsor.id %>" class="speaker-container">
-                      <div class="speaker-colorbox-title">Sponsors</div>
-                      <div class="speaker-top-info">
-                        <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
-                        <div class="speaker-name">LendIt Europe</div>
-                        <div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
-                        <% if sponsor.url != nil %>
-                          <div class="speaker-company">
-                            <a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
-                          </div>
-                        <% end %>
-                      </div>
-                      <div class="speaker-bio-text">
-                        <div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
-                      </div>
-                      <div class="speaker-bio-mask"></div>
-                    </div>
-                  </div>
-                  <!-- end bio -->
-
-
-                </div>
-              <% end %>
-            </div>
-          <% end %>
-        </div>
-        <!-- end SILVER -->
-
-
-
-
-        <!-- begin BRONZE -->
-        <div class="grouping">
-          <% if @bronze.any? %>
-            <div class="header"> Bronze Sponsors </div>
-            <div class="group">
-              <% @bronze.each do |sponsor| %>
-                <div class="item">
-                  <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)"></a>
-
-
-                    <!-- begin bio -->
-                    <div style="/*temp styles*/display:none;" class="speaker-bio">
-                      <div id="sponsor-<%= sponsor.id %>" class="speaker-container">
-                        <div class="speaker-colorbox-title">Sponsors</div>
-                        <div class="speaker-top-info">
-                          <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
-                          <div class="speaker-name">LendIt Europe</div>
-                          <div class="speaker-title"><%= sponsor.sponsor_level %> Sponsor</div>
-                          <% if sponsor.url != nil %>
-                            <div class="speaker-company">
-                              <a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
-                            </div>
-                          <% end %>
-                        </div>
-                        <div class="speaker-bio-text">
-                          <div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
-                        </div>
-                        <div class="speaker-bio-mask"></div>
-                      </div>
-                    </div>
-                    <!-- end bio -->
-
-
-                  </div>
-                <% end %>
-              </div>
-            <% end %>
-          </div>
-          <!-- end BRONZE -->
-
-
-        </div>
-        <!-- end SPONSORS-A -->
-
-
-
-
-        <!-- begin SPONSORS-B -->
-        <div class="sponsors-b other">
-          <div class="sponsors-b-header">Other</div>
-          <div class="grouping">
-
-
-
-
-        <div class="sponsors-b exhib">
-          <div class="sponsors-b-header">Exhibitors</div>
-          <div class="grouping">
-
-
-            <!-- begin exhibitor -->
-            <% if @exhibitor.any? %>
-              <div class="sponsor-section sponsor-exhibitor">
-                <div class="header"> Exhibitor </div>
-                <div class="group">
-                  <% @exhibitor.each do |sponsor| %>
-                    <div class="item">
-                      <a class="sponsor-top" href="#sponsor-<%= sponsor.id %>" style="background-image:url(<%= sponsor.logo_img %>)">
-                      </a>
-
-
-                      <!-- begin bio -->
-                      <div style="display:none;" class="speaker-bio">
-                        <div id="sponsor-<%= sponsor.id %>" class="speaker-container">
-                          <div class="speaker-colorbox-title">Sponsors</div>
-                          <div class="speaker-top-info">
-                            <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>" class="modal-sponsor-image">
-                            <div class="speaker-name">LendIt Europe</div>
-                            <div class="speaker-title"><%= sponsor.sponsor_level %></div>
-                            <% if sponsor.url != nil %>
-                              <div class="speaker-company">
-                                <a href="<%= sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %> ></a>
-                              </div>
-                            <% end %>
-                          </div>
-                          <div class="speaker-bio-text">
-                            <div class="speaker-bio-text-inner"><%= raw sponsor.description %></div>
-                          </div>
-                          <div class="speaker-bio-mask"></div>
-                        </div>
-                      </div>
-                      <!-- end bio -->
-
-
-                    </div>
-                  <% end %>
-                </div>
-              </div>
-            <% end %>
-            <!-- end exhibitor -->
-
-
-          </div>
-        </div>
-        <!-- end SPONSORS-B -->
-
-
-        <div id="more-sponsors-info"></div>
-        <div class="sponsors-text-b">
-          <!--            <p> LendIt sponsors receive extensive brand exposure to a core audience of prominent industry insiders and investment professionals through a powerful combination of multiple media including: web presence, webcasts, e-marketing campaigns, print advertising, widespread on-site recognition, signage, event giveaways and program exposure. Sponsorship opportunities are enjoyed before, during and after the event. Brand sponsorship is open to financial, legal technology and professional service firms in addition to high-end consumer brands. </p>
-          <p> LendIt provides industry participants the opportunity to showcase their products and services at LendIt’s acclaimed exhibit hall, which is a focal point for extensive participant interaction. This is the ideal opportunity for market leaders and new entrants alike to exhibit to fund managers, asset allocators, family offices, venture capitalists, individual investors, industry veterans and members of the financial media. </p>
-          <p> For more information on sponsorship and exhibitor opportunities, please email <a href="mailto:info@lendit.co">info@lendit.co</a>. </p> -->
-          <h3>Who Should Sponsor</h3>
-          <ul>
-            <li>Online lending platforms</li>
-            <li>Investment banks</li>
-            <li>Law firms</li>
-            <li>Accounting firms</li>
-            <li>Venture capital firms</li>
-            <li>Investment advisors & consultants</li>
-          </ul>
-          <h3>Why Sponsor</h3>
-          <ul>
-            <li>Increase brand and product awareness</li>
-            <li>Get face time with real decision makers</li>
-            <li>Launch new products</li>
-            <li>Raise capital</li>
-            <li>Educate the market</li>
-            <li>Uncover new partners</li>
-            <li>Be seen as an industry leader</li>
-          </ul>
-          <h3>Types of Sponsorship Participation</h3>
-          <p>LendIt sponsors receive extensive brand exposure to a core audience of prominent industry insiders and investment professionals before, during and after the event. </p>
-          <p style="font-weight:bold;">Key channels include:</p>
-          <ul>
-            <li>The LendIt website and blog</li>
-            <li>The exhibition</li>
-            <li>On-site recognition & signage</li>
-            <li>Event program exposure</li>
-            <li>Webcasts and videos</li>
-            <li>Joint press releases</li>
-            <li>Print advertising</li>
-          </ul>
-          <p>For more information on sponsorship and exhibitor opportunities, please email <a href="mailto:info@lendit.co">info@lendit.co</a>.</p>
-          <div class="sponsorship-packages"><a href="/assets/LendIt-Europe-Sponsorship-Packages.pdf" target="_new"><button>Download Sponsorship Packages</button></a></div>
-        </div>
-      </main>
+					<div class="sponsors-subhead">
+						Who Should Sponsor
+					</div>
+					<ul>
+						<li>Online lending platforms</li>
+						<li>Investment banks</li>
+						<li>Law firms</li>
+						<li>Accounting firms</li>
+						<li>Venture capital firms</li>
+						<li>Investment advisors & consultants</li>
+					</ul>
+					<div class="sponsors-subhead">
+						Why Sponsor
+					</div>
+					<ul>
+						<li>Increase brand and product awareness</li>
+						<li>Get face time with real decision makers</li>
+						<li>Launch new products</li>
+						<li>Raise capital</li>
+						<li>Educate the market</li>
+						<li>Uncover new partners</li>
+						<li>Be seen as an industry leader</li>
+					</ul>
+					<div class="sponsors-subhead">
+						Types of Sponsorship Participation
+					</div>
+					<p>LendIt sponsors receive extensive brand exposure to a core audience of prominent industry insiders and investment professionals before, during and after the event. </p>
+					<div class="sponsors-subhead">
+						Key channels include:
+					</div>
+					<ul>
+						<li>The LendIt website and blog</li>
+						<li>The exhibition</li>
+						<li>On-site recognition & signage</li>
+						<li>Event program exposure</li>
+						<li>Webcasts and videos</li>
+						<li>Joint press releases</li>
+						<li>Print advertising</li>
+					</ul>
+					<p>For more information on sponsorship and exhibitor opportunities, please email <a href="mailto:info@lendit.co">info@lendit.co</a>.</p>
+					<div class="download-sponsorship-packages"><a href="/assets/LendIt-Europe-Sponsorship-Packages.pdf" target="_new"><button>Download Sponsorship Packages</button></a></div>
+				</div>
+			</div>
+			<div class="large-9 columns">
+				<ul class="small-block-grid-2 medium-block-grid-2 large-block-grid-1">
+					<li>
+						<div class="ny15-prospectus-link2">
+							<a href="/usa/2015/floorplan">
+								<span>
+									<img src="/assets/usa15-floorplan-thumb.png" />
+								</span>
+								<span class="ny15-prospectus-link-text2">
+									View the LendIt USA 2015 floorplan at the New York Marriott Marquis
+									<i class="fa fa-arrow-circle-right"></i>
+								</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="ny15-prospectus-link2">
+							<a href="https://s3-us-west-2.amazonaws.com/lendit/uploads/LendIt-USA-2015-Prospectus.pdf" target="_blank">
+								<span>
+									<img src="/assets/ny15-prospectus-cover.png" />
+								</span>
+								<span class="ny15-prospectus-link-text2"> Download Sponsorship Prospectus <i class="fa fa-arrow-circle-right"></i></span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+</div>

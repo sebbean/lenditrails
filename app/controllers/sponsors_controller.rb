@@ -13,6 +13,7 @@ class SponsorsController < ApplicationController
     @gold = @usa15_sponsors.where(sponsor_level: 'Gold')
     @silver = @usa15_sponsors.where(sponsor_level: 'Silver')
     @bronze = @usa15_sponsors.where(sponsor_level: 'Bronze')
+    # binding.pry
   end
 
   def eu14

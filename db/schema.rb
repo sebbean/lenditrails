@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150113175250) do
+ActiveRecord::Schema.define(version: 20150113230736) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,15 @@ ActiveRecord::Schema.define(version: 20150113175250) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "description"
+  end
+
+  create_table "exhibitors", force: true do |t|
+    t.string  "company_name"
+    t.string  "logo_img"
+    t.string  "conference"
+    t.text    "description"
+    t.string  "url"
+    t.integer "conference_id"
   end
 
   create_table "friendly_id_slugs", force: true do |t|
@@ -69,6 +78,15 @@ ActiveRecord::Schema.define(version: 20150113175250) do
     t.string   "sponsor_level"
     t.string   "url"
     t.integer  "conference_id"
+  end
+
+  create_table "startups", force: true do |t|
+    t.string  "company_name"
+    t.string  "logo_img"
+    t.string  "conference"
+    t.text    "description"
+    t.string  "url"
+    t.integer "conference_id"
   end
 
   create_table "videos", force: true do |t|

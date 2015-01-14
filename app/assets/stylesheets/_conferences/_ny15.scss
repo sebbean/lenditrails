@@ -1,18 +1,13 @@
-
 body.conferences header .container {
 	@media (max-width: 550px) {
 		background-position:center 90px;
-
 	}
-
 }
-
 body.conferences header.nyc .container  {
 	@media (min-width:1000px) {
-	width:1000px;
+		width:1000px;
+	}
 }
-}
-
 .ny15 {
 	color:#666;
 	-webkit-font-smoothing: antialiased;
@@ -97,7 +92,6 @@ ul.ny15-icon li {
 }
 .ny15-intro {
 	margin-bottom:.5em;
-
 }
 .ny15-intro p {
 	font-size:18px;
@@ -159,7 +153,6 @@ ul.ny15-icon li {
 	line-height:1.2em;
 	font-weight:400;
 }
-
 .ny15-moreinfo {
 	background:#fafafa;
 	padding-top:1em;
@@ -171,38 +164,55 @@ ul.ny15-icon li {
 	margin-bottom:1.3em;
 }
 
+.usa15-buttons-panel {
+	background:#f5f9ea;
+	border:none;
+}
+.ny15-prospectus-link2 {
+	>a {
+		display:block;
+	}
+	> a img {
+		border:1px solid #9CC83D;
+	}
+	span {
+		display:block;
+		font-size:14px;
+	}
+}
+
+.ny15-prospectus-link-text2 {
+	padding-top:6px;
+	font-weight:600;
+	line-height:1.4em;
+
+}
+
 .ny15-prospectus-link {
 	a {
 		display:block;
 		background:url(https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-lattice-light.jpg) center center no-repeat;
-			background-size:cover;
+		background-size:cover;
 		border:1px solid lighten($linkcolor,10%);
-			-webkit-border-radius: 2px;
-			-moz-border-radius: 2px;
-			border-radius: 2px;
-			line-height:1.2em;
-			font-weight:600;
-		
-			padding:10px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		line-height:1.2em;
+		font-weight:600;
+		padding:10px;
 		@media (min-width:641px) {
 			@include box-sizing;
-			text-align:center;
 			img {
 			}
-.ny15-prospectus-link-text {
-			
+			.ny15-prospectus-link-text {
 				display:block;
 				padding-top:.45em;
 			}
 		}
 		@media (max-width:640px) {
-			
 			margin-bottom:1.2em;
 			display:table;
-
 			img {
-
-
 				max-width:100px;
 			}
 			span {
@@ -213,20 +223,14 @@ ul.ny15-icon li {
 		&:hover {
 			border:1px solid $linkcolor;
 		}
-
-
-
 	}
 }
 .ny15-prospectus-link-text {
-
-		@media (max-width:640px) {
-			padding-left:10px;
-		}
+	@media (max-width:640px) {
+		padding-left:10px;
+	}
 }
-
 // USA Floorplan
-
 .ny15-floorplan {
 	max-width: 1207px;
 	margin: auto;
@@ -235,7 +239,6 @@ ul.ny15-icon li {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	background:#fff;
-
 	h4 {
 		font-weight: 700;
 		color: #9CC83D;
@@ -245,10 +248,3 @@ ul.ny15-icon li {
 		border-bottom:2px solid #9CC83D;
 	}
 }
-
-
-
-
-
-
-

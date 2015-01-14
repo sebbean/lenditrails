@@ -13,7 +13,6 @@ class SponsorsController < ApplicationController
     @gold = @usa15_sponsors.where(sponsor_level: 'Gold')
     @silver = @usa15_sponsors.where(sponsor_level: 'Silver')
     @bronze = @usa15_sponsors.where(sponsor_level: 'Bronze')
-    @exhibitor = @usa15_sponsors.where(sponsor_level: 'Exhibitor')
   end
 
   def eu14
@@ -60,7 +59,6 @@ class SponsorsController < ApplicationController
 
   # GET /sponsors/new
   def new
-    @sponsor = Sponsor.new
   end
 
   # GET /sponsors/1/edit

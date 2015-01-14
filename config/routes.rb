@@ -16,10 +16,12 @@ LenditRails::Application.routes.draw do
   get '/nyc' => 'conferences#go_to_usa15'
   get '/usa' => 'conferences#usa15'
   get '/usa/2015/start-up-zone' => 'conferences#usa15_startup'
-  # get '/usa/2015/sponsors' => 'sponsors#usa15'
+  get '/usa/2015/sponsors' => 'sponsors#usa15'
   get '/usa/2015/speakers' => 'speakers#usa15'
   get '/usa/2015/agenda' => 'agendas#usa15'
   get '/usa/2015/floorplan' => 'welcome#usa15_floorplan'
+  get '/usa/2015/startups' => 'startups#usa15'
+  get '/us/2015/exhibitors' => 'exhibitors#usa15'
 
   #LendIt Europe 2014
   get '/europe' => 'conferences#europe'

@@ -1,8 +1,85 @@
 .usa15-sponsors {
+	.general-background {
+		background:#fafafa;
+		padding-bottom:30px;
+	}
+	.sponsors-header {
+		font-size:36px;
+		font-family:'Open Sans', sans-serif;
+		font-weight:600;
+		color:#666;
+		line-height:1.2em;
+		padding-bottom:.3em;
+	}
+	.sponsors-subhead {
+		font-weight:600;
+		font-family:'Open Sans', sans-serif;
+		padding-bottom:.3em;
+		padding-top:10px;
+		color:#666;
+	}			
+	.sponsors-section {
+		margin-bottom:1em;
+	}	
+	.sponsors-section-head {
+		font-family:'Open Sans', sans-serif;
+		color:$primary-color;
+		padding-bottom:.2em;
+		text-shadow: 1px 1px 0 #fff;
+		font-size:22px;
+		border-bottom:1px solid $primary-color;
+		margin-bottom:1em;
+		font-weight:600;
+	}			
+	.sponsors-info-head {
+		font-family:'Open Sans', sans-serif;
+		color:#666;
+		padding-bottom:.2em;
+		text-shadow: 1px 1px 0 #fff;
+		font-size:22px;
+		border-bottom:1px solid #666;
+		margin-bottom:1em;
+		font-weight:600;
+	}			
+	.sponsors-sidebar {
+		border:none;
+		border-radius:0;
+		p,ul,li {
+			line-height:1.5em;
+			font-family:'Open Sans', sans-serif;
+			color:#666;
+		}
+		button {
+			font-family:'Open Sans', sans-serif;
+		}
+	}
+	.sponsors-intro-text {
+		font-family:'Open Sans', sans-serif;
+		color:#666;
+	}	
 
-	h1 {
-		font-family: 'Open Sans', sans-serif;
-		font-weight:200;
+	.sponsors-thumb {
+		img {
+			border: 1px solid #ddd;
+		}
+		&:hover img {
+			border-color:$primary-color;
+		}
+	}	
+	.ny15-prospectus-link2 {
+			font-family:'Open Sans', sans-serif;
+			padding-bottom:1em;
+	}
 
+	.panel {
+		background:none;
+		box-shadow:none;
+		border-radius:none;
+	}
+	.download-sponsorship-packages a {
+		display:table;
+		@media only screen and (max-width: 1023px) {
+		margin:0 auto 20px auto;
+	}
 	}
 }

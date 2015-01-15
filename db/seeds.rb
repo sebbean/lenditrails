@@ -32,6 +32,7 @@ usa15 = Conference.create(title: 'LendIt USA 2015', description: 'LendIt USA 201
 # Sponsor.create(company_name: '', logo_img: '', conference: 'LendIt USA 2015', sponsor_level: '', url: '', description: '', conference_id: usa15.id)
 
 # LendIt USA 2015 sponsors
+
 Sponsor.create(company_name: 'Lending Club', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/lending.psd-th.jpeg', conference: 'LendIt USA 2015', sponsor_level: 'Title', description: '', url: 'https://www.lendingclub.com/', conference_id: usa15.id)
 Sponsor.create(company_name: 'Prosper', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/prosper.psd-th.jpeg', conference: 'LendIt USA 2015', sponsor_level: 'Platinum', description: '', url: 'https://www.prosper.com/', conference_id: usa15.id)
 Sponsor.create(company_name: 'GLI Finance Limited', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/gli.psd-th.jpeg', conference: 'LendIt USA 2015', sponsor_level: 'Platinum', description: '', url: 'http://www.glifund.com/', conference_id: usa15.id)

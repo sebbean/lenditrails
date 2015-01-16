@@ -9,13 +9,15 @@
       <h1>LendIt USA Speakers</h1>
       <section class="speakers-intro">
 
-        <p>The following speakers have been confirmed for LendIt USA 2015.</p>
+        <p>Keynote speakers at the LendIt USA 2014 conference:</p>
         <div class="speakers-signup"><a href="/speakers/sign-up"><button>Sign Up To Be A Speaker for LendIt 2015</button></a></div>
       </section>
 
 
 
       <section class="current-speakers">
+
+        <%= render 'speakers/past_speakers' %>
         <% @usa15_speakers.each do |speaker| %>
           <a class="current-speaker" href="#<%= raw speaker.first_name %><%= raw speaker.last_name %>">
             <div class="speaker">

@@ -24,12 +24,14 @@ ActiveRecord::Schema.define(version: 20150113230736) do
   end
 
   create_table "exhibitors", force: true do |t|
-    t.string  "company_name"
-    t.string  "logo_img"
-    t.string  "conference"
-    t.text    "description"
-    t.string  "url"
-    t.integer "conference_id"
+    t.string   "company_name"
+    t.string   "logo_img"
+    t.string   "conference"
+    t.text     "description"
+    t.string   "url"
+    t.integer  "conference_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "friendly_id_slugs", force: true do |t|
@@ -81,12 +83,14 @@ ActiveRecord::Schema.define(version: 20150113230736) do
   end
 
   create_table "startups", force: true do |t|
-    t.string  "company_name"
-    t.string  "logo_img"
-    t.string  "conference"
-    t.text    "description"
-    t.string  "url"
-    t.integer "conference_id"
+    t.string   "company_name"
+    t.string   "logo_img"
+    t.string   "conference"
+    t.text     "description"
+    t.string   "url"
+    t.integer  "conference_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "videos", force: true do |t|

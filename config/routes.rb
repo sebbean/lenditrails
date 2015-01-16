@@ -5,6 +5,7 @@ LenditRails::Application.routes.draw do
 
   get '/about' => 'welcome#about'
   get '/speakers' => 'speakers#index'
+  get '/sponsors' => 'sponsors#index'
   get '/speakers/sign-up' => 'speakers#sign-up'
   get '/speakers/thank-you' => 'speakers#thank-you'
   get '/terms-of-use' => 'welcome#terms-of-use'
@@ -29,7 +30,6 @@ LenditRails::Application.routes.draw do
   get '/privacy' => 'welcome#privacy'
   get '/europe/attendees' => 'welcome#europe14_attendees'
   get '/san-francisco-2014/attendees' => 'welcome#sf14_attendees'
-  get '/sponsors' => 'sponsors#index'
   get '/live', to: redirect('/videos', status: 301)
   get '/europe/2014/videos' => 'videos#eu14'
   get '/europe/2014/videos/:id' => 'videos#show_eu14', via: :get, as: :eu14_video

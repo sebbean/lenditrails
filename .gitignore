@@ -21,3 +21,6 @@
 config.codekit
 
 /config/initializers/flickr.rb
+
+# Ignore ruby local version
+.ruby-version

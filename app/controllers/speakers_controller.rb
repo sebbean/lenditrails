@@ -3,7 +3,7 @@ class SpeakersController < ApplicationController
 
 
   def index
-    redirect_to ('/europe/2014/speakers'), :status => 301
+    redirect_to ('/usa/2015/speakers'), :status => 301
   end
 
   def usa15

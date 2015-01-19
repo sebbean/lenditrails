@@ -11,6 +11,8 @@ LenditRails::Application.routes.draw do
   get '/terms-of-use' => 'welcome#terms-of-use'
   get '/videos' => 'videos#go_to_eu14'
   get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
+  get '/privacy' => 'welcome#privacy'
+  get '/live', to: redirect('/videos', status: 301)
 
 
   # LendIt USA 2015
@@ -28,24 +30,19 @@ LenditRails::Application.routes.draw do
   #LendIt Europe 2014
   get '/europe' => 'conferences#europe'
   get '/europe/2014/photos' => 'photos#eu14'
-  get '/privacy' => 'welcome#privacy'
   get '/europe/attendees' => 'welcome#europe14_attendees'
-
-
-  #LendIt USA 2014
-  get '/san-francisco-2014/attendees' => 'attendees#usa14'
-  # get '/san-francisco-2014/attendees' => 'welcome#sf14_attendees'
-  get '/live', to: redirect('/videos', status: 301)
   get '/europe/2014/videos' => 'videos#eu14'
   get '/europe/2014/videos/:id' => 'videos#show_eu14', via: :get, as: :eu14_video
   get '/europe/2014/speakers' => 'speakers#eu14'
   get '/europe/2014/sponsors' => 'sponsors#eu14'
 
+
+  #LendIt USA 2014
+  get '/san-francisco-2014/attendees' => 'attendees#usa14'
+
+
   # 301 redirects with GA tracking codes
   get '/sharecast' => 'conferences#sharecast'
-
-
-  # See all redirects in WelcomeController
   # 301 redirects from old WP site
   get '/speaker' => 'welcome#go_to_speakers'
   get '/speaker/:id' => 'welcome#go_to_speakers'

@@ -40,6 +40,7 @@
 					<% end %>
 				</ul>
 			</div>
+
 			<div class="sponsors-section">
 				<div class="sponsors-section-head">
 					Gold Sponsors
@@ -54,6 +55,7 @@
 					<% end %>
 				</ul>
 			</div>
+
 			<div class="sponsors-section">
 				<div class="sponsors-section-head">
 					Silver Sponsors
@@ -68,6 +70,7 @@
 					<% end %>
 				</ul>
 			</div>
+
 			<div class="sponsors-section">
 				<div class="sponsors-section-head">
 
@@ -83,6 +86,26 @@
 					<% end %>
 				</ul>
 			</div>
+
+
+			<div class="sponsors-section">
+				<div class="sponsors-section-head">
+
+					Exhibitors
+				</div>
+				<ul class="small-block-grid-2 large-block-grid-3">
+					<% @exhibitors.each do |company| %>
+					<li>
+						<a href="<%= company.url %>" class="sponsors-thumb" target="_blank">
+							<img src="<%= company.logo_img %>" />
+						</a>
+					</li>
+					<% end %>
+				</ul>
+			</div>
+
+
+
 		</div>
 	</div>
 	<div class="row">
@@ -166,5 +189,7 @@
 					</li>
 				</ul>
 			</div>
+
+
 		</div>
 </div>

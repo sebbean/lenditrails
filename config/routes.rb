@@ -14,8 +14,8 @@ LenditRails::Application.routes.draw do
   get '/privacy' => 'welcome#privacy'
   get '/live', to: redirect('/videos', status: 301)
   get '/attendees' => 'attendees#go_to_usa15'
-  # get '/volunteers' => 'welcome#volunteers'
-  # get '/volunteers/submitted' => 'welcome#volunteers_submitted'
+  get '/volunteers' => 'welcome#volunteers'
+  get '/volunteers/submitted' => 'welcome#volunteers_submitted'
 
 
   # LendIt USA 2015

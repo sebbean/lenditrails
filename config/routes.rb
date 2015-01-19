@@ -29,7 +29,11 @@ LenditRails::Application.routes.draw do
   get '/europe/2014/photos' => 'photos#eu14'
   get '/privacy' => 'welcome#privacy'
   get '/europe/attendees' => 'welcome#europe14_attendees'
-  get '/san-francisco-2014/attendees' => 'welcome#sf14_attendees'
+
+
+  #LendIt USA 2014
+  get '/san-francisco-2014/attendees' => 'attendees#usa14'
+  # get '/san-francisco-2014/attendees' => 'welcome#sf14_attendees'
   get '/live', to: redirect('/videos', status: 301)
   get '/europe/2014/videos' => 'videos#eu14'
   get '/europe/2014/videos/:id' => 'videos#show_eu14', via: :get, as: :eu14_video

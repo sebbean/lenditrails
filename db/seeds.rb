@@ -11,14 +11,14 @@ usa15 = Conference.create(title: 'LendIt USA 2015', description: 'LendIt USA 201
 ##############
 # Exhibitors #
 ##############
-# Exhibitor.create(company_name: 'AssetAvenue', logo_img: '', conference: 'LendIt USA 2015', url: 'https://www.assetavenue.com/', description: '', conference_id: usa15.id)
-# Exhibitor.create(company_name: 'Patch of Land', logo_img: '', conference: 'LendIt USA 2015', url: 'https://patchofland.com/', description: '', conference_id: usa15.id)
-# Exhibitor.create(company_name: 'Herio Capital', logo_img: '', conference: 'LendIt USA 2015', url: 'http://www.heriocapital.com/', description: '', conference_id: usa15.id)
-# Exhibitor.create(company_name: 'Lob', logo_img: '', conference: 'LendIt USA 2015', url: '', description: 'https://lob.com/', conference_id: usa15.id)
-# Exhibitor.create(company_name: 'First Associates', logo_img: '', conference: 'LendIt USA 2015', url: 'http://1stassociates.com/', description: '', conference_id: usa15.id)
-# Exhibitor.create(company_name: 'Portfolio Financial Servicing Company', logo_img: '', conference: 'LendIt USA 2015', url: 'http://www.pfsc.com/', description: '', conference_id: usa15.id)
-# Exhibitor.create(company_name: 'Borrowell', logo_img: '', conference: 'LendIt USA 2015', url: 'http://www.borrowell.com/', description: '', conference_id: usa15.id)
-# Exhibitor.create(company_name: 'Credible', logo_img: '', conference: 'LendIt USA 2015', url: 'https://www.credible.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'AssetAvenue', logo_img: '', conference: 'LendIt USA 2015', url: 'https://www.assetavenue.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Patch of Land', logo_img: '', conference: 'LendIt USA 2015', url: 'https://patchofland.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Herio Capital', logo_img: '', conference: 'LendIt USA 2015', url: 'http://www.heriocapital.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Lob', logo_img: '', conference: 'LendIt USA 2015', url: '', description: 'https://lob.com/', conference_id: usa15.id)
+Exhibitor.create(company_name: 'First Associates', logo_img: '', conference: 'LendIt USA 2015', url: 'http://1stassociates.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Portfolio Financial Servicing Company', logo_img: '', conference: 'LendIt USA 2015', url: 'http://www.pfsc.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Borrowell', logo_img: '', conference: 'LendIt USA 2015', url: 'http://www.borrowell.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Credible', logo_img: '', conference: 'LendIt USA 2015', url: 'https://www.credible.com/', description: '', conference_id: usa15.id)
 # Exhibitor.create(company_name: '', logo_img: '', conference: 'LendIt USA 2015', url: '', description: '', conference_id: usa15.id)
 
 ############

@@ -13,6 +13,7 @@ LenditRails::Application.routes.draw do
   get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
   get '/privacy' => 'welcome#privacy'
   get '/live', to: redirect('/videos', status: 301)
+  get '/attendees' => 'attendees#go_to_usa15'
 
 
   # LendIt USA 2015

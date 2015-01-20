@@ -14,6 +14,7 @@ class SponsorsController < ApplicationController
     @silver = @usa15_sponsors.where(sponsor_level: 'Silver')
     @bronze = @usa15_sponsors.where(sponsor_level: 'Bronze')
     @exhibitors = Exhibitor.where(conference: 'LendIt USA 2015')
+    @startups = Startup.where(conference: 'LendIt USA 2015')
   end
 
   def eu14

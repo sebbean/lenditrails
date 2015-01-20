@@ -24,7 +24,7 @@ Exhibitor.create(company_name: 'Credible', logo_img: '', conference: 'LendIt USA
 ############
 # StartUps #
 ############
-# Exhibitor.create(company_name: '', logo_img: '', conference: 'LendIt USA 2015', url: '', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Sample', logo_img: '', conference: 'LendIt USA 2015', url: 'www.google.com', description: '', conference_id: usa15.id)
 
 ############
 # Sponsors #

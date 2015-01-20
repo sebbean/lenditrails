@@ -72,15 +72,23 @@ hr {
 
 
 .general-background {
+	
 	background: white;
 margin-top: 20px;
 padding-top: 30px;
 max-width: 1207px;
 margin: auto;
-border-left: 1px solid #ccc;
-border-right: 1px solid #ccc;
+
 overflow: hidden;
 display: block;
+
+	@media (min-width: 961px) {
+border-left: 1px solid #ccc;
+border-right: 1px solid #ccc;
+		
+	}
+
 }
+
 
 

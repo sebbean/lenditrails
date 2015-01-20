@@ -1,0 +1,64 @@
+.pg-volunteers {
+	.general-background {
+		background:#fff;
+	}
+	
+	label {
+		display:inline;
+	}
+	ul.ss-choices {
+		list-style-type:none;
+		margin-left:0;
+
+
+	}
+	.ss-required-asterisk {
+		color:#c00;
+		font-size:18px;
+	}
+	.required-message {
+		color:#c00;
+		display:none;
+	}	
+	.ss-q-title {
+		font-size:16px;
+		margin-bottom:.5em;
+	}
+	.ss-q-title label {
+		font-size:18px;
+
+
+	}
+	.ss-form-question {
+		margin-bottom:1em;
+	}
+	.ss-choice-item {
+		font-size:14px;
+		line-height:1.2em;
+	}
+	#navigation-table {
+		width:100%;
+		margin-top:2em;
+		margin-bottom:3em;
+		border:none;
+
+		td {
+			padding:0;
+		}
+	}
+	.ss-password-warning {
+		display:none;
+	}
+	.jfk-button {
+			background:#8bbf28;
+			border:none;
+			color:#fff;
+			font-size:18px;
+			font-weight:500;
+			padding:8px 15px;
+			display:inline-block;
+	}
+	#progress-container {
+		display:none;
+	}
+}

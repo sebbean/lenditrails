@@ -16,6 +16,29 @@
 		<%= csrf_meta_tags %>
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<%= favicon_link_tag 'favicon.ico' %>
+
+		<!-- Wistia Golden Ticket - Links all videos using Turnstile email capture so that if a viewer enters their email address for one video, they won't be prompted to enter an email address on any other videos -->
+		<script src="//fast.wistia.com/static/embed_shepherd-v1.js"></script>
+		<script>
+		//<![CDATA[
+		wistiaEmbeds.onFind(function(video) {
+		  var email = Wistia.localStorage("golden-ticket");
+		  if (email) {
+		    video.setEmail(email);
+		  }
+		});
+		wistiaEmbeds.bind("conversion", function(video, type, data) {
+		  if (/^(pre|mid|post)-roll-email$/.test(type)) {
+		    Wistia.localStorage("golden-ticket", data);
+		    for (var i = 0; i < wistiaEmbeds.length; i++) {
+		      wistiaEmbeds[i].setEmail(data);
+		    }
+		  }
+		});
+		//]]>
+		</script>
+		<!-- end of Wistia Golden Ticket script -->
+
 	</head>
 
 	<!-- <body class="<%= controller.controller_name %>"> -->

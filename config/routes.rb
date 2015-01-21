@@ -16,7 +16,7 @@ LenditRails::Application.routes.draw do
   get '/attendees' => 'attendees#go_to_usa15'
   get '/volunteers' => 'welcome#volunteers'
   get '/volunteers/submitted' => 'welcome#volunteers_submitted'
-  get '/archives' => 'conferences#index'
+  # get '/archives' => 'conferences#index'
 
 
   # LendIt USA 2015

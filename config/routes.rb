@@ -35,6 +35,7 @@ LenditRails::Application.routes.draw do
   get '/europe' => 'conferences#europe'
   get '/europe/2014/photos' => 'photos#eu14'
   get '/europe/2014/attendees' => 'attendees#eu14'
+  get '/europe/attendees' => 'attendees#go_to_eu14'
   get '/europe/2014/videos' => 'videos#eu14'
   get '/europe/2014/videos/:id' => 'videos#show_eu14', via: :get, as: :eu14_video
   get '/europe/2014/speakers' => 'speakers#eu14'

@@ -11,20 +11,20 @@ usa15 = Conference.create(title: 'LendIt USA 2015', description: 'LendIt USA 201
 ##############
 # Exhibitors #
 ##############
-Exhibitor.create(company_name: 'AssetAvenue', logo_img: '', conference: 'LendIt USA 2015', url: 'https://www.assetavenue.com/', description: '', conference_id: usa15.id)
-Exhibitor.create(company_name: 'Patch of Land', logo_img: '', conference: 'LendIt USA 2015', url: 'https://patchofland.com/', description: '', conference_id: usa15.id)
-Exhibitor.create(company_name: 'Herio Capital', logo_img: '', conference: 'LendIt USA 2015', url: 'http://www.heriocapital.com/', description: '', conference_id: usa15.id)
-Exhibitor.create(company_name: 'Lob', logo_img: '', conference: 'LendIt USA 2015', url: '', description: 'https://lob.com/', conference_id: usa15.id)
-Exhibitor.create(company_name: 'First Associates', logo_img: '', conference: 'LendIt USA 2015', url: 'http://1stassociates.com/', description: '', conference_id: usa15.id)
-Exhibitor.create(company_name: 'Portfolio Financial Servicing Company', logo_img: '', conference: 'LendIt USA 2015', url: 'http://www.pfsc.com/', description: '', conference_id: usa15.id)
-Exhibitor.create(company_name: 'Borrowell', logo_img: '', conference: 'LendIt USA 2015', url: 'http://www.borrowell.com/', description: '', conference_id: usa15.id)
-Exhibitor.create(company_name: 'Credible', logo_img: '', conference: 'LendIt USA 2015', url: 'https://www.credible.com/', description: '', conference_id: usa15.id)
+# Exhibitor.create(company_name: 'AssetAvenue', logo_img: '', conference: 'LendIt USA 2015', url: 'https://www.assetavenue.com/', description: '', conference_id: usa15.id)
+# Exhibitor.create(company_name: 'Patch of Land', logo_img: '', conference: 'LendIt USA 2015', url: 'https://patchofland.com/', description: '', conference_id: usa15.id)
+# Exhibitor.create(company_name: 'Herio Capital', logo_img: '', conference: 'LendIt USA 2015', url: 'http://www.heriocapital.com/', description: '', conference_id: usa15.id)
+# Exhibitor.create(company_name: 'Lob', logo_img: '', conference: 'LendIt USA 2015', url: '', description: 'https://lob.com/', conference_id: usa15.id)
+# Exhibitor.create(company_name: 'First Associates', logo_img: '', conference: 'LendIt USA 2015', url: 'http://1stassociates.com/', description: '', conference_id: usa15.id)
+# Exhibitor.create(company_name: 'Portfolio Financial Servicing Company', logo_img: '', conference: 'LendIt USA 2015', url: 'http://www.pfsc.com/', description: '', conference_id: usa15.id)
+# Exhibitor.create(company_name: 'Borrowell', logo_img: '', conference: 'LendIt USA 2015', url: 'http://www.borrowell.com/', description: '', conference_id: usa15.id)
+# Exhibitor.create(company_name: 'Credible', logo_img: '', conference: 'LendIt USA 2015', url: 'https://www.credible.com/', description: '', conference_id: usa15.id)
 # Exhibitor.create(company_name: '', logo_img: '', conference: 'LendIt USA 2015', url: '', description: '', conference_id: usa15.id)
 
 ############
 # StartUps #
 ############
-Exhibitor.create(company_name: 'Sample', logo_img: '', conference: 'LendIt USA 2015', url: 'www.google.com', description: '', conference_id: usa15.id)
+# Exhibitor.create(company_name: 'Sample', logo_img: '', conference: 'LendIt USA 2015', url: 'www.google.com', description: '', conference_id: usa15.id)
 
 ############
 # Sponsors #
@@ -45,6 +45,7 @@ Sponsor.create(company_name: 'The Interface Financial Group', logo_img: 'https:/
 Sponsor.create(company_name: 'Assetz Capital', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/assetz.psd-th.jpeg', conference: 'LendIt USA 2015', sponsor_level: 'Bronze', description: '', url: 'https://www.assetzcapital.co.uk/', conference_id: usa15.id)
 Sponsor.create(company_name: 'Direct Lending Investments', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/direct.psd-th.jpeg', conference: 'LendIt USA 2015', sponsor_level: 'Bronze', description: '', url: 'http://www.dirlend.com/', conference_id: usa15.id)
 Sponsor.create(company_name: 'Blue Elephant Capital Management', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/blue.psd-th.jpeg', conference: 'LendIt USA 2015', sponsor_level: 'Bronze', description: '', url: 'http://www.bluelep.com/', conference_id: usa15.id)
+Sponsor.create(company_name: 'Prime Meridian Capital Management', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/prime-meridian.jpg', conference: 'LendIt USA 2015', sponsor_level: 'Bronze', description: '', url: 'http://www.pmifunds.com/', conference_id: usa15.id)
 
 # LendIt Europe 2014 sponsors
 #platinum

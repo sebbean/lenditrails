@@ -11,15 +11,23 @@ usa15 = Conference.create(title: 'LendIt USA 2015', description: 'LendIt USA 201
 ##############
 # Exhibitors #
 ##############
-# Exhibitor.create(company_name: 'AssetAvenue', logo_img: '', conference: 'LendIt USA 2015', url: 'https://www.assetavenue.com/', description: '', conference_id: usa15.id)
-# Exhibitor.create(company_name: 'Patch of Land', logo_img: '', conference: 'LendIt USA 2015', url: 'https://patchofland.com/', description: '', conference_id: usa15.id)
-# Exhibitor.create(company_name: 'Herio Capital', logo_img: '', conference: 'LendIt USA 2015', url: 'http://www.heriocapital.com/', description: '', conference_id: usa15.id)
-# Exhibitor.create(company_name: 'Lob', logo_img: '', conference: 'LendIt USA 2015', url: '', description: 'https://lob.com/', conference_id: usa15.id)
-# Exhibitor.create(company_name: 'First Associates', logo_img: '', conference: 'LendIt USA 2015', url: 'http://1stassociates.com/', description: '', conference_id: usa15.id)
-# Exhibitor.create(company_name: 'Portfolio Financial Servicing Company', logo_img: '', conference: 'LendIt USA 2015', url: 'http://www.pfsc.com/', description: '', conference_id: usa15.id)
-# Exhibitor.create(company_name: 'Borrowell', logo_img: '', conference: 'LendIt USA 2015', url: 'http://www.borrowell.com/', description: '', conference_id: usa15.id)
-# Exhibitor.create(company_name: 'Credible', logo_img: '', conference: 'LendIt USA 2015', url: 'https://www.credible.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'AssetAvenue', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/asset-avenue.psd-th.jpeg', conference: 'LendIt USA 2015', url: 'https://www.assetavenue.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Patch of Land', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/patchofland.psd-th.jpeg', conference: 'LendIt USA 2015', url: 'https://patchofland.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Herio Capital', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/herio-capital.psd-th.jpeg', conference: 'LendIt USA 2015', url: 'http://www.heriocapital.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Lob', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/lob.psd-th.jpeg', conference: 'LendIt USA 2015', url: '', description: 'https://lob.com/', conference_id: usa15.id)
+Exhibitor.create(company_name: 'First Associates', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/first-associates.psd-th.jpeg', conference: 'LendIt USA 2015', url: 'http://1stassociates.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Portfolio Financial Servicing Company', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/portfolio-financial.psd-th.jpeg', conference: 'LendIt USA 2015', url: 'http://www.pfsc.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Realty Moguel', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/realtymoguel.psd-th.jpeg', conference: 'LendIt USA 2015', url: 'https://www.realtymogul.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'NoteX', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/notex.psd-th.jpeg', conference: 'LendIt USA 2015', url: 'http://notex360.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Richards Kibbe & Orbe LLP', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/rko.psd-th.jpeg', conference: 'LendIt USA 2015', url: 'http://www.rkollp.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Garnet Capital Advisors', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/garnet-capital.psd-th.jpeg', conference: 'LendIt USA 2015', url: 'https://www.garnetcapital.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Opus Fund Services', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/opus.psd-th.jpeg', conference: 'LendIt USA 2015', url: 'http://www.opusfundservices.com/', description: '', conference_id: usa15.id)
+Exhibitor.create(company_name: 'Nortridge Software Company', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/nortridge.psd-th.jpeg', conference: 'LendIt USA 2015', url: 'http://www.nortridge.com/', description: '', conference_id: usa15.id)
 # Exhibitor.create(company_name: '', logo_img: '', conference: 'LendIt USA 2015', url: '', description: '', conference_id: usa15.id)
+# Exhibitor.create(company_name: '', logo_img: '', conference: 'LendIt USA 2015', url: '', description: '', conference_id: usa15.id)
+# Exhibitor.create(company_name: '', logo_img: '', conference: 'LendIt USA 2015', url: '', description: '', conference_id: usa15.id)
+# Exhibitor.create(company_name: '', logo_img: '', conference: 'LendIt USA 2015', url: '', description: '', conference_id: usa15.id)
+
 
 ############
 # StartUps #

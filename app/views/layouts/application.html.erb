@@ -8,14 +8,36 @@
 		<meta name="google-site-verification" content="by6W7B4QIEZf5yc1MoQlex0GuqL2U9ekI9YTCSzX5wg" />
 		<!-- Mobile -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<!-- comment out for production -->
-		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7219312/623924/css/fonts.css" />
 		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 		<%= csrf_meta_tags %>
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<%= favicon_link_tag 'favicon.ico' %>
+
+		<!-- Wistia Golden Ticket - Links all videos using Turnstile email capture so that if a viewer enters their email address for one video, they won't be prompted to enter an email address on any other videos -->
+		<script src="//fast.wistia.com/static/embed_shepherd-v1.js"></script>
+		<script>
+		//<![CDATA[
+		wistiaEmbeds.onFind(function(video) {
+		  var email = Wistia.localStorage("golden-ticket");
+		  if (email) {
+		    video.setEmail(email);
+		  }
+		});
+		wistiaEmbeds.bind("conversion", function(video, type, data) {
+		  if (/^(pre|mid|post)-roll-email$/.test(type)) {
+		    Wistia.localStorage("golden-ticket", data);
+		    for (var i = 0; i < wistiaEmbeds.length; i++) {
+		      wistiaEmbeds[i].setEmail(data);
+		    }
+		  }
+		});
+		//]]>
+		</script>
+		<!-- end of Wistia Golden Ticket script -->
+
 	</head>
 
 	<!-- <body class="<%= controller.controller_name %>"> -->

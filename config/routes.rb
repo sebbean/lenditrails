@@ -16,7 +16,7 @@ LenditRails::Application.routes.draw do
   get '/attendees' => 'attendees#go_to_usa15'
   get '/volunteers' => 'welcome#volunteers'
   get '/volunteers/submitted' => 'welcome#volunteers_submitted'
-  get '/archives' => 'conferences#index'
+  # get '/archives' => 'conferences#index'
 
 
   # LendIt USA 2015
@@ -34,7 +34,8 @@ LenditRails::Application.routes.draw do
   #LendIt Europe 2014
   get '/europe' => 'conferences#europe'
   get '/europe/2014/photos' => 'photos#eu14'
-  get '/europe/attendees' => 'welcome#europe14_attendees'
+  get '/europe/2014/attendees' => 'attendees#eu14'
+  get '/europe/attendees' => 'attendees#go_to_eu14'
   get '/europe/2014/videos' => 'videos#eu14'
   get '/europe/2014/videos/:id' => 'videos#show_eu14', via: :get, as: :eu14_video
   get '/europe/2014/speakers' => 'speakers#eu14'
@@ -59,17 +60,15 @@ LenditRails::Application.routes.draw do
   get '/presentations/Michael-Barr-LendiIt-2014.pdf' => 'welcome#barr_2014_deck'
   get '/presentations/Chales-Moldow-Foundation-Capital-LendIt-2014.pdf' => 'welcome#moldow_2014_deck'
   get '/presentations/Securitization-Panel-LendIt-2014.pdf' => 'welcome#securitization_panel_2014_deck'
-  get '/blog', to: redirect("http://blog.lendit.co")
+  # get '/blog', to: redirect("http://blog.lendit.co", status: 301)
+  get '/videos-2', to: redirect("/videos", status: 301)
 
 
   # 302 redirect to be updated to 301 once Wistia is configured
-  # get '/blog', to: redirect('/', status: 302)
   get '/event', to: redirect('/about', status: 302)
   get '/event/:id', to: redirect('/about', status: 302)
   get '/lendit2013', to: redirect('/about', status: 302)
   get '/lendit-spring-2014', to: redirect('/about', status: 302)
-  # get '/videos', to: redirect("https://www.youtube.com/user/LendItConference", status: 302)
-  get '/videos-2', to: redirect("http://lendit.tv", status: 302)
 
 
 end

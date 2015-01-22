@@ -7,4 +7,8 @@ class AttendeesController < ApplicationController
     redirect_to '/usa/2015/attendees', :status => 301
   end
 
+  def go_to_eu14
+    redirect_to '/europe/2014/attendees', :status => 301
+  end
+
 end

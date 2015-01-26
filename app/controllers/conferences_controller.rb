@@ -16,6 +16,9 @@ class ConferencesController < ApplicationController
   def usa15_startup
   end
 
+  def usa15_chinese_invite
+  end
+
   def go_to_usa15
     redirect_to ('/usa'), :status => 301
   end

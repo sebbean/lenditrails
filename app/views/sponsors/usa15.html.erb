@@ -87,6 +87,22 @@
 				</ul>
 			</div>
 
+			<div class="sponsors-section">
+				<div class="sponsors-section-head">
+
+					Mobile App Sponsor
+				</div>
+				<ul class="small-block-grid-2 large-block-grid-3">
+					<% @mobile.each do |sponsor| %>
+					<li>
+						<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
+							<img src="<%= sponsor.logo_img %>" />
+						</a>
+					</li>
+					<% end %>
+				</ul>
+			</div>
+
 
 			<div class="sponsors-section">
 				<div class="sponsors-section-head">

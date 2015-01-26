@@ -13,6 +13,7 @@ class SponsorsController < ApplicationController
     @gold = @usa15_sponsors.where(sponsor_level: 'Gold')
     @silver = @usa15_sponsors.where(sponsor_level: 'Silver')
     @bronze = @usa15_sponsors.where(sponsor_level: 'Bronze')
+    @mobile = @usa15_sponsors.where(sponsor_level: 'Mobile App')
     @exhibitors = Exhibitor.where(conference: 'LendIt USA 2015')
     @exhibitors.sort_by! { |company| company['company_name'] }
     @startups = Startup.where(conference: 'LendIt USA 2015')

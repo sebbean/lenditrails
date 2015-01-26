@@ -1,6 +1,9 @@
 var app = app || {};
 
+$(document).foundation();
 $(document).ready(function() {
+
+
 
   $('.menu-item-has-children').on("click", function(){
     $('.menu-item-has-children').toggleClass('open');

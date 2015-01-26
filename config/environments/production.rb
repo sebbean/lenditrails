@@ -78,4 +78,7 @@ LenditRails::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
+  # Modernizr for Foundation-Zurb
+  config.assets.precompile += %w( vendor/modernizr.js )
+
 end

@@ -18,21 +18,13 @@
 		<%= favicon_link_tag 'favicon.ico' %>
 
 		<!-- Wistia Golden Ticket - Links all videos using Turnstile email capture so that if a viewer enters their email address for one video, they won't be prompted to enter an email address on any other videos -->
-				<%= render 'layouts/wistia_golden_ticket' %>
+		<%= render 'layouts/wistia_golden_ticket' %>
 		<!-- end of Wistia Golden Ticket script -->
 
 		<!-- Wistia Google Analytics -->
-		<script src="//fast.wistia.com/assets/external/embed_shepherd-v1.js"></script>
-<script>
-wistiaEmbeds.onFind(function(video) {
-  video.addPlugin("googleAnalytics", {
-    src: "//fast.wistia.com/labs/google-analytics/plugin.js",
-    outsideIframe: true
-  });
-});
-</script>
-
+		<%= render 'layouts/wistia_ga' %>
 		<!-- end of Wistia Google Analytics  -->
+		<%= javascript_include_tag "vendor/modernizr" %>
 	</head>
 
 	<!-- <body class="<%= controller.controller_name %>"> -->

@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require bootstrap-sprockets
 //= require doubletaptogo
 //= require colorbox
@@ -20,5 +21,7 @@
 //= require validate
 //= require turbolinks
 //= require_tree .
+
+
 
 

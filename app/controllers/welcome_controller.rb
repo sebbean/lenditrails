@@ -1,6 +1,11 @@
 class WelcomeController < ApplicationController
 
   # 301 permanent redirect to /speakers
+  def go_to_libsyn
+    redirect_to ('http://liaudio.lendit.libsynpro.com/rss'), :status => 301
+  end
+
+  # 301 permanent redirect to /speakers
   def go_to_speakers
     redirect_to speakers_path, :status => 301
   end

@@ -17,6 +17,7 @@ LenditRails::Application.routes.draw do
   get '/volunteers' => 'welcome#volunteers'
   get '/volunteers/submitted' => 'welcome#volunteers_submitted'
   get '/archives' => 'conferences#index'
+  get '/audio' => 'welcome#go_to_libsyn'
 
 
   # LendIt USA 2015

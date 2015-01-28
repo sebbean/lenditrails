@@ -18,6 +18,7 @@ LenditRails::Application.routes.draw do
   get '/volunteers/submitted' => 'welcome#volunteers_submitted'
   get '/archives' => 'conferences#index'
   get '/audio' => 'welcome#go_to_libsyn'
+  get '/bookhotel', to: redirect('https://aws.passkey.com/g/35613120', status: 301)
 
 
   # LendIt USA 2015

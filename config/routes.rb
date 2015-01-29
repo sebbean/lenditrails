@@ -32,9 +32,9 @@ LenditRails::Application.routes.draw do
   get '/usa/2015/startups' => 'startups#usa15'
   get '/us/2015/exhibitors' => 'exhibitors#usa15'
   get '/usa/2015/attendees' => 'attendees#usa15'
-  # get '/usa/2015/beijing-invite' => 'conferences#usa15_beijing_invite-update'
-  get '/usa/2015/beijing-invite', to: redirect('https://s3-us-west-2.amazonaws.com/lendit/uploads/LendIt-USA-2015-FIN.pdf', status: 301)
-  get '/beijing' => 'conferences#usa15_beijing_invite-update'
+  # get '/usa/2015/beijing-invite' => 'conferences#usa15_beijing_invite'
+  # get '/usa/2015/beijing-invite', to: redirect('https://s3-us-west-2.amazonaws.com/lendit/uploads/LendIt-USA-2015-FIN.pdf', status: 301)
+  get '/usa/2015/beijing-invite' => 'conferences#usa15_beijing_invite-update'
   # get '/test' => 'conferences#test'
 
   #LendIt Europe 2014

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150113230736) do
+ActiveRecord::Schema.define(version: 20150130214455) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,14 +24,12 @@ ActiveRecord::Schema.define(version: 20150113230736) do
   end
 
   create_table "exhibitors", force: true do |t|
-    t.string   "company_name"
-    t.string   "logo_img"
-    t.string   "conference"
-    t.text     "description"
-    t.string   "url"
-    t.integer  "conference_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string  "company_name"
+    t.string  "logo_img"
+    t.string  "conference"
+    t.text    "description"
+    t.string  "url"
+    t.integer "conference_id"
   end
 
   create_table "friendly_id_slugs", force: true do |t|
@@ -50,6 +48,12 @@ ActiveRecord::Schema.define(version: 20150113230736) do
   create_table "photos", force: true do |t|
     t.string  "title"
     t.text    "caption"
+    t.integer "conference_id"
+  end
+
+  create_table "podcasts", force: true do |t|
+    t.text    "audio_embed"
+    t.integer "video_id"
     t.integer "conference_id"
   end
 
@@ -83,14 +87,12 @@ ActiveRecord::Schema.define(version: 20150113230736) do
   end
 
   create_table "startups", force: true do |t|
-    t.string   "company_name"
-    t.string   "logo_img"
-    t.string   "conference"
-    t.text     "description"
-    t.string   "url"
-    t.integer  "conference_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string  "company_name"
+    t.string  "logo_img"
+    t.string  "conference"
+    t.text    "description"
+    t.string  "url"
+    t.integer "conference_id"
   end
 
   create_table "videos", force: true do |t|

@@ -10,6 +10,7 @@ class VideosController < ApplicationController
 
   def show_eu14
     @video = Video.friendly.find(params[:id])
+    # binding.pry
   end
 
   def go_to_eu14

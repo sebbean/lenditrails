@@ -15,6 +15,11 @@
         </div>
         <div class="conf-id">
 
+        <div>
+          <% if !@video.podcast.nil? %>
+          <%= raw @video.podcast.audio_embed %>
+          <% end %>
+        </div>
         </div>
         <div class="video-description">
           <%= raw @video.description %><br /><br />

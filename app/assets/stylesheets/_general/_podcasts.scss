@@ -1,0 +1,40 @@
+.pg-podcasts {
+	.general-background {
+		font-family:'Open Sans', sans-serif;
+		h1 {
+			margin-top:.5em;
+			margin-bottom:1em;
+		font-family:'Open Sans', sans-serif;
+		}
+		.panel {
+			position:relative;
+			padding-top:80px;
+			border-color:$primary-color;
+			background:#fafafa;
+			
+		}
+
+		.podcast-item-embed {
+			min-height:67px;
+
+			iframe {
+				width:100% !important;
+			background:#fafafa url(ajax-loader.gif) center 40px no-repeat;
+			}
+		}
+		.podcast-title {
+			position:absolute;
+			z-index:1;
+			width:100%;
+			top:0;
+			left:0;
+			padding:20px;
+			font-size:18px;
+			color:#444;
+			
+		}
+		
+
+	}
+
+}

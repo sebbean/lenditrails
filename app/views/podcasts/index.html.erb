@@ -5,6 +5,10 @@
 		<div class="columns">
 			<h1>Podcasts</h1>
 
+		  <div>
+        <a href="https://itunes.apple.com/us/podcast/lendit-conference/id962047495" target="_blank">Subscribe via iTunes</a>  |  <a href="http://liaudio.lendit.libsynpro.com/rss" target="_blank">RSS Feed</a>  |  <a href="http://www.stitcher.com/podcast/lendit-conference?refid=stpr" target="_blank">Listen on Stitcher</a>
+      </div>
+
 			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3" data-equalizer>
 				<% @eu14podcasts.each do |podcast| %>
 					<li>
@@ -12,7 +16,7 @@
 							<div class="podcast-title">
 								<%= raw podcast.video.title %>
 							</div>
-							
+
 							<div class="podcast-item-embed">
 								<%= raw podcast.audio_embed %>
 							</div>
@@ -20,6 +24,7 @@
 					</li>
 				<% end %>
 			</ul>
+
 
 		</div>
 	</div>

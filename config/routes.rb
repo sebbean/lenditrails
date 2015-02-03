@@ -19,7 +19,7 @@ LenditRails::Application.routes.draw do
   get '/archives' => 'conferences#index'
   get '/audio' => 'welcome#go_to_libsyn'
   get '/bookhotel', to: redirect('https://aws.passkey.com/g/35613120', status: 301)
-  # get '/podcasts' => 'podcasts#index'
+  get '/podcasts' => 'podcasts#index'
 
 
   # LendIt USA 2015

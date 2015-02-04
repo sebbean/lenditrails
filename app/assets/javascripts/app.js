@@ -9,6 +9,9 @@ $(document).ready(function() {
     $('.menu-item-has-children').toggleClass('open');
   });
 
+  $('a.reveal-link').trigger('click');
+  $('a.close-reveal-modal').trigger('click');
+
 
   // toggle agenda
   $('.pm-button').on('click', function(e){

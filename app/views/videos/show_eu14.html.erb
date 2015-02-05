@@ -20,14 +20,24 @@
           <%= raw @video.podcast.audio_embed %>
           <% end %>
         </div>
+
+        <div class="podcast-actions">
+          <div>
+            <a href="https://itunes.apple.com/us/podcast/lendit-conference/id962047495" target="_blank"> <i class="fa fa-music"></i> Subscribe via iTunes</a>
+          </div>
+          <div>
+            <a href="http://liaudio.lendit.libsynpro.com/rss" target="_blank"> <i class="fa fa-rss"></i> RSS Feed</a>
+          </div>
+          <div>
+            <a href="http://www.stitcher.com/podcast/lendit-conference?refid=stpr" target="_blank"> <i class="fa fa-play-circle-o"></i> Listen on Stitcher</a>
+          </div>
         </div>
+
         <div class="video-description">
           <%= raw @video.description %><br /><br />
           <%= raw @video.conference.description %>
         </div>
 
-        <div>
-          <a href="https://itunes.apple.com/us/podcast/lendit-conference/id962047495" target="_blank">Subscribe via iTunes</a>  |  <a href="http://liaudio.lendit.libsynpro.com/rss" target="_blank">RSS Feed</a>  |  <a href="http://www.stitcher.com/podcast/lendit-conference?refid=stpr" target="_blank">Listen on Stitcher</a>
         </div>
       </div>
     </div>

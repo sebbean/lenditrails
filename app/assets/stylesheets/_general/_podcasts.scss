@@ -1,5 +1,6 @@
 .pg-podcasts {
 	.general-background {
+		padding-bottom:4em;
 		font-family:'Open Sans', sans-serif;
 		h1 {
 			margin-top:.5em;
@@ -9,8 +10,10 @@
 		.panel {
 			position:relative;
 			padding-top:80px;
-			border-color:$primary-color;
 			background:#fafafa;
+			-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
 			
 		}
 
@@ -35,6 +38,35 @@
 		}
 		
 
+	}
+
+}
+.podcast-actions {
+	margin-bottom:2em;
+	> div {
+		display:inline-block;
+		a {
+			
+			font-weight:600;
+			margin-right:10px;
+			border:1px solid #e5e5e5;
+			background:#fafafa;
+			padding:4px 10px;
+			display:block;
+			text-shadow:1px 1px 1px #fff;
+			&:hover {
+				border-color:$primary-color;
+				text-shadow:1px 1px 1px darken($primary-color,10%) ;
+				background:$primary-color;
+				color:#fff;
+				text-decoration:none;
+			}
+			&:active,
+			&:focus {
+				text-decoration:none;
+			}
+		}
+	
 	}
 
 }

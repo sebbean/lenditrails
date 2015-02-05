@@ -1,6 +1,6 @@
 var app = app || {};
 
-$(document).foundation();
+$(document).foundation('reveal', {animation: 'none'});
 $(document).ready(function() {
 
 

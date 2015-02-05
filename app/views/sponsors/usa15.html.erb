@@ -18,6 +18,7 @@
 				</div>
 				<ul class="small-block-grid-2 large-block-grid-3">
 					<% @title.each do |sponsor| %>
+
 					<li data-reveal-id="sponsor-modal-<%= sponsor.id %>">
 						<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
 							<img src="<%= sponsor.logo_img %>" />
@@ -44,19 +45,30 @@
 
 				<ul class="small-block-grid-2 large-block-grid-3">
 					<% @platinum.each do |sponsor| %>
-					<li data-reveal-id="sponsor-modal-<%= sponsor.id %>">
-						<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
-							<img src="<%= sponsor.logo_img %>" />
-						</a>
-					</li>
 
-					<div id="sponsor-modal-<%= sponsor.id %>" class="reveal-modal" data-reveal>
-						LendIt USA 2015 <%= sponsor.sponsor_level %> Sponsor
-						<p><img src="<%= sponsor.logo_img %>" /></p>
-						<p><a href="<%= raw sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %></a></p>
-						<p><%= raw sponsor.description %></p>
-						<a class="close-reveal-modal">&#215;</a>
-					</div>
+						<% if !sponsor.description.empty? %>
+							<li data-reveal-id="sponsor-modal-<%= sponsor.id %>">
+								<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= sponsor.logo_img %>" />
+								</a>
+							</li>
+
+							<div id="sponsor-modal-<%= sponsor.id %>" class="reveal-modal" data-reveal>
+								LendIt USA 2015 <%= sponsor.sponsor_level %> Sponsor
+								<p><img src="<%= sponsor.logo_img %>" /></p>
+								<p><a href="<%= raw sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %></a></p>
+								<p><%= raw sponsor.description %></p>
+								<a class="close-reveal-modal">&#215;</a>
+							</div>
+						<% else %>
+							<li>
+								<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= sponsor.logo_img %>" />
+								</a>
+							</li>
+						<% end %>
+
+
 
 					<% end %>
 				</ul>
@@ -68,19 +80,28 @@
 				</div>
 				<ul class="small-block-grid-2 large-block-grid-3">
 					<% @gold.each do |sponsor| %>
-					<li data-reveal-id="sponsor-modal-<%= sponsor.id %>">
-						<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
-							<img src="<%= sponsor.logo_img %>" />
-						</a>
-					</li>
 
-					<div id="sponsor-modal-<%= sponsor.id %>" class="reveal-modal" data-reveal>
-						LendIt USA 2015 <%= sponsor.sponsor_level %> Sponsor
-						<p><img src="<%= sponsor.logo_img %>" /></p>
-						<p><a href="<%= raw sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %></a></p>
-						<p><%= raw sponsor.description %></p>
-						<a class="close-reveal-modal">&#215;</a>
-					</div>
+						<% if !sponsor.description.empty? %>
+							<li data-reveal-id="sponsor-modal-<%= sponsor.id %>">
+								<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= sponsor.logo_img %>" />
+								</a>
+							</li>
+
+							<div id="sponsor-modal-<%= sponsor.id %>" class="reveal-modal" data-reveal>
+								LendIt USA 2015 <%= sponsor.sponsor_level %> Sponsor
+								<p><img src="<%= sponsor.logo_img %>" /></p>
+								<p><a href="<%= raw sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %></a></p>
+								<p><%= raw sponsor.description %></p>
+								<a class="close-reveal-modal">&#215;</a>
+							</div>
+						<% else %>
+							<li>
+								<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= sponsor.logo_img %>" />
+								</a>
+							</li>
+						<% end %>
 
 					<% end %>
 				</ul>
@@ -92,19 +113,28 @@
 				</div>
 				<ul class="small-block-grid-2 large-block-grid-3">
 					<% @silver.each do |sponsor| %>
-					<li data-reveal-id="sponsor-modal-<%= sponsor.id %>">
-						<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
-							<img src="<%= sponsor.logo_img %>" />
-						</a>
-					</li>
 
-					<div id="sponsor-modal-<%= sponsor.id %>" class="reveal-modal" data-reveal>
-						LendIt USA 2015 <%= sponsor.sponsor_level %> Sponsor
-						<p><img src="<%= sponsor.logo_img %>" /></p>
-						<p><a href="<%= raw sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %></a></p>
-						<p><%= raw sponsor.description %></p>
-						<a class="close-reveal-modal">&#215;</a>
-					</div>
+						<% if !sponsor.description.empty? %>
+							<li data-reveal-id="sponsor-modal-<%= sponsor.id %>">
+								<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= sponsor.logo_img %>" />
+								</a>
+							</li>
+
+							<div id="sponsor-modal-<%= sponsor.id %>" class="reveal-modal" data-reveal>
+								LendIt USA 2015 <%= sponsor.sponsor_level %> Sponsor
+								<p><img src="<%= sponsor.logo_img %>" /></p>
+								<p><a href="<%= raw sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %></a></p>
+								<p><%= raw sponsor.description %></p>
+								<a class="close-reveal-modal">&#215;</a>
+							</div>
+						<% else %>
+							<li>
+								<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= sponsor.logo_img %>" />
+								</a>
+							</li>
+						<% end %>
 
 					<% end %>
 				</ul>
@@ -120,19 +150,28 @@
 				</div>
 				<ul class="small-block-grid-2 large-block-grid-3">
 					<% @bronze.each do |sponsor| %>
-					<li data-reveal-id="sponsor-modal-<%= sponsor.id %>">
-						<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
-							<img src="<%= sponsor.logo_img %>" />
-						</a>
-					</li>
 
-					<div id="sponsor-modal-<%= sponsor.id %>" class="reveal-modal" data-reveal>
-						LendIt USA 2015 <%= sponsor.sponsor_level %> Sponsor
-						<p><img src="<%= sponsor.logo_img %>" /></p>
-						<p><a href="<%= raw sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %></a></p>
-						<p><%= raw sponsor.description %></p>
-						<a class="close-reveal-modal">&#215;</a>
-					</div>
+						<% if !sponsor.description.empty? %>
+							<li data-reveal-id="sponsor-modal-<%= sponsor.id %>">
+								<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= sponsor.logo_img %>" />
+								</a>
+							</li>
+
+							<div id="sponsor-modal-<%= sponsor.id %>" class="reveal-modal" data-reveal>
+								LendIt USA 2015 <%= sponsor.sponsor_level %> Sponsor
+								<p><img src="<%= sponsor.logo_img %>" /></p>
+								<p><a href="<%= raw sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %></a></p>
+								<p><%= raw sponsor.description %></p>
+								<a class="close-reveal-modal">&#215;</a>
+							</div>
+						<% else %>
+							<li>
+								<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= sponsor.logo_img %>" />
+								</a>
+							</li>
+						<% end %>
 
 					<% end %>
 				</ul>
@@ -145,19 +184,28 @@
 				</div>
 				<ul class="small-block-grid-2 large-block-grid-3">
 					<% @mobile.each do |sponsor| %>
-					<li data-reveal-id="sponsor-modal-<%= sponsor.id %>">
-						<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
-							<img src="<%= sponsor.logo_img %>" />
-						</a>
-					</li>
-					<div id="sponsor-modal-<%= sponsor.id %>" class="reveal-modal" data-reveal>
-						LendIt USA 2015 <%= sponsor.sponsor_level %> Sponsor
-						<p><img src="<%= sponsor.logo_img %>" /></p>
-						<p><a href="<%= raw sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %></a></p>
-						<p><%= raw sponsor.description %></p>
-						<a class="close-reveal-modal">&#215;</a>
-					</div>
 
+						<% if !sponsor.description.empty? %>
+							<li data-reveal-id="sponsor-modal-<%= sponsor.id %>">
+								<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= sponsor.logo_img %>" />
+								</a>
+							</li>
+
+							<div id="sponsor-modal-<%= sponsor.id %>" class="reveal-modal" data-reveal>
+								LendIt USA 2015 <%= sponsor.sponsor_level %> Sponsor
+								<p><img src="<%= sponsor.logo_img %>" /></p>
+								<p><a href="<%= raw sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %></a></p>
+								<p><%= raw sponsor.description %></p>
+								<a class="close-reveal-modal">&#215;</a>
+							</div>
+						<% else %>
+							<li>
+								<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= sponsor.logo_img %>" />
+								</a>
+							</li>
+						<% end %>
 					<% end %>
 				</ul>
 			</div>
@@ -169,20 +217,27 @@
 				</div>
 				<ul class="small-block-grid-2 large-block-grid-3">
 					<% @exhibitors.each do |company| %>
-					<li data-reveal-id="sponsor-modal-<%= company.id %>">
-						<a href="<%= company.url %>" class="sponsors-thumb" target="_blank">
-							<img src="<%= company.logo_img %>" />
-						</a>
-					</li>
+						<% if !company.description.empty? %>
+							<li data-reveal-id="sponsor-modal-<%= company.id %>">
+								<a href="<%= company.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= company.logo_img %>" />
+								</a>
+							</li>
 
-					<div id="sponsor-modal-<%= company.id %>" class="reveal-modal" data-reveal>
-						LendIt USA 2015 Exhibitor
-						<p><img src="<%= company.logo_img %>" /></p>
-						<p><a href="<%= raw company.url %>" target="_blank">Visit <%= company.company_name %></a></p>
-						<p><%= raw company.description %></p>
-						<a class="close-reveal-modal">&#215;</a>
-					</div>
-
+							<div id="sponsor-modal-<%= company.id %>" class="reveal-modal" data-reveal>
+								LendIt USA 2015 Exhibitor
+								<p><img src="<%= company.logo_img %>" /></p>
+								<p><a href="<%= raw company.url %>" target="_blank">Visit <%= company.company_name %></a></p>
+								<p><%= raw company.description %></p>
+								<a class="close-reveal-modal">&#215;</a>
+							</div>
+						<% else %>
+							<li>
+								<a href="<%= company.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= company.logo_img %>" />
+								</a>
+							</li>
+						<% end %>
 
 					<% end %>
 				</ul>
@@ -196,20 +251,28 @@
 				</div>
 				<ul class="small-block-grid-2 large-block-grid-3">
 					<% @startups.each do |company| %>
-					<li data-reveal-id="sponsor-modal-<%= company.id %>">
-						<a href="<%= company.url %>" class="sponsors-thumb" target="_blank">
-							<img src="<%= company.logo_img %>" />
-						</a>
-					</li>
 
-					<div id="sponsor-modal-<%= company.id %>" class="reveal-modal" data-reveal>
-						LendIt USA 2015 Start-Up
-						<p><img src="<%= company.logo_img %>" /></p>
-						<p><a href="<%= raw company.url %>" target="_blank">Visit <%= company.company_name %></a></p>
-						<p><%= raw company.description %></p>
-						<a class="close-reveal-modal">&#215;</a>
-					</div>
+						<% if !company.description.empty? %>
+							<li data-reveal-id="sponsor-modal-<%= company.id %>">
+								<a href="<%= company.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= company.logo_img %>" />
+								</a>
+							</li>
 
+							<div id="sponsor-modal-<%= company.id %>" class="reveal-modal" data-reveal>
+								LendIt USA 2015 Start-Up
+								<p><img src="<%= company.logo_img %>" /></p>
+								<p><a href="<%= raw company.url %>" target="_blank">Visit <%= company.company_name %></a></p>
+								<p><%= raw company.description %></p>
+								<a class="close-reveal-modal">&#215;</a>
+							</div>
+						<% else %>
+							<li>
+								<a href="<%= company.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= company.logo_img %>" />
+								</a>
+							</li>
+						<% end %>
 
 					<% end %>
 				</ul>

@@ -19,7 +19,7 @@ LenditRails::Application.routes.draw do
   get '/archives' => 'conferences#index'
   get '/audio' => 'welcome#go_to_libsyn'
   get '/bookhotel', to: redirect('https://aws.passkey.com/g/35613120', status: 301)
-  get '/podcasts' => 'podcasts#index'
+  get '/podcasts' => 'podcasts#go_to_eu14'
 
 
   # LendIt USA 2015
@@ -45,6 +45,7 @@ LenditRails::Application.routes.draw do
   get '/europe/2014/videos/:id' => 'videos#show_eu14', via: :get, as: :eu14_video
   get '/europe/2014/speakers' => 'speakers#eu14'
   get '/europe/2014/sponsors' => 'sponsors#eu14'
+  get '/europe/2014/podcasts' => 'podcasts#eu14'
 
 
   #LendIt USA 2014

@@ -19,19 +19,28 @@
 				<ul class="small-block-grid-2 large-block-grid-3">
 					<% @title.each do |sponsor| %>
 
-					<li data-reveal-id="sponsor-modal-<%= sponsor.id %>">
-						<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
-							<img src="<%= sponsor.logo_img %>" />
-						</a>
-					</li>
+						<%# if !sponsor.description.empty? %>
+						<% if false %>
+							<li data-reveal-id="sponsor-modal-<%= sponsor.id %>">
+								<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= sponsor.logo_img %>" />
+								</a>
+							</li>
 
-					<div id="sponsor-modal-<%= sponsor.id %>" class="reveal-modal" data-reveal>
-						LendIt USA 2015 <%= sponsor.sponsor_level %> Sponsor
-						<p><img src="<%= sponsor.logo_img %>" /></p>
-						<p><a href="<%= raw sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %></a></p>
-						<p><%= raw sponsor.description %></p>
-						<a class="close-reveal-modal">&#215;</a>
-					</div>
+							<div id="sponsor-modal-<%= sponsor.id %>" class="reveal-modal" data-reveal>
+								LendIt USA 2015 <%= sponsor.sponsor_level %> Sponsor
+								<p><img src="<%= sponsor.logo_img %>" /></p>
+								<p><a href="<%= raw sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %></a></p>
+								<p><%= raw sponsor.description %></p>
+								<a class="close-reveal-modal">&#215;</a>
+							</div>
+						<% else %>
+							<li>
+								<a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
+									<img src="<%= sponsor.logo_img %>" />
+								</a>
+							</li>
+						<% end %>
 
 
 					<% end %>

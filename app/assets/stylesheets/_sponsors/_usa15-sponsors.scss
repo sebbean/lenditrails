@@ -67,8 +67,8 @@
 		}
 	}
 	.ny15-prospectus-link2 {
-			font-family:'Open Sans', sans-serif;
-			padding-bottom:1em;
+		font-family:'Open Sans', sans-serif;
+		padding-bottom:1em;
 	}
 
 	.panel {
@@ -79,9 +79,47 @@
 	.download-sponsorship-packages a {
 		display:table;
 		@media only screen and (max-width: 1023px) {
-		margin:0 auto 20px auto;
+			margin:0 auto 20px auto;
+		}
 	}
+}
+
+.sponsor-category {
+	font-family: 'Open Sans', sans-serif;
+	color: #666;
+	padding-bottom: .2em;
+	text-shadow: 1px 1px 0 #fff;
+	font-size: 22px;
+	border-bottom: 1px solid #666;
+	margin-bottom: 1em;
+	font-weight: 600;
+	b {
+		font-weight:inherit;
 	}
 
 
+}
+.sponsor-modal-thumb img {
+	display:block;
+	max-width:300px;
+	margin:auto;
+	border: 1px solid #ddd;
+
+}
+
+p.sponsor-modal-visit {
+	font-family:'Open Sans', sans-serif;
+	font-weight:600;
+	a {
+		&:before {
+			content: '\f0a9 \00A0';
+			font-family:FontAwesome;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		} 
+	}
+}
+p.sponsor-modal-description {
+	font-family: 'Open Sans', sans-serif;
+	
 }

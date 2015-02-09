@@ -1,7 +1,31 @@
 var app = app || {};
 
-$(document).foundation('reveal', {animation: 'none'});
+$(document).foundation('reveal', {
+  animation: 'fadeAndPop',
+  animation_speed: 250,
+  close_on_background_click: true,
+  dismiss_modal_class: 'close-reveal-modal',
+  multiple_opened: false,
+  bg_class: 'reveal-modal-bg',
+  root_element: 'body',
+  bg : $('.reveal-modal-bg'),
+  css : {
+    open : {
+      'opacity': 0,
+      'visibility': 'visible',
+      'display' : 'block'
+    },
+    close : {
+      'opacity': 1,
+      'visibility': 'hidden',
+      'display': 'none'
+    }
+  }
+});
 $(document).ready(function() {
+
+
+
 
 
 

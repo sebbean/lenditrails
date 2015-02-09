@@ -44,16 +44,16 @@ class SponsorsController < ApplicationController
   end
 
   def test
-    @europe_sponsors = Sponsor.where(conference: 'LendIt Europe 2014')
-    @platinum = @europe_sponsors.where(sponsor_level: 'Platinum')
-    @gold = @europe_sponsors.where(sponsor_level: 'Gold')
-    @silver = @europe_sponsors.where(sponsor_level: 'Silver')
-    @bronze = @europe_sponsors.where(sponsor_level: 'Bronze')
-    @cocktails = @europe_sponsors.where(sponsor_level: 'Cocktail Party')
-    @smartphone = @europe_sponsors.where(sponsor_level: 'Smartphone App')
-    @exhibitor = @europe_sponsors.where(sponsor_level: 'Exhibitor')
-    @other_sponsors = @europe_sponsors.where(sponsor_level: 'Other')
-    @past_sponsors = Sponsor.where(conference: 'LendIt 2014')
+    @usa15_sponsors = Sponsor.where(conference: 'LendIt USA 2015')
+    @title = @usa15_sponsors.where(sponsor_level: 'Title')
+    @platinum = @usa15_sponsors.where(sponsor_level: 'Platinum')
+    @gold = @usa15_sponsors.where(sponsor_level: 'Gold')
+    @silver = @usa15_sponsors.where(sponsor_level: 'Silver')
+    @bronze = @usa15_sponsors.where(sponsor_level: 'Bronze')
+    @mobile = @usa15_sponsors.where(sponsor_level: 'Mobile App')
+    @exhibitors = Exhibitor.where(conference: 'LendIt USA 2015')
+    @exhibitors.sort_by! { |company| company['company_name'] }
+    @startups = Startup.where(conference: 'LendIt USA 2015')
   end
 
   # GET /sponsors/1

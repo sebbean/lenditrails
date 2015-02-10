@@ -18,23 +18,20 @@
 			</div>
 
 
-<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
-            <div class="image-container">
-              <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
-            </div>
-          </a>
-
 
 			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3" data-equalizer>
 				<% @eu14podcasts.each do |podcast| %>
 					<li>
 						<div class="panel" data-equalizer-watch>
 							<div class="podcast-title">
-								<a href="#"><%= raw podcast.video.title %></a>
+								<a href="#" data-reveal-id="podcast-<%= podcast.id %>"><%= raw podcast.video.title %></a>
 							</div>
 
-							<div class="podcast-item-embed">
-								<%= raw podcast.audio_embed %>
+							<div class="podcast-item-embed reveal-modal" id="podcast-<%= podcast.id %>" data-reveal>
+								<div><%= raw podcast.video.title %></div>
+								<div><%= raw podcast.audio_embed %></div>
+								<div><%= raw podcast.video.description %></div>
+								<a href="" class="close-reveal-modal">&#215;</a>
 							</div>
 						</div>
 					</li>

@@ -7,22 +7,30 @@
 
 			<div class="podcast-actions">
 				<div>
-					<a href="https://itunes.apple.com/us/podcast/lendit-conference/id962047495" target="_blank"> <i class="fa fa-music"></i> Subscribe via iTunes</a>	
+					<a href="https://itunes.apple.com/us/podcast/lendit-conference/id962047495" target="_blank"> <i class="fa fa-music"></i> Subscribe via iTunes</a>
 				</div>
 				<div>
-					<a href="http://liaudio.lendit.libsynpro.com/rss" target="_blank"> <i class="fa fa-rss"></i> RSS Feed</a>	
+					<a href="http://liaudio.lendit.libsynpro.com/rss" target="_blank"> <i class="fa fa-rss"></i> RSS Feed</a>
 				</div>
 				<div>
 					<a href="http://www.stitcher.com/podcast/lendit-conference?refid=stpr" target="_blank"> <i class="fa fa-play-circle-o"></i> Listen on Stitcher</a>
 				</div>
 			</div>
 
+
+<a class="sponsor-top" href="#sponsor-<%= sponsor.id %>">
+            <div class="image-container">
+              <img src="<%= sponsor.logo_img %>" alt="<%= sponsor.company_name %>">
+            </div>
+          </a>
+
+
 			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3" data-equalizer>
 				<% @eu14podcasts.each do |podcast| %>
 					<li>
 						<div class="panel" data-equalizer-watch>
 							<div class="podcast-title">
-								<%= raw podcast.video.title %>
+								<a href="#"><%= raw podcast.video.title %></a>
 							</div>
 
 							<div class="podcast-item-embed">

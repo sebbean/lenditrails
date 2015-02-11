@@ -1,10 +1,8 @@
 <% body_class "pg-podcasts" %>
-
 <div class="general-background">
-	<div class="row">
-		<div class="columns">
+	<div class="row podcasts-main">
+		<div class="columns ">
 			<h1>LendIt Europe 2014 Podcasts</h1>
-
 			<div class="podcast-actions">
 				<div>
 					<a href="https://itunes.apple.com/us/podcast/lendit-conference/id962047495" target="_blank"> <i class="fa fa-music"></i> Subscribe via iTunes</a>
@@ -17,22 +15,17 @@
 				</div>
 			</div>
 
-
-
-			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3" data-equalizer>
+			<ul class="podcast-items">
 				<% @eu14podcasts.each_with_index do |podcast, index| %>
 					<li>
-						<div class="panel" data-equalizer-watch>
-							<div class="podcast-title">
-							 Episode <%= index + 1 %>: <a href="#" data-reveal-id="podcast-<%= podcast.id %>"><%= raw podcast.video.title %></a>
-							</div>
-
-							<div class="podcast-item-embed reveal-modal" id="podcast-<%= podcast.id %>" data-reveal>
-								<div>Episode <%= index %>: <%= raw podcast.video.title %></div>
-								<div><%= raw podcast.audio_embed %></div>
-								<div><%= raw podcast.video.description %></div>
-								<a href="" class="close-reveal-modal">&#215;</a>
-							</div>
+						<div class="podcast-title">
+							<b>#<%= index + 1 %>:</b> <i><a href="#" data-reveal-id="podcast-<%= podcast.id %>"><%= raw podcast.video.title %></a></i>
+						</div>
+						<div class="podcast-item-embed reveal-modal" id="podcast-<%= podcast.id %>" data-reveal>
+							<div class="podcast-modal-header"># <%= index %>: <%= raw podcast.video.title %></div>
+							<div class="podcast-modal-audio"><%= raw podcast.audio_embed %></div>
+							<div class="podcast-modal-desc"><%= raw podcast.video.description %></div>
+							<a href="" class="close-reveal-modal">&#215;</a>
 						</div>
 					</li>
 				<% end %>

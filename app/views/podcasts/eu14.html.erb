@@ -22,7 +22,7 @@
 							<b>#<%= index + 1 %>:</b> <i><a href="#" data-reveal-id="podcast-<%= podcast.id %>"><%= raw podcast.video.title %></a></i>
 						</div>
 						<div class="podcast-item-embed reveal-modal" id="podcast-<%= podcast.id %>" data-reveal>
-							<div class="podcast-modal-header"># <%= index %>: <%= raw podcast.video.title %></div>
+							<div class="podcast-modal-header"># <%= index + 1 %>: <%= raw podcast.video.title %></div>
 							<div class="podcast-modal-audio"><%= raw podcast.audio_embed %></div>
 							<div class="podcast-modal-desc"><%= raw podcast.video.description %></div>
 							<div><%= link_to 'Watch the video', eu14_video_path(podcast.video) %></div>

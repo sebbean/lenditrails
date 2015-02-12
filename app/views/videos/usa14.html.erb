@@ -17,7 +17,6 @@
         <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
           <% @usa14videos.each do |video| %>
             <li>
-              <%#= link_to video, class: 'video-item' do %>
               <%= link_to usa14_video_path(video), class: 'video-item' do %>
                 <div class="video-image">
                   <img src="<%= video.img %>" alt="<%= video.title %>">

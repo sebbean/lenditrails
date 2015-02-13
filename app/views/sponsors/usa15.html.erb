@@ -283,12 +283,17 @@
 								<p class="sponsor-modal-description"><%= raw company.description %></p>
 								<a class="close-reveal-modal">&#215;</a>
 							</div>
+						<% elsif !company.url? %>
+							<li>
+								<img src="<%= company.logo_img %>" alt="">
+							</li>
 						<% else %>
 							<li>
 								<a href="<%= company.url %>" class="sponsors-thumb" target="_blank">
 									<img src="<%= company.logo_img %>" />
 								</a>
 							</li>
+
 						<% end %>
 					<% end %>
 				</ul>

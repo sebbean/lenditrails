@@ -5,6 +5,7 @@ Conference.delete_all
 Startup.delete_all
 Video.delete_all
 Podcast.delete_all
+Partner.delete_all
 
 # Conferences
 usa14 = Conference.create(title: 'LendIt USA 2014', description: 'The second LendIt Conference built off the success of the first. We had over 950 people attend at the two-day conference at the Hilton Hotel in San Francisco on May 5-6.')
@@ -81,7 +82,11 @@ Startup.create(company_name: 'REAMERGE', logo_img: 'https://s3-us-west-2.amazona
 # Media Partner #
 #################
 
-Sponsor.create(company_name: 'deBanked', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/debanked.psd-th.jpeg', conference: 'LendIt USA 2015', sponsor_level: 'Media Partner', url: 'http://debanked.com/', description: 'Just when technology was finally working to connect the unbanked and underbanked to traditional financial services, a new class of consumer emerged, the debanked. This group has access to banking services but they reject them. Instead they crowdfund online to raise money, earn interest through member payment dependent notes instead of savings accounts, and maybe, just maybe flirt with bitcoin.<br><br>deBanked magazine was founded by merchant cash advance industry veteran Sean Murray. With deep roots in a niche market, Murray began documenting his experiences as an underwriter and salesman on his blog in 2010. Now a full-fledged publication and distributed in print, deBanked is your guide to the online lending universe.<br><br>While our team of experienced journalists work to bring you stories you can\'t find anywhere else, Murray remains an especially hands-on observer. He invests in platform loans, syndicates in merchant cash advances, and mines bitcoins. We\'ve officially deBanked, have you?', conference_id: usa15.id)
+
+Partner.create(company_name: 'deBanked', conference: 'LendIt USA 2015', partner_type: 'Media', url: 'http://debanked.com/', description: 'Just when technology was finally working to connect the unbanked and underbanked to traditional financial services, a new class of consumer emerged, the debanked. This group has access to banking services but they reject them. Instead they crowdfund online to raise money, earn interest through member payment dependent notes instead of savings accounts, and maybe, just maybe flirt with bitcoin.<br><br>deBanked magazine was founded by merchant cash advance industry veteran Sean Murray. With deep roots in a niche market, Murray began documenting his experiences as an underwriter and salesman on his blog in 2010. Now a full-fledged publication and distributed in print, deBanked is your guide to the online lending universe.<br><br>While our team of experienced journalists work to bring you stories you can\'t find anywhere else, Murray remains an especially hands-on observer. He invests in platform loans, syndicates in merchant cash advances, and mines bitcoins. We\'ve officially deBanked, have you?', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/debanked.psd-th.jpeg', conference_id: usa15.id)
+Partner.create(company_name: 'Guopeiwang', conference: 'LendIt USA 2015', partner_type: 'Tour', url: 'http://www.guopeiwang.com/', description: '', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/guopei.psd-th.jpeg', conference_id: usa15.id)
+# Partner.create(company_name: 'LingYi Caijing ', conference: 'LendIt USA 2015', partner_type: 'Media', url: '', description: '', logo_img: '', conference_id: usa15.id)
+
 
 
 ############

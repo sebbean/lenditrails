@@ -270,7 +270,7 @@
 				</div>
 				<ul class="small-block-grid-2 large-block-grid-3">
 					<% @partners.each do |company| %>
-						<% if !company.description.empty? %>
+						<% if company.description? %>
 							<li data-reveal-id="sponsor-modal-<%= company.id %>">
 								<a href="#" class="sponsors-thumb" target="_blank">
 									<img src="<%= company.logo_img %>" />
@@ -279,7 +279,9 @@
 							<div id="sponsor-modal-<%= company.id %>" class="reveal-modal" data-reveal>
 								<div class="sponsor-category"><span>LendIt USA 2015</span> <%= company.partner_type %> Partner</div>
 								<p class="sponsor-modal-thumb"><img src="<%= company.logo_img %>" /></p>
+								<% if company.url? %>
 								<p class="sponsor-modal-visit"><a href="<%= raw company.url %>" target="_blank">Visit <%= company.company_name %></a></p>
+								<% end %>
 								<p class="sponsor-modal-description"><%= raw company.description %></p>
 								<a class="close-reveal-modal">&#215;</a>
 							</div>

@@ -40,6 +40,24 @@ $(document).foundation('reveal', {
 
 $(document).ready(function() {
 
+  $('.ag-track-main').on("click", function(){
+    $('.agenda-main-box').toggleClass('ag-show-main');
+  });
+
+  $('.ag-track-astor').on("click", function(){
+    $('.agenda-main-box').toggleClass('ag-show-astor');
+  });
+
+  $('.ag-track-china').on("click", function(){
+    $('.agenda-main-box').toggleClass('ag-show-china');
+  });
+
+  $('.ag-track-demo').on("click", function(){
+    $('.agenda-main-box').toggleClass('ag-show-demo');
+  });
+
+
+
 
   $('.menu-item-has-children').on("click", function(){
     $('.menu-item-has-children').toggleClass('open');

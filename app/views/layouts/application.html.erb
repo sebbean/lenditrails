@@ -21,6 +21,7 @@
 		<!-- Wistia Google Analytics -->
 		<%= render 'layouts/wistia_ga' %>
 		<%= javascript_include_tag "vendor/modernizr" %>
+		<%= canonical_tag -%>
 	</head>
 
 	<body class="<%= yield (:body_class) %>">

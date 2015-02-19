@@ -30,9 +30,7 @@ $primary-color: #8ac10b;
   float: none;
   vertical-align: top;
 }
-.ag-track {
-  width: 50%;
-}
+
 .ag-date .ag-group {
   display: table;
   width: 100%;
@@ -51,7 +49,7 @@ $primary-color: #8ac10b;
   font-family: 'Open Sans', sans-serif;
   white-space: nowrap;
   background: #fafafa;
-  @media screen and (min-width:651px) {
+  @media screen and (min-width:751px) {
     box-shadow: 1px 0 0 rgba(0, 0, 0, 0.2) inset;
   }
   font-size: 18px;
@@ -66,7 +64,7 @@ $primary-color: #8ac10b;
   background: #e5e5e5;
 }
 .ag-date dd:last-of-type a {
-  @media screen and (min-width:651px) {
+  @media screen and (min-width:751px) {
     border-right: 1px solid rgba(0, 0, 0, 0.2);
   }
 }
@@ -145,7 +143,7 @@ $primary-color: #8ac10b;
   color: #444;
   position: relative;
 
-@media screen and (min-width:651px) {
+@media screen and (min-width:751px) {
   box-shadow: 0 5px 0 rgba(0, 0, 0, 0.7) inset, 1px 0 0 rgba(0, 0, 0, 0.2) inset, -1px 0 0 rgba(0, 0, 0, 0.2) inset;
   margin-left: -1px;
   margin-right: -1px;
@@ -153,7 +151,7 @@ $primary-color: #8ac10b;
   font-weight: 600;
   background: #fff;
 }
-@media screen and (min-width:651px) {
+@media screen and (min-width:751px) {
   .ag-date dd.ag-active:first-of-type a {
     box-shadow: 0 5px 0 rgba(0, 0, 0, 0.7) inset, 2px 0 0 rgba(0, 0, 0, 0.2) inset, -1px 0 0 rgba(0, 0, 0, 0.2) inset;
   }
@@ -201,7 +199,7 @@ $primary-color: #8ac10b;
 			display: table;
 			color: #666;
 			text-shadow: 0 1px 2px #fff;
-			@media only screen and (min-width: 600px) {
+			@media only screen and (min-width: 751px) {
 				display: table-cell;
 				padding: 10px 4px;
 				vertical-align: top;
@@ -225,7 +223,7 @@ $primary-color: #8ac10b;
 			}
 		}
 		.agenda-title {
-			@media only screen and (min-width: 600px) {
+			@media only screen and (min-width: 751px) {
 				display: table-cell;
 				padding: 10px 4px;
 				vertical-align: top;
@@ -275,7 +273,7 @@ $primary-color: #8ac10b;
 			}
 		}
 		.agenda-track {
-			@media only screen and (min-width: 600px) {
+			@media only screen and (min-width: 751px) {
 				display: table-cell;
 				padding: 10px 4px;
 				vertical-align: top;
@@ -403,7 +401,7 @@ $primary-color: #8ac10b;
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 751px) {
   .agenda-item {
     position: relative;
     padding-top: 35px;
@@ -435,7 +433,7 @@ $primary-color: #8ac10b;
 
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 751px) {
   .ag-nav .ag-track .ag-group {
     margin: 0;
   }

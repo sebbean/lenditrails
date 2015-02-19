@@ -1,16 +1,28 @@
 $primary-color: #8ac10b;
 
 
-.temporary-body-name-agenda {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  padding: 0;
+.usa15-agenda {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	h1 {
+		font-size:32px;
+		font-family: 'Open Sans', sans-serif;
+		margin:1em 0;
+	}
+	h2 {
+		font-size:24px;
+		font-family: 'Open Sans', sans-serif;
+		margin:1em 0;
+		font-weight:600;
+	}
 }
 .ag-nav {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 -1px 0 rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
   line-height: 1em;
   padding: 0;
   background: #fafafa;
+	margin:0 0 40px 0;
 }
 .ag-nav.fixed {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -57,7 +69,7 @@ $primary-color: #8ac10b;
   color: rgba(0, 0, 0, 0.7);
   text-align: center;
   display: block;
-  padding: 15px 15px 15px 15px;
+  padding: 10px 10px 10px 10px;
 }
 .ag-date dd a:hover {
   color: #000;
@@ -163,7 +175,7 @@ $primary-color: #8ac10b;
   font-weight: 600;
 }
 .agenda-container {
-  margin: 0 auto 2em auto;
+  margin: 0 auto 4em auto;
 }
 .agenda-item {
   border-bottom: 2px solid #f5f5f5;
@@ -227,7 +239,7 @@ $primary-color: #8ac10b;
   color: #fff;
 }
 .agenda-astor .agenda-track {
-  color: #8C8D8D;
+  color: #FF8300;
 }
 .agenda-astor .agenda-title a {
   border-right: 24px solid #FF8300;
@@ -438,4 +450,26 @@ $primary-color: #8ac10b;
 
 
 
+.preconf-workshops {
+	table {
+		border:none;
+	}	
+	th {
 
+		background:$primary-color;
+		color:#fff;
+		font-weight:600;
+		border-left:1px solid lighten($primary-color, 50%);
+
+	}
+	td {
+	border-bottom: 2px solid #f5f5f5;
+	
+		
+	}
+	.preconf-workshop-time {
+		white-space:nowrap;
+	}
+	
+
+}

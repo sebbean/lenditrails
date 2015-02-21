@@ -40,7 +40,7 @@ LenditRails::Application.routes.draw do
   get '/usa/2015/beijing-invite' => 'conferences#usa15_beijing_invite-update'
 
   #LendIt Europe 2014
-  get '/europe' => 'conferences#europe'
+  get '/europe' => 'conferences#eu14'
   get '/europe/2014/photos' => 'photos#eu14'
   get '/europe/2014/attendees' => 'attendees#eu14'
   get '/europe/attendees' => 'attendees#go_to_eu14'
@@ -52,7 +52,8 @@ LenditRails::Application.routes.draw do
 
 
   #LendIt USA 2014
-  get '/san-francisco-2014/attendees' => 'attendees#usa14'
+  get '/usa/2014' => 'conferences#usa14'
+  get '/usa/2014/attendees' => 'attendees#usa14'
   get '/usa/2014/videos' => 'videos#usa14'
   get '/usa/2014/videos/:id' => 'videos#show_usa14', via: :get, as: :usa14_video
 

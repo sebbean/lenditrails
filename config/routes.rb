@@ -22,7 +22,6 @@ LenditRails::Application.routes.draw do
   get '/podcasts' => 'podcasts#go_to_eu14'
   # get '/agenda' => 'agendas#usa15'
   # get '/agenda' => 'agendas#usa15'
-
   # get '/test' => 'sponsors#test'
 
 
@@ -38,6 +37,7 @@ LenditRails::Application.routes.draw do
   get '/us/2015/exhibitors' => 'exhibitors#usa15'
   get '/usa/2015/attendees' => 'attendees#usa15'
   get '/usa/2015/beijing-invite' => 'conferences#usa15_beijing_invite-update'
+  get '/usa/2015/brochure', to: redirect('https://s3-us-west-2.amazonaws.com/lendit/uploads/LendIt-USA-2015-conference-brochure.pdf', status: 301)
 
   #LendIt Europe 2014
   get '/europe' => 'conferences#eu14'

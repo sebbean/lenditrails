@@ -40,6 +40,14 @@ $(document).foundation('reveal', {
 
 $(document).ready(function() {
 
+  $('.ag-date').on("click", function(){
+    $('.ag-date').toggleClass('open');
+  });
+
+  $('ag-track').on("click", function(){
+    $('.ag-track').toggleClass('open');
+  });
+
   $('.ag-track-main').on("click", function(){
     $('.agenda-main-box').toggleClass('ag-show-main');
   });

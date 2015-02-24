@@ -8,7 +8,6 @@ class SpeakersController < ApplicationController
 
   def usa15
     @usa15_speakers = Speaker.where(conference: 'LendIt USA 2015')
-    @usa15_speakers.sort_by! { |speaker| speaker['last_name'] }
     @past_speakers = Speaker.where(conference: 'LendIt USA 2014')
   end
 

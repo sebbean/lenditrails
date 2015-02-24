@@ -26,4 +26,8 @@ class ConferencesController < ApplicationController
   def europe_test
   end
 
+  def usa14
+    @past_speakers = Speaker.where(conference: 'LendIt USA 2014')
+  end
+
 end

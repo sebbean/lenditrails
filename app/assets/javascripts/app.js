@@ -40,13 +40,13 @@ $(document).foundation('reveal', {
 
 $(document).ready(function() {
 
-  $('.ag-date').on("click", function(){
-    $('.ag-date').toggleClass('open');
-  });
+//  $('.ag-date').on("click", function(){
+//   $('.ag-date').toggleClass('open');
+// });
 
-  $('ag-track').on("click", function(){
-    $('.ag-track').toggleClass('open');
-  });
+// $('.ag-track').on("click", function(){
+//   $('.ag-track').toggleClass('open');
+// });
 
   $('.ag-track-main').on("click", function(){
     $('.agenda-main-box').toggleClass('ag-show-main');
@@ -56,15 +56,22 @@ $(document).ready(function() {
     $('.agenda-main-box').toggleClass('ag-show-astor');
   });
 
+  $('.ag-track-real-estate').on("click", function(){
+    $('.agenda-main-box').toggleClass('ag-show-real-estate');
+  });
+
   $('.ag-track-china').on("click", function(){
     $('.agenda-main-box').toggleClass('ag-show-china');
   });
-
+	
   $('.ag-track-demo').on("click", function(){
     $('.agenda-main-box').toggleClass('ag-show-demo');
   });
 
-
+  $('.ag-track-qanda').on("click", function(){
+    $('.agenda-main-box').toggleClass('ag-show-qanda');
+  });
+	
 
 
   $('.menu-item-has-children').on("click", function(){

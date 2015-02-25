@@ -1,13 +1,11 @@
 @import "usa15-agenda-container";
 // ag-nav
 .ag-nav {
-	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 -1px 0 rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
-	line-height: 1em;
-	padding: 0;
-	background: #fafafa;
-	margin:0 0 40px 0;
+	margin:0;
+	padding:0;
+	overflow:visible;
 	&.fixed {
-		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.3);
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 	}
 }
 .ag-area {
@@ -15,148 +13,288 @@
 	width: 100%;
 	max-width: 970px;
 	margin: auto;
-	box-shadow: -1px 0 0 rgba(0, 0, 0, 0.2) inset;
 }
+
+
+
 //
-// ag-date ------------------------------------------------
-//
+
 .ag-date {
-	display: table-cell;
-	float: none;
-	vertical-align: top;
+  display: table-cell;
+  vertical-align: top;
 }
+
 .ag-date .ag-group {
-	display: table;
-	width: 100%;
+  display: table;
+  width: 100%;
 }
+
 .ag-date dd {
-	display: table-cell;
-	margin: 0;
-	float: none;
+  display: table-cell;
+  margin: 0;
+  float: none;
+  vertical-align: top;
 }
+
 .ag-nav .ag-date a {
-	font-family: 'Open Sans', sans-serif;
-	white-space: nowrap;
-	background: #fafafa;
-	font-size: 18px;
-	text-decoration: none;
-	color: rgba(0, 0, 0, 0.7);
-	text-align: center;
-	display: block;
-	padding: 10px 10px 10px 10px;
-	@media screen and (min-width:751px) {
-		box-shadow: 1px 0 0 rgba(0, 0, 0, 0.2) inset;
-	}
-	&:hover {
-		color: #000;
-		background: #e5e5e5;
-	}
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+  background: #f0f0f0;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  display: block;
+  padding: 8px 20px 12px 20px;
+  margin: 8px 8px 8px 0;
+  border-radius: 4px;
 }
-.ag-nav .ag-date dd:last-of-type {
-	@media screen and (min-width:751px) {
-		box-shadow: 1px 0 0 rgba(0, 0, 0, 0.2) ;
+
+.ag-nav .ag-date a:hover {
+  color: #000;
+  background: #e5e5e5;
+}
+
+.ag-nav.fixed {
+  padding-left: 10px;
+}
+
+.ag-date .ag-active a,
+.ag-date .ag-active a:hover,
+.ag-date .ag-active a:active,
+.ag-date .ag-active a:focus {
+  color: #fff;
+  position: relative;
+  background: #999;
+}
+
+@media screen and (max-width: 600px) {
+  .ag-date .ag-group {
+    line-height: 1em;
+  }
+
+  .ag-date .ag-group dd a {
+    padding-left: 12px;
+    padding-right: 12px;
+    line-height: 1em;
+  }
+
+  .ag-date .ag-group dd a .ag-date-month {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 4px;
+  }
+
+  .ag-date .ag-group dd a .ag-date-number {
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+  }
+}
+.select-track {
+  display: none;
+}
+
+.select-track span {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600) {
+  .select-track span {
+    font-size: 14px;
+  }
+}
+.ag-track {
+  width: 50%;
+  display: table-cell;
+  vertical-align: top;
+  position: relative;
+}
+
+.ag-track .ag-group {
+  display: none;
+}
+
+
+
+.seltra {
+  display: table;
+  margin: auto;
+}
+
+.seltra-inner {
+  padding: 10px 10px 10px 10px;
+  margin: 8px 0 8px 0;
+  border-radius: 4px;
+	cursor:pointer;
+	cursor:hand;
+	&:hover {
+		background:#eee;
 	}
+
+}
+.ag-track.open .seltra-inner {
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
 	
 }
-.ag-date .ag-active:last-of-type a {
-	@media screen and (min-width:751px) {
-		border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+@media screen and (max-width: 600px) {
+  .seltra-inner {
+    padding: 5px 10px 5px 10px;
+  }
+}
+.seltra .fa-location-arrow {
+  display: inline;
+}
+
+@media screen and (max-width: 600px) {
+  .seltra .fa-location-arrow {
+    font-size: 24px;
+    display: block;
+    text-align: center;
+  }
+}
+.seltra-text {
+  display: inline;
+}
+
+@media screen and (max-width: 600px) {
+  .seltra-text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 400px) {
+  .seltra-sel {
+    display: none;
+  }
+}
+.ag-track .ag-group {
+  display: none;
+	position:relative;
+	-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+	&:before {
+		display:block;
+		content:'\25B2';
+		font-family:'arial, sans-serif';
+		width:24px;
+		height:24px;
+		text-align:center;
+		font-size:24px;
+		line-height:26px;
+		top:-20px;
+		position:absolute;
+		right:50%;
+		margin-right:-12px;
+		color:#fff;
+		text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
+		
+
 	}
 }
-.ag-date .ag-active a {
-	color: #444;
-	position: relative;
+.ag-track-inner {
+	display:table;
+	margin:auto;
+}
+
+.ag-track-inner:hover .ag-group {
+  display: block;
+  position: absolute;
+  box-shadow: 0 7px 12px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5)  ;
+  z-index: 100;
+  background: #fff;
+	width:200px;
+	right:50%;
+	margin-right:-100px;
+	@media screen and (max-width:600px) {
+
+  width: 160px;
+  right: 50%;
+  margin-right: -80px;
+}
+	
+}
+
+.ag-track .seltra-inner {
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.7) inset;
+}
+.ag-track-inner:hover .seltra-inner {
+
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.9) inset;
+	background:#fafafa;
+}
+
+.ag-track .ag-group span {
+  display: block;
+	border-bottom:1px solid #ddd;
+	
+
+}
+.ag-track .ag-group span:last-child {
+	border-bottom:none;
+}
+
+.ag-track .ag-group span b {
+	white-space:nowrap;
+	display: block;
 	font-weight: 600;
-	background: #fff;
-	@media screen and (min-width:751px) {
-		box-shadow: 0 5px 0 rgba(0, 0, 0, 0.7) inset, 1px 0 0 rgba(0, 0, 0, 0.2) inset, -1px 0 0 rgba(0, 0, 0, 0.2) inset;
-		margin-left: -1px;
-		margin-right: -1px;
+	font-size: 14px;
+	padding: 6px 10px 6px 8px;
+	line-height:1.3em;
+	cursor: pointer;
+	cursor: hand;
+
+	&:before {
+		content:'\f10c';
+		font-family: FontAwesome;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		padding-right:4px;
+		font-size:18px;
+		float:left;
+
+	}
+	&:hover {
+		background:#eee;
 	}
 }
-.ag-date .ag-active:first-of-type a {
-	@media screen and (min-width:751px) {
-		box-shadow: 0 5px 0 rgba(0, 0, 0, 0.7) inset, 2px 0 0 rgba(0, 0, 0, 0.2) inset, -1px 0 0 rgba(0, 0, 0, 0.2) inset;
-	}
+.ag-track .ag-group span b:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }  
+
+.ag-dd.ag-track-main b{
+	color: $main-color;
 }
-.ag-select-date {
-	@media screen and (min-width: 751px) {
-		display:none;
-	}
+.ag-dd.ag-track-astor  b{
+	color: $track2-color;
+}
+.ag-dd.ag-track-real-estate b {
+	color: $realestate-color;
+}
+.ag-dd.ag-track-china b{
+	color: $china-color;
+}
+.ag-dd.ag-track-demo b {
+	color: $demo-color;
+}
+.ag-dd.ag-track-qanda b {
+		color: $qanda-color;
 }
 
-.ag-nav.fixed .ag-date dd.ag-active:first-of-type a {
-	@media screen and (min-width:751px) {
-		box-shadow: 0 5px 0 rgba(0, 0, 0, 0.7) inset, 1px 0 0 rgba(0, 0, 0, 0.2) inset, -1px 0 0 rgba(0, 0, 0, 0.2) inset;
-	}
-}
-.ag-date dd.ag-active:last-of-type a {
-	@media screen and (min-width:751px) {
-		box-shadow: 0 5px 0 rgba(0, 0, 0, 0.7) inset, 1px 0 0 rgba(0, 0, 0, 0.2) inset;
-	}
-}
-//
-// ag-track ----------------------------------------
-//
-.ag-track {
-	display: table-cell;
-	float: none;
-	vertical-align: top;
-	.ag-group {
-		display: table;
-		margin: 12px auto 0 auto;
-	}
-	.ag-dd {
-		display: table-cell;
-		margin: 0;
-		float: none;
-		b {
-			white-space: nowrap;
-			text-align: center;
-			color: #444;
-			font-size: 12px;
-			margin-left: 4px;
-			margin-right: 4px;
-			text-decoration: none;
-			display: block;
-			background: #fafafa;
-			padding: 3px 6px 3px 0;
-			font-weight: 500;
-			cursor: pointer;
-			cursor: hand;
 
-			&:before {
-				content: '\f10c';
-				padding-top: 2px;
-				width: 14px;
-				font-size: 20px;
-				height: 22px;
-				float: left;
-				margin-top: -3px;
-				margin-right: 8px;
-				font-family: FontAwesome;
-				-webkit-font-smoothing: antialiased;
-				-moz-osx-font-smoothing: grayscale;
-			}
-		}
-	}
-}
-.ag-show-main .ag-track-main b:before,
-.ag-show-astor .ag-track-astor b:before,
-.ag-show-china .ag-track-china b:before,
-.ag-show-demo .ag-track-demo b:before {
+
+
+.ag-show-main .ag-dd.ag-track-main b:before,
+.ag-show-astor .ag-dd.ag-track-astor b:before,
+.ag-show-real-estate .ag-dd.ag-track-real-estate b:before,
+.ag-show-china .ag-dd.ag-track-china b:before,
+.ag-show-demo .ag-dd.ag-track-demo b:before,
+.ag-show-qanda .ag-dd.ag-track-qanda b:before {
 	content: '\f058';
 }
-.ag-dd.ag-track-main b:before {
-	color: #8AC10B;
-}
-.ag-dd.ag-track-astor b:before {
-	color: #FFA000;
-}
-.ag-dd.ag-track-china b:before {
-	color: #C487BE;
-}
-.ag-dd.ag-track-demo b:before {
-	color: #84C5C5;
-}
-// end
+

@@ -27,7 +27,8 @@ class ConferencesController < ApplicationController
   end
 
   def usa14
-    @past_speakers = Speaker.where(conference: 'LendIt USA 2014')
+    @usa14_speakers = Speaker.where(conference: 'LendIt USA 2014')
+    @featured_speakers = @usa14_speakers.where(featured: true)
   end
 
 end

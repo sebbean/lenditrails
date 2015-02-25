@@ -1,210 +1,204 @@
 <% title "LendIt USA 2014 Conference Page" %>
 <% meta_description "Join thousands of peer-to-peer and online lending professionals from around the world for the LendIt Conference in New York City" %>
 <% meta_keywords "p2p, online lending, peer-to-peer, LendIt Europe" %>
-<% body_class "conferences" %>
-<header class="nyc">
-  <div class="container">
-    <div class="logo"></div>
-    <div class="header-buttons">
-<!--       <div class="button-register">
-          <span>Watch Recap</span>
-          <strong>San Francisco 2014</strong>
-      </div> -->
-<!--       <div class="button-recap">
-        <a href="https://aws.passkey.com/g/35613120" target="_blank">
-          <span>Reserve hotel room</span>
-          <strong>New York Marriott Marquis</strong>
-        </a>
-      </div> -->
-      <div class="button-recap">
-        <a href="/usa/2014/videos" target="_blank">
-          <span>Watch Video Recap</span>
-          <strong>San Francisco 2014</strong>
-        </a>
-      </div>
-    </div>
-  </div>
-</header>
-<main class="ny15">
-  <section class="ny15-section">
-    <div class="ny15-container">
-      <div class="row">
-        <div class="large-24 columns">
-          <div class="ny15-h1">LendIt USA: May 4-6, 2014 at the Hilton in San Francisco</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-24 columns">
-          <p>
-            Thank you to everyone who came to LendIt USA 2014!
-          </p>
-          <p>
-            The LendIt Conference is the leading conference in the global online lending industry, encompassing both consumer and small business lending. Lending is about introducing people to the latest and greatest online lending platforms, the big data that makes them tick and how investors can benefit.
-          </p>
-          <p>
-            Our inaugural conference, LendIt 2013, was held in New York City on June 20, 2013, and was completely sold out. In fact, the conference was oversold and many people were turned away.
-          </p>
-          <p>
-            This year, we nearly tripled pur attendance and had about 100 presenting companies at the vent. LendIt 2014 in San Francisco also expanded as a two- day conference.
-          </p>
-          <p>
-            The online lending industry has been growing immensely, and the industry’s annual growth rate is near 200%. Participating in the industry’s most recognized conference continues to garner more interest every day.
-          </p>
-          <p>
-            <div><a href="http://blog.lendit.co/wp-content/uploads/2014/04/Agenda_lendit2014-1.pdf" target="_blank">Agenda <span class="fa fa-arrow-circle-o-down"></span></a></div>
+<% body_class "conference-usa14" %>
+<div class="general-background">
 
-            <div><a href="http://www.lendacademy.com/wrap-up-of-the-2014-lendit-conference/" target="_blank">Presentation Decks <span class="fa fa-arrow-circle-o-down"></span></a></div>
-          </p>
-        </div>
-      </div>
+	<div class="hero">
 
-      <div class="row">
-        <div class="large-24 columns">
+		<div class="hero-inner">
 
-          <div class="past-speakers-section">
-            <div class="ny15-header">Speakers</div>
-            <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-5">
-              <% @past_speakers.each do |speaker| %>
-                <li>
-                  <div class="speaker">
-                    <div class="speaker-top">
-                      <a class="past-speaker" href="#<%= speaker.first_name %><%= speaker.last_name %>">
-                        <img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
-                      </a>
-                    </div>
-                    <div class="speaker-bio" style="/*temp styles*/display:none;">
-                      <div id="<%= speaker.first_name %><%= speaker.last_name %>" class="speaker-container">
-                        <div class="speaker-colorbox-title">Speaker</div>
-                        <div class="speaker-top-info">
-                          <img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
-                          <div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
-                          <div class="speaker-title"><%= speaker.title %></div>
-                          <div class="speaker-company"><%= speaker.company_name %></div>
-                        </div>
-                        <div class="speaker-bio-text"><div class="speaker-bio-text-inner"><%= raw speaker.bio %></div></div>
-                        <div class="speaker-bio-mask"></div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              <% end %>
-            </ul>
-          </div>
+			<div class="hero-content">
+				<div class="logo-image">
+					<img src="https://s3-us-west-2.amazonaws.com/lendit/lendit-usa14-hero-logo.png" />
+				</div>
+				<div class="hero-button">
+					<a href="/usa/2014/videos" target="_blank">
+						<div>
+						<span>Watch Video Recap:</span>
+						<strong>San Francisco 2014</strong>
+						</div>
+					</a>
+				</div>
+			</div>
 
-        </div>
-      </div>
+		</div>
 
-    <div class="row">
-      <div class="large-24 columns">
-        <div class="ny15-header">History</div>
-          <p>
-            The inaugural Lendit Conference was held in New York City on June 20, 2013. It established the LendIt Conference as the must-attend event for anyone looking to learn how Peer-to-Peer and online lending (collectively, “online lending”) are revolutionizing the credit markets and transforming the global banking industry.
-          </p>
-          <p>
-            The LendIt conference was co-founded by Lend Academy, NowStreet Wire and Disruption Cedit.
-          </p>
-      </div>
-    </div>
+	</div>
 
-    <div class="row ny15-callouts">
-      <div class="large-24 columns">
-        <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
-          <li>
-            <div class="ny15-header"> 2014 Audience Breakdown </div>
-            <div class="ny15-callout-image">
-              <img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-breakdown.png" class="ny15-attendperyr" />
-            </div>
-          </li>
-          <li>
-            <div class="ny15-header"> 2014 Attendee Map </div>
-            <div class="ny15-attendee-map-link">
-              <a href="/usa/2014/attendees"><img src="https://s3-us-west-2.amazonaws.com/lendit/photos/lendit-sf14-attendees-map.png" /></a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-24 columns">
-        <div class="ny15-header">Hosts</div>
-        <p>
-          The LendIt conference is presented to you by Lend Academy and NowStreet Media.
-        </p>
-        <p>
-          Lend Academy: Lend Academy is a media and financial services firm that owns Lend Academy Media, Lend Academy Investments and is a co owner of the Lendit Conference. Lend Academy Media operates Lendacademy.com, which is the largest most trusted investor education site in the p2p lending industry. Lend Academy Investments is a registered investment advisor that offers investment solutions over online lending marketplaces to individual investors. The LendIt Conference is the largest conference dedicated to P2P and online lending. LendAacademy is owned and operated by Bo Brustkern, Jason Jones, and Peter Renton.
-        </p>
-        <p>
-          NowStreet: NowStreet, symbolizing a new Wall Street with a more democratic flow of capital, was founded by Dara Albright in 2010. Since that time, NowStreet has emerged as the preeminent resource for education and insight into the burgeoning industry of global crowd finance. NowStreet is most known for its cutting-edge commentary and acclaimed financial events that that introduce crowdfinancing mechanisms and neoteric asset classes such as crowdfunding, peer-to-peer and peer-to-business lending, PIPRs (506c offerings), crowdfinanced IPOs and Intrastate (local) crowdfinancing to Wall Street. Some of the most prominent figures in the financial industry as well as the legislature have participated in NowStreet events. Our platform has helped issuers, investors as well as financial service providers across the globe capitalize during this unprecedented period of financial industry disruption and regulatory reform.
-        </p>
-        <p>
-          In July of 2013, NowStreet was acquired by Crowdnetic, the premier cetnralized hub for real-time market data aggregates from P2P, crowdfunding and angel platforms around the world. Today, NowStreet Wire connects crowdfinancial products with investors while delivering information, news and cutting-edge market commentary across multiple media outlets including newsletters, webinars, broadcasts and conferences.
-        </p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-24 columns">
-        <div class="ny15-header"> 2014 Photos </div>
-        <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
-          <li class="visible">
-            <img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC01295-th.JPG" />
-          </li>
-          <li>
-            <img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC01344-th.JPG" />
-          </li>
-          <li>
-            <img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC02127-th.JPG" />
-          </li>
-          <li>
-            <img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC01708-th.JPG" />
-          </li>
-        </ul>
-      </div>
-    </div>
-
-
-    <div class="row" style="display: none;">
-      <div class=" large-24 columns">
-        <div class="ny15-header">Event Overview</div>
-      </div>
-      <div class=" large-8 columns" style="margin-bottom:1.1em;">
-        <p class="ny15-icon-space ny15-icon"><span>35,000 Sq. Ft. of Exhibition Space</span></p>
-        <p class="ny15-icon-floors ny15-icon"><span>3 Floors of Content, Networking and Private Meeting Spaces</span></p>
-        <p class="ny15-icon-keynote ny15-icon"><span>Keynotes and Panels</span></p>
-        <p class="ny15-icon-preconf ny15-icon"><span>Pre-Conference Workshops</span></p>
-        <p class="ny15-icon-decision ny15-icon"><span>1,500 Decision Makers</span></p>
-        <p class="ny15-icon-parties ny15-icon"><span>2 Fun Parties</span></p>
-      </div>
-      <div class=" large-16 columns">
-        <ul class="ny15-icon-otherhigh ny15-icon">
-          <div> Hot topics will include </div>
-          <li> State of the Industry: Today and Beyond</li>
-          <!-- <li> Lending to Small Business</li> -->
-          <li> Buy Now! Pay Later! - Purchase Finance meets P2P</li>
-          <li> Working Capital for Companies through invoice financing</li>
-          <li> Real Estate Investing: Equity, Debt and In-Between</li>
-          <li> Big Money Talks: the institutional investor panel</li>
-          <!--  <li> From Across the Pond: European Issues and Innovations</li> -->
-          <li> Around the World in 40 minutes: the Global Lending Landscape</li>
-          <li> The Giant Overseas: Chinese P2P Lending</li>
-          <li> The Support Network: Service Providers for a Healthy Ecosystem</li>
-          <!--  <li> Big Data in Credit Decisioning</li> -->
-          <!--  <li> New Developments in Credit Underwriting</li> -->
-          <!--  <li> A Tranche in Every Pot: the Evolution of P2P Securitization</li> -->
-          <!--  <li> Investing in Millennials: The Beauty of Thin File Borrowers</li> -->
-        </ul>
-        <ul class="ny15-icon-extens ny15-icon">
-          <div>Extensive networking activities</div>
-          <li>Pre and post conference parties</li>
-          <li>Numerous breakfast, lunch ￼￼￼￼￼and coffee breaks</li>
-          <li>Private meeting rooms and pods</li>
-          <li>Event networking app</li>
-        </ul>
-      </div>
-    </div>
-
-
-  </div>
-</section>
-</main>
+	<div class="row">
+		<div class="large-24 columns">
+			<h1>
+				LendIt USA: May 4-6, 2014 at the Hilton in San Francisco
+			</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-24 columns">
+			<p>
+				Thank you to everyone who came to LendIt USA 2014!
+			</p>
+			<p>
+				The LendIt Conference is the leading conference in the global online lending industry, encompassing both consumer and small business lending. Lending is about introducing people to the latest and greatest online lending platforms, the big data that makes them tick and how investors can benefit.
+			</p>
+			<p>
+				Our inaugural conference, LendIt 2013, was held in New York City on June 20, 2013, and was completely sold out. In fact, the conference was oversold and many people were turned away.
+			</p>
+			<p>
+				This year, we nearly tripled pur attendance and had about 100 presenting companies at the vent. LendIt 2014 in San Francisco also expanded as a two- day conference.
+			</p>
+			<p>
+				The online lending industry has been growing immensely, and the industry’s annual growth rate is near 200%. Participating in the industry’s most recognized conference continues to garner more interest every day.
+			</p>
+			<div class="centerbuttons">
+				<div class="button-agenda"><a href="http://blog.lendit.co/wp-content/uploads/2014/04/Agenda_lendit2014-1.pdf" target="_blank">Agenda </a></div>
+				<div class="button-deck"><a href="http://www.lendacademy.com/wrap-up-of-the-2014-lendit-conference/" target="_blank">Presentation Decks </a></div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-24 columns">
+			<h2>
+				Speakers
+			</h2>
+			<ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-5">
+				<% @featured_speakers.each do |speaker| %>
+					<li>
+						<div class="speaker">
+							<div class="speaker-top">
+								<a class="past-speaker" href="#<%= speaker.first_name %><%= speaker.last_name %>">
+									<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+								</a>
+							</div>
+							<div class="speaker-bio" style="/*temp styles*/display:none;">
+								<div id="<%= speaker.first_name %><%= speaker.last_name %>" class="speaker-container">
+									<div class="speaker-colorbox-title">Speaker</div>
+									<div class="speaker-top-info">
+										<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+										<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
+										<div class="speaker-title"><%= speaker.title %></div>
+										<div class="speaker-company"><%= speaker.company_name %></div>
+									</div>
+									<div class="speaker-bio-text"><div class="speaker-bio-text-inner"><%= raw speaker.bio %></div></div>
+									<div class="speaker-bio-mask"></div>
+								</div>
+							</div>
+						</div>
+					</li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-24 columns">
+			<h2>
+				History
+			</h2>
+			<p>
+				The inaugural Lendit Conference was held in New York City on June 20, 2013. It established the LendIt Conference as the must-attend event for anyone looking to learn how Peer-to-Peer and online lending (collectively, “online lending”) are revolutionizing the credit markets and transforming the global banking industry.
+			</p>
+			<p>
+				The LendIt conference was co-founded by Lend Academy, NowStreet Wire and Disruption Cedit.
+			</p>
+		</div>
+	</div>
+	<div class="row ny15-callouts">
+		<div class="large-24 columns">
+			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
+				<li>
+					<h2>
+						2014 Audience Breakdown
+					</h2>
+					<div class="ny15-callout-image">
+						<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-breakdown.png" class="ny15-attendperyr" />
+					</div>
+				</li>
+				<li>
+					<h2>
+						2014 Attendee Map
+					</h2>
+					<div class="ny15-attendee-map-link">
+						<a href="/usa/2014/attendees"><img src="https://s3-us-west-2.amazonaws.com/lendit/photos/lendit-sf14-attendees-map.png" /></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-24 columns">
+			<h2>Hosts</h2>
+			<p>
+				The LendIt conference is presented to you by Lend Academy and NowStreet Media.
+			</p>
+			<p>
+				Lend Academy: Lend Academy is a media and financial services firm that owns Lend Academy Media, Lend Academy Investments and is a co owner of the Lendit Conference. Lend Academy Media operates Lendacademy.com, which is the largest most trusted investor education site in the p2p lending industry. Lend Academy Investments is a registered investment advisor that offers investment solutions over online lending marketplaces to individual investors. The LendIt Conference is the largest conference dedicated to P2P and online lending. LendAacademy is owned and operated by Bo Brustkern, Jason Jones, and Peter Renton.
+			</p>
+			<p>
+				NowStreet: NowStreet, symbolizing a new Wall Street with a more democratic flow of capital, was founded by Dara Albright in 2010. Since that time, NowStreet has emerged as the preeminent resource for education and insight into the burgeoning industry of global crowd finance. NowStreet is most known for its cutting-edge commentary and acclaimed financial events that that introduce crowdfinancing mechanisms and neoteric asset classes such as crowdfunding, peer-to-peer and peer-to-business lending, PIPRs (506c offerings), crowdfinanced IPOs and Intrastate (local) crowdfinancing to Wall Street. Some of the most prominent figures in the financial industry as well as the legislature have participated in NowStreet events. Our platform has helped issuers, investors as well as financial service providers across the globe capitalize during this unprecedented period of financial industry disruption and regulatory reform.
+			</p>
+			<p>
+				In July of 2013, NowStreet was acquired by Crowdnetic, the premier cetnralized hub for real-time market data aggregates from P2P, crowdfunding and angel platforms around the world. Today, NowStreet Wire connects crowdfinancial products with investors while delivering information, news and cutting-edge market commentary across multiple media outlets including newsletters, webinars, broadcasts and conferences.
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-24 columns">
+			<h2> 2014 Photos </h2>
+			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+				<li class="visible">
+					<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC01295-th.JPG" />
+				</li>
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC01344-th.JPG" />
+				</li>
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC02127-th.JPG" />
+				</li>
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC01708-th.JPG" />
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row" style="display: none;">
+		<div class=" large-24 columns">
+			<h2>
+				Event Overview
+			</h2>
+		</div>
+		<div class=" large-8 columns" style="margin-bottom:1.1em;">
+			<p class="ny15-icon-space ny15-icon"><span>35,000 Sq. Ft. of Exhibition Space</span></p>
+			<p class="ny15-icon-floors ny15-icon"><span>3 Floors of Content, Networking and Private Meeting Spaces</span></p>
+			<p class="ny15-icon-keynote ny15-icon"><span>Keynotes and Panels</span></p>
+			<p class="ny15-icon-preconf ny15-icon"><span>Pre-Conference Workshops</span></p>
+			<p class="ny15-icon-decision ny15-icon"><span>1,500 Decision Makers</span></p>
+			<p class="ny15-icon-parties ny15-icon"><span>2 Fun Parties</span></p>
+		</div>
+		<div class=" large-16 columns">
+			<ul class="ny15-icon-otherhigh ny15-icon">
+				<div> Hot topics will include </div>
+				<li> State of the Industry: Today and Beyond</li>
+				<!-- <li> Lending to Small Business</li> -->
+				<li> Buy Now! Pay Later! - Purchase Finance meets P2P</li>
+				<li> Working Capital for Companies through invoice financing</li>
+				<li> Real Estate Investing: Equity, Debt and In-Between</li>
+				<li> Big Money Talks: the institutional investor panel</li>
+				<!--  <li> From Across the Pond: European Issues and Innovations</li> -->
+				<li> Around the World in 40 minutes: the Global Lending Landscape</li>
+				<li> The Giant Overseas: Chinese P2P Lending</li>
+				<li> The Support Network: Service Providers for a Healthy Ecosystem</li>
+				<!--  <li> Big Data in Credit Decisioning</li> -->
+				<!--  <li> New Developments in Credit Underwriting</li> -->
+				<!--  <li> A Tranche in Every Pot: the Evolution of P2P Securitization</li> -->
+				<!--  <li> Investing in Millennials: The Beauty of Thin File Borrowers</li> -->
+			</ul>
+			<ul class="ny15-icon-extens ny15-icon">
+				<div>Extensive networking activities</div>
+				<li>Pre and post conference parties</li>
+				<li>Numerous breakfast, lunch ￼￼￼￼￼and coffee breaks</li>
+				<li>Private meeting rooms and pods</li>
+				<li>Event networking app</li>
+			</ul>
+		</div>
+	</div>
+</div>

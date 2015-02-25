@@ -1,7 +1,18 @@
+
+
+
 // Agenda Container
 
 // general
 $primary-color: #8ac10b;
+
+$main-color:#8ac10b; 
+$track2-color:#F39B20; 
+$realestate-color:#7DAFC0; 
+$china-color:#9786BF; 
+$demo-color:#E38B96; 
+$qanda-color:#C6BF32; 
+
 .usa15-agenda {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
@@ -190,15 +201,15 @@ $primary-color: #8ac10b;
 	}
 	.agenda-title {
 		a, span {
-			background: #8AC10B;
+			background: $main-color;
 			color: #fff;
 		}
 		a {
-			border-right: 24px solid #68AC00;
+			border-right: 24px solid darken($main-color,4%);
 		}
 	}
 	.agenda-track {
-		color:#8AC10B;
+		color:$main-color;
 	}
 }
 .agenda-astor { 
@@ -207,15 +218,32 @@ $primary-color: #8ac10b;
 	}
 	.agenda-title {
 		a, span {
-			background: #FFA000;
+			background: $track2-color;
 			color: #fff;
 		}
 		a {
-			border-right: 24px solid #FF8300;
+			border-right: 24px solid darken($track2-color,6%);
 		}
 	}
 	.agenda-track {
-		color:#FFA000;
+		color:$track2-color;
+	}
+}
+.agenda-real-estate { 
+	.ag-show-real-estate & {
+		display:table;
+	}
+	.agenda-title {
+		a, span {
+			background: $realestate-color;
+			color: #fff;
+		}
+		a {
+			border-right: 24px solid darken($realestate-color,6%);
+		}
+	}
+	.agenda-track {
+		color:$realestate-color;
 	}
 }
 
@@ -225,15 +253,15 @@ $primary-color: #8ac10b;
 	}
 	.agenda-title {
 		a, span {
-			background: #C487BE;
+			background: $china-color;
 			color: #fff;
 		}
 		a {
-			border-right: 24px solid #B870B1;
+			border-right: 24px solid darken($china-color,6%);
 		}
 	}
 	.agenda-track {
-		color:#C487BE;
+		color:$china-color;
 	}
 }
 .agenda-demo { 
@@ -242,15 +270,32 @@ $primary-color: #8ac10b;
 	}
 	.agenda-title {
 		a, span {
-			background: #84C5C5;
+			background: $demo-color;
 			color: #fff;
 		}
 		a {
-			border-right: 24px solid #5CB3B3;
+			border-right: 24px solid darken($demo-color,6%);
 		}
 	}
 	.agenda-track {
-		color:#84C5C5;
+		color:$demo-color;
+	}
+}
+.agenda-qanda { 
+	.ag-show-qanda & {
+		display:table;
+	}
+	.agenda-title {
+		a, span {
+			background: $qanda-color;
+			color: #fff;
+		}
+		a {
+			border-right: 24px solid darken($qanda-color,6%);
+		}
+	}
+	.agenda-track {
+		color:$qanda-color;
 	}
 }
 

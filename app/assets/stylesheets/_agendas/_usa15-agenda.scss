@@ -113,7 +113,9 @@
   display: table-cell;
   vertical-align: top;
   position: relative;
+	
 }
+
 
 .ag-track .ag-group {
   display: none;
@@ -204,22 +206,26 @@ border-radius: 2px;
 	margin:auto;
 }
 
-.ag-track-inner:hover .ag-group {
-  display: block;
-  position: absolute;
-  box-shadow: 0 7px 12px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5)  ;
-  z-index: 100;
-  background: #fff;
+
+.ag-track-inner:hover .ag-group
+{
+	display: block;
+	position: absolute;
+	box-shadow: 0 7px 12px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5)  ;
+	z-index: 100;
+	background: #fff;
 	width:200px;
 	right:50%;
 	margin-right:-100px;
 	@media screen and (max-width:600px) {
-
-  width: 160px;
-  right: 50%;
-  margin-right: -80px;
+		width: 160px;
+		right: 50%;
+		margin-right: -80px;
+	}
 }
-	
+
+.ag-track.closed .ag-group {
+	display:none;
 }
 
 .ag-track .seltra-inner {
@@ -296,5 +302,10 @@ border-radius: 2px;
 .ag-show-demo .ag-dd.ag-track-demo b:before,
 .ag-show-qanda .ag-dd.ag-track-qanda b:before {
 	content: '\f058';
+}
+
+.ag-track.open .ag-group {
+	display:block;
+	position:absolute;
 }
 

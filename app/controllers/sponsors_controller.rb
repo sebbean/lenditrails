@@ -18,6 +18,7 @@ class SponsorsController < ApplicationController
     @exhibitors.sort_by! { |company| company['company_name'] }
     @startups = Startup.where(conference: 'LendIt USA 2015')
     @partners = Partner.where(conference: 'LendIt USA 2015')
+    @associates = @usa15_sponsors.where(associate: true)
     # binding.pry
   end
 

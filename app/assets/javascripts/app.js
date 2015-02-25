@@ -40,17 +40,27 @@ $(document).foundation('reveal', {
 
 $(document).ready(function() {
 
+
 //  $('.ag-date').on("click", function(){
 //   $('.ag-date').toggleClass('open');
 // });
 
-// $('.ag-track').on("click", function(){
-//   $('.ag-track').toggleClass('open');
-// });
+ $('.ag-track').on("click", function(){
+   $('.ag-track').toggleClass('closed');
+ });
+
+
+
+
+// agenda tracks
+
+
+
 
   $('.ag-track-main').on("click", function(){
     $('.agenda-main-box').toggleClass('ag-show-main');
   });
+
 
   $('.ag-track-astor').on("click", function(){
     $('.agenda-main-box').toggleClass('ag-show-astor');
@@ -63,7 +73,7 @@ $(document).ready(function() {
   $('.ag-track-china').on("click", function(){
     $('.agenda-main-box').toggleClass('ag-show-china');
   });
-	
+
   $('.ag-track-demo').on("click", function(){
     $('.agenda-main-box').toggleClass('ag-show-demo');
   });
@@ -71,7 +81,7 @@ $(document).ready(function() {
   $('.ag-track-qanda').on("click", function(){
     $('.agenda-main-box').toggleClass('ag-show-qanda');
   });
-	
+
 
 
   $('.menu-item-has-children').on("click", function(){
@@ -82,7 +92,7 @@ $(document).ready(function() {
   $('a.close-reveal-modal').trigger('click');
 
 
-  // toggle agenda
+  // toggle Europe 2014 agenda
   $('.pm-button').on('click', function(e){
     e.preventDefault();
     $('table.pm-agenda').removeClass('off');

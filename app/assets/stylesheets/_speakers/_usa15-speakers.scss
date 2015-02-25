@@ -1,52 +1,51 @@
 .usa15-speakers {
+
+	h1 {
+		@media (min-width:960px) {
+		float:left;
+		}
+	}
+	.speakers-intro {
+		@include clearfix;
+	}	
+	.speakers-signup  {
+		margin-top:11px;
+
+
+
+	}
 	h2 {
-		margin-bottom:12px;
+		margin-bottom: 12px;
 	}
 	.past-speakers-section {
-		margin-bottom:2em;
+		margin-bottom: 2em;
 	}
-	.past-speaker {
-		outline:0;
-		&:hover,
-		&:active,
-		&:focus
-		{
-			text-decoration:none;
-			opacity:.8;
-		}
-		> .speaker-top-info {
-			color:#666;
-			padding-top:.5em;
-			line-height:1.2em;
+	.speaker {
+		outline: 0;
+	}
 
-			.speaker-name {
-				
-				font-family:'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-				font-size: 20px;
-				
-				margin-top:.4em;
-				margin-bottom:.4em;
+	.speaker-top-info {
+		color: #666;
+		padding-top: .5em;
+		line-height: 1.2em;
+	}
+	.speaker-top-info .speaker-name {
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-size: 20px;
+		margin-top: .4em;
+		margin-bottom: .4em;
+	}
+	.speaker-top-info .speaker-title {
+		margin-top: .4em;
+		margin-bottom: .4em;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+	.speaker-top-info .speaker-company {
+		margin-top: .4em;
+		margin-bottom: .4em;
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-size: 20px;
+	}
 
-			}
-			.speaker-title {
-				margin-top:.4em;
-				margin-bottom:.4em;
-				
-				text-transform:uppercase;
-				font-size:14px;
-			}
-			.speaker-company {
-				
-				margin-top:.4em;
-				margin-bottom:.4em;
-				font-family:'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-				font-size: 20px;
-				
-				
-			}
-		}
-	}
-	.past-speaker:hover > .speaker-top-info {
-		color:$primary-color;
-	}
 }

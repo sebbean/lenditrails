@@ -54,12 +54,25 @@ $(document).ready(function() {
 
 // agenda tracks
 
+// if ( $('.aenda-main-box').hasClass('ag-show-astor') || $('.aenda-main-box').hasClass('ag-show-china')) {
 
+  var ag_counter = 0;
 
+  // if ( $('.agenda-main-box').hasClass('ag-show-main') {
+  //   console.log('yay you got astor');
+  // });
+
+  // if ($(".ag-show-main").length) {
+
+  // if $('.agenda-main-box').hasClass('ag-show-main')
+  //   console.log('yep its on');
+  // };
 
   $('.ag-track-main').on("click", function(){
     $('.agenda-main-box').toggleClass('ag-show-main');
+    console.log('added that');
   });
+
 
 
   $('.ag-track-astor').on("click", function(){

@@ -54,7 +54,7 @@ $(document).ready(function() {
 
 // agenda tracks
 
-  var class_count = 1;
+  var class_count = 3;
 
   toggle_function = function(track){
     if ($('.agenda-main-box').hasClass(track)) {

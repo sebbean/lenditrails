@@ -95,6 +95,8 @@ $(document).ready(function() {
 
 
 
+// reveal menu
+
   $('.menu-item-has-children').on("click", function(){
     $('.menu-item-has-children').toggleClass('open');
   });

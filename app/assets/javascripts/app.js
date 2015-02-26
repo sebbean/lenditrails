@@ -54,45 +54,43 @@ $(document).ready(function() {
 
 // agenda tracks
 
-// if ( $('.aenda-main-box').hasClass('ag-show-astor') || $('.aenda-main-box').hasClass('ag-show-china')) {
+  var class_count = 1;
 
-  var ag_counter = 0;
+  toggle_function = function(track){
+    if ($('.agenda-main-box').hasClass(track)) {
+      class_count--;
+    }
+    else {
+      class_count++;
+    }
+    if (class_count >= 1) {
+      $('.agenda-main-box').toggleClass(track);
+    }
+  }
 
-  // if ( $('.agenda-main-box').hasClass('ag-show-main') {
-  //   console.log('yay you got astor');
-  // });
-
-  // if ($(".ag-show-main").length) {
-
-  // if $('.agenda-main-box').hasClass('ag-show-main')
-  //   console.log('yep its on');
-  // };
 
   $('.ag-track-main').on("click", function(){
-    $('.agenda-main-box').toggleClass('ag-show-main');
-    console.log('added that');
+    toggle_function('ag-show-main');
   });
 
-
-
   $('.ag-track-astor').on("click", function(){
-    $('.agenda-main-box').toggleClass('ag-show-astor');
+    toggle_function('ag-show-astor');
   });
 
   $('.ag-track-real-estate').on("click", function(){
-    $('.agenda-main-box').toggleClass('ag-show-real-estate');
+    toggle_function('ag-show-real-estate');
   });
 
   $('.ag-track-china').on("click", function(){
-    $('.agenda-main-box').toggleClass('ag-show-china');
+    toggle_function('ag-show-china');
   });
 
   $('.ag-track-demo').on("click", function(){
-    $('.agenda-main-box').toggleClass('ag-show-demo');
+    toggle_function('ag-show-demo');
   });
 
   $('.ag-track-qanda').on("click", function(){
-    $('.agenda-main-box').toggleClass('ag-show-qanda');
+    toggle_function('ag-show-qanda');
   });
 
 

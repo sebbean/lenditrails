@@ -12,10 +12,17 @@
 	display: table;
 	width: 100%;
 	max-width: 970px;
+	position:relative;
 	margin: auto;
 }
 
 
+.ag-nav .ag-track-inner {
+	display:none;
+}
+.ag-nav.fixed .ag-track-inner {
+	display:block;
+}
 
 //
 
@@ -117,10 +124,11 @@
 }
 
 
+/*
 .ag-track .ag-group {
   display: none;
 }
-
+*/
 
 
 .seltra {
@@ -176,12 +184,26 @@
     display: none;
   }
 }
-.ag-track .ag-group {
-  display: none;
+.ag-nav.fixed .ag-track .ag-group {
 	position:relative;
 	-webkit-border-radius: 2px;
 -moz-border-radius: 2px;
 border-radius: 2px;
+
+	display: block;
+	position: absolute;
+	box-shadow: 0 7px 12px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5)  ;
+	z-index: 100;
+	background: #fff;
+	width:200px;
+	right:50%;
+	margin-right:-100px;
+	@media screen and (max-width:600px) {
+		width: 160px;
+		right: 50%;
+		margin-right: -80px;
+	}
+
 	&:before {
 		display:block;
 		content:'\25B2';
@@ -199,6 +221,7 @@ border-radius: 2px;
 		text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
 		
 
+
 	}
 }
 .ag-track-inner {
@@ -207,6 +230,7 @@ border-radius: 2px;
 }
 
 
+/*
 .ag-track-inner:hover .ag-group
 {
 	display: block;
@@ -223,10 +247,8 @@ border-radius: 2px;
 		margin-right: -80px;
 	}
 }
+*/
 
-.ag-track.closed .ag-group {
-	display:none;
-}
 
 .ag-track .seltra-inner {
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0.7) inset;
@@ -252,7 +274,7 @@ border-radius: 2px;
 	display: block;
 	font-weight: 600;
 	font-size: 14px;
-	padding: 6px 10px 6px 8px;
+	padding: 10px 8px 10px 8px;
 	line-height:1.3em;
 	cursor: pointer;
 	cursor: hand;
@@ -307,5 +329,64 @@ border-radius: 2px;
 .ag-track.open .ag-group {
 	display:block;
 	position:absolute;
+}
+
+.ag-track.closed .ag-group {
+	display:none !important;
+}
+
+.ag-nav dd[data-magellan-arrival="apr14"] a:after {
+	position:absolute;
+	content:'\2193 Tracks start April 14';
+	color:$primary-color;
+	display:block;
+	font-size:14px;
+	width:50%;
+	text-align:center;
+	top:18px;
+	right:50%;
+	left:50%;
+	z-index:200;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	
+	@media screen and (max-width:767px) {
+		left:auto;
+		right:0;
+		margin-right:9%;
+		width:157px;
+
+
+	}
+	@media screen and (max-width:700px) {
+		margin-right:6%;
+
+	}
+	@media screen and (max-width:600px) {
+	width:50%;
+	right:50%;
+	left:50%;
+	top:10px;
+	padding:20px 20px 20px 2px;
+
+	content:'\2193 View Tracks';
+	
+	}
+	@media screen and (max-width:450px) {
+	content:'\2193 Tracks';
+			left:auto;
+		right:0;
+		margin-right:0;
+		width:30%;
+		padding-right:10px;
+
+	}
+
+	
+
+	
+}
+.ag-nav.fixed dd[data-magellan-arrival="apr14"] a:after {
+	display:none ;
 }
 

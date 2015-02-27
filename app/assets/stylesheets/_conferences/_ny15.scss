@@ -214,6 +214,10 @@
 	.button-register a:before {
 		height: 75px;
 	}
+
+	.button-recap {
+		display:none;
+	}
 	// button recap
 	.button-recap {
 		margin-top: 10px;
@@ -489,19 +493,13 @@
 		padding: 0 0 0 0;
 	}
 	main {
-		background: #eee;
 		@media (max-width: 550px) {
 			background: none;
 		}
 	}
 	section {
-		background: #fff;
-		max-width: 1207px;
-		margin: auto;
-		padding-top:40px;
-		padding-bottom: 50px;
-		border-left: 1px solid #ccc;
-		border-right: 1px solid #ccc;
+		
+
 	}
 	h1 {
 		margin-top: 0;
@@ -932,19 +930,22 @@
 	/* BEGIN the old usa14 styles */
 	.hero {
 		display:table;
-		background: url(https://s3-us-west-2.amazonaws.com/lendit/usa14-hero.jpg) center center no-repeat;
+		background: url(https://s3-us-west-2.amazonaws.com/lendit/hero-2015-nyc.jpg) center center no-repeat;
 		background-size:1230px;
 		min-height:340px;
 		width:100%;
-		margin-bottom:1em;
+		margin-bottom:20px;
 	}
 	.hero-inner {
 		display:table-cell;
 		vertical-align:middle;
+		padding-top:30px;
+		padding-bottom:30px;
 	}
+	
 	.hero-content {
 		@media screen and (min-width:600px) {
-			width:80%;
+			width:85%;
 		}
 		display:table;
 		margin:auto;
@@ -968,19 +969,22 @@
 					width:100%;
 				}
 				display:table;
+				width:100%;
+				max-width:380px;
+				min-width:240px;
 				background:#89BE2E;
 				color:#fff;
 				text-shadow:2px 2px 2px rgba(0, 0, 0, 0.2); 
 				> div {
-					padding:6px 20px 6px 45px;
+					padding:6px 20px 6px 55px;
 					&:before {
-						content:'\f144';
+						content:'\f18e';
 						float:left;
 						font-size:44px;
 						margin-top:3px;
 						margin-right:8px;
 						line-height:1em;
-						margin-left:-35px;
+						margin-left:-45px;
 						font-family:FontAwesome;
 						-webkit-font-smoothing: antialiased;
 						-moz-osx-font-smoothing: grayscale;
@@ -990,13 +994,11 @@
 					display:block;
 					font-size:14px;
 					font-weight:600;
-					white-space:nowrap;
 				}
 				strong {
 					display:block;
 					font-size:18px;
 					font-weight:600;
-					white-space:nowrap;
 				}
 				@include clearfix;
 				&:focus,
@@ -1006,7 +1008,9 @@
 					text-decoration:none;
 					background:darken(#89BE2E, 10%);
 				}
+				margin-bottom:10px;
 			}
+
 		}
 	}
 	.logo-image {
@@ -1017,6 +1021,8 @@
 		}
 		img {
 			max-width:280px;
+			margin-left:30px; 
+			margin-right:30px;
 		}
 	}
 	.nav-logo {
@@ -1133,6 +1139,7 @@
 		margin-bottom:.5em;
 		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 		font-weight:400;
+		
 	}
 	.ny15-attendperyr { width:100%; }
 	.ny15-icon {

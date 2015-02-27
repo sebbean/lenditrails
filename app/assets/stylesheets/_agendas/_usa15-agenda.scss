@@ -8,6 +8,14 @@
 		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 	}
 }
+
+.ag-nav:not(.fixed) .ag-date dd[data-magellan-arrival="apr13"] a {
+	
+	 color:#fff;
+	 background:#999;
+}
+
+
 .ag-area {
 	display: table;
 	width: 100%;
@@ -67,6 +75,9 @@
   padding-left: 10px;
 }
 
+
+
+
 .ag-date .ag-active a,
 .ag-date .ag-active a:hover,
 .ag-date .ag-active a:active,
@@ -75,6 +86,8 @@
   position: relative;
   background: #999;
 }
+
+
 
 @media screen and (max-width: 600px) {
   .ag-date .ag-group {
@@ -346,7 +359,7 @@ border-radius: 2px;
 	top:18px;
 	right:50%;
 	left:50%;
-	z-index:200;
+	z-index:49;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	

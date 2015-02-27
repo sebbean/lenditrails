@@ -13,6 +13,10 @@ $china-color:#9786BF;
 $demo-color:#E38B96; 
 $qanda-color:#C6BF32; 
 
+.spacer-above-nav {
+	height:10px;
+}
+
 .usa15-agenda {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
@@ -23,15 +27,28 @@ $qanda-color:#C6BF32;
 }
 .usa15-agenda .general-background h1 {
 	font-family: 'Open Sans', sans-serif;
-	margin: 1.2em 0 .4em 0;
+	margin: 1.2em 0 1em 0;
+	padding-bottom:4px;
+	border-bottom:2px solid #666;
 }
 .usa15-agenda .general-background h2 {
-	margin: 1.5em 0 .5em 0;
+	margin: 1em 0 1em 0;
 	font-family: 'Open Sans', sans-serif;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-	padding-bottom: 12px;
-	font-size: 28px;
+	line-height:1em;
+	border-top:10px solid #f5f5f5;
+	padding-top:20px;
+	padding-left:10px;
+
+	font-size: 32px;
 	font-weight: 600;
+	-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+@media screen and (max-width:700px) {
+	text-align:center;
+	padding-left:0;
+}
+
 }
 
 
@@ -63,8 +80,12 @@ $qanda-color:#C6BF32;
 		font-family: 'Open Sans', sans-serif;
 		font-size:20px;
 		font-weight:600;
-		margin:2em 0 1em 0;
-		text-align:center;
+		margin:1.5em 0 1.5em 10px;
+		
+@media screen and (max-width:700px) {
+	text-align:center;
+	margin-left:0;
+}
 		
 
 	}

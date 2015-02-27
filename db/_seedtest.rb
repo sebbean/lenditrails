@@ -1,0 +1,1 @@
+puts "yep it worked as a render"

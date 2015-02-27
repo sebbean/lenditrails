@@ -53,17 +53,16 @@ $(document).ready(function() {
 
 
 // agenda tracks
-
-  var class_count = 3;
+  var track_count = 3;
 
   toggle_function = function(track){
     if ($('.agenda-main-box').hasClass(track)) {
-      class_count--;
+      track_count--;
     }
     else {
-      class_count++;
+      track_count++;
     }
-    if (class_count >= 1) {
+    if (track_count >= 1) {
       $('.agenda-main-box').toggleClass(track);
     }
   }

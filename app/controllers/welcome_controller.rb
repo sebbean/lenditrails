@@ -48,8 +48,5 @@ class WelcomeController < ApplicationController
     redirect_to ('/assets/presentations/Securitization-Panel-LendIt-2014.pdf'), :status => 301
   end
 
-  def usa15_floorplan
-  end
-
 
 end

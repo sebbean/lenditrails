@@ -54,6 +54,7 @@ LenditRails::Application.routes.draw do
   get '/usa/2014/attendees' => 'attendees#usa14'
   get '/usa/2014/videos' => 'videos#usa14'
   get '/usa/2014/videos/:id' => 'videos#show_usa14', via: :get, as: :usa14_video
+  get '/usa/2014/speakers' => 'speakers#usa14'
 
 
   # 301 redirects with GA tracking codes

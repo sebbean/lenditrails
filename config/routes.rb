@@ -20,7 +20,7 @@ LenditRails::Application.routes.draw do
   get '/audio' => 'welcome#go_to_libsyn'
   get '/bookhotel', to: redirect('https://aws.passkey.com/g/35613120', status: 301)
   get '/podcasts' => 'podcasts#go_to_eu14'
-  # get '/agenda' => 'agendas#usa15'
+  get '/agenda' => 'agendas#usa15'
 
 
   # LendIt USA 2015
@@ -36,6 +36,8 @@ LenditRails::Application.routes.draw do
   get '/usa/2015/beijing-invite' => 'conferences#usa15_beijing_invite-update'
   get '/usa/2015/brochure', to: redirect('https://s3-us-west-2.amazonaws.com/lendit/uploads/LendIt-USA-2015-conference-brochure.pdf', status: 301)
   get '/usa/2015/pitchit-at-lendit' => 'conferences#usa15_pitchit'
+  get '/usa/2015/pitchit/sign-up' => 'conferences#usa15_pitchit_signup'
+  get '/usa/2015/pitchit/submitted' => 'conferences#usa15_pitchit_submitted'
 
   #LendIt Europe 2014
   get '/europe' => 'conferences#eu14'

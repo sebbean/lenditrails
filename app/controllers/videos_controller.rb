@@ -1,5 +1,13 @@
 class VideosController < ApplicationController
 
+  def index
+    eu14 = Conference.where(title: 'LendIt Europe 2014').first
+    @eu14_videos = eu14.videos.where(featured: true)
+
+    us14 = Conference.where(title: 'LendIt USA 2014').first
+    @usa14_videos = us14.videos.where(featured: true)
+  end
+
   def live
   end
 

@@ -9,7 +9,8 @@ LenditRails::Application.routes.draw do
   get '/speakers/sign-up' => 'speakers#sign-up'
   get '/speakers/thank-you' => 'speakers#thank-you'
   get '/terms-of-use' => 'welcome#terms-of-use'
-  get '/videos' => 'videos#go_to_eu14'
+  # get '/videos' => 'videos#go_to_eu14'
+  get '/videos' => 'videos#index'
   get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
   get '/privacy' => 'welcome#privacy'
   get '/live', to: redirect('/videos', status: 301)

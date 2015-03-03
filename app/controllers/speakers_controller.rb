@@ -20,8 +20,7 @@ class SpeakersController < ApplicationController
   end
 
   def usa14
-    @speakers = Speaker.where(conference: 'LendIt USA 2014')
-    @usa14_speakers = @speakers.where(featured: false)
+    @usa14_speakers = Speaker.where(conference: 'LendIt USA 2014').where(featured: false)
   end
 
 

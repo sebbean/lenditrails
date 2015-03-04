@@ -84,7 +84,7 @@ $(document).ready(function() {
       console.log(track_count);
     } else {
 
-      alert('Please choose at least one track for the agenda.')
+      swal("Whoops!\nYou need to have at least one track active. \nPlease choose another track before toggling off your current track.");
     }
 
 

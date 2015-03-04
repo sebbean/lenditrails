@@ -18,6 +18,7 @@
 //= require colorbox
 //= require isotope
 //= require bootstrap
+//= require sweetalert
 //= require validate
 //= require turbolinks
 //= require_tree .

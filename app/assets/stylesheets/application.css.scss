@@ -13,6 +13,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "foundation_and_overrides";
+@import "sweetalert";
 @import "_general/variables";
 @import "_general/mixins";
 @import "_general/general";
@@ -45,4 +46,3 @@
 @import "_general/startup-zone";
 @import "_general/volunteers";
 @import "_agendas/_usa15-agenda";
-@import "sweetalert";

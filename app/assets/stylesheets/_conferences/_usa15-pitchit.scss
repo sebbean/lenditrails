@@ -1,6 +1,90 @@
+
 .usa15-pitchit {
+	.pitchit-image {
+
+			max-width:200px;
+			position:absolute;
+			top:-4em;
+			right:-1em;
+			
+			@media screen and (max-width: 500px) {
+				max-width:120px;
+				
+			}	
+
+		}
+
+	.pitchit-image-reversed-container {
+		position:relative;
+	}
+	.pitchit-image-reversed {
+			position:absolute;
+			max-width:60px;
+			right:50%;
+			margin-right:-30px;
+			margin-top:-.6em;
+
+	}
+
 	.general-background {
-		padding-bottom:2em;
+		padding-top:3em;
+		padding-bottom:4em;
+		.panel {
+			line-height:1.6em;
+			b {
+				font-weight:600;
+			}
+			p, ul {
+				font-size:16px;
+				line-height:1.6em;
+				font-weight:300;
+				a {
+					font-weight:600;
+					text-decoration:underline;
+				}
+			}
+			ul {
+				list-style-type:square;
+			}
+
+			h1 {
+				color: $primary-color;
+				margin-bottom:1em;
+				line-height:1.6em;
+				margin-top:.5em;
+			}
+			h2 {
+				color: $primary-color;
+				margin-bottom:1em;
+				border-top:1px solid $primary-color;
+				font-size:24px;
+				font-weight:600;
+				padding-top:1.2em;
+				line-height:1.6em;
+				margin-top:1.6em;
+			}
+			h3 {
+				line-height:1.6em;
+				font-weight:600;
+				font-size:18px;
+				margin-top:1em;
+				margin-bottom:1em;
+				font-family: 'Open Sans', sans-serif;
+			}
+			@media screen and (min-width:715px) {
+				border-right:1px solid $primary-color;
+				border-left:1px solid $primary-color;
+			}
+			border-top:3px solid $primary-color;
+			border-bottom:1px solid $primary-color;
+			background:#fafafa;
+			max-width:700px;
+			margin:auto;
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+			box-shadow:0 1px 8px rgba(0, 0, 0, 0.3); 
+		}
 	}
 	font-family:'Open Sans', sans-serif;
 	h1, h2 {
@@ -31,7 +115,6 @@
 		margin-bottom:.4em;
 		.pitch-signup-title {
 			display:inline;
-
 		}
 		label {
 			display:inline;
@@ -40,35 +123,28 @@
 			display:inline;
 			color:#c00;
 		}
-
-
 	}
 	.required-message {
 		display:none;
 	}
-
 	#navigation-table {
 		border:none;
 	}
 	#navigation-buttons {
 		padding:0;
 		border:none;
-
 	}
-
 	.jfk-button {
-			background:#89be2e;
-			color:#fff;
-	font-family:'Open Sans', sans-serif;
-  padding: 8px 20px;
-  font-weight: 600;
-	font-size:18px;
-	border:none;
-	margin-top:1.4em;
+		background:#89be2e;
+		color:#fff;
+		font-family:'Open Sans', sans-serif;
+		padding: 8px 20px;
+		font-weight: 600;
+		font-size:18px;
+		border:none;
+		margin-top:1.4em;
 	}
-
 }
-
 .usa15-pitchit-submitted {
 	.general-background {
 		padding-top:3em;
@@ -80,4 +156,3 @@
 		font-family:'Open Sans', sans-serif;
 	}
 }
-

@@ -9,7 +9,8 @@ LenditRails::Application.routes.draw do
   get '/speakers/sign-up' => 'speakers#sign-up'
   get '/speakers/thank-you' => 'speakers#thank-you'
   get '/terms-of-use' => 'welcome#terms-of-use'
-  get '/videos' => 'videos#go_to_eu14'
+  # get '/videos' => 'videos#go_to_eu14'
+  get '/videos' => 'videos#index'
   get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
   get '/privacy' => 'welcome#privacy'
   get '/live', to: redirect('/videos', status: 301)
@@ -36,6 +37,8 @@ LenditRails::Application.routes.draw do
   get '/usa/2015/beijing-invite' => 'conferences#usa15_beijing_invite-update'
   get '/usa/2015/brochure', to: redirect('https://s3-us-west-2.amazonaws.com/lendit/uploads/LendIt-USA-2015-conference-brochure.pdf', status: 301)
   get '/usa/2015/pitchit-at-lendit' => 'conferences#usa15_pitchit'
+  get '/usa/2015/pitchit/sign-up' => 'conferences#usa15_pitchit_signup'
+  get '/usa/2015/pitchit/submitted' => 'conferences#usa15_pitchit_submitted'
 
   #LendIt Europe 2014
   get '/europe' => 'conferences#eu14'
@@ -54,6 +57,7 @@ LenditRails::Application.routes.draw do
   get '/usa/2014/attendees' => 'attendees#usa14'
   get '/usa/2014/videos' => 'videos#usa14'
   get '/usa/2014/videos/:id' => 'videos#show_usa14', via: :get, as: :usa14_video
+  get '/usa/2014/speakers' => 'speakers#usa14'
 
 
   # 301 redirects with GA tracking codes

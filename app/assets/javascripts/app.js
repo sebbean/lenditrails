@@ -53,6 +53,28 @@ $(document).ready(function() {
 
 
 // agenda tracks
+
+
+  // toggle between topic and time for april 13 usa 2015
+  // $('.ag13-show-topic').on("click", function(e){
+  //   // e.preventDefault();
+  //   $('.ag13-sort-by-time').removeClass('ag13-active-panel');
+  //   $('.ag13-sort-by-topic').addClass('ag13-active-panel');
+  //   $('.ag13-show-time').removeClass('ag13-active');
+  //   $('.ag13-show-topic').addClass('ag13-active');
+  // });
+
+  $(".ag13-show-topic").on("click", function(e){
+    console.log('you clicked on topic');
+  });
+
+
+  // $('.ag13-show-time').on("click", function(e){
+  //   $('.ag-13-show-time').toggleClass('ag13-active');
+  //   $('.ag-13-show-topic').toggleClass('ag13-active');
+  // });
+
+
   var track_count = 3;
 
   toggle_function = function(track){

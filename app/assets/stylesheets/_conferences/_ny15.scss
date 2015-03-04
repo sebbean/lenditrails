@@ -290,6 +290,7 @@
 			height:105px;
 		}
 	}
+	
 	.button-recap-loud a {
 		color:orange;
 		@media (max-width: 960px) {
@@ -331,6 +332,7 @@
 			box-shadow: none;
 		}
 	}
+	
 	.button-recap a:hover:before {
 		opacity: 1;
 		background-position: 18px center;
@@ -1013,6 +1015,16 @@
 
 		}
 	}
+
+	.hero-content .hero-button .hero-button-loud  {
+		background:orange;
+		&:hover {
+			background:darken(orange,5%);
+		}
+	}
+	
+
+	
 	.logo-image {
 		display:table;
 		margin:0 auto;

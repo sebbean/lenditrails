@@ -84,7 +84,8 @@ $(document).ready(function() {
       console.log(track_count);
     } else {
 
-      swal("Whoops!\nYou need to have at least one track active. \nPlease choose another track before toggling off your current track.");
+      swal("Before deactivating current track, \nplease select another\n(at least one track must be selected)");
+			
     }
 
 

@@ -1,4 +1,5 @@
 var app = app || {};
+  var track_count = 3;
 
 $(document).foundation('magellan', 'reflow');
 
@@ -40,53 +41,53 @@ $(document).foundation('reveal', {
 
 $(document).ready(function() {
 
+// INSERT THE TOGGLE STUFF HERE
 
-//  $('.ag-date').on("click", function(){
-//   $('.ag-date').toggleClass('open');
-// });
-
- $('.ag-track').on("click", function(){
-   $('.ag-track').toggleClass('closed');
- });
-
-
-
-
-// agenda tracks
-
-
-  // toggle between topic and time for april 13 usa 2015
-  // $('.ag13-show-topic').on("click", function(e){
-  //   // e.preventDefault();
-  //   $('.ag13-sort-by-time').removeClass('ag13-active-panel');
-  //   $('.ag13-sort-by-topic').addClass('ag13-active-panel');
-  //   $('.ag13-show-time').removeClass('ag13-active');
-  //   $('.ag13-show-topic').addClass('ag13-active');
-  // });
-
-  $(".ag13-show-topic").on("click", function(e){
-    console.log('you clicked on topic');
+  // USA2015 Agenda Page /usa/2015/agenda
+  // toggles select track open and closed
+  $('.ag-track').on("click", function(){
+     $('.ag-track').toggleClass('closed');
   });
 
+  // Pre-conference workshop toggles between topic and time on mobile view
+  $(".ag13-show-topic").on("click", function(e){
+    console.log('you clicked on topic');
+    $('.ag13-sort-by-topic').addClass('ag13-active-panel');
+    $('.ag13-sort-by-time').removeClass('ag13-active-panel');
+    $('.ag13-show-topic').addClass('ag13-active');
+    $('.ag13-show-time').removeClass('ag13-active');
+  });
 
-  // $('.ag13-show-time').on("click", function(e){
-  //   $('.ag-13-show-time').toggleClass('ag13-active');
-  //   $('.ag-13-show-topic').toggleClass('ag13-active');
-  // });
+  $(".ag13-show-time").on("click", function(e){
+    console.log('you clicked on time');
+    $('.ag13-sort-by-topic').removeClass('ag13-active-panel');
+    $('.ag13-sort-by-time').addClass('ag13-active-panel');
+    $('.ag13-show-topic').removeClass('ag13-active');
+    $('.ag13-show-time').addClass('ag13-active');
+  });
 
+  // Main Agenda works with magellan nav that allows you to choose the track you want to view on the agenda
+  // Prevents you from toggling off all but one
+  function toggle_function(track) {
 
-  var track_count = 3;
+    if (($('.agenda-main-box').hasClass(track)) && (track_count > 1)) {
 
-  toggle_function = function(track){
-    if ($('.agenda-main-box').hasClass(track)) {
-      track_count--;
-    }
-    else {
-      track_count++;
-    }
-    if (track_count >= 1) {
       $('.agenda-main-box').toggleClass(track);
+      track_count--;
+      console.log('you removed a track');
+      console.log(track_count);
+    } else if ((!$('.agenda-main-box').hasClass(track)) && (track_count >= 1)) {
+
+      $('.agenda-main-box').toggleClass(track);
+      track_count++;
+      console.log('you added a track');
+      console.log(track_count);
+    } else {
+
+      alert('Please choose at least one track for the agenda.')
     }
+
+
   }
 
 
@@ -126,17 +127,15 @@ $(document).ready(function() {
   $('a.close-reveal-modal').trigger('click');
 
 
-  // toggle Europe 2014 agenda
-  $('.pm-button').on('click', function(e){
-    e.preventDefault();
+  // toggle Europe 2014 agenda between morning and afternoon
+  $('.pm-button').on('click', function(){
     $('table.pm-agenda').removeClass('off');
     $('table.am-agenda').addClass('off');
     $('.am-button').removeClass('on');
     $('.pm-button').addClass('on');
   });
 
-  $('.am-button').on('click', function(e){
-    e.preventDefault();
+  $('.am-button').on('click', function(){
     $('table.pm-agenda').addClass('off');
     $('table.am-agenda').removeClass('off');
     $('.pm-button').removeClass('on');

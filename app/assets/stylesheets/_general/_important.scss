@@ -1,0 +1,48 @@
+.important-callout {
+	position:relative;
+	margin:auto;
+	background:#f0f0f0;
+
+
+
+	a {
+	max-width:1207px;
+	margin:auto;
+	width:100%;
+opacity:.9;
+background:$primary-color url(https://s3-us-west-2.amazonaws.com/lendit/2015-03-06-lattice-background.png) center center repeat;
+background-size:50px;
+
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+	display:block;
+	font-family:'Open Sans', sans-serif;
+	border-bottom:1px solid #fff;
+
+	@media (max-width: 550px) {
+		border-bottom:1em solid #fff;
+	}
+
+	b {
+padding:6px 20px;
+text-align:center;
+display:table;
+margin:auto;
+color:#fff;
+border-left:1px solid #ccc;
+border-right:1px solid #ccc;
+background:rgba(140, 141, 141, 1);
+background:$primary-color;
+
+	}
+	
+	&:hover {
+		opacity:1;
+		color:#fff;
+		b {
+background:$primary-color;
+		}
+	}
+	
+	}
+}

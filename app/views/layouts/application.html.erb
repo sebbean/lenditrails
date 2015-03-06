@@ -27,6 +27,10 @@
 	<body class="<%= yield (:body_class) %>">
 
 		<%= render 'layouts/nav' %>
+		<div class="important-callout">
+			<a href="/agenda"><b><i class="fa fa-arrow-circle-right"></i> View the 2015 Agenda</b></a>
+
+		</div>
 		<%= yield %>
 		<%= render 'layouts/footer' %>
 		<%= render 'layouts/googleanalytics' %>

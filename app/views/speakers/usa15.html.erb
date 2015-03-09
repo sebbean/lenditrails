@@ -29,17 +29,17 @@
 		<% @usa15_speakers.each do |speaker| %>
 			<li>
 			<% if speaker.bio? %>
+			<a class="past-speaker" href="#<%= speaker.first_name %><%= speaker.last_name %>">
 				<div class="speaker">
 					<div class="speaker-top">
-						<a class="past-speaker" href="#<%= speaker.first_name %><%= speaker.last_name %>">
 							<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
 							<div class="speaker-top-info">
 								<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
 								<div class="speaker-title"><%= speaker.title %></div>
 								<div class="speaker-company"><%= speaker.company_name %></div>
 							</div>
-						</a>
 					</div>
+			</a>
 					<div class="speaker-bio" style="/*temp styles*/display:none;">
 						<div id="<%= speaker.first_name %><%= speaker.last_name %>" class="speaker-container">
 							<div class="speaker-colorbox-title">Past Speakers</div>

@@ -10,7 +10,7 @@
 }
 
 .ag-nav:not(.fixed) .ag-date dd[data-magellan-arrival="apr13"] a {
-	
+
 	 color:#fff;
 	 background:#999;
 }
@@ -133,7 +133,7 @@
   display: table-cell;
   vertical-align: top;
   position: relative;
-	
+
 }
 
 
@@ -162,7 +162,7 @@
 }
 .ag-track.open .seltra-inner {
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
-	
+
 }
 
 @media screen and (max-width: 600px) {
@@ -232,7 +232,7 @@ border-radius: 2px;
 		margin-right:-12px;
 		color:#fff;
 		text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
-		
+
 
 
 	}
@@ -275,7 +275,7 @@ border-radius: 2px;
 .ag-track .ag-group span {
   display: block;
 	border-bottom:1px solid #ddd;
-	
+
 
 }
 .ag-track .ag-group span:last-child {
@@ -306,7 +306,7 @@ border-radius: 2px;
 		background:#eee;
 	}
 }
-.ag-track .ag-group span b:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }  
+.ag-track .ag-group span b:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
 
 .ag-dd.ag-track-main b{
 	color: $main-color;
@@ -363,7 +363,7 @@ border-radius: 2px;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 
-	
+
 	@media screen and (max-width:767px) {
 		left:auto;
 		right:0;
@@ -384,7 +384,7 @@ border-radius: 2px;
 	padding:20px 20px 20px 2px;
 
 	content:'\2193 View Tracks';
-	
+
 	}
 	@media screen and (max-width:450px) {
 	content:'\2193 Tracks';
@@ -396,15 +396,21 @@ border-radius: 2px;
 
 	}
 
-	
 
-	
+
+
 }
 .ag-nav.fixed dd[data-magellan-arrival="apr14"] a:after {
 	display:none ;
 }
 
+.agenda-btn a {
+  color: white;
+  text-decoration: none;
+}
+.agenda-btn a:hover {
 
+}
 
 // IF April 13 ISN'T SHOWING
 

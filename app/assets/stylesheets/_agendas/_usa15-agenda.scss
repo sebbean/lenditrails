@@ -412,6 +412,17 @@ border-radius: 2px;
 
 }
 
+.usa15-view-extended-agenda {
+  color:#999;
+  margin-top: 0px;
+  font-family: 'Verlag A', 'Verlag B', verlag;
+  font-size:18px;
+  font-weight:600;
+  @media (min-width: 641px) {
+    float:right;
+  }
+}
+
 // IF April 13 ISN'T SHOWING
 
 .ag-nav dd[data-magellan-arrival="apr14"] a:after {

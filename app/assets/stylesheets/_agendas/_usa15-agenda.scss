@@ -26,7 +26,7 @@
 
 
 .ag-nav .ag-track-inner {
-	display:none;
+	display:block;
 }
 .ag-nav.fixed .ag-track-inner {
 	display:block;
@@ -197,7 +197,7 @@
     display: none;
   }
 }
-.ag-nav.fixed .ag-track .ag-group {
+.ag-nav .ag-track .ag-group {
 	position:relative;
 	-webkit-border-radius: 2px;
 -moz-border-radius: 2px;
@@ -362,6 +362,7 @@ border-radius: 2px;
 	z-index:49;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
+
 	
 	@media screen and (max-width:767px) {
 		left:auto;
@@ -403,3 +404,10 @@ border-radius: 2px;
 	display:none ;
 }
 
+
+
+// IF April 13 ISN'T SHOWING
+
+.ag-nav dd[data-magellan-arrival="apr14"] a:after {
+	display:none;
+}

@@ -1,6 +1,34 @@
 $(document).ready(function() {
 
 
+  // toggle snapshot agenda on the main conference page
+
+  $('.apr13-tab').on("click", function(){
+    $('.apr13-tab').addClass('on');
+    $('.apr13-tab').removeClass('off');
+    $('.apr14-tab').removeClass('on');
+    $('.apr14-tab').addClass('off');
+    $('.apr15-tab').removeClass('on');
+    $('.apr15-tab').addClass('off');
+  });
+
+  $('.apr14-tab').on("click", function(){
+    $('.apr14-tab').addClass('on');
+    $('.apr14-tab').removeClass('off');
+    $('.apr13-tab').removeClass('on');
+    $('.apr13-tab').addClass('off');
+    $('.apr15-tab').removeClass('on');
+    $('.apr15-tab').addClass('off');
+  });
+
+  $('.apr14-tab').on("click", function(){
+    $('.apr15-tab').addClass('on');
+    $('.apr15-tab').removeClass('off');
+    $('.apr14-tab').removeClass('on');
+    $('.apr14-tab').addClass('off');
+    $('.apr13-tab').addClass('on');
+    $('.apr13-tab').removeClass('off');
+  });
 
   // USA2015 Agenda Page /usa/2015/agenda
   // toggles select track open and closed

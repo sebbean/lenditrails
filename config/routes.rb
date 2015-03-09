@@ -31,6 +31,7 @@ LenditRails::Application.routes.draw do
   get '/usa/2015/sponsors' => 'sponsors#usa15'
   get '/usa/2015/speakers' => 'speakers#usa15'
   get '/usa/2015/agenda' => 'agendas#usa15'
+  get '/usa/2015/pre-conference-workshops' => 'agendas#usa15_workshops'
   get '/usa/2015/floorplan' => 'conferences#usa15_floorplan'
   get '/us/2015/exhibitors' => 'exhibitors#usa15'
   get '/usa/2015/attendees' => 'attendees#usa15'

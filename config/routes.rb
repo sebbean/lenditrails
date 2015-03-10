@@ -9,7 +9,6 @@ LenditRails::Application.routes.draw do
   get '/speakers/sign-up' => 'speakers#sign-up'
   get '/speakers/thank-you' => 'speakers#thank-you'
   get '/terms-of-use' => 'welcome#terms-of-use'
-  # get '/videos' => 'videos#go_to_eu14'
   get '/videos' => 'videos#index'
   get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
   get '/privacy' => 'welcome#privacy'
@@ -22,7 +21,8 @@ LenditRails::Application.routes.draw do
   get '/bookhotel', to: redirect('https://aws.passkey.com/g/35613120', status: 301)
   get '/podcasts' => 'podcasts#go_to_eu14'
   get '/agenda' => 'agendas#usa15'
-  # get '/team' => 'welcome#team'
+  get '/team' => 'welcome#team'
+  get '/test' => 'speakers#test'
 
   # LendIt USA 2015
   get '/nyc' => 'conferences#go_to_usa15'

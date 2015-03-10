@@ -4,9 +4,12 @@ $(document).ready(function() {
   // toggle snapshot agenda on the main conference page
   // toggle between april 13, april 14 and april 15 tabs
   $('.apr13-tab').on("click", function(){
-    $('.apr13-tab').addClass('on')
+    $('.apr13-tab').addClass('on');
+    $('.apr13-tab').removeClass('off');
     $('.apr14-tab').removeClass('on');
+    $('.apr14-tab').addClass('off');
     $('.apr15-tab').removeClass('on');
+    $('.apr15-tab').addClass('off');
 
     $('.usa15-apr13').removeClass('off');
     $('.usa15-apr14').addClass('off');
@@ -15,9 +18,12 @@ $(document).ready(function() {
   });
 
   $('.apr14-tab').on("click", function(){
-    $('.ap14-tab').removeClass('off');
+    $('.apr14-tab').addClass('on');
+    $('.apr14-tab').removeClass('off');
     $('.apr13-tab').addClass('off');
+    $('.apr13-tab').removeClass('on');
     $('.apr15-tab').addClass('off');
+    $('.apr15-tab').removeClass('on');
 
     $('.usa15-apr14').removeClass('off');
     $('.usa15-apr13').addClass('off');
@@ -25,8 +31,8 @@ $(document).ready(function() {
   });
 
   $('.apr15-tab').on("click", function(){
-    $('.apr15-tab').removeClass('off');
     $('.apr15-tab').addClass('on');
+    $('.apr15-tab').removeClass('off');
     $('.apr14-tab').addClass('off');
     $('.apr14-tab').removeClass('on');
     $('.apr13-tab').addClass('off');

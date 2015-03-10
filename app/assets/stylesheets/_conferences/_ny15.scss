@@ -29,6 +29,7 @@
 			font-size:16px;
 			font-weight:600;
 			padding:10px 12px;
+			border-top:1px solid #ccc;
 			border-bottom:1px solid #ddd;
 			background:#eee;
 			cursor:pointer;
@@ -49,7 +50,6 @@
 		}
 	}
 	.off {
-		display: none;
 	}
 	.home-agenda {
 		table[class$="agenda"] {
@@ -1212,8 +1212,27 @@
 		font-weight:700;
 		padding-bottom:.25em;
 		margin-bottom:1em;
-		font-size:1.1em;
+		font-size:20px;
 	}
+	.ny15-header-agenda {
+		color:#9CC83D;
+		border-bottom:2px solid #9CC83D;
+		padding-bottom:.25em;
+		margin-bottom:1em;
+		font-size:20px;
+		@include clearfix;
+		b {
+		font-weight:700;
+		float:left;
+		}	
+		a {
+			float:right;
+			font-weight:500;
+			font-size:18px;
+			text-decoration:underline;
+		}
+	}
+	
 	.ny15-callouts {
 		margin-top:.5em;
 		margin-bottom:.5em;

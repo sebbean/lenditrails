@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  var track_count = 3;
 
   // toggle snapshot agenda on the main conference page
   // toggle between april 13, april 14 and april 15 tabs

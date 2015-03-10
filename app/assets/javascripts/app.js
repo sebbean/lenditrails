@@ -1,5 +1,4 @@
 var app = app || {};
-  var track_count = 3;
 
 $(document).foundation('magellan', 'reflow');
 

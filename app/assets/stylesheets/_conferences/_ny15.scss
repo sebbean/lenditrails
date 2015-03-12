@@ -19,6 +19,7 @@
 		margin:0;
 		h3 {
 			font-family: 'Verlag A', 'Verlag B', verlag;
+			font-family: 'Open Sans' sans-serif;
 			margin:0;
 			color:#89be2e;
 			display:table-cell;
@@ -1414,6 +1415,7 @@
 			}
 			td {
 				font-family: 'Verlag A', 'Verlag B', verlag;
+				font-family: 'Open Sans', sans-serif;
 				vertical-align:top;
 				padding-top:10px;
 				padding-bottom:10px;
@@ -1440,7 +1442,7 @@
 				font-weight:400;
 				line-height:1.4em;
 				@media (min-width: 641px) {
-					font-size:18px;
+					font-size:16px;
 				}
 			}
 			td:last-of-type {
@@ -1448,11 +1450,51 @@
 				font-weight:400;
 				line-height:1.4em;
 				@media (min-width: 641px) {
-					font-size:18px;
+					font-size:16px;
 				}
 			}
 		}
 	}
+.overview-icons {
+	td:first-of-type {
+		vertical-align:top;
+		
+	}
+	td {
+		padding:0 0 1.2em 0;
+		font-size:16px;
+		line-height:1.4em;
+		span {
+			font-weight:600;
+
+		}
+	}
+	border:none;
+	tr:nth-of-type(even) {
+		background:none;
+
+	}
+	img {
+		max-width:60px;
+		margin-right:15px;
+		margin-top:12px;
+		display:block;
+	}
+
+}
+.overview-icons-featuring {
+	td {
+		padding:0 0 .6em 0;
+		font-weight:600;
+	}
+	img {
+		margin-top:0;
+		max-width:110px;
+		margin-left:-28px;
+		margin-right:0;
+	}
+}
+	
 }
 
 

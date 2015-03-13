@@ -96,166 +96,104 @@
 
 			<!--  FEATURED SPEAKERS BEGIN  -->
 			<div class="row">
-
-
-					<div class="ny15-header">
-						<b>Featured speakers</b>
-						<a href="/usa/2015/speakers"> View All Speakers <i class="fa fa-arrow-circle-right"></i></a>
-					</div>
-
-					<ul>
-						<% @featured.each do |speaker| %>
-						<li>
-								<%= image_tag speaker.img_url, class: "" %>
-								<%= speaker.first_name %> <%= speaker.last_name %>
-								<%= speaker.title %>
-								<%= speaker.company_name %>
-						</li>
-						<% end %>
-					</ul>
-
-
-					<ul class="small-block-grid-2 medium-block-grid-6 large-block-grid-6 eu14-keynotes " style="margin-top:1em;">
-						<li>
-							<div class="item">
-								<img src="/assets/samir-desai-lg.png" alt="Samir Desai">
-								<div class="info">
-									<div class="name"> Samir Desai </div>
-									<div class="title"> Co-Founder &amp; Director </div>
-									<div class="company"> Funding Circle </div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<img src="/assets/giles-andrews-lg.png" alt="Giles Andrews">
-								<div class="info">
-									<div class="name"> Giles Andrews </div>
-									<div class="title"> Co-Founder &amp; CEO </div>
-									<div class="company"> Zopa </div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<img src="/assets/rhydian-lewis-lg.png" alt="Rydian Lewis">
-								<div class="info">
-									<div class="name"> Rhydian Lewis </div>
-									<div class="title"> Founder &amp; CEO </div>
-									<div class="company"> RateSetter </div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<img src="/assets/nigel-morris-QED.png" alt="Nigel Morris">
-								<div class="info">
-									<div class="name"> Nigel Morris </div>
-									<div class="title"> Managing Partner </div>
-									<div class="company"> QED Investors </div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<img src="https://s3-us-west-2.amazonaws.com/lendit/speakers/cormac-leech-lg.jpg" alt="Nigel Morris">
-								<div class="info">
-									<div class="name"> Cormac Leech </div>
-									<div class="title"> Equity Research </div>
-									<div class="company"> Liberum </div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<img src="https://s3-us-west-2.amazonaws.com/lendit/speakers/bryan-zhang-lg.png" alt="Samir Desai">
-								<div class="info">
-									<div class="name"> Bryan Zhang </div>
-									<div class="title"> PhD Research, Alternative Finance expert </div>
-									<div class="company"> University of Cambridge </div>
-								</div>
-							</div>
-						</li>
-					</ul>
+				<div class="ny15-header">
+					<b>Featured speakers</b>
+					<a href="/usa/2015/speakers"> View All Speakers <i class="fa fa-arrow-circle-right"></i></a>
 				</div>
-				<!--  FEATURED SPEAKERS END  -->
 
-				<!-- SNAPSHOT AGENDA BEGINS -->
-				<div class="row">
-					<div class=" large-24 columns">
-
-						<div class="ny15-header-agenda">
-							<b>Agenda Snapshot</b>
-							<a href="/usa/2015/agenda"> View Extended Agenda <i class="fa fa-arrow-circle-right"></i></a>
+				<ul class="small-block-grid-2 medium-block-grid-6 large-block-grid-6 eu14-keynotes " style="margin-top:1em;">
+					<% @featured.each do |speaker| %>
+					<li>
+						<div class="item">
+							<%= image_tag speaker.img_url, class: "", alt: speaker.first_name+" "+speaker.last_name %>
+							<div class="info">
+								<div class="name"><%= speaker.first_name %> <%= speaker.last_name %></div>
+								<div class="title"><%= speaker.title %></div>
+								<div class="company"><%= speaker.company_name %></div>
+							</div>
 						</div>
-						<%= render "/conferences/usa15_snapshot_agenda" %>
+					</li>
+					<% end %>
+				</ul>
+			</div>
+			<!--  FEATURED SPEAKERS END  -->
+
+			<!-- SNAPSHOT AGENDA BEGINS -->
+			<div class="row">
+				<div class=" large-24 columns">
+
+					<div class="ny15-header-agenda">
+						<b>Agenda Snapshot</b>
+						<a href="/usa/2015/agenda"> View Extended Agenda <i class="fa fa-arrow-circle-right"></i></a>
 					</div>
-
+					<%= render "/conferences/usa15_snapshot_agenda" %>
 				</div>
-				<!-- SNAPSHOT AGENDA ENDS -->
+
+			</div>
+			<!-- SNAPSHOT AGENDA ENDS -->
 
 
-				<%= render "usa15_event_overview" %>
+			<%= render "usa15_event_overview" %>
 
-				<div class="row">
-					<div class="large-24 columns">
-						<div class="ny15-wide-quote">
-							<div class="ny15-wide-quote-strong">
-								"Marketplace lending is arguably the hottest spot for financial innovation today and LendIt is right at its center, stoking the fires with great education, content, and networking. LendIt assembles all the key players, asks all the right questions, and creates the perfect forum to fire up ideas, spark connections, and facilitate deal making."
-							</div>
-							<div class="ny15-wide-quote-attribute">&mdash; Penelope Holt, Chief Marketing Officer, BorrowersFirst</div>
+			<div class="row">
+				<div class="large-24 columns">
+					<div class="ny15-wide-quote">
+						<div class="ny15-wide-quote-strong">
+							"Marketplace lending is arguably the hottest spot for financial innovation today and LendIt is right at its center, stoking the fires with great education, content, and networking. LendIt assembles all the key players, asks all the right questions, and creates the perfect forum to fire up ideas, spark connections, and facilitate deal making."
 						</div>
-					</div>
-				</div>
-
-				<div class="row ny15-callouts">
-					<div class="large-24 columns">
-						<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
-							<li>
-								<div class="ny15-header">Attendee Growth</div>
-								<div class="ny15-callout-image">
-									<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-attendperyr.png" class="ny15-attendperyr" />
-								</div>
-							</li>
-							<li>
-								<div class="ny15-header"> 2014 Audience Breakdown </div>
-								<div class="ny15-callout-image">
-									<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-breakdown.png" class="ny15-attendperyr" />
-								</div>
-							</li>
-							<li>
-								<div class="ny15-header"> 2015 Attendee Map </div>
-								<div class="ny15-attendee-map-link">
-									<a href="/usa/2015/attendees"><img src="https://s3-us-west-2.amazonaws.com/lendit/photos/lendit-sf14-attendees-map.png" /></a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-
-				<div class="row">
-					<div class="large-24 columns">
-						<div class="ny15-header"> 2014 Photos </div>
-						<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
-							<li class="visible">
-								<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC01295-th.JPG" />
-							</li>
-							<li>
-								<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC01344-th.JPG" />
-							</li>
-							<li>
-								<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC02127-th.JPG" />
-							</li>
-							<li>
-								<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC01708-th.JPG" />
-							</li>
-						</ul>
+						<div class="ny15-wide-quote-attribute">&mdash; Penelope Holt, Chief Marketing Officer, BorrowersFirst</div>
 					</div>
 				</div>
 			</div>
-		</section>
+
+			<div class="row ny15-callouts">
+				<div class="large-24 columns">
+					<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
+						<li>
+							<div class="ny15-header">Attendee Growth</div>
+							<div class="ny15-callout-image">
+								<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-attendperyr.png" class="ny15-attendperyr" />
+							</div>
+						</li>
+						<li>
+							<div class="ny15-header"> 2014 Audience Breakdown </div>
+							<div class="ny15-callout-image">
+								<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-breakdown.png" class="ny15-attendperyr" />
+							</div>
+						</li>
+						<li>
+							<div class="ny15-header"> 2015 Attendee Map </div>
+							<div class="ny15-attendee-map-link">
+								<a href="/usa/2015/attendees"><img src="https://s3-us-west-2.amazonaws.com/lendit/photos/lendit-sf14-attendees-map.png" /></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
 
 
-	</main>
+			<div class="row">
+				<div class="large-24 columns">
+					<div class="ny15-header"> 2014 Photos </div>
+					<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+						<li class="visible">
+							<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC01295-th.JPG" />
+						</li>
+						<li>
+							<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC01344-th.JPG" />
+						</li>
+						<li>
+							<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC02127-th.JPG" />
+						</li>
+						<li>
+							<img src="https://s3-us-west-2.amazonaws.com/lendit/photos/ny15-DSC01708-th.JPG" />
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
 </div>

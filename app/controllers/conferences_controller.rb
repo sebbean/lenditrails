@@ -5,6 +5,8 @@ class ConferencesController < ApplicationController
   end
 
   def usa15
+    @usa15_speakers = Speaker.where(conference: 'LendIt USA 2015')
+    @featured = @usa15_speakers.where(featured: true)
   end
 
   def go_to_usa15

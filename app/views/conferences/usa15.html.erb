@@ -95,27 +95,7 @@
 
 
 			<!--  FEATURED SPEAKERS BEGIN  -->
-			<div class="row">
-				<div class="ny15-header">
-					<b>Featured speakers</b>
-					<a href="/usa/2015/speakers"> View All Speakers <i class="fa fa-arrow-circle-right"></i></a>
-				</div>
-
-				<ul class="small-block-grid-2 medium-block-grid-6 large-block-grid-6 eu14-keynotes " style="margin-top:1em;">
-					<% @featured.each do |speaker| %>
-					<li>
-						<div class="item">
-							<%= image_tag speaker.img_url, class: "", alt: speaker.first_name+" "+speaker.last_name %>
-							<div class="info">
-								<div class="name"><%= speaker.first_name %> <%= speaker.last_name %></div>
-								<div class="title"><%= speaker.title %></div>
-								<div class="company"><%= speaker.company_name %></div>
-							</div>
-						</div>
-					</li>
-					<% end %>
-				</ul>
-			</div>
+			<%#= render "usa15_featured_speakers" %>
 			<!--  FEATURED SPEAKERS END  -->
 
 			<!-- SNAPSHOT AGENDA BEGINS -->

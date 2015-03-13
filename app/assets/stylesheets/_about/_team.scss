@@ -7,19 +7,22 @@
 		font-family:'Open Sans', sans-serif;
 		margin-bottom:1em;
 	}
-		.lendit-team-level1 {
-			display:table;
-			margin:auto;
-			max-width:800px;
-		
+	.lendit-team-level1 {
+		@media only screen and (min-width: 40.063em) {
+		display:table;
+		margin:auto;
+		max-width:800px;
+	}
 		.headshot img {
 			-webkit-border-radius: 100%;
 			-moz-border-radius: 100%;
 			border-radius: 100%;
 		}
-
 		li {
+		@media only screen and (max-width: 40.063em) {
 			text-align:center;
+			float:none;
+		}
 			b {
 				display:block;
 				font-weight:600;
@@ -38,14 +41,12 @@
 		display:table;
 		margin:auto;
 		max-width:800px;
-		
 		.headshot img {
 			-webkit-border-radius: 100%;
 			-moz-border-radius: 100%;
 			border-radius: 100%;
 			box-shadow:0 1px 3px rgba(0, 0, 0, 0.2)  ;
 		}
-
 		li {
 			text-align:center;
 			b {

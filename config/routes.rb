@@ -25,7 +25,7 @@ LenditRails::Application.routes.draw do
   get '/test' => 'speakers#test'
 
   # LendIt China 2015
-  # get '/china' => 'conferences#china15'
+  get '/china' => 'conferences#china15'
 
   # LendIt USA 2015
   get '/nyc' => 'conferences#go_to_usa15'

@@ -4,6 +4,13 @@ class ConferencesController < ApplicationController
     redirect_to ('/?utm_source=sharecast&utm_medium=video&utm_campaign=europe-2014'), :status => 301
   end
 
+  def china15
+  end
+
+  def go_to_china15
+    redirect_to '/china', :status => 301
+  end
+
   def usa15
     @usa15_speakers = Speaker.where(conference: 'LendIt USA 2015')
     @featured = @usa15_speakers.where(featured: true)

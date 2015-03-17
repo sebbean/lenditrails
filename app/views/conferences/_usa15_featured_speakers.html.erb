@@ -1,21 +1,23 @@
-      <div class="row">
-        <div class="ny15-header">
-          <b>Featured speakers</b>
-          <a href="/usa/2015/speakers"> View All Speakers <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
+      <div class="row featured-speakers">
+				<div class="columns">
+					<div class="ny15-header ny15-header-featured-speakers">
+						<b>Featured speakers</b>
+						<a href="/usa/2015/speakers"> View All <span>Speakers</span> <i class="fa fa-arrow-circle-right"></i></a>
+					</div>
 
-        <ul class="small-block-grid-2 medium-block-grid-6 large-block-grid-6 eu14-keynotes " style="margin-top:1em;">
-          <% @featured.each do |speaker| %>
-          <li>
-            <div class="item">
-              <%= image_tag speaker.img_url, class: "", alt: speaker.first_name+" "+speaker.last_name %>
-              <div class="info">
-                <div class="name"><%= speaker.first_name %> <%= speaker.last_name %></div>
-                <div class="title"><%= speaker.title %></div>
-                <div class="company"><%= speaker.company_name %></div>
-              </div>
-            </div>
-          </li>
-          <% end %>
-        </ul>
+					<ul class="small-block-grid-2 medium-block-grid-5 large-block-grid-5" style="margin-top:1em;">
+						<% @featured.each do |speaker| %>
+							<li>
+								<div class="speaker-top">
+									<%= image_tag speaker.img_url, class: "speaker-image", alt: speaker.first_name+" "+speaker.last_name %>
+									<div class="speaker-top-info">
+										<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
+										<div class="speaker-title"><%= speaker.title %></div>
+										<div class="speaker-company"><%= speaker.company_name %></div>
+									</div>
+							</div>
+						</li>
+						<% end %>
+					</ul>
+				</div>
       </div>

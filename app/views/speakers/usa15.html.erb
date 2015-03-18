@@ -22,9 +22,17 @@
 						</a>
 				</div></div>
 			</section>
-			<div class="speakers-section">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="columns">
+			<div class="speakeres-section">
 				<ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4 current-speakers">
-					<% @usa15_speakers.each do |speaker| %>
+
+					<h2>Keynote & Special Speakers</h2>
+
+					<% @vip.each do |speaker| %>
 						<li>
 							<% if speaker.bio? %>
 								<a class="current-speaker cboxElement" href="#<%= speaker.first_name %><%= speaker.last_name %>">
@@ -32,7 +40,7 @@
 										<div class="speaker-top">
 											<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
 											<div class="speaker-top-info">
-												<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
+												<div class="speaker-name"><%= speaker.first_name %> <%= speaker.middle_name %> <%= speaker.last_name %></div>
 												<div class="speaker-title"><%= speaker.title %></div>
 												<div class="speaker-company"><%= speaker.company_name %></div>
 											</div>
@@ -44,7 +52,65 @@
 										<div class="speaker-colorbox-title">LendIt USA 2015</div>
 										<div class="speaker-top-info">
 											<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
-											<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
+											<div class="speaker-name"><%= speaker.first_name %> <%= speaker.middle_name %> <%= speaker.last_name %></div>
+											<div class="speaker-title"><%= speaker.title %></div>
+											<div class="speaker-company"><%= speaker.company_name %></div>
+										</div>
+										<div class="speaker-bio-text"><div class="speaker-bio-text-inner"><%= raw speaker.bio %></div></div>
+										<div class="speaker-bio-mask"></div>
+									</div>
+								</div>
+
+							<% else %>
+								<span>
+									<div class="speaker">
+										<div class="speaker-top">
+											<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+											<div class="speaker-top-info">
+												<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
+												<div class="speaker-title"><%= speaker.title %></div>
+												<div class="speaker-company"><%= speaker.company_name %></div>
+											</div>
+										</div>
+									</div>
+								</span>
+							<% end %>
+						</li>
+					<% end %>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div class="columns">
+			<div class="speakers-section">
+				<ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4 current-speakers">
+				<!-- <ul class="block-grid-small-2 block-grid-medium-4 block-grid-large-5"> -->
+					<% @speakers.each do |speaker| %>
+						<li>
+							<% if speaker.bio? %>
+								<a class="current-speaker cboxElement" href="#<%= speaker.first_name %><%= speaker.last_name %>">
+									<div class="speaker">
+										<div class="speaker-top">
+											<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+											<div class="speaker-top-info">
+												<div class="speaker-name"><%= speaker.first_name %> <%= speaker.middle_name %> <%= speaker.last_name %></div>
+												<div class="speaker-title"><%= speaker.title %></div>
+												<div class="speaker-company"><%= speaker.company_name %></div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<div class="speaker-bio" style="display:none;">
+									<div id="<%= speaker.first_name %><%= speaker.last_name %>" class="speaker-container">
+										<div class="speaker-colorbox-title">LendIt USA 2015</div>
+										<div class="speaker-top-info">
+											<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+											<div class="speaker-name"><%= speaker.first_name %> <%= speaker.middle_name %> <%= speaker.last_name %></div>
 											<div class="speaker-title"><%= speaker.title %></div>
 											<div class="speaker-company"><%= speaker.company_name %></div>
 										</div>

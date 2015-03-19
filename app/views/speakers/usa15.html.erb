@@ -27,10 +27,11 @@
 
 	<div class="row">
 		<div class="columns">
-			<div class="speakeres-section">
+			<div class="speakers-section">
 				<ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4 current-speakers">
-
-					<h2>Keynote & Special Speakers</h2>
+					<div>
+						<h3>Featured Speakers</h3>
+					</div>
 
 					<% @vip.each do |speaker| %>
 						<li>
@@ -83,12 +84,13 @@
 		</div>
 	</div>
 
-	<hr>
-
 	<div class="row">
 		<div class="columns">
 			<div class="speakers-section">
 				<ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4 current-speakers">
+					<div>
+						<h3>Speakers</h3>
+					</div>
 				<!-- <ul class="block-grid-small-2 block-grid-medium-4 block-grid-large-5"> -->
 					<% @speakers.each do |speaker| %>
 						<li>

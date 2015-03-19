@@ -4,6 +4,19 @@
 <% body_class "usa15-speakers" %>
 <%= render "/welcome/callout" %>
 
+<style>
+.usa15-speaker-header {
+	color: #9cc83d;
+	border-bottom: 2px solid #9cc83d;
+	font-weight: 700;
+	padding-bottom: .25em;
+	margin-bottom: 1em;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+}
+</style>
+
 <div class="general-background" >
 	<div class="row">
 		<div class="columns">
@@ -16,7 +29,6 @@
 						<a href="/speakers/sign-up">
 							<i class="fa fa-arrow-circle-right"></i>
 							<b>
-
 								Sign Up To Be A Speaker for LendIt 2015
 							</b>
 						</a>
@@ -29,8 +41,8 @@
 		<div class="columns">
 			<div class="speakers-section">
 				<ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4 current-speakers">
-					<div>
-						<h3>Featured Speakers</h3>
+					<div class="usa15-speaker-header">
+						Featured Speakers
 					</div>
 
 					<% @vip.each do |speaker| %>
@@ -88,8 +100,8 @@
 		<div class="columns">
 			<div class="speakers-section">
 				<ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4 current-speakers">
-					<div>
-						<h3>Speakers</h3>
+					<div class="usa15-speaker-header">
+						Speakers
 					</div>
 				<!-- <ul class="block-grid-small-2 block-grid-medium-4 block-grid-large-5"> -->
 					<% @speakers.each do |speaker| %>

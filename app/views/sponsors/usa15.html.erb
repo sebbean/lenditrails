@@ -17,7 +17,7 @@
 				<div class="sponsors-section-head">
 					Title Sponsor
 				</div>
-				<ul class="small-block-grid-2 large-block-grid-3">
+				<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3">
 					<% @title.each do |sponsor| %>
 						<% if !sponsor.description.empty? %>
 						<li>
@@ -50,7 +50,7 @@
 				<div class="sponsors-section-head">
 					Platinum Sponsors
 				</div>
-				<ul class="small-block-grid-2 large-block-grid-3">
+				<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3">
 					<% @platinum.each do |sponsor| %>
 
 						<% if !sponsor.description.empty? %>
@@ -82,7 +82,7 @@
 				<div class="sponsors-section-head">
 					Gold Sponsors
 				</div>
-				<ul class="small-block-grid-2 large-block-grid-3">
+				<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3">
 					<% @gold.each do |sponsor| %>
 
 						<% if !sponsor.description.empty? %>
@@ -114,7 +114,7 @@
 				<div class="sponsors-section-head">
 					Silver Sponsors
 				</div>
-				<ul class="small-block-grid-2 large-block-grid-3">
+				<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3">
 					<% @silver.each do |sponsor| %>
 
 						<% if !sponsor.description.empty? %>
@@ -146,7 +146,7 @@
 				<div class="sponsors-section-head">
 					Bronze Sponsors
 				</div>
-				<ul class="small-block-grid-2 large-block-grid-3">
+				<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3">
 					<% @bronze.each do |sponsor| %>
 
 						<% if !sponsor.description.empty? %>
@@ -178,7 +178,7 @@
 				<div class="sponsors-section-head">
 					Associate Sponsors
 				</div>
-				<ul class="small-block-grid-2 large-block-grid-3">
+				<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3">
 					<% @associates.each do |sponsor| %>
 
 						<% if !sponsor.description.empty? %>
@@ -210,7 +210,7 @@
 				<div class="sponsors-section-head">
 					Exhibitors
 				</div>
-				<ul class="small-block-grid-2 large-block-grid-3">
+				<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3">
 					<% @exhibitors.each do |company| %>
 						<% if !company.description.empty? %>
 							<li>
@@ -239,7 +239,7 @@
 				<div class="sponsors-section-head">
 					Start-Up Zone
 				</div>
-				<ul class="small-block-grid-2 large-block-grid-3">
+				<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3">
 					<% @startups.each do |company| %>
 						<% if !company.description.empty? %>
 							<li data-reveal-id="sponsor-modal-<%= company.id %>">
@@ -269,7 +269,7 @@
 				<div class="sponsors-section-head">
 					Strategic Partners
 				</div>
-				<ul class="small-block-grid-2 large-block-grid-3">
+				<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3">
 					<% @partners.each do |company| %>
 						<% if company.description? %>
 							<li data-reveal-id="sponsor-modal-<%= company.id %>">

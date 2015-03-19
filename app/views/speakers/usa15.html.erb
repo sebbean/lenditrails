@@ -28,16 +28,15 @@
 	<div class="row">
 		<div class="columns">
 			<div class="speakers-section">
+				<h3>Featured Speakers</h3>
 				<ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4 current-speakers">
-					<div>
-						<h3>Featured Speakers</h3>
-					</div>
+					
 
 					<% @vip.each do |speaker| %>
 						<li>
 							<% if speaker.bio? %>
 								<a class="current-speaker cboxElement" href="#<%= speaker.first_name %><%= speaker.last_name %>">
-									<div class="speaker">
+									<div class="speaker speaker-featured">
 										<div class="speaker-top">
 											<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
 											<div class="speaker-top-info">
@@ -87,10 +86,9 @@
 	<div class="row">
 		<div class="columns">
 			<div class="speakers-section">
-				<ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4 current-speakers">
-					<div>
-						<h3>Speakers</h3>
-					</div>
+				<h3>Speakers</h3>
+				<ul class="small-block-grid-2 medium-block-grid-5 large-block-grid-5 current-speakers">
+					
 				<!-- <ul class="block-grid-small-2 block-grid-medium-4 block-grid-large-5"> -->
 					<% @speakers.each do |speaker| %>
 						<li>

@@ -41,7 +41,7 @@ footer {
 			width: auto;
 		}
 	}
-	h2 {
+	.footer-header {
 		margin-top: 0;
 		font-size: 16px;
 		font-family: 'Open Sans', sans-serif;
@@ -49,6 +49,7 @@ footer {
 		margin-bottom: 10px;
 	}
 	.bottom-link-area {
+		font-family:'Open Sans', sans-serif;
 		text-align:right;
 		@include clearfix;
 		@media (max-width: 550px) {
@@ -64,6 +65,7 @@ footer {
 	}
 	// -------------------------------------
 	// social
+	
 	.social {
 		width: 100%;
 		display: table;
@@ -173,7 +175,7 @@ get updates form! */
 				width:70px;
 				.button {
 					border: 1px solid #89be2e;
-					font-family: 'Verlag A', 'Verlag B', verlag;
+					font-family:'Open Sans', sans-serif;
 					color: #89be2e;
 					background: #fff;
 					padding: 4px 10px;

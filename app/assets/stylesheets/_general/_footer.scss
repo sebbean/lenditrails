@@ -2,8 +2,9 @@ footer {
 	margin: 0;
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
-	@media (max-width: 960px) {
-		border-bottom: none;
+	@media (max-width: 1200px) {
+		border-left: none;
+		border-right: none;
 	}
 	.footer-inside {
 		background: #fafafa;
@@ -47,7 +48,7 @@ footer {
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 600;
 		margin-bottom: 10px;
-		@media (max-width: 550px) {
+		@media (max-width: 960px) {
 			span {
 				display:none;
 			}

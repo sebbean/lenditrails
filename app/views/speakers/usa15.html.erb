@@ -32,7 +32,7 @@
 					<% @vip.each do |speaker| %>
 						<li>
 							<% if speaker.bio? %>
-								<a class="current-speaker cboxElement" href="#<%= speaker.first_name %><%= speaker.last_name %>">
+								<a class="current-speaker cboxElement" href="#<%= raw speaker.first_name %><%= raw speaker.last_name %><%= speaker.id %>">
 									<div class="speaker speaker-featured">
 										<div class="speaker-top">
 											<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
@@ -45,7 +45,7 @@
 									</div>
 								</a>
 								<div class="speaker-bio" style="display:none;">
-									<div id="<%= speaker.first_name %><%= speaker.last_name %>" class="speaker-container">
+									<div id="<%= raw speaker.first_name %><%= raw speaker.last_name %><%= speaker.id %>" class="speaker-container">
 										<div class="speaker-colorbox-title">LendIt USA 2015</div>
 										<div class="speaker-top-info">
 											<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
@@ -88,10 +88,10 @@
 					<% @speakers.each do |speaker| %>
 						<li>
 							<% if speaker.bio? %>
-								<a class="current-speaker cboxElement" href="#<%= speaker.first_name %><%= speaker.last_name %>">
+								<a class="current-speaker cboxElement" href="#<%= raw speaker.first_name %><%= raw speaker.last_name %><%= speaker.id %>">
 									<div class="speaker">
 										<div class="speaker-top">
-											<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+											<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= raw speaker.first_name %> <%= raw speaker.last_name %>">
 											<div class="speaker-top-info">
 												<div class="speaker-name"><%= raw speaker.first_name %> <%= raw speaker.middle_name %> <%= raw speaker.last_name %></div>
 												<div class="speaker-title"><%= raw speaker.title %></div>
@@ -101,7 +101,7 @@
 									</div>
 								</a>
 								<div class="speaker-bio" style="display:none;">
-									<div id="<%= speaker.first_name %><%= speaker.last_name %>" class="speaker-container">
+									<div id="<%= raw speaker.first_name %><%= raw speaker.last_name %><%= speaker.id %>" class="speaker-container">
 										<div class="speaker-colorbox-title">LendIt USA 2015</div>
 										<div class="speaker-top-info">
 											<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
@@ -118,7 +118,7 @@
 								<span>
 									<div class="speaker">
 										<div class="speaker-top">
-											<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+											<img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= raw speaker.first_name %> <%= raw speaker.last_name %>">
 											<div class="speaker-top-info">
 												<div class="speaker-name"><%= raw speaker.first_name %> <%= raw speaker.last_name %></div>
 												<div class="speaker-title"><%= raw speaker.title %></div>

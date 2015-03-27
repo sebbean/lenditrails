@@ -195,7 +195,9 @@
 						<div id="sponsor-modal-<%= sponsor.id %>" class="reveal-modal" data-reveal>
 							<div class="sponsor-category"><span>LendIt USA 2015</span> <b><%= sponsor.sponsor_level %> Sponsor</b></div>
 							<p class="sponsor-modal-thumb"><img src="<%= sponsor.logo_img %>" /></p>
+							<% if sponsor.url? %>
 							<p class="sponsor-modal-visit"><a href="<%= raw sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %></a></p>
+							<% end %>
 							<p class="sponsor-modal-description"><%= raw sponsor.description %></p>
 							<a class="close-reveal-modal">&#215;</a>
 						</div>

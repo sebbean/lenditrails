@@ -8,14 +8,10 @@
 		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 	}
 }
-
 .ag-nav:not(.fixed) .ag-date dd[data-magellan-arrival="apr13"] a {
-
-	 color:#fff;
-	 background:#999;
+	color:#fff;
+	background:#999;
 }
-
-
 .ag-area {
 	display: table;
 	width: 100%;
@@ -23,186 +19,153 @@
 	position:relative;
 	margin: auto;
 }
-
-
 .ag-nav .ag-track-inner {
 	display:none;
 }
 .ag-nav.fixed .ag-track-inner {
 	display:block;
 }
-
 //
-
 .ag-date {
-  display: table-cell;
-  vertical-align: top;
+	display: table-cell;
+	vertical-align: top;
 }
-
 .ag-date .ag-group {
-  display: table;
-  width: 100%;
+	display: table;
+	width: 100%;
 }
-
 .ag-date dd {
-  display: table-cell;
-  margin: 0;
-  float: none;
-  vertical-align: top;
+	display: table-cell;
+	margin: 0;
+	float: none;
+	vertical-align: top;
 }
-
 .ag-nav .ag-date a {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  white-space: nowrap;
-  background: #f0f0f0;
-  font-size: 18px;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
-  text-align: center;
-  display: block;
-  padding: 8px 20px 12px 20px;
-  margin: 8px 8px 8px 0;
-  border-radius: 4px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	white-space: nowrap;
+	background: #f0f0f0;
+	font-size: 18px;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	display: block;
+	padding: 8px 20px 12px 20px;
+	margin: 8px 8px 8px 0;
+	border-radius: 4px;
 }
-
 .ag-nav .ag-date a:hover {
-  color: #000;
-  background: #e5e5e5;
+	color: #000;
+	background: #e5e5e5;
 }
-
 .ag-nav.fixed {
-  padding-left: 10px;
+	padding-left: 10px;
 }
-
-
-
-
 .ag-date .ag-active a,
 .ag-date .ag-active a:hover,
 .ag-date .ag-active a:active,
 .ag-date .ag-active a:focus {
-  color: #fff;
-  position: relative;
-  background: #999;
+	color: #fff;
+	position: relative;
+	background: #999;
 }
-
-
-
 @media screen and (max-width: 600px) {
-  .ag-date .ag-group {
-    line-height: 1em;
-  }
-
-  .ag-date .ag-group dd a {
-    padding-left: 12px;
-    padding-right: 12px;
-    line-height: 1em;
-  }
-
-  .ag-date .ag-group dd a .ag-date-month {
-    font-size: 14px;
-    display: block;
-    text-align: center;
-    font-weight: 600;
-    padding-bottom: 4px;
-  }
-
-  .ag-date .ag-group dd a .ag-date-number {
-    font-size: 24px;
-    display: block;
-    text-align: center;
-    font-weight: 600;
-  }
+	.ag-date .ag-group {
+		line-height: 1em;
+	}
+	.ag-date .ag-group dd a {
+		padding-left: 12px;
+		padding-right: 12px;
+		line-height: 1em;
+	}
+	.ag-date .ag-group dd a .ag-date-month {
+		font-size: 14px;
+		display: block;
+		text-align: center;
+		font-weight: 600;
+		padding-bottom: 4px;
+	}
+	.ag-date .ag-group dd a .ag-date-number {
+		font-size: 24px;
+		display: block;
+		text-align: center;
+		font-weight: 600;
+	}
 }
 .select-track {
-  display: none;
+	display: none;
 }
-
 .select-track span {
-  font-weight: 600;
+	font-weight: 600;
 }
-
 @media screen and (max-width: 600) {
-  .select-track span {
-    font-size: 14px;
-  }
+	.select-track span {
+		font-size: 14px;
+	}
 }
 .ag-track {
-  width: 50%;
-  display: table-cell;
-  vertical-align: top;
-  position: relative;
-
+	width: 50%;
+	display: table-cell;
+	vertical-align: top;
+	position: relative;
 }
-
-
 /*
 .ag-track .ag-group {
-  display: none;
+display: none;
 }
-*/
-
-
+ */
 .seltra {
-  display: table;
-  margin: auto;
+	display: table;
+	margin: auto;
 }
-
 .seltra-inner {
-  padding: 10px 10px 10px 10px;
-  margin: 8px 0 8px 0;
-  border-radius: 4px;
+	padding: 10px 10px 10px 10px;
+	margin: 8px 0 8px 0;
+	border-radius: 4px;
 	cursor:pointer;
 	cursor:hand;
 	&:hover {
 		background:#eee;
 	}
-
 }
 .ag-track.open .seltra-inner {
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
-
 }
-
 @media screen and (max-width: 600px) {
-  .seltra-inner {
-    padding: 5px 10px 5px 10px;
-  }
+	.seltra-inner {
+		padding: 5px 10px 5px 10px;
+	}
 }
 .seltra .fa-location-arrow {
-  display: inline;
+	display: inline;
 }
-
 @media screen and (max-width: 600px) {
-  .seltra .fa-location-arrow {
-    font-size: 24px;
-    display: block;
-    text-align: center;
-  }
+	.seltra .fa-location-arrow {
+		font-size: 24px;
+		display: block;
+		text-align: center;
+	}
 }
 .seltra-text {
-  display: inline;
+	display: inline;
 }
-
 @media screen and (max-width: 600px) {
-  .seltra-text {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-  }
+	.seltra-text {
+		text-align: center;
+		font-size: 14px;
+		font-weight: 600;
+	}
 }
 @media screen and (max-width: 400px) {
-  .seltra-sel {
-    display: none;
-  }
+	.seltra-sel {
+		display: none;
+	}
 }
 .ag-nav .ag-track .ag-group {
 	position:relative;
 	-webkit-border-radius: 2px;
--moz-border-radius: 2px;
-border-radius: 2px;
-
+	-moz-border-radius: 2px;
+	border-radius: 2px;
 	display: block;
 	position: absolute;
 	box-shadow: 0 7px 12px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5)  ;
@@ -216,7 +179,6 @@ border-radius: 2px;
 		right: 50%;
 		margin-right: -80px;
 	}
-
 	&:before {
 		display:block;
 		content:'\25B2';
@@ -232,56 +194,44 @@ border-radius: 2px;
 		margin-right:-12px;
 		color:#fff;
 		text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
-
-
-
 	}
 }
 .ag-track-inner {
 	display:table;
 	margin:auto;
 }
-
-
 /*
 .ag-track-inner:hover .ag-group
 {
-	display: block;
-	position: absolute;
-	box-shadow: 0 7px 12px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5)  ;
-	z-index: 100;
-	background: #fff;
-	width:200px;
-	right:50%;
-	margin-right:-100px;
-	@media screen and (max-width:600px) {
-		width: 160px;
-		right: 50%;
-		margin-right: -80px;
-	}
+display: block;
+position: absolute;
+box-shadow: 0 7px 12px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5)  ;
+z-index: 100;
+background: #fff;
+width:200px;
+right:50%;
+margin-right:-100px;
+@media screen and (max-width:600px) {
+width: 160px;
+right: 50%;
+margin-right: -80px;
 }
-*/
-
-
+}
+ */
 .ag-track .seltra-inner {
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0.7) inset;
 }
 .ag-track-inner:hover .seltra-inner {
-
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0.9) inset;
 	background:#fafafa;
 }
-
 .ag-track .ag-group span {
-  display: block;
+	display: block;
 	border-bottom:1px solid #ddd;
-
-
 }
 .ag-track .ag-group span:last-child {
 	border-bottom:none;
 }
-
 .ag-track .ag-group span b {
 	white-space:nowrap;
 	display: block;
@@ -291,7 +241,6 @@ border-radius: 2px;
 	line-height:1.3em;
 	cursor: pointer;
 	cursor: hand;
-
 	&:before {
 		content:'\f10c';
 		font-family: FontAwesome;
@@ -300,14 +249,12 @@ border-radius: 2px;
 		padding-right:4px;
 		font-size:18px;
 		float:left;
-
 	}
 	&:hover {
 		background:#eee;
 	}
 }
 .ag-track .ag-group span b:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
-
 .ag-dd.ag-track-main b{
 	color: $main-color;
 }
@@ -324,12 +271,8 @@ border-radius: 2px;
 	color: $demo-color;
 }
 .ag-dd.ag-track-qanda b {
-		color: $qanda-color;
+	color: $qanda-color;
 }
-
-
-
-
 .ag-show-main .ag-dd.ag-track-main b:before,
 .ag-show-astor .ag-dd.ag-track-astor b:before,
 .ag-show-real-estate .ag-dd.ag-track-real-estate b:before,
@@ -338,16 +281,13 @@ border-radius: 2px;
 .ag-show-qanda .ag-dd.ag-track-qanda b:before {
 	content: '\f058';
 }
-
 .ag-track.open .ag-group {
 	display:block;
 	position:absolute;
 }
-
 .ag-track.closed .ag-group {
 	display:none !important;
 }
-
 .ag-nav dd[data-magellan-arrival="apr14"] a:after {
 	position:absolute;
 	content:'\2193 Tracks start April 14';
@@ -362,69 +302,52 @@ border-radius: 2px;
 	z-index:49;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
-
-
 	@media screen and (max-width:767px) {
 		left:auto;
 		right:0;
 		margin-right:9%;
 		width:157px;
-
-
 	}
 	@media screen and (max-width:700px) {
 		margin-right:6%;
-
 	}
 	@media screen and (max-width:600px) {
-	width:50%;
-	right:50%;
-	left:50%;
-	top:10px;
-	padding:20px 20px 20px 2px;
-
-	content:'\2193 View Tracks';
-
+		width:50%;
+		right:50%;
+		left:50%;
+		top:10px;
+		padding:20px 20px 20px 2px;
+		content:'\2193 View Tracks';
 	}
 	@media screen and (max-width:450px) {
-	content:'\2193 Tracks';
-			left:auto;
+		content:'\2193 Tracks';
+		left:auto;
 		right:0;
 		margin-right:0;
 		width:30%;
 		padding-right:10px;
-
 	}
-
-
-
-
 }
 .ag-nav.fixed dd[data-magellan-arrival="apr14"] a:after {
 	display:none ;
 }
-
 .agenda-btn a {
-  color: white;
-  text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 .agenda-btn a:hover {
-
 }
-
 .usa15-view-extended-agenda {
-  color:#999;
-  margin-top: 0px;
-  font-family: 'Verlag A', 'Verlag B', verlag;
-  font-size:18px;
-  font-weight:600;
-  @media (min-width: 641px) {
-    float:right;
-  }
+	color:#999;
+	margin-top: 0px;
+	font-family: 'Verlag A', 'Verlag B', verlag;
+	font-size:18px;
+	font-weight:600;
+	@media (min-width: 641px) {
+		float:right;
+	}
 }
-
 // IF April 13 ISN'T SHOWING
-
 .ag-nav dd[data-magellan-arrival="apr14"] a:after {
 	display:none;
 }

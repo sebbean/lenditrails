@@ -1,12 +1,6 @@
-
-
-
-
 // Agenda Container
-
 // general
 $primary-color: #8ac10b;
-
 $main-color:#8ac10b; 
 $track2-color:#F39B20; 
 $realestate-color:#7DAFC0; 
@@ -18,12 +12,9 @@ $ag13-under-color: #7FB2CC;
 $ag13-p2p-color:#7FB299;
 $ag13-online-color: #D19497;
 $ag13-build-color: #C6A2C3;
-
-
 .spacer-above-nav {
 	height:10px;
 }
-
 .usa15-agenda .important-callout {
 	display:none;
 }
@@ -46,7 +37,6 @@ $ag13-build-color: #C6A2C3;
 	font-family: 'Open Sans', sans-serif;
 	line-height:1em;
 	padding-top:20px;
-
 	font-size: 32px;
 	font-weight: 600;
 	-webkit-border-radius: 2px;
@@ -56,11 +46,7 @@ $ag13-build-color: #C6A2C3;
 		text-align:center;
 		padding-left:0;
 	}
-
 }
-
-
-
 .agenda-container {
 	margin: 0 auto 4em auto;
 	h2 {
@@ -73,11 +59,9 @@ $ag13-build-color: #C6A2C3;
 				color:#fff;
 				font-weight:600;
 				border-left:1px solid lighten($primary-color, 50%);
-
 			}
 			td {
 				border-bottom: 2px solid #f5f5f5;
-
 			}
 			.preconf-workshop-time {
 				white-space:nowrap;
@@ -89,18 +73,12 @@ $ag13-build-color: #C6A2C3;
 		font-size:20px;
 		font-weight:600;
 		margin:1.5em 0 1.5em 0;
-
 		@media screen and (max-width:700px) {
 			text-align:center;
 			margin-left:0;
 		}
-
-
 	}
 }
-
-
-
 .agenda-item {
 	display: table;
 	width:100%;
@@ -169,7 +147,6 @@ $ag13-build-color: #C6A2C3;
 				font-weight: 600;
 				text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 				position: relative;
-
 			}
 			a {
 				line-height: 1.3em;
@@ -231,11 +208,9 @@ $ag13-build-color: #C6A2C3;
 		}
 	}
 }
-
 .agenda-item {
 	display:none;
 }
-
 .agenda-main {
 	.ag-show-main & {
 		display:table;
@@ -287,7 +262,6 @@ $ag13-build-color: #C6A2C3;
 		color:$realestate-color;
 	}
 }
-
 .agenda-china { 
 	.ag-show-china & {
 		display:table;
@@ -339,25 +313,17 @@ $ag13-build-color: #C6A2C3;
 		color:$qanda-color;
 	}
 }
-
-
 // other 
 .big-spacer {
 	height: 400px;
 }
-
-
 // the pre-conference styles
-
 .preconf-workshops {
 	display:none;
 }
 .ag13-sort-by-time {
 	display:none;
 }
-
-
-
 .ag13-sort-by-topic {
 	display:none;
 }
@@ -374,15 +340,7 @@ $ag13-build-color: #C6A2C3;
 	.preconf-workshops {
 		display:block;
 	}
-
 }
-
-
-
-
-
-
-
 .ag13-section {
 	padding-bottom:1em;
 	padding-left:10px;
@@ -457,7 +415,6 @@ $ag13-build-color: #C6A2C3;
 .ag13-section li:last-of-type {
 	margin-bottom:0;
 }
-
 .ag13-toggle {
 	display:table;
 	margin:0 auto 1em auto;
@@ -466,7 +423,6 @@ $ag13-build-color: #C6A2C3;
 	@media screen and (min-width:700px) {
 		display:none;
 	}
-
 }
 .ag13-toggle span {
 	font-size:14px;
@@ -491,12 +447,10 @@ $ag13-build-color: #C6A2C3;
 	border-radius: 2px;
 	cursor:pointer;
 	cursor:hand;
-
 }
 .ag13-toggle span b:hover {
 	background:#f5f5f5;
 }
-
 .ag13-toggle .ag13-active {
 	border-top:2px solid #e5e5e5;
 	background:#fff;
@@ -513,38 +467,38 @@ $ag13-build-color: #C6A2C3;
 .ag13-toggle .ag13-active b:hover {
 	background:#fff;
 }
-
 .ag13-toggle span + span {
 	border-left:1px solid #e5e5e5;
-
 }
-
-
-
 .ag13-unified {
 	.ag13-sponsor-row {
-		
 	}
-
 	.ag13-sponsor-item {
 		font-weight:600;
+		margin-top:.25em;
 		margin-bottom:.25em;
-		display:inline-block;
-		padding-left:6px;
-		span {
-			font-weight:200;
-		}
 
+		display:block;
+		padding-left:6px;
+		line-height:1.2em;
+		span {
+			display:inline-block;
+
+			padding-top:2px;
+			padding-bottom:2px;
+		}
+		span:nth-child(2) {
+			
+			font-weight:200;
+
+		}
 		font-size:14px;
 	}
-
 	.ag13-sponsor-title {
 		padding:4px 8px;
 		font-size:14px;
 		font-weight:300;
-		
 		display:inline-block;
-		
 	}
 	.ag13-sponsor-highlight {
 		height:20px;
@@ -553,8 +507,6 @@ $ag13-build-color: #C6A2C3;
 		font-size:13px;
 		font-weight:300;
 	}
-	
-	
 	.ag13-header i {
 		color:#CDCB80; 
 		font-weight:300;
@@ -563,25 +515,20 @@ $ag13-build-color: #C6A2C3;
 	.ag13-header {
 		&:before {
 			content: '\f017';
-			  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-	font-family:'FontAwesome';
-	padding-right:6px;
-
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			font-family:'FontAwesome';
+			padding-right:6px;
 		}
 	}
 	.ag13-end {
 		margin:1em auto;
 		max-width:800px;
-		
-
 	}
 	.ag13-sponsors {
 		margin:1em auto;
 		max-width:800px;
 	}
-	
-	
 	.ag13-row {
 		max-width:800px;
 		margin:1em auto;
@@ -598,10 +545,8 @@ $ag13-build-color: #C6A2C3;
 		padding-right:10px;
 		padding-bottom:5px;
 		padding-top:5px;
-
 		.ag13-subhead {
 			opacity:.8;
-
 			color:#fff;
 		}
 		.ag13-content {
@@ -609,54 +554,38 @@ $ag13-build-color: #C6A2C3;
 			font-size:16px;
 			line-height:1.3em;
 		}
-
 	}
 	.ag13-party {
 		background:#CA2F38;
 	}
-	
-.ag13-row-lendingclub {
-	background:#CA2F38;
-	.ag13-subhead {
-		opacity:1;
+	.ag13-row-lendingclub {
+		background:#CA2F38;
+		.ag13-subhead {
+			opacity:1;
+		}
 	}
-}
 	.ag13-generic {
 		background:#999;
 	}
-
 	.ag13-sponsor-highlight {
 		text-shadow:1px 1px 1px rgba(0, 0, 0, 0.4) ;
-		
 	}
 	.ag13-sponsor-item-under {
 		color:darken($ag13-under-color,10%);
-			border-left:20px solid darken($ag13-under-color,10%);
-		
+		border-left:20px solid darken($ag13-under-color,10%);
 	}
 	.ag13-sponsor-item-p2p {
 		color:darken($ag13-p2p-color,10%);
-			border-left: 20px solid darken($ag13-p2p-color,10%);
-
-		
+		border-left: 20px solid darken($ag13-p2p-color,10%);
 	}
 	.ag13-sponsor-item-online {
 		color:darken($ag13-online-color,10%);
-			border-left:20px solid darken($ag13-online-color,10%);
-			color:#fff;
-		
+		border-left:20px solid darken($ag13-online-color,10%);
 	}
-
 	.ag13-sponsor-item-build {
 		color:darken($ag13-build-color,10%);
-
-			border-left:20px solid darken($ag13-build-color,10%);
-			color:#fff;
+		border-left:20px solid darken($ag13-build-color,10%);
 	}
-
-
-
-
 	.ag13-under {
 		background: darken($ag13-under-color, 10%);
 	}
@@ -669,7 +598,6 @@ $ag13-build-color: #C6A2C3;
 	.ag13-build {
 		background: darken($ag13-build-color, 10%);
 	}
-
 	.ag13-section {
 		border:none;
 		padding-left:0;
@@ -681,5 +609,3 @@ $ag13-build-color: #C6A2C3;
 		background:#fafafa;
 	}
 }
-
-

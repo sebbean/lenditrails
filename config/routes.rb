@@ -25,6 +25,7 @@ LenditRails::Application.routes.draw do
   get '/agenda' => 'agendas#usa15'
   get '/team' => 'welcome#team'
   get '/networking' => 'welcome#networking'
+  # get '/test' => 'agendas#test-with-china'
 
   # LendIt China 2015
   get '/china' => 'conferences#china15'

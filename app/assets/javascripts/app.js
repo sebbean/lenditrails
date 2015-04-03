@@ -44,7 +44,7 @@ $(document).ready(function() {
 ////////// BEGIN USA15 AGENDA JS //////////
 ///////////////////////////////////////////
 
-  var track_count = 4;
+  var track_count = 5;
 
   // toggle snapshot agenda on the main conference page
   // toggle between april 13, april 14 and april 15 tabs

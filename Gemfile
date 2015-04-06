@@ -14,7 +14,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'canonical-rails', github: 'jumph4x/canonical-rails'
 gem "flickr-objects"
-gem 'friendly_id', '~> 5.0.0'
+gem 'friendly_id', '~> 5.1.0'
 gem 'pry-rails'
 
 group :doc do

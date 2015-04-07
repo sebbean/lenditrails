@@ -12,7 +12,8 @@ class SpeakersController < ApplicationController
     # @vip.sort_by! { |speaker| speaker['last_name'] }
 
     @speakers = @usa15_speakers.where(keynote_vip: nil)
-    @speakers.sort_by! { |speaker| speaker['last_name'] }
+    @speakers.sort_by! { |speaker| [ speaker['last_name'], speaker['first_name'] ] }
+
     @past_speakers = Speaker.where(conference: 'LendIt USA 2014')
   end
 
@@ -20,7 +21,7 @@ class SpeakersController < ApplicationController
   # GET /speakers.json
   def eu14
     @europe_speakers = Speaker.where(conference: 'LendIt Europe 2014')
-    @europe_speakers.sort_by! { |speaker| speaker['last_name'] }
+    @europe_speakers.sort_by! { |speaker| [ speaker['last_name'], speaker['first_name'] ] }
     @past_speakers = Speaker.where(conference: 'LendIt USA 2014')
   end
 

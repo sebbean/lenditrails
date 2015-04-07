@@ -625,7 +625,10 @@ $ag13-build-color: #C6A2C3;
 
 	opacity:.8;
 }
-.ag13-item a:hover {
+.ag13-item a:hover,
+.ag13-item a:focus,
+.ag13-item a:active
+{
 	text-decoration:none;
 
 }

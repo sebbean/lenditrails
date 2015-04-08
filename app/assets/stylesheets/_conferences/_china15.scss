@@ -934,22 +934,18 @@
 	.hero {
 		display: table;
 		//		background: url(hero-2015-china.jpg) top center no-repeat;
-		background: url(https://s3-us-west-2.amazonaws.com/lendit/hero-2015-china.jpg) bottom left no-repeat;
+		background: url(https://s3-us-west-2.amazonaws.com/lendit/hero-2015-china-02.jpg) bottom left no-repeat;
 		background-size: cover;
 		min-height: 340px;
 		width: 100%;
 		margin-bottom: 40px;
-		@media screen and (max-width: 600px) {
-			background: url(https://s3-us-west-2.amazonaws.com/lendit/hero-2015-china-sm.jpg) bottom right no-repeat;
-			background-size: 600px;
-		}
+		
 	}
 	.hero-inner {
 		display: table-cell;
 		vertical-align: middle;
 		padding-top: 30px;
 		padding-bottom: 30px;
-		border-bottom:1px solid #ccc;
 	}
 	.hero-content {
 		display: table;

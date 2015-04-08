@@ -1,27 +1,19 @@
-
-
 .page-video {
 	.link-back-to-videos {
 		margin-top:1em;
 		margin-bottom:1em;
 		font-size:18px;
-
 		a {
-
-		&:before {
-			content: '\f104 ';
-			font-family:FontAwesome;
-			padding-right:6px;
-			
-			
-		}	
-		&:hover,&:active,&:focus {
-			text-decoration:none;
+			&:before {
+				content: '\f104 ';
+				font-family:FontAwesome;
+				padding-right:6px;
+			}	
+			&:hover,&:active,&:focus {
+				text-decoration:none;
+			}
 		}
 	}
-
-	}
-	
 	.video-main {
 		background: white url(brillant.png) center center repeat;
 		margin-top: 20px;
@@ -34,21 +26,16 @@
 		overflow: hidden;
 		display: block;
 	}
-	
 	.video-title {
 		font-size:24px;
 		font-weight:600;
 		margin-top:1em;
-		
 	}	
 	.video-description {
 		font-size:18px;
-
 	}
 }
-
 .page-videos {
-
 	h1 {
 		margin-top:.5em;
 		margin-bottom:.5em;
@@ -65,18 +52,15 @@
 		overflow: hidden;
 		display: block;
 	}
-
 	.video-title {
 		font-size: 20px;
 		font-weight: 400;
 		margin-top:1em;
 		min-height:72px;
 	}
-
 	#wistia_13_requireEmail_first_name {
 		margin-right:auto;
 	}
-
 	.video-item {
 		display:block;
 		border:1px solid #ddd;
@@ -97,5 +81,93 @@
 			text-decoration:none;
 		}	
 	}
+}
 
+.pg-livestream {
+	.live-header {
+		padding-bottom:1em;
+	}
+	.general-background {
+		padding-bottom:3em;
+	}
+	font-family:'Open Sans', sans-serif;
+	h1 {
+		font-family:'Open Sans', sans-serif;
+	}
+
+	.live-sponsor-area {
+		display:table;
+		.live-sponsor-area-inner {
+			display:table-cell;
+			vertical-align:middle;
+			text-align:center;
+
+			padding-top:10px;
+			padding-bottom:10px;
+		}
+		.live-sponsored {
+			line-height:40px;
+			margin-bottom:-10px;
+			margin-right:10px;
+		}
+		.live-sponsored, 
+		.live-sponsor-logo {
+			display:inline-block;
+			line-height:40px;
+
+			
+			
+		}
+		img {
+			max-height:40px;
+			margin-top:-10px;
+		}
+	}
+}
+.live-iframe-area {
+	display:table;
+	margin:auto;
+}
+.live-sponsor-area {
+	margin:auto;
+	background:#eee;
+	width:970px;
+	height:120px;
+	@media screen and (max-width:970px) {
+		width:728px;
+		height:90px;
+	}
+	@media screen and (max-width:728px) {
+		width:546px;
+		height:68px;
+	}
+	@media screen and (max-width:546px) {
+		width:410px;
+		height:51px;
+	}
+	@media screen and (max-width:410px) {
+		width:308px;
+		height:38px;
+	}
+	
+}
+.live-iframe {
+	width:970px;
+	height:552px;
+	@media screen and (max-width:970px) {
+		width:728px;
+		height:414px;
+	}
+	@media screen and (max-width:728px) {
+		width:546px;
+		height:310px;
+	}
+	@media screen and (max-width:546px) {
+		width:410px;
+		height:233px;
+	}
+	@media screen and (max-width:410px) {
+		width:308px;
+		height:175px;
+	}
 }

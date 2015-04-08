@@ -14,8 +14,8 @@ LenditRails::Application.routes.draw do
   get '/videos' => 'videos#index'
   get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
   get '/privacy' => 'welcome#privacy'
-  get '/live' => 'videos#live'
-  #get '/live', to: redirect('/videos', status: 301)
+  # get '/live' => 'videos#live'
+  get '/live', to: redirect('/videos', status: 301)
   # get '/china-pavilion-live' => 'videos#china_live'
   get '/attendees' => 'attendees#go_to_usa15'
   get '/volunteers' => 'welcome#volunteers'

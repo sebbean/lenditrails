@@ -30,10 +30,10 @@ LenditRails::Application.routes.draw do
 
 
   # LendIt Europe 2015
-  # get '/europe/2015' => 'conferences#eu15'
+  get '/europe/2015' => 'conferences#eu15'
 
   # LendIt China 2015
-  # get '/china' => 'conferences#china15'
+  get '/china' => 'conferences#china15'
 
   # LendIt USA 2015
   get '/nyc' => 'conferences#go_to_usa15'

@@ -14,7 +14,7 @@ LenditRails::Application.routes.draw do
   get '/videos' => 'videos#index'
   get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
   get '/privacy' => 'welcome#privacy'
-  # get '/live' => 'videos#live'
+  get '/live' => 'videos#live'
   # get '/china-pavilion-live' => 'videos#china_live'
   get '/live', to: redirect('/videos', status: 301)
   get '/attendees' => 'attendees#go_to_usa15'
@@ -30,10 +30,10 @@ LenditRails::Application.routes.draw do
   # get '/test' => 'agendas#test-with-china'
 
   # LendIt Europe 2015
-  get '/europe/2015' => 'conferences#eu15'
+  # get '/europe/2015' => 'conferences#eu15'
 
   # LendIt China 2015
-  get '/china' => 'conferences#china15'
+  # get '/china' => 'conferences#china15'
 
   # LendIt USA 2015
   get '/nyc' => 'conferences#go_to_usa15'
@@ -86,7 +86,7 @@ LenditRails::Application.routes.draw do
   get '/presentations/Michael-Barr-LendiIt-2014.pdf' => 'welcome#barr_2014_deck'
   get '/presentations/Chales-Moldow-Foundation-Capital-LendIt-2014.pdf' => 'welcome#moldow_2014_deck'
   get '/presentations/Securitization-Panel-LendIt-2014.pdf' => 'welcome#securitization_panel_2014_deck'
-  # get '/blog', to: redirect("http://blog.lendit.co", status: 301)
+  get '/blog', to: redirect("http://blog.lendit.co", status: 301)
   get '/videos-2', to: redirect("/videos", status: 301)
 
 

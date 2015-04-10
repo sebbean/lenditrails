@@ -1,0 +1,316 @@
+.europe-2015 {
+	.row-wide {
+		max-width:1180px;
+	}
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing:-.01em;
+	.green {
+		color:#7eb834;
+		background:#f5f9ea;
+		font-weight:500;
+		text-shadow:1px 1px 1px #fff;
+	}
+	.nav-logo {
+		background: none;
+	}
+	.general-background {
+		padding-top: 0;
+		padding-bottom: 3em;
+		h1 {
+			font-family: 'Open Sans', sans-serif;
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+		h2 {
+			font-family: 'Open Sans', sans-serif;
+			margin-top: 1em;
+			margin-bottom: .5em;
+			font-weight: 600;
+			font-size: 24px;
+		}
+	}
+	.hero {
+		display: table;
+		background: url(https://s3-us-west-2.amazonaws.com/lendit/europe-2015-hero.jpg) center left no-repeat;
+		background-size: 1230px;
+		min-height: 340px;
+		width: 100%;
+		margin-bottom: 24px;
+	}
+	.hero-inner {
+		display: table-cell;
+		vertical-align: middle;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.hero-content {
+		width: 98%;
+		display: table;
+		margin: auto;
+		@media screen and (min-width: 850px) {
+			width: 85%;
+		}
+		>div {
+			@media screen and (min-width: 600px) {
+				vertical-align: middle;
+				display: table-cell;
+			}
+		}
+	}
+	.logo-image {
+		display: table;
+		margin: 0 auto;
+		padding-left:10px;
+		padding-right:10px;
+		@media screen and (max-width: 600px) {
+			margin: 0 auto 30px auto;
+		}
+		img {
+			width: 100%;
+			max-width: 340px;
+			@media screen and (min-width: 760px) {
+				margin-left: 30px;
+				margin-right: 30px;
+			}
+		}
+	}
+	.hero-button {
+		margin: auto;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.hero-button a {
+		@include clearfix;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		font-family: 'Open Sans', sans-serif;
+		border-radius: 2px;
+		margin: auto;
+		display: table;
+		width: 100%;
+		max-width: 380px;
+		min-width: 240px;
+		background: #89BE2E;
+		color: #fff;
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		@media screen and (max-width: 600px) {
+			width: 100%;
+		}
+		> div {
+			padding: 6px 20px 6px 55px;
+			&:before {
+				content: '\f18e';
+				float: left;
+				font-size: 44px;
+				margin-top: 3px;
+				margin-right: 8px;
+				line-height: 1em;
+				margin-left: -45px;
+				font-family: FontAwesome;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		}
+		span {
+			display: block;
+			font-size: 14px;
+			font-weight: 600;
+		}
+		strong {
+			display: block;
+			font-size: 18px;
+			font-weight: 600;
+		}
+		&:focus,  
+		&:active,  
+		&:hover {
+			text-decoration: none;
+			background: #6b9524;
+		}
+	}
+	.hero-button-loud a {
+		background: orange;
+		&:hover {
+			background: #e69500;
+		}
+	}
+	.conf-content {
+		-webkit-font-smoothing: antialiased;
+	}
+	.conf-hd {
+		color: #666;
+		font-size: 43px;
+		line-height: 1.1em;
+		margin-bottom: 24px;
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		font-weight: 400;
+		span {
+			display:inline-block;
+		}
+	}
+	.conf-intro {
+		color:#666;
+		p {
+			font-size:20px;
+		}
+	}
+	.section-hd {
+		color:$primary-color;
+		font-weight:600;
+		border-bottom:2px solid $primary-color;
+		font-size:24px;
+	}
+	.section-intro {
+		p {
+			font-size:20px;
+			margin-top:1em;
+			margin-bottom:1em;
+			color:#666;
+		}
+	}
+	.section-subhead {
+		color:$primary-color;
+		font-weight:600;
+		margin-top:1em;
+		margin-bottom:1em;
+		font-size:20px;
+	}
+	.hero-inner {
+	}
+	.overview-icons {
+		width:100%;
+		margin-bottom:0;
+		border: none;
+		td:first-of-type {
+			vertical-align: top;
+		}
+		td {
+			padding: 0 0 0 0;
+			font-size: 16px;
+			line-height: 1.4em;
+		}
+		td:nth-of-type(1) {
+
+			width:60px;
+		}
+		td span {
+			font-weight: 600;
+			font-size:18px;
+		}
+		tr:nth-of-type(even) {
+			background: none;
+		}
+		img {
+			max-width: 60px;
+			margin-right: 15px;
+			margin-top: 0;
+			margin-bottom:2px;
+			display: block;
+		}
+		.overview-icons-featuring td {
+			padding: 0 0 .6em 0;
+			font-weight: 600;
+		}
+		.overview-icons-featuring img {
+			margin-top: 0;
+			max-width: 110px;
+			margin-left: -28px;
+			margin-right: 0;
+		}
+		.overview-icons-featuring a,  .overview-icons-featuring a:link,  .overview-icons-featuring a:visited,  .overview-icons-featuring a:active {
+			color: #222222;
+		}
+		.overview-icons-featuring a:hover {
+			color: #89BE2D;
+			text-decoration: none;
+		}
+	}
+	.conf-intro {
+		.panel {
+			background:#f5f9ea;
+			max-width:240px;
+			img {
+				display: block;
+				border: 1px solid #a1d44b;
+				border-radius: 2px;
+				margin-bottom:.5em;
+			}
+			a {
+				line-height: 1.2em;
+				font-weight: 600;
+				display:inline-block;
+				margin-bottom:.5em;
+				&:last-child {
+					margin-bottom:0;
+				}
+			}
+		}
+	}
+	.special-spacer-0 {
+		@media #{$large-up} {
+			height:10px;
+		}
+	}
+	.special-spacer {
+		@media #{$large-up} {
+			height:20px;
+		}
+	}
+	.special-networking-opp {
+		@include clearfix;
+		img {
+			max-width:80px;
+		}
+
+	}
+	.conf-quote {
+		margin-top:1.5em;
+		margin-bottom:1.5em;
+		strong {
+			padding:1em;
+			display:inline-block;
+			background:#a7cd70;
+			color:#000;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			font-size:18px;
+		}
+		div {
+			font-weight:400;
+			background:url(https://s3-us-west-2.amazonaws.com/lendit/conf-quote-pointer.png) top left no-repeat;
+			background-size:14px;
+			margin-left:10px;
+			padding-left:24px;
+			padding-right:24px;
+			display:block;
+			font-size:18px;
+			padding-top:6px;
+
+
+		}
+	}
+	.conf-callouts {
+		.conf-callout-hd {
+			color:$primary-color;
+			font-weight:600;
+			text-align:center;
+			margin-bottom:1em;
+		}
+		.panel {
+			background:#f5f9ea;
+			@media #{$small-only} {
+				max-width:320px;
+			}
+		}
+	}
+	.conf-photos {
+		.section-hd {
+			margin-bottom:1em;
+		}
+	}
+}

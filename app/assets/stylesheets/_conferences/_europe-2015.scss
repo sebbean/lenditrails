@@ -3,7 +3,6 @@
 		max-width:1180px;
 	}
 	font-family: 'Open Sans', sans-serif;
-	letter-spacing:-.01em;
 	.green {
 		color:#7eb834;
 		background:#f5f9ea;
@@ -79,6 +78,67 @@
 		padding-left: 1em;
 		padding-right: 1em;
 	}
+
+	.hero-button >div {
+		background:#fff;
+
+		@include clearfix;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		font-family: 'Open Sans', sans-serif;
+		border-radius: 2px;
+		margin: auto;
+		display: table;
+		width: 100%;
+		max-width: 380px;
+		min-width: 240px;
+		color: #999;
+		margin-bottom: 10px;
+			padding: 6px 20px 6px 60px;
+			&:before {
+				content: '\f073';
+				float: left;
+		color: $primary-color;
+				
+				font-size: 40px;
+				margin-top: 3px;
+				margin-right: 12px;
+				line-height: 1em;
+				margin-left: -46px;
+				margin-bottom:5px;
+				font-family: FontAwesome;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			
+
+		@media screen and (max-width: 600px) {
+			width: 100%;
+		}
+
+		span {
+			display: block;
+			font-size: 14px;
+			font-weight: 600;
+			line-height:1.1em;
+			margin-top:.4em;
+			margin-bottom:.25em;
+		}
+		strong {
+			display: block;
+			font-size: 18px;
+			font-weight: 600;
+			line-height:1.1em;
+		color: $primary-color;
+			
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+		
+	}
+
 	.hero-button a {
 		@include clearfix;
 		box-sizing: border-box;
@@ -124,6 +184,8 @@
 			display: block;
 			font-size: 18px;
 			font-weight: 600;
+			line-height:1.1em;
+			
 		}
 		&:focus,  
 		&:active,  
@@ -139,6 +201,7 @@
 		}
 	}
 	.conf-content {
+	letter-spacing:-.01em;
 		-webkit-font-smoothing: antialiased;
 	}
 	.conf-hd {

@@ -230,8 +230,10 @@
 		}
 	}
 	.conf-intro {
+		margin-bottom:1em;
 		.panel {
 			background:#f5f9ea;
+			margin:auto;
 			max-width:240px;
 			img {
 				display: block;
@@ -268,8 +270,8 @@
 
 	}
 	.conf-quote {
-		margin-top:1.5em;
-		margin-bottom:1.5em;
+		margin-top:2em;
+		margin-bottom:2em;
 		strong {
 			padding:1em;
 			display:inline-block;
@@ -305,6 +307,7 @@
 			background:#f5f9ea;
 			@media #{$small-only} {
 				max-width:320px;
+				margin:0 auto 1em auto;
 			}
 		}
 	}

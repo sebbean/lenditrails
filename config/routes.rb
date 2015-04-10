@@ -14,9 +14,9 @@ LenditRails::Application.routes.draw do
   get '/videos' => 'videos#index'
   get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
   get '/privacy' => 'welcome#privacy'
-  # get '/live' => 'videos#live'
-  # get '/china-pavilion-live' => 'videos#china_live'
-  get '/live', to: redirect('/videos', status: 301)
+  get '/live' => 'videos#live'
+  get '/china-pavilion-live' => 'videos#china_live'
+  # get '/live', to: redirect('/videos', status: 301)
   get '/attendees' => 'attendees#go_to_usa15'
   get '/volunteers' => 'welcome#volunteers'
   get '/volunteers/submitted' => 'welcome#volunteers_submitted'
@@ -36,8 +36,9 @@ LenditRails::Application.routes.draw do
   # get '/china' => 'conferences#china15'
 
   # LendIt USA 2015
-  get '/nyc' => 'conferences#go_to_usa15'
   get '/usa' => 'conferences#usa15'
+  get '/usa/2015' => 'conferences#go_to_usa15'
+  get '/nyc' => 'conferences#go_to_usa15'
   get '/usa/2015/start-up-zone' => 'conferences#usa15_startup'
   get '/usa/2015/sponsors' => 'sponsors#usa15'
   get '/usa/2015/speakers' => 'speakers#usa15'
@@ -53,7 +54,7 @@ LenditRails::Application.routes.draw do
   get '/usa/2015/pitchit/submitted' => 'conferences#usa15_pitchit_submitted'
 
   #LendIt Europe 2014
-  get '/europe' => 'conferences#eu14'
+  get '/europe/2014' => 'conferences#eu14'
   get '/europe/2014/photos' => 'photos#eu14'
   get '/europe/2014/attendees' => 'attendees#eu14'
   get '/europe/attendees' => 'attendees#go_to_eu14'

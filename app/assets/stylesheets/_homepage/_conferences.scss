@@ -292,4 +292,61 @@
 	.news-and-live {
 		margin-bottom:20px;
 	}
+
+	.livestream-area  {
+		text-align:center;
+
+		.li-button {
+			margin-top:20px;
+		}
+
+	}
+.li-button a {
+	
+	line-height:17px;
+					transition: all ease-in-out .1s;
+					display:inline-block;
+					background:$primary-color;
+					color:#fff;
+					font-weight:700;
+					padding:6px 10px 6px 28px;
+					margin-top:2px;
+					text-shadow:0 1px 1px rgba(0, 0, 0, 0.4);
+					position:relative;
+					&:focus,
+					&:active {
+						text-decoration:none;
+					}
+					&:hover {
+						color:$primary-color;
+						text-shadow:none;
+						background:#fff;
+						text-decoration:none;
+					}
+					&:before {
+						content:'\f138';
+						font-family:FontAwesome;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						position:absolute;
+						left:8px;
+						top:6px;
+					}
+				}	
+	.li-button.orange a {
+		background:#f90;
+		color:#fff;
+
+					&:hover {
+						color:#f90;
+						background:#fff;
+						text-shadow:none;
+					}
+	}
+	.li-button.video a {
+			&:before	{
+				content: '\f04b';
+			}
+		
+	}
 }

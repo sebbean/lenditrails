@@ -5,4 +5,7 @@ class PhotosController < ApplicationController
     @eu14photos = eu14.photos
   end
 
+  def usa15
+  end
+
 end

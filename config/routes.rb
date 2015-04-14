@@ -12,8 +12,8 @@ LenditRails::Application.routes.draw do
   get '/speakers/thank-you' => 'speakers#thank-you'
   get '/terms-of-use' => 'welcome#terms-of-use'
   get '/videos' => 'videos#index'
-  get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
-  # get '/photos' => 'photos#usa15'
+  # get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
+  get '/photos' => 'photos#usa15'
   get '/privacy' => 'welcome#privacy'
   get '/live' => 'videos#live'
   get '/china-pavilion-live' => 'videos#china_live'

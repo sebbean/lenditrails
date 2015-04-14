@@ -13,12 +13,31 @@
 			border-left:1px solid #ccc;
 			border-right:1px solid #ccc;
 		}
-		div {
+		.important-callout-container {
 			width:100%;
 			padding:10px 0;
 			max-width:970px;
 			margin:auto;
 			padding-left:10px;
+			@include clearfix;
+			div {
+				display:inline-block;
+
+			}
+			div:nth-child(2) {
+				@media #{$medium-up} {
+
+				float:right;
+			}
+				a {
+				color:orange;
+				&:hover {
+					background:orange;
+					color:#fff;
+				}
+			}
+			}
+
 			@media (min-width:961px) {
 				
 				padding-left:0;

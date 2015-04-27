@@ -1,0 +1,63 @@
+<%= title "LendIt USA 2015 Videos" %>
+<% meta_description "Videos of the LendIt USA 2015 Conference" %>
+<% meta_keywords "p2p, online lending, peer-to-peer, LendIt, USA, videos, presentations" %>
+
+<% body_class "videos" %>
+
+
+<div class="page-videos">
+  <div class="videos-main">
+    <div class="row">
+      <div class="columns large-24">
+        <h1>LendIt USA 2015 Videos</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <h3>Main Track</h3>
+      <div class="columns large-24">
+        <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
+          <% @usa15_main.each do |video| %>
+            <li>
+              <%#= link_to video, class: 'video-item' do %>
+              <%= link_to usa15_video_path(video), class: 'video-item' do %>
+                <div class="video-image">
+                  <img src="<%= video.img %>" alt="<%= video.title %>">
+                </div>
+                <div class="video-title">
+                  <%= raw video.title %>
+
+                </div>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <h3>Track 2</h3>
+      <div class="columns large-24">
+        <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
+          <% @usa15_track2.each do |video| %>
+            <li>
+              <%#= link_to video, class: 'video-item' do %>
+              <%= link_to usa15_video_path(video), class: 'video-item' do %>
+                <div class="video-image">
+                  <img src="<%= video.img %>" alt="<%= video.title %>">
+                </div>
+                <div class="video-title">
+                  <%= raw video.title %>
+
+                </div>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+

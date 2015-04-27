@@ -40,6 +40,8 @@ LenditRails::Application.routes.draw do
   # LendIt USA 2015
   get '/usa' => 'conferences#usa15'
   get '/usa/2015' => 'conferences#go_to_usa15'
+  get '/usa/2015/videos' => 'videos#usa15'
+  get '/usa/2015/videos/:id' => 'videos#show_usa15', via: :get, as: :usa15_video
   get '/nyc' => 'conferences#go_to_usa15'
   get '/usa/2015/start-up-zone' => 'conferences#usa15_startup'
   get '/usa/2015/sponsors' => 'sponsors#usa15'

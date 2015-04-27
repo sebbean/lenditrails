@@ -6,9 +6,22 @@ class VideosController < ApplicationController
 
     us14 = Conference.where(title: 'LendIt USA 2014').first
     @usa14_videos = us14.videos.where(featured: true)
+
+    us15 = Conference.where(title: 'LendIt USA 2015').first
+    @usa15_videos = us15.videos.where(featured: true)
   end
 
   def live
+  end
+
+  def usa15
+    usa15 = Conference.where(title: 'LendIt USA 2015').first
+    @usa15_main = usa15.videos.where(track: 'Main')
+    @usa15_track2 = usa15.videos.where(track: 'Track 2')
+  end
+
+  def show_usa15
+    @video = Video.friendly.find(params[:id])
   end
 
   def eu14

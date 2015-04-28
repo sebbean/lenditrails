@@ -2,35 +2,39 @@
 <% meta_description "Videos of the LendIt USA 2014 Peer-to-Peer and Online Lending Conference" %>
 <% meta_keywords "p2p, online lending, peer-to-peer, LendIt, videos, presentations" %>
 
-<% body_class "videos" %>
+<% body_class "vid-index vid-conf-index" %>
 
 
-<div class="page-videos">
-  <div class="videos-main">
-    <div class="row">
-      <div class="columns large-24">
-        <h1>LendIt USA 2014 Videos</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="columns large-24">
-        <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
-          <% @usa14videos.each do |video| %>
-            <li>
-              <%= link_to usa14_video_path(video), class: 'video-item' do %>
-                <div class="video-image">
-                  <img src="<%= video.img %>" alt="<%= video.title %>">
-                </div>
-                <div class="video-title">
-                  <%= raw video.title %>
 
-                </div>
-              <% end %>
-            </li>
-          <% end %>
-        </ul>
-      </div>
-    </div>
-  </div>
+<div class="general-background">
+	<div class="row">
+		<div class="columns">
+
+			<div class="back">
+				<a href="#">Videos Main</a>
+			</div>
+
+
+			<h1>LendIt USA 2014 Videos</h1>
+
+			<br>
+
+			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4" data-equalizer="vid">
+				<% @usa14videos.each do |video| %>
+					<li>
+						<%= link_to usa14_video_path(video), :"class" => 'video-item', :"data-equalizer-watch" => "vid"  do %>
+							<div class="video-image">
+								<img src="<%= video.img %>" alt="<%= video.title %>">
+							</div>
+							<div class="video-title">
+								<%= raw video.title %>
+
+							</div>
+						<% end %>
+					</li>
+				<% end %>
+			</ul>
+
+		</div>
+	</div>
 </div>
-

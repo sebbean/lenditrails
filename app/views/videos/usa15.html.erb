@@ -1,63 +1,80 @@
 <%= title "LendIt USA 2015 Videos" %>
 <% meta_description "Videos of the LendIt USA 2015 Conference" %>
 <% meta_keywords "p2p, online lending, peer-to-peer, LendIt, USA, videos, presentations" %>
+<% body_class "vid-index vid-conf-index" %>
 
-<% body_class "videos" %>
-
-
-<div class="page-videos">
-  <div class="videos-main">
-    <div class="row">
-      <div class="columns large-24">
-        <h1>LendIt USA 2015 Videos</h1>
-      </div>
-    </div>
-
-    <div class="row">
-      <h3>Main Track</h3>
-      <div class="columns large-24">
-        <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
-          <% @usa15_main.each do |video| %>
-            <li>
-              <%#= link_to video, class: 'video-item' do %>
-              <%= link_to usa15_video_path(video), class: 'video-item' do %>
-                <div class="video-image">
-                  <img src="<%= video.img %>" alt="<%= video.title %>">
-                </div>
-                <div class="video-title">
-                  <%= raw video.title %>
-
-                </div>
-              <% end %>
-            </li>
-          <% end %>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row">
-      <h3>Track 2</h3>
-      <div class="columns large-24">
-        <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
-          <% @usa15_track2.each do |video| %>
-            <li>
-              <%#= link_to video, class: 'video-item' do %>
-              <%= link_to usa15_video_path(video), class: 'video-item' do %>
-                <div class="video-image">
-                  <img src="<%= video.img %>" alt="<%= video.title %>">
-                </div>
-                <div class="video-title">
-                  <%= raw video.title %>
-
-                </div>
-              <% end %>
-            </li>
-          <% end %>
-        </ul>
-      </div>
-    </div>
-
-
-  </div>
-</div>
-
+<div class="general-background">
+	<div class="row">
+		<div class="columns">
+			<div class="back">
+				<a href="#">Videos Main</a>
+			</div>
+			
+			<h1>LendIt USA 2015 Videos</h1>
+			<h3>Main Track</h3>
+			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
+				<% @usa15_main.each do |video| %>
+					<li>
+						<%#= link_to video, class: 'video-item' do %>
+							<%= link_to usa15_video_path(video), class: 'video-item' do %>
+								<div class="video-image">
+									<img src="<%= video.img %>" alt="<%= video.title %>">
+								</div>
+								<div class="video-title">
+									<%= raw video.title %>
+								</div>
+							<% end %>
+						</li>
+					<% end %>
+					<!-- BEGIN you can throw this away -->
+					<li>
+						<a class="video-item " href="/usa/2015/videos/signature-keynote-laplanche">
+							<div class="video-image">
+								<img src="http://embed.wistia.com/deliveries/f79e40c1a5f438255bc0b24ed30940b6f29f8126.bin" alt="Signature Keynote: Renaud Laplanche">
+							</div>
+							<div class="video-title">
+								Signature Keynote: Renaud Laplanche
+							</div>
+						</a>						
+					</li>
+					<li>
+						<a class="video-item" href="/usa/2015/videos/signature-keynote-laplanche">
+							<div class="video-image">
+								<img src="http://embed.wistia.com/deliveries/f79e40c1a5f438255bc0b24ed30940b6f29f8126.bin" alt="Signature Keynote: Renaud Laplanche">
+							</div>
+							<div class="video-title">
+								Signature Keynote: Renaud Laplanche
+							</div>
+						</a>						
+					</li>
+					<li>
+						<a class="video-item" href="/usa/2015/videos/signature-keynote-laplanche">
+							<div class="video-image ">
+								<img src="http://embed.wistia.com/deliveries/f79e40c1a5f438255bc0b24ed30940b6f29f8126.bin" alt="Signature Keynote: Renaud Laplanche">
+							</div>
+							<div class="video-title">
+								Signature Keynote: Renaud Laplanche
+							</div>
+						</a>						
+					</li>
+					<!-- END you can throw this away -->
+				</ul>
+				<h3>Track 2</h3>
+				<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
+					<% @usa15_track2.each do |video| %>
+						<li>
+							<%#= link_to video, class: 'video-item' do %>
+								<%= link_to usa15_video_path(video), class: 'video-item' do %>
+									<div class="video-image">
+										<img src="<%= video.img %>" alt="<%= video.title %>">
+									</div>
+									<div class="video-title">
+										<%= raw video.title %>
+									</div>
+								<% end %>
+							</li>
+						<% end %>
+					</ul>
+				</div>
+			</div>
+		</div>

@@ -11,7 +11,7 @@
 
 
 			<div class="back">
-				<a href="#">Videos Main</a>
+				<a href="/videos">Videos Main</a>
 			</div>
 
 
@@ -22,7 +22,6 @@
 			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 				<% @eu14videos.each do |video| %>
 					<li>
-						<%#= link_to video, class: 'video-item' do %>
 							<%= link_to eu14_video_path(video), class: 'video-item' do %>
 								<div class="video-image">
 									<img src="<%= video.img %>" alt="<%= video.title %>">

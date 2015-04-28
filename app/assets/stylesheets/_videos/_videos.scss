@@ -1,32 +1,27 @@
-.page-video {
-	.link-back-to-videos {
+.vid-show {
+	font-family:'Open Sans', sans-serif;
+	.general-background {
+		padding-bottom:50px;
+	}	
+	.back {
+		font-size:20px;
 		margin-top:1em;
-		margin-bottom:1em;
-		font-size:18px;
+		margin-bottom:1.5em;
+		font-family: 'Verlag A', 'Verlag B', verlag;
 		a {
 			&:before {
-				content: '\f104 ';
+				content:'\f104 \00A0';
 				font-family:FontAwesome;
-				padding-right:6px;
-			}	
-			&:hover,&:active,&:focus {
-				text-decoration:none;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
 			}
 		}
 	}
-	.video-main {
-		background: white url(brillant.png) center center repeat;
-		margin-top: 20px;
-		padding-top: 10px;
-		padding-bottom:30px;
-		max-width: 1207px;
-		margin: auto;
-		border-left: 1px solid #ccc;
-		border-right: 1px solid #ccc;
-		overflow: hidden;
-		display: block;
-	}
+	
+	
 	.video-title {
+		
 		font-size:24px;
 		font-weight:600;
 		margin-top:1em;
@@ -82,7 +77,6 @@
 		}	
 	}
 }
-
 .pg-livestream {
 	.live-header {
 		padding-bottom:1em;
@@ -94,14 +88,12 @@
 	h1 {
 		font-family:'Open Sans', sans-serif;
 	}
-
 	.live-sponsor-area {
 		display:table;
 		.live-sponsor-area-inner {
 			display:table-cell;
 			vertical-align:middle;
 			text-align:center;
-
 			padding-top:10px;
 			padding-bottom:10px;
 		}
@@ -114,9 +106,6 @@
 		.live-sponsor-logo {
 			display:inline-block;
 			line-height:40px;
-
-			
-			
 		}
 		img {
 			max-height:40px;
@@ -149,7 +138,6 @@
 		width:308px;
 		height:38px;
 	}
-	
 }
 .live-iframe {
 	width:970px;
@@ -169,5 +157,82 @@
 	@media screen and (max-width:410px) {
 		width:308px;
 		height:175px;
+	}
+}
+.vid-index {
+	.back {
+		font-size:20px;
+		margin-top:1em;
+		margin-bottom:1.5em;
+		a {
+			&:before {
+				content:'\f104 \00A0';
+				font-family:FontAwesome;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		}
+	}
+	h1, h2, h3 {
+		font-family:'Open Sans', sans-serif;
+		letter-spacing:-.01em;
+	}
+	h3 {
+		margin-top:1em;
+		border-top:3px solid #eee;
+		padding-top:.5em;
+		margin-bottom:1em;
+		font-size:24px;
+		font-weight:600;
+		a {
+			color:#222;
+			&:focus,
+			&:active,
+			&:hover {
+				text-decoration:none;
+				color:$primary-color;
+			}
+			&:after {
+				padding-left:10px;
+				color:$primary-color;
+				content:'\f0a9';
+				font-family:FontAwesome;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		}
+	}
+	.general-background {
+		padding-bottom:40px;
+		.video-item {
+			display:block;
+			padding:3px;
+			img {
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;
+			}
+			.video-title {
+				line-height:1.1em;
+				font-size:22px;
+				padding-right:10px;
+				font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag';
+				font-weight:500;
+				margin-top:.75rem;
+				margin-bottom:1em;
+				color:$primary-color;
+			}
+			&:active,
+			&:focus,
+			&:hover {
+				background:#eee;
+				text-decoration:none;
+				color:#fff;
+				box-shadow: -10px 10px 0 #eeeeee, 10px 10px 0 #eeeeee, 10px 10px 0 #eeeeee, 10px -10px 0 #eeeeee, -10px -10px 0 #eeeeee;
+			}
+		}
 	}
 }

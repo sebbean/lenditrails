@@ -31,11 +31,11 @@ LenditRails::Application.routes.draw do
 
 
   # LendIt Europe 2015
-   get '/europe' => 'conferences#eu15'
+  get '/europe' => 'conferences#eu15'
 
   # LendIt China 2015
-   get '/china' => 'conferences#china15'
-
+  get '/china' => 'conferences#china15'
+  get '/china/2015/speakers/sign-up' => 'speakers#china15_sign-up'
 
   # LendIt USA 2015
   get '/usa' => 'conferences#usa15'

@@ -78,10 +78,8 @@
 		padding-left: 1em;
 		padding-right: 1em;
 	}
-
 	.hero-button >div {
 		background:#fff;
-
 		@include clearfix;
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -93,29 +91,24 @@
 		max-width: 380px;
 		min-width: 240px;
 		color: #999;
-		margin-bottom: 10px;
-			padding: 6px 20px 6px 60px;
-			&:before {
-				content: '\f073';
-				float: left;
-		color: $primary-color;
-				
-				font-size: 40px;
-				margin-top: 3px;
-				margin-right: 12px;
-				line-height: 1em;
-				margin-left: -46px;
-				margin-bottom:5px;
-				font-family: FontAwesome;
-				-webkit-font-smoothing: antialiased;
-				-moz-osx-font-smoothing: grayscale;
-			}
-			
-
+		padding: 6px 20px 6px 60px;
+		&:before {
+			content: '\f073';
+			float: left;
+			color: $primary-color;
+			font-size: 40px;
+			margin-top: 3px;
+			margin-right: 12px;
+			line-height: 1em;
+			margin-left: -46px;
+			margin-bottom:5px;
+			font-family: FontAwesome;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
 		@media screen and (max-width: 600px) {
 			width: 100%;
 		}
-
 		span {
 			display: block;
 			font-size: 14px;
@@ -129,16 +122,20 @@
 			font-size: 18px;
 			font-weight: 600;
 			line-height:1.1em;
-		color: $primary-color;
-			
+			color: $primary-color;
 		}
-
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.hero-button {
+		margin-bottom: 10px;
 		&:last-child {
 			margin-bottom: 0;
 		}
 		
 	}
-
+	
 	.hero-button a {
 		@include clearfix;
 		box-sizing: border-box;
@@ -153,10 +150,6 @@
 		background: #89BE2E;
 		color: #fff;
 		text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-		margin-bottom: 10px;
-		&:last-child {
-			margin-bottom: 0;
-		}
 		@media screen and (max-width: 600px) {
 			width: 100%;
 		}
@@ -185,7 +178,6 @@
 			font-size: 18px;
 			font-weight: 600;
 			line-height:1.1em;
-			
 		}
 		&:focus,  
 		&:active,  
@@ -201,7 +193,7 @@
 		}
 	}
 	.conf-content {
-	letter-spacing:-.01em;
+		letter-spacing:-.01em;
 		-webkit-font-smoothing: antialiased;
 	}
 	.conf-hd {
@@ -257,7 +249,6 @@
 			line-height: 1.4em;
 		}
 		td:nth-of-type(1) {
-
 			width:60px;
 		}
 		td span {
@@ -330,7 +321,6 @@
 		img {
 			max-width:80px;
 		}
-
 	}
 	.conf-quote {
 		margin-top:2em;
@@ -355,8 +345,6 @@
 			display:block;
 			font-size:18px;
 			padding-top:6px;
-
-
 		}
 	}
 	.conf-callouts {
@@ -380,10 +368,9 @@
 		}
 		img {
 			-webkit-border-radius: 2px;
--moz-border-radius: 2px;
-border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-			
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 		}
 	}
 }

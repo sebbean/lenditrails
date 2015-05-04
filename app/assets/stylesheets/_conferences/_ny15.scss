@@ -936,6 +936,7 @@
 				display:table-cell;
 			}
 		}
+		
 		.hero-button {
 			margin:auto;
 			a {
@@ -989,8 +990,8 @@
 					text-decoration:none;
 					background:darken(#89BE2E, 10%);
 				}
-				margin-bottom:10px;
 			}
+				margin-bottom:10px;
 		}
 	}
 	.hero-content .hero-button .hero-button-loud  {
@@ -1531,7 +1532,6 @@
 		max-width: 380px;
 		min-width: 240px;
 		color: #999;
-		margin-bottom: 10px;
 		padding: 6px 20px 6px 60px;
 		&:before {
 			content: '\f073';
@@ -1565,6 +1565,11 @@
 			line-height:1.1em;
 			color: $primary-color;
 		}
+		
+
+	}
+	.hero-button {
+		margin-bottom: 10px;
 		&:last-child {
 			margin-bottom: 0;
 		}

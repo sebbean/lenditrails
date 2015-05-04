@@ -8,7 +8,7 @@ LenditRails::Application.routes.draw do
   get '/about' => 'welcome#about'
   get '/speakers' => 'speakers#index'
   get '/sponsors' => 'sponsors#index'
-  get '/speakers/sign-up' => 'speakers#sign-up'
+  # get '/speakers/sign-up' => 'speakers#sign-up'
   get '/speakers/thank-you' => 'speakers#thank-you'
   get '/terms-of-use' => 'welcome#terms-of-use'
   get '/videos' => 'videos#index'
@@ -54,7 +54,7 @@ LenditRails::Application.routes.draw do
   get '/usa/2015/beijing-invite' => 'conferences#usa15_beijing_invite-update'
   get '/usa/2015/brochure', to: redirect('https://s3-us-west-2.amazonaws.com/lendit/uploads/LendIt-USA-2015-conference-brochure.pdf', status: 301)
   get '/usa/2015/pitchit-at-lendit' => 'conferences#usa15_pitchit'
-  get '/usa/2015/pitchit/sign-up' => 'conferences#usa15_pitchit_signup'
+  # get '/usa/2015/pitchit/sign-up' => 'conferences#usa15_pitchit_signup'
   get '/usa/2015/pitchit/submitted' => 'conferences#usa15_pitchit_submitted'
 
   #LendIt Europe 2014

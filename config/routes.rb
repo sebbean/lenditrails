@@ -12,6 +12,7 @@ LenditRails::Application.routes.draw do
   get '/speakers/thank-you' => 'speakers#thank-you'
   get '/terms-of-use' => 'welcome#terms-of-use'
   get '/videos' => 'videos#index'
+  get '/press' => 'welcome#press'
   # get '/photos', to: redirect("https://www.flickr.com/photos/wemakepictures/sets/72157647005531163/")
   get '/photos' => 'photos#usa15'
   get '/privacy' => 'welcome#privacy'

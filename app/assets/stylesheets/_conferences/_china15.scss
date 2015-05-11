@@ -1594,4 +1594,48 @@
 			font-weight:600;
 		}
 	}
+
+
+	.buttons-panel {
+		background:#f5f9ea;
+		border:none;
+		li {
+			padding-bottom:0;
+		}
+		.prospectus-link2 {
+			margin:auto;
+			display:table;
+				max-width:200px;
+			img {
+				border:2px solid red;
+				display:block;
+			}
+			
+
+			>a {
+				display:block;
+			}
+			> a img {
+				border:1px solid #9CC83D;
+			}
+			span {
+				display:block;
+				font-size:14px;
+			}
+		}
+		.prospectus-link-text2 {
+			padding-top:6px;
+			font-weight:600;
+			line-height:1.4em;
+		}
+
+
+		.prospectus-link-text {
+			@media (max-width:640px) {
+				padding-left:10px;
+			}
+		}
+	}
+
+
 }

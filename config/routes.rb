@@ -40,6 +40,7 @@ LenditRails::Application.routes.draw do
   get '/china/2015/speakers/sign-up' => 'speakers#china15_sign-up'
 
   # LendIt USA 2016
+  get '/usa/2016' => 'conferences#usa16'
   get '/usa/2016/speakers/sign-up' => 'speakers#usa16_sign-up'
 
   # LendIt USA 2015

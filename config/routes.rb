@@ -38,13 +38,13 @@ LenditRails::Application.routes.draw do
   # LendIt China 2015
   get '/china' => 'conferences#china15'
   get '/china/2015/speakers/sign-up' => 'speakers#china15_sign-up'
-  get '/china/2015/agenda' => 'agendas#china15'
-  get '/china/2015/china-app-show' => 'conferences#china15_china_app'
-  get '/china/2015/bund-summit' => 'conferences#china15_bund_summit'
+  # get '/china/2015/agenda' => 'agendas#china15'
+  # get '/china/2015/china-app-show' => 'conferences#china15_china_app'
+  # get '/china/2015/bund-summit' => 'conferences#china15_bund_summit'
 
 
   # LendIt USA 2016
-  get '/usa/2016' => 'conferences#usa16'
+  # get '/usa/2016' => 'conferences#usa16'
   get '/usa/2016/speakers/sign-up' => 'speakers#usa16_sign-up'
 
   # LendIt USA 2015

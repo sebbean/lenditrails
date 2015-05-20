@@ -189,6 +189,15 @@
 			text-align:center;
 			margin-bottom:1em;
 		}
+		a.conf-callout-map {
+			display:block;
+			&:hover {
+				img {
+				box-shadow:0 0 2px $primary-color;
+				opacity:.9;
+			}
+			}
+		}
 		.panel {
 			background:#f5f9ea;
 			@media #{$small-only} {

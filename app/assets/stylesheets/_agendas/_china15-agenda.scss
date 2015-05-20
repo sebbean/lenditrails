@@ -1,0 +1,424 @@
+.china15-agenda {
+	.general-background {
+		padding-bottom:40px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.agenda-area {
+		max-width:800px;
+		margin:auto;
+		.agenda-day00 {
+			display:none;
+		}
+	}
+		[class^="agenda-day"] {
+			margin-bottom:2em;
+		}
+
+		.agenda-row01
+	 	{
+			padding:.25em .5em;
+			display:block;
+			font-size:18px;
+			text-align:center;
+		}
+		
+		.agenda-row03
+	 	{
+			padding:.25em .5em;
+			display:block;
+			background:$primary-color;
+			color:#fff;
+		}
+	.agenda-row05 span,
+	.agenda-row06 span,
+	.agenda-row07 span,
+	.agenda-row08 span,
+	.agenda-row09 span,
+	.agenda-row10 span,
+	.agenda-row11 span,
+	.agenda-row12 span,
+	.agenda-row13 span,
+	.agenda-row14 span,
+	.agenda-row15 span,
+	.agenda-row16 span,
+	.agenda-row17 span,
+	.agenda-row18 span,
+	.agenda-row19 span,
+	.agenda-row20 span,
+	.agenda-row21 span,
+	.agenda-row22 span,
+	.agenda-row23 span,
+	.agenda-row24 span,
+	.agenda-row25 span,
+	.agenda-row26 span,
+	.agenda-row27 span,
+	.agenda-row28 span,
+	.agenda-row29 span,
+	.agenda-row30 span,
+	.agenda-row31 span,
+	.agenda-row32 span,
+	.agenda-row33 span,
+	.agenda-row34 span,
+	.agenda-row35 span,
+	.agenda-row36 span {
+		display:block;
+		border-bottom:1px dotted #ccc;
+		position:relative;
+		padding-left:100px;
+		padding-right:1em;
+		padding-top:.25em;
+		padding-bottom:.25em;
+		&:before {
+			content:'';
+			text-align:right;
+			top:0;
+			left:0;
+			padding-top:.25em;
+			float:left;
+			width:80px;
+			color:#999;
+			position:absolute;
+		}		
+	}
+	.agenda-row05 span {
+		&:before {
+			content: '6:00 AM';
+		}
+	}
+	.agenda-row06 span {
+		&:before {
+			content: '7:00 AM';
+		}
+	}
+	.agenda-row07 span {
+		&:before {
+			content: '8:00 AM';
+		}
+	}
+	.agenda-row08 span {
+		&:before {
+			content: '8:30 AM';
+		}
+	}
+	.agenda-row09 span {
+		&:before {
+			content: '9:00 AM';
+		}
+	}
+	.agenda-row10 span {
+		&:before {
+			content: '9:30 AM';
+		}
+	}
+	.agenda-row11 span {
+		&:before {
+			content: '10:00 AM';
+		}
+	}
+	.agenda-row12 span {
+		&:before {
+			content: '10:30 AM';
+		}
+	}
+	.agenda-row13 span {
+		&:before {
+			content: '11:00 AM';
+		}
+	}
+	.agenda-row14 span {
+		&:before {
+			content: '11:30 AM';
+		}
+	}
+	.agenda-row15 span {
+		&:before {
+			content: '12:00 PM';
+		}
+	}
+	.agenda-row16 span {
+		&:before {
+			content: '12:30 PM';
+		}
+	}
+	.agenda-row17 span {
+		&:before {
+			content: '1:00 PM';
+		}
+	}
+	.agenda-row18 span {
+		&:before {
+			content: '1:30 PM';
+		}
+	}
+	.agenda-row19 span {
+		&:before {
+			content: '2:00 PM';
+		}
+	}
+	.agenda-row20 span {
+		&:before {
+			content: '2:30 PM';
+		}
+	}
+	.agenda-row21 span {
+		&:before {
+			content: '3:00 PM';
+		}
+	}
+	.agenda-row22 span {
+		&:before {
+			content: '3:30 PM';
+		}
+	}
+	.agenda-row23 span {
+		&:before {
+			content: '4:00 PM';
+		}
+	}
+	.agenda-row24 span {
+		&:before {
+			content: '4:30 PM';
+		}
+	}
+	.agenda-row25 span {
+		&:before {
+			content: '5:00 PM';
+		}
+	}
+	.agenda-row26 span {
+		&:before {
+			content: '5:30 PM';
+		}
+	}
+	.agenda-row27 span {
+		&:before {
+			content: '6:00 PM';
+		}
+	}
+	.agenda-row28 span {
+		&:before {
+			content: '6:30 PM';
+		}
+	}
+	.agenda-row29 span {
+		&:before {
+			content: '7:00 PM';
+		}
+	}
+	.agenda-row30 span {
+		&:before {
+			content: '7:30 PM';
+		}
+	}
+	.agenda-row31 span {
+		&:before {
+			content: '8:00 PM';
+		}
+	}
+	.agenda-row32 span {
+		&:before {
+			content: '8:30 PM';
+		}
+	}
+	.agenda-row33 span {
+		&:before {
+			content: '9:00 PM';
+		}
+	}
+	.agenda-row34 span {
+		&:before {
+			content: '9:30 PM';
+		}
+	}
+	.agenda-row35 span {
+		&:before {
+			content: '10:00 PM';
+		}
+	}
+	.agenda-row36 span {
+		&:before {
+			content: '10:30 PM';
+		}
+	}
+	.agenda-row02 {
+		display:none;
+	}
+	.agenda-row04 {
+		display:none;
+	}
+	.agenda-row05 {
+		display:none;
+	}
+	.agenda-row37 {
+		display:none;
+	}
+	.agenda-row38 {
+		display:none;
+	}
+	.agenda-row39 {
+		display:none;
+	}
+	.agenda-row40 {
+		display:none;
+	}
+	.agenda-row41 {
+		display:none;
+	}
+	.agenda-row42 {
+		display:none;
+	}
+	@media screen and (min-width:900px) {
+		.agenda-area {
+			max-width:1100px;
+			.agenda-day00 {
+				display:table-cell;
+			}
+		}
+		.row {
+			max-width:none;
+		}
+		max-width:1160px;
+		margin:auto;
+		display:table;
+		width:100%;
+		[class^="agenda-day"] {
+			width:14%;
+			display:table-cell;
+			font-size:15px;
+			font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+			font-weight:normal;
+			border-right:1px dotted #999;
+		}
+		[class^="agenda-day"] {
+			margin-bottom:0;
+			@media screen and (min-width:1150px) {
+				font-family: 'Verlag A', 'Verlag B', 'verlag';
+			}
+		}
+		[class^="agenda-day"]:last-of-type {
+			border-right:none;
+		}
+		.agenda-day00 {
+			white-space:nowrap;
+		}
+		.agenda-day00,
+		.agenda-day07,
+		.agenda-day14 {
+			width:6%;
+		}
+		[class^="agenda-row"]:nth-of-type(odd) {
+			background:#fafafa;
+		}
+		[class^="agenda-row"] {
+			min-width:50px;
+			border-bottom:1px solid #ddd;
+			padding-left:3px;
+			padding-right:3px;
+			line-height:1.2em;
+			overflow:hidden;
+			min-height:55px;
+			padding-top:8px;
+			padding-bottom:8px;
+			span {
+				border:none;
+				padding:0;
+			&:before {
+				display:none;
+				padding:0;
+				
+				
+			}
+		}
+			.optional {
+				display:none;
+			}
+		}
+		.agenda-row01 {
+			text-align:center;
+			font-size:18px;
+			background:$primary-color !important;
+			min-height:40px;
+			border:none;
+			border-bottom:1px solid #fff;
+			color:#fff;
+		}
+		.agenda-row03 {
+			min-height:110px;
+			background:$primary-color !important;
+			color:#fff;
+			border:none;
+		}
+		.agenda-row06 {
+		}
+		.agenda-row07 {
+		}
+		.agenda-row08 {
+		}
+		.agenda-row09 {
+			min-height:80px;
+		}
+		.agenda-row10 {
+			min-height:80px;
+		}
+		.agenda-row11 {
+		}
+		.agenda-row12 {
+			min-height:120px;
+		}
+		.agenda-row13 {
+		}
+		.agenda-row14 {
+		}
+		.agenda-row15 {
+		}
+		.agenda-row16 {
+		}
+		.agenda-row17 {
+			min-height:100px;
+		}
+		.agenda-row18 {
+		}
+		.agenda-row19 {
+		}
+		.agenda-row20 {
+		}
+		.agenda-row21 {
+		}
+		.agenda-row22 {
+		}
+		.agenda-row23 {
+		}
+		.agenda-row24 {
+			min-height:100px;
+		}
+		.agenda-row25 {
+		}
+		.agenda-row26 {
+		}
+		.agenda-row27 {
+			min-height:100px;
+		}
+		.agenda-row28 {
+			min-height:100px;
+		}
+		.agenda-row29 {
+			min-height:100px;
+		}
+		.agenda-row30 {
+			min-height:100px;
+		}
+		.agenda-row31 {
+		}
+		.agenda-row32 {
+		}
+		.agenda-row33 {
+		}
+		.agenda-row34 {
+		}
+		.agenda-row35 {
+		}
+		.agenda-row36 {
+		}
+	}
+}

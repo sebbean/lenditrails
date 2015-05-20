@@ -11,25 +11,36 @@
 			display:none;
 		}
 	}
-		[class^="agenda-day"] {
-			margin-bottom:2em;
+	[class^="agenda-day"] {
+		margin-bottom:2em;
+	}
+	.agenda-row01 {
+		i {
+			font-style:normal;
 		}
+	}	
 
-		.agenda-row01
-	 	{
-			padding:.25em .5em;
-			display:block;
-			font-size:18px;
-			text-align:center;
+	.agenda-row01 {
+		padding:.25em .5em;
+		display:block;
+		font-size:18px;
+		text-align:center;
+		@media screen and (min-width:900px) and (max-width:1150px) {
+			i {display:none;}
 		}
-		
-		.agenda-row03
-	 	{
-			padding:.25em .5em;
-			display:block;
-			background:$primary-color;
-			color:#fff;
+	}
+	.agenda-day07 .agenda-row01, .agenda-day14 .agenda-row01 {
+		i { 
+			display:none;
 		}
+	}
+	.agenda-row03
+	{
+		padding:.25em .5em;
+		display:block;
+		background:$primary-color;
+		color:#fff;
+	}
 	.agenda-row05 span,
 	.agenda-row06 span,
 	.agenda-row07 span,
@@ -323,15 +334,10 @@
 			span {
 				border:none;
 				padding:0;
-			&:before {
-				display:none;
-				padding:0;
-				
-				
-			}
-		}
-			.optional {
-				display:none;
+				&:before {
+					display:none;
+					padding:0;
+				}
 			}
 		}
 		.agenda-row01 {

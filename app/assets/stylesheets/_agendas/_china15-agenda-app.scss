@@ -1,0 +1,72 @@
+.china15-agenda-app {
+	.general-background {
+		font-family: 'Open Sans', sans-serif;
+		font-size:14px; 
+		padding-bottom:40px;
+		.hide {
+			display:none;
+		}
+		.sheet {
+			.note {
+				margin-top:1em;
+				margin-bottom:1em;
+				text-align:center;
+				color:orange;
+				font-weight:500;
+				font-size:16px;
+
+			}
+			[class^="section"] {
+				margin-top:2em;
+				margin-bottom:2em;
+			}
+			h1 {
+				font-family: 'Open Sans', sans-serif;
+				border-bottom:2px solid black;
+				padding-bottom:.5em; 
+				font-size:24px;
+			}
+			ul {
+				list-style-type:none;
+				margin:0;
+				padding:0;
+				font-size:14px;
+			}
+			.cols01,.cols02 {
+			}
+			.cols07, .cols06, .cols05, .cols04  {
+				border-bottom:1px dotted #ddd;
+				padding-top:1em;
+				padding-bottom:1em;
+				position:relative;
+				@media #{$large-up} {
+
+					padding-left:300px;
+				}
+				a {
+					font-weight:600;
+				}
+				.cell01 {
+					@media #{$large-up} {
+						position:absolute;
+						width:300px;
+						text-align:right;
+						padding-right:20px;
+						left:0;
+						top:1em;
+
+					}
+					div {
+						font-size:24px;
+						font-weight:600;
+						margin-bottom:.5em;
+					}
+				}
+				.cell02 {
+					font-weight:600;
+					font-size:16px;
+				}
+			}
+		}
+	}
+}

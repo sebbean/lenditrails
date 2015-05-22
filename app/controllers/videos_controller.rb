@@ -18,6 +18,9 @@ class VideosController < ApplicationController
     usa15 = Conference.where(title: 'LendIt USA 2015').first
     @usa15_main = usa15.videos.where(track: 'Main')
     @usa15_track2 = usa15.videos.where(track: 'Track 2')
+    @usa15_china = usa15.videos.where(track: 'China')
+    @usa15_realestate = usa15.videos.where(track: 'Real Estate')
+    @usa15_demo = usa15.videos.where(track: 'Company Demo')
   end
 
   def show_usa15

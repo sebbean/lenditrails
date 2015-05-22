@@ -1489,18 +1489,50 @@
 			display:inline-block;
 		}
 	}
+	.agenda-area {
+		
+	}
 	.china15-sectionhead {
-		margin:0 0 1em 0;
-		font-size:20px; 
-		font-weight:600;
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		background:#fff;
+		color:#666;
+		font-size: 26px;
+		font-weight: 400;
+		padding: 2px 10px 12px 0;
+		border-bottom: 1px solid #ccc;
+		margin-bottom:18px;
+		span {
+			display:inline-block;
+		}
+		.hellip {
+			color:#ccc;
+			display:inline-block;
+		}
+
+		.fa {
+			font-size:20px;
+		}
+
 	}
 	.agenda-area.panel {
 		border:none;
+		padding:0;
+	}
+	.agenda-content {
+		padding-right:1em;
+		padding-bottom:18px;
+
+		padding-top:18px;
+			background:#f5f9ea;
 	}
 	.agenda-area {
+	.china15-sectionhead {
+		margin-bottom:0;
+	}
+		padding:0;
+		padding-bottom:1em;
 		margin-bottom:2em;
 		font-size:16px;
-		background:#F8FBEF;
 		font-weight:400;
 		.agenda-row {
 			margin-bottom:1em;
@@ -1509,7 +1541,6 @@
 			}
 			.agenda-date {
 				color:$primary-color;
-				font-weight:600;
 				@media screen and (min-width:600px) {
 					width:120px;
 					display:table-cell;
@@ -1584,9 +1615,12 @@
 		tr {
 			background:none;
 		}
+		td:first-of-type {
+			color:$primary-color;
+
+		}
 		td {
 			vertical-align:top;
-			color:$primary-color;
 			font-size:18px;
 			background:none;
 			font-weight:600;
@@ -1628,16 +1662,29 @@
 			}
 		}
 	}
+	
 	.module-area {
 		margin-bottom:2em;
+		.china15-sectionhead {
+			margin-bottom:0;
+		}
+		p {
+			
+			font-size:16px;
+			font-weight:normal;
+			line-height:1.5em;
+			color:#333;
+		}
 		.module {
+			margin-bottom:1em;
 		}
 		.module-content {
+			padding-top:18px;
+
 			.module-intro {
 				margin-top:1em;
 				margin-bottom:1em;
 			}
-			padding:10px;
 			table {
 				border:none;
 				tr {
@@ -1660,40 +1707,76 @@
 	}
 	.module-shows {
 		.module {
-			background:#fffaf1;
 		}
 		.header {
 			font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-			font-size:34px;
+			font-size:24px;
 			font-weight:400;
-			color:orange;
 			padding:2px 10px;
-			border-bottom:1px dotted orange;
+			border-bottom:1px dotted #ccc;
 		}
 	}
 	.module-highlights {
+		.china15-sectionhead {
+			background:#fff;
+		}
 		.module {
-			background:#fafcf5;
 		}
 		.header {
 			font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-			font-size:34px;
+			font-size:26px;
 			font-weight:400;
-			border-bottom:1px dotted $primary-color;
-			color:$primary-color;
+			border-bottom:1px solid #ccc;
 			padding:2px 10px;
 		}
 	}
 	.module-area .module-tour-highlights .module-content table td {
-		font-size:18px;
-		color:$primary-color;
+		font-size:16px;
 		font-weight:500;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		
+	}
+	.module-area .module-tour-highlights .module-content table td:first-of-type {
+		color:$primary-color;
 	}
 	.module-area .module-tour-price .module-content table td {
-		font-size:14px;
-		color:$primary-color;
-		font-weight:600;
+		font-size:16px;
+		font-weight:500;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		
+
+		
 	}
+	.module-area .module-tour-price .module-content table td:first-of-type {
+		color:$primary-color;
+	}
+	.module-tour-highlights,
+	.module-tour-price
+ 	{
+	.module-content {
+
+		background:#f5f9ea;
+		padding:18px 20px 10px 20px;
+		.module-intro {
+			margin:0;
+		}
+	}
+
+
 }
-
-
+.trusted-source {
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		color:#666;
+		font-size: 26px;
+		text-align:center;
+		font-weight: 200;
+		padding: 2px 10px 6px 0;
+		color:$primary-color;
+	
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+}	
+	
+}

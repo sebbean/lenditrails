@@ -14,37 +14,59 @@
 			<h3>Main Track</h3>
 			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 				<% @usa15_main.each do |video| %>
-					<li>
-						<%#= link_to video, class: 'video-item' do %>
-							<%= link_to usa15_video_path(video), class: 'video-item' do %>
-								<div class="video-image">
-									<img src="<%= video.img %>" alt="<%= video.title %>">
-								</div>
-								<div class="video-title">
-									<%= raw video.title %>
-								</div>
-							<% end %>
-						</li>
+				<li>
+					<%= link_to usa15_video_path(video), class: 'video-item' do %>
+					<div class="video-image">
+						<img src="<%= video.img %>" alt="<%= video.title %>">
+					</div>
+					<div class="video-title">
+						<%= raw video.title %>
+					</div>
 					<% end %>
+				</li>
+				<% end %>
 
-				</ul>
+			</ul>
 
-<!-- 				<h3>Track 2</h3>
-				<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
-					<#% @usa15_track2.each do |video| %>
-						<li>
-							<%#= link_to video, class: 'video-item' do %>
-								<%#= link_to usa15_video_path(video), class: 'video-item' do %>
-									<div class="video-image">
-										<img src="<%#= video.img %>" alt="<%#= video.title %>">
-									</div>
-									<div class="video-title">
-										<%#= raw video.title %>
-									</div>
-								<%# end %>
-							</li>
-						<%# end %>
-					</ul> -->
-				</div>
-			</div>
+
+
+			<!-- <h3>Track 2</h3> -->
+			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
+				<% @usa15_track2.each do |video| %>
+				<li>
+					<%= link_to usa15_video_path(video), class: 'video-item' do %>
+					<div class="video-image">
+						<img src="<%= video.img %>" alt="<%= video.title %>">
+					</div>
+					<div class="video-title">
+						<%= raw video.title %>
+					</div>
+					<% end %>
+				</li>
+				<% end %>
+			</ul>
+
+
+			<h3>China Pavilion</h3>
+			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
+				<% @usa15_china.each do |video| %>
+				<li>
+					<%= link_to usa15_video_path(video), class: 'video-item' do %>
+					<div class="video-image">
+						<img src="<%= video.img %>" alt="<%= video.title %>">
+					</div>
+					<div class="video-title">
+						<%= raw video.title %>
+					</div>
+					<% end %>
+				</li>
+				<% end %>
+			</ul>
+
+
+
+
+
 		</div>
+	</div>
+</div>

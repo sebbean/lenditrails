@@ -1490,7 +1490,6 @@
 		}
 	}
 	.agenda-area {
-		
 	}
 	.china15-sectionhead {
 		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
@@ -1508,11 +1507,9 @@
 			color:#ccc;
 			display:inline-block;
 		}
-
 		.fa {
 			font-size:20px;
 		}
-
 	}
 	.agenda-area.panel {
 		border:none;
@@ -1521,14 +1518,13 @@
 	.agenda-content {
 		padding-right:1em;
 		padding-bottom:18px;
-
 		padding-top:18px;
-			background:#f5f9ea;
+		background:#f5f9ea;
 	}
 	.agenda-area {
-	.china15-sectionhead {
-		margin-bottom:0;
-	}
+		.china15-sectionhead {
+			margin-bottom:0;
+		}
 		padding:0;
 		padding-bottom:1em;
 		margin-bottom:2em;
@@ -1617,7 +1613,6 @@
 		}
 		td:first-of-type {
 			color:$primary-color;
-
 		}
 		td {
 			vertical-align:top;
@@ -1662,14 +1657,12 @@
 			}
 		}
 	}
-	
 	.module-area {
 		margin-bottom:2em;
 		.china15-sectionhead {
 			margin-bottom:0;
 		}
 		p {
-			
 			font-size:16px;
 			font-weight:normal;
 			line-height:1.5em;
@@ -1680,7 +1673,6 @@
 		}
 		.module-content {
 			padding-top:18px;
-
 			.module-intro {
 				margin-top:1em;
 				margin-bottom:1em;
@@ -1735,7 +1727,6 @@
 		font-weight:500;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-		
 	}
 	.module-area .module-tour-highlights .module-content table td:first-of-type {
 		color:$primary-color;
@@ -1745,28 +1736,22 @@
 		font-weight:500;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-		
-
-		
 	}
 	.module-area .module-tour-price .module-content table td:first-of-type {
 		color:$primary-color;
 	}
 	.module-tour-highlights,
 	.module-tour-price
- 	{
-	.module-content {
-
-		background:#f5f9ea;
-		padding:18px 20px 10px 20px;
-		.module-intro {
-			margin:0;
+	{
+		.module-content {
+			background:#f5f9ea;
+			padding:18px 20px 10px 20px;
+			.module-intro {
+				margin:0;
+			}
 		}
 	}
-
-
-}
-.trusted-source {
+	.trusted-source {
 		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
 		color:#666;
 		font-size: 26px;
@@ -1774,9 +1759,34 @@
 		font-weight: 200;
 		padding: 2px 10px 6px 0;
 		color:$primary-color;
-	
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-}	
-	
+	}	
+	.just-announced {
+		
+		margin-bottom:40px;
+		background:#fff6e9;
+		max-width:970px;
+		color:#d68b00;
+
+		.china15-sectionhead {
+			color:#d68b00;
+			margin-top:10px;
+			border-bottom:1px dotted lighten(#d68b00,30%);
+			background:none;
+		}
+		.just-announced-text {
+			@media #{$medium-up} {
+				padding-left:.5em;
+			}
+		}
+		.just-announced-headshot {
+			background:url(https://s3-us-west-2.amazonaws.com/lendit/usa15-speakers/soul-htite.psd-th.jpeg) center center no-repeat;
+			background-size:cover;
+		}
+		p {
+			font-size:16px;
+			font-weight:500;
+		}
+	}
 }

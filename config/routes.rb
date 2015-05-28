@@ -29,7 +29,8 @@ LenditRails::Application.routes.draw do
   get '/agenda' => 'agendas#usa15'
   get '/team' => 'welcome#team'
   get '/networking' => 'welcome#networking'
-  # get '/jobs' => 'welcome#jobs'
+  get '/jobs' => 'jobs#index'
+  get '/jobs/vp-finance' => 'jobs#vp_finance'
 
 
   # LendIt Europe 2015

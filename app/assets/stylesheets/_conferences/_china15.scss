@@ -1765,14 +1765,14 @@
 	.just-announced {
 		
 		margin-bottom:40px;
-		background:#fff6e9;
+		background:#b22082;
 		max-width:970px;
-		color:#d68b00;
+		color:#fff;
 
 		.china15-sectionhead {
-			color:#d68b00;
+			color:#fff;
 			margin-top:10px;
-			border-bottom:1px dotted lighten(#d68b00,30%);
+			border-bottom:1px dotted lighten(#b22082,30%);
 			background:none;
 		}
 		.just-announced-text {
@@ -1785,8 +1785,8 @@
 			background-size:cover;
 		}
 		p {
-			font-size:16px;
-			font-weight:500;
+			font-size:13px;
+			font-weight:600;
 		}
 	}
 }

@@ -90,20 +90,158 @@ hr {
 }
 .nav {
 	.sold-out {
-		  font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-	text-align:center;
-	font-weight:500;
-	line-height:1.1em;
-  font-size: 15px;
-	margin-left:10px;
-  margin-right: 10px;
-	padding:6px 7px 5px 7px;
-	color:#b22081;
-	border:1px solid #b22081;
-	-webkit-border-radius: 2px;
--moz-border-radius: 2px;
-border-radius: 2px;
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+		text-align:center;
+		font-weight:500;
+		line-height:1.1em;
+		font-size: 15px;
+		margin-left:10px;
+		margin-right: 10px;
+		padding:6px 7px 5px 7px;
+		color:#b22081;
+		border:1px solid #b22081;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		line-height:20px;
+	}
+}
+// jobs
+.pg-jobs {
+	.general-background {
+		min-height:600px;
+		padding-bottom:80px;
 
-	line-height:20px;
+		font-family:'Open Sans', sans-serif;
+		font-size:16px;
+		h1 { 
+			font-size: 2em; 
+			margin: .67em 0;
+		}
+		h2 { 
+			font-size: 1.5em; 
+			margin: .75em 0;
+		}
+		h3 { 
+			font-size: 1.17em; 
+			margin: .83em 0;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font-family:'Open Sans', sans-serif;
+		}
+		h1 {
+			border-bottom:2px dotted #ccc;
+			padding-bottom:.3em;
+			margin-bottom:1em;
+		}
+		
+	}
+}
+.pg-jobs-main {
+	ul {
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			li {
+				padding:0;
+				margin:0 0 1em 0;
+				p {
+					line-height:1.6em;
+				}
+				h2 {
+					margin-bottom:.2em;
+					position:relative;
+					font-weight:600;
+					padding-left:30px;
+					a:before {
+						position:absolute;
+						left:0;
+						margin-top:.3em;
+						top:0;
+						content: '\f0a9';
+						display: inline-block;
+						font: normal normal normal 14px/1 FontAwesome;
+						font-size: inherit;
+						text-rendering: auto;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						transform: translate(0, 0);
+						font-size:23px;
+					}
+				}
+			}
+		}
+
+
+}
+.pg-jobs-sub {
+	
+
+	.general-background {
+		.job-nav {
+		border-bottom:2px dotted #ccc ;
+		margin-bottom:1em;
+		padding-bottom:1em;
+		margin-top:1em;
+
+			a {
+				font-size:18px;
+				font-weight:normal;
+				&:before {
+						content: '\f104\00A0';
+						display: inline-block;
+						font: normal normal normal 14px/1 FontAwesome;
+						font-size: inherit;
+						text-rendering: auto;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						transform: translate(0, 0);
+					}
+
+			}
+		}
+	h1 {
+		border-bottom:none;
+		
+	}
+		
+	.job-section {
+		padding-bottom:2em;
+		a {
+			font-weight:normal;
+		}
+
+	}
+	h2 {
+		border-top:10px solid #fafafa;
+		padding-top:1em;
+
+	text-transform:uppercase;
+	font-size:18px;
+		padding-bottom:.5em;
+		margin-bottom:1.5em;
+	}
+	ul {
+		list-style-type:square;
+		margin-left:3em;
+		li {
+			margin-bottom:.5em;
+			font-weight:normal;
+			font-size:1rem;
+			
+		}
+	}
+}
+.job-metadata, .job-inquiries {
+	>div {
+		margin-bottom:.2em;
+	position:relative;
+	padding-left:150px;
+	b { 
+		position:absolute;
+		left:0;
+		top:0;
+	}
+}
 }
 }

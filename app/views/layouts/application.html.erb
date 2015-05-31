@@ -10,13 +10,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' tgype='text/css'>
-
+		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 		<link rel="stylesheet" type="text/css" href="http://cloud.typography.com/7219312/623924/css/fonts.css" />
 		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 		<%= csrf_meta_tags %>
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<%= favicon_link_tag 'favicon.ico' %>
-		<!-- Wistia Golden Ticket - Links all videos using Turnstile email capture so that if a viewer enters their email address for one video, they won't be prompted to enter an email address on any other videos -->
 		<%= render 'layouts/wistia_golden_ticket' %>
 		<!-- Wistia Google Analytics -->
 		<%= render 'layouts/wistia_ga' %>

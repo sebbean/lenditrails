@@ -1483,7 +1483,7 @@
 		color:$primary-color;
 		margin:.25em 0 1em 0;
 		line-height:1.2em;
-		font-size:34px; 
+		font-size:34px;
 		font-weight:400;
 		span {
 			display:inline-block;
@@ -1566,7 +1566,7 @@
 		p {
 			font-size:16px;
 		}
-		@media #{$medium-up} { 
+		@media #{$medium-up} {
 			margin-left:30px;
 		}
 		.agenda-pullquote {
@@ -1761,9 +1761,9 @@
 		color:$primary-color;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-	}	
+	}
 	.just-announced {
-		
+
 		margin-bottom:40px;
 		background:#b22082;
 		max-width:970px;
@@ -1781,7 +1781,7 @@
 			}
 		}
 		.just-announced-headshot {
-			background:url(https://s3-us-west-2.amazonaws.com/lendit/usa15-speakers/soul-htite.psd-th.jpeg) center center no-repeat;
+			background:url(https://s3-us-west-2.amazonaws.com/lendit/usa15-speakers/ronsuber.psd-th.jpeg) center center no-repeat;
 			background-size:cover;
 		}
 		p {

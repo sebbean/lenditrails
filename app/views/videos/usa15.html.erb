@@ -79,6 +79,21 @@
 			</ul>
 
 
+			<h3>Company Demo Track</h3>
+			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
+				<% @usa15_demo.each do |video| %>
+				<li>
+					<%= link_to usa15_video_path(video), class: 'video-item' do %>
+					<div class="video-image">
+						<img src="<%= video.img %>" alt="<%= video.title %>">
+					</div>
+					<div class="video-title">
+						<%= raw video.title %>
+					</div>
+					<% end %>
+				</li>
+				<% end %>
+			</ul>
 
 		</div>
 	</div>

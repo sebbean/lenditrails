@@ -7,6 +7,22 @@
 	<div class="row">
 		<div class="columns">
 			<h1>LendIt Videos</h1>
+
+			<h3><a href="/china/2015/videos">LendIt China 2015</a></h3>
+			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
+				<% @china15_videos.each do |video| %>
+					<li>
+						<%= link_to china15_video_path(video), class: 'video-item' do %>
+							<div class="video-image">
+								<img src="<%= video.img %>" alt="<%= video.title %>">
+							</div>
+							<div class="video-title">
+								<%= raw video.title %>
+							</div>
+						<% end %>
+					</li>
+				<% end %>
+			</ul>
 			<!-- LendIt USA 2015 FEATURED VIDEOS -->
 			<h3><a href="/usa/2015/videos">LendIt USA 2015 </a></h3>
 			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">

@@ -9,9 +9,21 @@ class VideosController < ApplicationController
 
     us15 = Conference.where(title: 'LendIt USA 2015').first
     @usa15_videos = us15.videos.where(featured: true)
+
+    china15 = Conference.where(title: 'LendIt China 2015').first
+    @china15_videos = china15.videos.where(featured: true)
   end
 
   def live
+  end
+
+  def china15
+    china15 = Conference.where(title: 'LendIt China 2015').first
+    @webinar = china15.videos.where(track: 'Webinar')
+  end
+
+  def show_china15
+    @video = Video.friendly.find(params[:id])
   end
 
   def usa15

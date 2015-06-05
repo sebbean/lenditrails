@@ -43,7 +43,8 @@ LenditRails::Application.routes.draw do
   get '/china/2015/itinerary' => 'agendas#china15'
   get '/china/2015/china-app-show' => 'conferences#china15_china_app'
   get '/china/2015/bund-summit' => 'conferences#china15_bund_summit'
-
+  get '/china/2015/videos' => 'videos#china15'
+  get '/china/2015/videos/:id' => 'videos#show_china15', via: :get, as: :china15_video
 
   # LendIt USA 2016
   # get '/usa/2016' => 'conferences#usa16'

@@ -41,20 +41,6 @@
 				<p>Ron will be a featured speaker at the Bund Summit in Shanghai and a participant in the complete LendIt China experience - attending high-level meetings, company visits, networking receptions, and cultural activities with tour attendees.</p>
 			</div>
 		</div>
-
-
-<!-- 	<div class="row just-announced " data-equalizer="justannounced"  >
-		<div class="columns small-24 medium-5 large-5 just-announced-headshot" data-equalizer-watch="justannounced">
-		</div>
-		<div class="columns small-24 medium-19 large-19" data-equalizer-watch="justannounced">
-			<div class="just-announced-text">
-				<div class="china15-sectionhead">Just Announced!</div>
-				<p>Soul Htite, Co-Founder & CEO of Dianrong will be speaking at the Bund Summit in Shanghai on July 11. He will participate on a panel addressing risk management for P2P platforms.</p>
-				<p>Prior to founding Dianrong in 2012, Soul was the Co-Founder and Head of Technology at Lending Club where he led the design and development efforts for Lending Club's online platform. Like Lending Club, Dianrong is leveraging advanced technology to deliver major innovation to the financial services sector in China. We are thrilled to have Soul involved in LendIt China again this year.</p>
-			</div>
-		</div> -->
-
-
 	</div>
 
 	<div class="row">
@@ -88,8 +74,8 @@
 				As part of our tour LendIt will co-host of the Bund Summit in Shanghai and the China App Show in Beijing.
 			</p>
 
-
 		</div>
+
 
 		<div class="columns small-24 medium-6 large-6">
 			<div class="panel buttons-panel">
@@ -110,6 +96,28 @@
 		</div>
 
 	</div>
+
+	<div class="row featured-speakers">
+		<div class="columns">
+			<div class="china15-sectionhead">Speakers</div>
+
+			<ul class="small-block-grid-2 medium-block-grid-5 large-block-grid-5" style="margin-top:1em;">
+				<% @china15_speakers.each do |speaker| %>
+				<li>
+					<div class="speaker-top">
+						<%= image_tag speaker.img_url, class: "speaker-image", alt: speaker.first_name+" "+speaker.last_name %>
+						<div class="speaker-top-info">
+							<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
+							<div class="speaker-title"><%= speaker.title %></div>
+							<div class="speaker-company"><%= speaker.company_name %></div>
+						</div>
+					</div>
+				</li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+
 
 	<div class="row">
 
@@ -262,11 +270,11 @@
 	</div>
 	<div class="row">
 		<div class="columns small-24 medium-24 large-24">
-			<div class="china15-sectionhead">LendIt Network</div>
+			<div class="china15-sectionhead">Sponsors</div>
 			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3 china15-sponsors">
 				<li><img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/creditease.psd-th.jpeg" /></li>
 				<li><img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/lufax.psd-th.jpeg" /></li>
-				<li><img src="https://s3-us-west-2.amazonaws.com/lendit/sponsors/diangrong.psd-th.jpeg" /></li>
+				<li><img src="https://s3-us-west-2.amazonaws.com/lendit/china-2015/sponsors/qingyidai.psd-th.jpeg" /></li>
 			</ul>
 		</div>
 

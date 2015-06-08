@@ -87,25 +87,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="row featured-speakers">
-		<div class="columns">
-			<div class="china15-sectionhead">Speakers</div>
-			<ul class="small-block-grid-2 medium-block-grid-5 large-block-grid-5" style="margin-top:1em;">
-				<% @china15_speakers.each do |speaker| %>
-					<li>
-						<div class="speaker-top">
-							<%= image_tag speaker.img_url, class: "speaker-image", alt: speaker.first_name+" "+speaker.last_name %>
-							<div class="speaker-top-info">
-								<div class="speaker-name"><%= speaker.first_name %> <%= speaker.last_name %></div>
-								<div class="speaker-title"><%= speaker.title %></div>
-								<div class="speaker-company"><%= speaker.company_name %></div>
-							</div>
-						</div>
-					</li>
-				<% end %>
-			</ul>
-		</div>
-	</div>
+
+<%= render 'china15_speakers' %>
+
+
 	<div class="row">
 		<div class="columns small-24 medium-15 large-15 ">
 			<div class=" panel agenda-area">

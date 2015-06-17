@@ -1520,6 +1520,8 @@
 		padding-bottom:18px;
 		padding-top:18px;
 		background:#f5f9ea;
+		
+		padding-left:10px;
 	}
 	.agenda-area {
 		.china15-sectionhead {
@@ -1586,12 +1588,13 @@
 		strong {
 			padding:1em;
 			display:inline-block;
+			font-weight:600;
 			background:#a7cd70;
 			color:#000;
 			-webkit-border-radius: 3px;
 			-moz-border-radius: 3px;
 			border-radius: 3px;
-			font-size:18px;
+			font-size:16px;
 		}
 		div {
 			font-weight:400;
@@ -1601,7 +1604,7 @@
 			padding-left:24px;
 			padding-right:24px;
 			display:block;
-			font-size:18px;
+			font-size:16px;
 			padding-top:6px;
 		}
 	}
@@ -1767,6 +1770,7 @@
 		background:#b22082;
 		max-width:970px;
 		color:#fff;
+		line-height:1.5em;
 
 		.china15-sectionhead {
 			color:#fff;
@@ -1784,8 +1788,10 @@
 			background-size:cover;
 		}
 		p {
-			font-size:13px;
+			font-size:16px;
 			font-weight:600;
+  -webkit-font-smoothing: antialiased;
+	line-height:1.5em;
 		}
 	}
 
@@ -2172,5 +2178,45 @@
 	}
 }
 
+.side-link {
+	font-family:'Open Sans', sans-serif;
+	font-size:16px;
+	font-weight:600;
+	float:right;
+	margin-top:.7em;
+
+	@media #{$medium-up} {
+		float:left;
+		border-left:1px solid #ddd; 
+		padding-left:20px;
+		margin-left:20px;
+	}
+	
+}
+.sponsors-section {
+	position:relative;
+	@include clearfix;
+	.sponsors-head-left {
+		
+		float:left;
+
+	}
+	
+
+}
+.tour-overview-bottom {
+	background:#e7f4d2;
+	text-align:center;
+	padding-top:1em;
+	padding-bottom:1em;
+}
+
+.tour-overview-area {
+	position:relative;
+	@include clearfix;
+	.tour-overview {
+		float:left;
+	}
+}
 
 }

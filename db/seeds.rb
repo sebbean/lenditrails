@@ -110,6 +110,7 @@ Partner.create(company_name: 'The Strontium Group', conference: 'LendIt USA 2015
 # Sponsor.create(company_name: '', logo_img: '', conference: 'LendIt USA 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
 
 # LendIt China 2015 sponsors
+Sponsor.create(company_name: 'Shanghai Finance Institute', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/china-2015/sponsors/shanghaifinance.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
 Sponsor.create(company_name: 'LingYi', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/china-2015/sponsors/lingyicaijing.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
 Sponsor.create(company_name: 'CreditEase', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/creditease.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: 'http://english.creditease.cn/', description: '', conference_id: china15.id)
 Sponsor.create(company_name: 'Lufax', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/lufax.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: 'http://www.lufax.com/', description: '', conference_id: china15.id)
@@ -119,7 +120,6 @@ Sponsor.create(company_name: 'Qingyidai', logo_img: 'https://s3-us-west-2.amazon
 Sponsor.create(company_name: 'FICO', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/china-2015/sponsors/fico.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
 Sponsor.create(company_name: 'Cashlai', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/china-2015/sponsors/cashlai.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
 Sponsor.create(company_name: 'Quark Finance', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/china-2015/sponsors/quarkfinance.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
-# Sponsor.create(company_name: '', logo_img: '', conference: 'LendIt China 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
 # Sponsor.create(company_name: '', logo_img: '', conference: 'LendIt China 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
 
 # LendIt USA 2015 sponsors

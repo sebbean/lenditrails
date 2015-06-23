@@ -9,6 +9,7 @@ class ConferencesController < ApplicationController
 
   def china15
     @china15_speakers = Speaker.where(conference: 'LendIt China 2015')
+    @sponsors = Sponsor.where(conference: 'LendIt China 2015')
   end
 
   def go_to_china15

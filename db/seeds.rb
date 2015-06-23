@@ -107,7 +107,20 @@ Partner.create(company_name: 'The Strontium Group', conference: 'LendIt USA 2015
 ############
 # Sponsors #
 ############
-# Sponsor.create(company_name: '', logo_img: '', conference: 'LendIt USA 2015', sponsor_level: '', url: '', description: '', conference_id: usa15.id)
+# Sponsor.create(company_name: '', logo_img: '', conference: 'LendIt USA 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
+
+# LendIt China 2015 sponsors
+Sponsor.create(company_name: 'LingYi', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/china-2015/sponsors/lingyicaijing.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
+Sponsor.create(company_name: 'CreditEase', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/creditease.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: 'http://english.creditease.cn/', description: '', conference_id: china15.id)
+Sponsor.create(company_name: 'Lufax', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/lufax.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: 'http://www.lufax.com/', description: '', conference_id: china15.id)
+Sponsor.create(company_name: 'Dianrong', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/china-2015/sponsors/diangrong.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: 'http://www.dianrong.com/', description: '', conference_id: china15.id)
+Sponsor.create(company_name: 'China Rapid Finance', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/china-2015/sponsors/chinarapidfin.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
+Sponsor.create(company_name: 'Qingyidai', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/china-2015/sponsors/qingyidai.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: 'http://qingyidai.com/', description: '', conference_id: china15.id)
+Sponsor.create(company_name: 'FICO', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/china-2015/sponsors/fico.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
+Sponsor.create(company_name: 'Cashlai', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/china-2015/sponsors/cashlai.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
+Sponsor.create(company_name: 'Quark Finance', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/china-2015/sponsors/quarkfinance.psd-th.jpeg', conference: 'LendIt China 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
+# Sponsor.create(company_name: '', logo_img: '', conference: 'LendIt China 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
+# Sponsor.create(company_name: '', logo_img: '', conference: 'LendIt China 2015', sponsor_level: '', url: '', description: '', conference_id: china15.id)
 
 # LendIt USA 2015 sponsors
 Sponsor.create(company_name: 'Lending Club', logo_img: 'https://s3-us-west-2.amazonaws.com/lendit/sponsors/lendit-usa-2015/lending.psd-th.jpeg', conference: 'LendIt USA 2015', sponsor_level: 'Title', description: 'Lending Club (NYSE: LC) is the world\'s largest online marketplace connecting borrowers and investors. The company\'s mission is to transform the banking system to make credit more affordable and investing more rewarding and help people achieve their financial goals. Lending Club operates at a lower cost than traditional banks and passes the savings on to borrowers in the form of lower rates and to investors in the form of attractive risk adjusted returns. Since launching in 2007, the company has built a trusted brand with a track record of delivering exceptional value and satisfaction to both borrowers and investors. Lending Club has been recognized as a leader for growth and innovation; the company\'s been named to the CNBC Disruptor, Inc. 500, and Forbes\' America\'s Most Promising Companies lists. Lending Club was awarded the 2014 Economist Innovation Award in consumer products.', url: 'https://www.lendingclub.com/', conference_id: usa15.id)

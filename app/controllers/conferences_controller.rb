@@ -1,6 +1,8 @@
 class ConferencesController < ApplicationController
 
   def eu15
+    @china15_speakers = Speaker.where(conference: 'LendIt China 2015')
+    @eu15_speakers = Speaker.where(conference: 'LendIt Europe 2015')
   end
 
   def sharecast

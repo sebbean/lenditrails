@@ -1,11 +1,11 @@
 LenditRails::Application.routes.draw do
 
 
-  # root 'welcome#home'
-  root 'conferences#china15'
+  root 'welcome#home'
+  # root 'conferences#china15'
 
-  get '/test' => 'welcome#test'
-  get '/home' => 'welcome#home'
+  # get '/test' => 'welcome#test'
+  # get '/home' => 'welcome#home'
 
   # get '/conferences' => 'welcome#home'
   get '/about' => 'welcome#about'

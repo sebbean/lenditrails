@@ -43,7 +43,8 @@
 	</div>
 	<div class="row conf-intro" data-equalizer="intro" >
 
-		<div class="small-24 medium-16 large-17 columns" data-equalizer-watch="intro">
+		<div class="columns" data-euqlizer-watch="intro">
+			<!-- <div class="small-24 medium-16 large-17 columns" data-equalizer-watch="intro"> -->
 			<div class="conf-intro-text" >
 				<p>
 					<span class="green">LendIt Europe is Europe's largest annual gathering of the online lending community.</span> It is where all the industry's major players come to learn, network, and do business.
@@ -53,14 +54,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="small-24 medium-8 large-7 columns" >
-			<div class="panel" data-equalizer-watch="intro">
-				<a href="https://s3-us-west-2.amazonaws.com/lendit/europe-2015/prospectus.pdf" target="_blank">
-					<img src="https://s3-us-west-2.amazonaws.com/lendit/europe-2015/2015-06-09-eu15-prospectus-thumb.png">
-					View Prospectus <i class="fa fa-arrow-circle-right"></i>
-				</a>
-			</div>
-		</div>
+
 	</div>
 
 	<%= render 'eu15_speakers' %>
@@ -148,6 +142,7 @@
 				</tr>
 			</table>
 		</div>
+
 		<div class="columns small-24 medium-12 large-8">
 			<table cellspacing="0" class="overview-icons">
 				<tr><td class="special-spacer"></td></tr>
@@ -184,67 +179,84 @@
 			</table>
 		</div>
 	</div>
-	<div class="row">
-		<div class="small-24 medium-24 large-10 columns">
-		</div>
-	</div>
-	<div class="row">
-		<div class="large-24 columns">
-			<div class="conf-quote">
-				<strong>
-					"LendIt Europe 2014 was a fantastic event for the industry. LendIt did a great job of bringing all the major names in the European market together for high quality learning and networking in an ideal location."
-				</strong>
-				<div>
-					Nick Moules, Marketing & Communication Manager, rebuildingsociety.com
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row conf-callouts" data-equalizer="callouts" >
-		<div class="columns small-24 medium-8 large-8">
-			<div class="panel" data-equalizer-watch="callouts">
-				<div class="conf-callout-hd">Attendee Growth</div>
-				<div class="conf-callout-object">
-					<img src="https://s3-us-west-2.amazonaws.com/lendit/conferences/europe-2015/europe-2015-callout-attendance.png" />
-				</div>
-			</div>
-		</div>
-		<div class="columns small-24 medium-8 large-8">
-			<div class="panel" data-equalizer-watch="callouts">
-				<div class="conf-callout-hd"> 2014 Audience Breakdown </div>
-				<div class="conf-callout-object">
-					<img src="https://s3-us-west-2.amazonaws.com/lendit/conferences/europe-2015/europe-2015-callout-audience.png" />
-				</div>
-			</div>
-		</div>
-		<div class="columns small-24 medium-8 large-8" >
-			<div class="panel" data-equalizer-watch="callouts">
-				<a href="europe/2014/attendees" class="conf-callout-map">
-					<div class="conf-callout-hd">
-						2015 Attendee Map <i class="fa fa-arrow-circle-right"></i>
-					</div>
-					<div class="conf-callout-object">
-						<img src="https://s3-us-west-2.amazonaws.com/lendit/conferences/europe-2015/europe-2015-callout-map.png" />
-					</div>
+
+<!-- <div class="small-24 medium-8 large-7 columns" >
+			<div class="panel" data-equalizer-watch="intro">
+				<a href="https://s3-us-west-2.amazonaws.com/lendit/europe-2015/prospectus.pdf" target="_blank">
+					<img src="https://s3-us-west-2.amazonaws.com/lendit/europe-2015/2015-06-09-eu15-prospectus-thumb.png">
+					View Prospectus <i class="fa fa-arrow-circle-right"></i>
 				</a>
 			</div>
+		</div> -->
+
+		<div class="row">
+			<div class="columns">
+				<a href="https://s3-us-west-2.amazonaws.com/lendit/europe-2015/prospectus.pdf" target-"_blank"><button>Want to sponsor LendIt Europe?</button></a>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="small-24 medium-24 large-10 columns">
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-24 columns">
+				<div class="conf-quote">
+					<strong>
+						"LendIt Europe 2014 was a fantastic event for the industry. LendIt did a great job of bringing all the major names in the European market together for high quality learning and networking in an ideal location."
+					</strong>
+					<div>
+						Nick Moules, Marketing & Communication Manager, rebuildingsociety.com
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row conf-callouts" data-equalizer="callouts" >
+			<div class="columns small-24 medium-8 large-8">
+				<div class="panel" data-equalizer-watch="callouts">
+					<div class="conf-callout-hd">Attendee Growth</div>
+					<div class="conf-callout-object">
+						<img src="https://s3-us-west-2.amazonaws.com/lendit/conferences/europe-2015/europe-2015-callout-attendance.png" />
+					</div>
+				</div>
+			</div>
+			<div class="columns small-24 medium-8 large-8">
+				<div class="panel" data-equalizer-watch="callouts">
+					<div class="conf-callout-hd"> 2014 Audience Breakdown </div>
+					<div class="conf-callout-object">
+						<img src="https://s3-us-west-2.amazonaws.com/lendit/conferences/europe-2015/europe-2015-callout-audience.png" />
+					</div>
+				</div>
+			</div>
+			<div class="columns small-24 medium-8 large-8" >
+				<div class="panel" data-equalizer-watch="callouts">
+					<a href="europe/2014/attendees" class="conf-callout-map">
+						<div class="conf-callout-hd">
+							2015 Attendee Map <i class="fa fa-arrow-circle-right"></i>
+						</div>
+						<div class="conf-callout-object">
+							<img src="https://s3-us-west-2.amazonaws.com/lendit/conferences/europe-2015/europe-2015-callout-map.png" />
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row conf-photos">
+			<div class="large-24 columns">
+				<div class="section-hd"> 2014 Photos </div>
+				<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
+					<li class="visible">
+						<img src="https://s3-us-west-2.amazonaws.com/lendit/conferences/europe-2015/europe-2015-prev-photos-01.jpg" />
+					</li>
+					<li>
+						<img src="https://s3-us-west-2.amazonaws.com/lendit/conferences/europe-2015/europe-2015-prev-photos-02.jpg" />
+					</li>
+					<li>
+						<img src="https://s3-us-west-2.amazonaws.com/lendit/conferences/europe-2015/europe-2015-prev-photos-03.jpg" />
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
-	<div class="row conf-photos">
-		<div class="large-24 columns">
-			<div class="section-hd"> 2014 Photos </div>
-			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
-				<li class="visible">
-					<img src="https://s3-us-west-2.amazonaws.com/lendit/conferences/europe-2015/europe-2015-prev-photos-01.jpg" />
-				</li>
-				<li>
-					<img src="https://s3-us-west-2.amazonaws.com/lendit/conferences/europe-2015/europe-2015-prev-photos-02.jpg" />
-				</li>
-				<li>
-					<img src="https://s3-us-west-2.amazonaws.com/lendit/conferences/europe-2015/europe-2015-prev-photos-03.jpg" />
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
 </div>

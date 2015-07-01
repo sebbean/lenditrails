@@ -40,6 +40,7 @@ LenditRails::Application.routes.draw do
   # LendIt Europe 2015
   get '/europe' => 'conferences#eu15'
   get '/europe/2015/speakers/sign-up' => 'speakers#eu15_sign-up'
+  get '/europe-book-hotel', to: redirect('http://register.lendit.co/d/yrqdh2', status: 301)
 
   # LendIt China 2015
   get '/china' => 'conferences#china15'

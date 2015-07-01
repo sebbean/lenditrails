@@ -34,6 +34,7 @@ LenditRails::Application.routes.draw do
   get '/networking' => 'welcome#networking'
   get '/jobs' => 'jobs#index'
   get '/jobs/vp-finance' => 'jobs#vp_finance'
+  get '/jobs/speaker-manager' => 'jobs#content_manager'
   get '/jobs/content-manager' => 'jobs#content_manager'
 
 

@@ -3,7 +3,6 @@
 		background: url(https://s3-us-west-2.amazonaws.com/lendit/europe-2015-hero.jpg) center left no-repeat;
 		background-size: 1230px;
 	}
-
 	.row-wide {
 		max-width:1180px;
 	}
@@ -194,49 +193,42 @@
 			color:#222;
 			font-weight:200;
 			-webkit-font-smoothing: antialiased;
-
 		}
-
-
 	}
 	.quote-row {
 		margin-top:2.5em;
 		margin-bottom:1.5em;
 	}
-
 	.conf-callout-button {
-
-				@media #{$small-only} {
-					border-bottom:1px solid #ddd;
-					margin-bottom:1.25em;
-				}
-		
-		
-			.buttonlink {
-				margin-bottom:1.5em;
-				&:before {
-					font-family:FontAwesome;
-					  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  content: '\f0a9';
-	padding-right:6px;
-  color: #fff;
-				}
-				display:block;
-				padding:6px 10px;
-					  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-				background:$primary-color;
-				font-size:16px;
-				text-align:center;
-				font-weight:700;
-				color:#fff;
-				-webkit-border-radius: 2px;
-				-moz-border-radius: 2px;
-				border-radius: 2px;
-				&:hover {
-					background:darken($primary-color, 10%);
-					text-decoration:none;
-				}
+		@media #{$small-only} {
+			border-bottom:1px solid #ddd;
+			margin-bottom:1.25em;
+		}
+		.buttonlink {
+			margin-bottom:1.5em;
+			&:before {
+				font-family:FontAwesome;
+				text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+				content: '\f0a9';
+				padding-right:6px;
+				color: #fff;
 			}
+			display:block;
+			padding:6px 10px;
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+			background:$primary-color;
+			font-size:16px;
+			text-align:center;
+			font-weight:700;
+			color:#fff;
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+			&:hover {
+				background:darken($primary-color, 10%);
+				text-decoration:none;
+			}
+		}
 	}
 	.conf-callouts {
 		.conf-callout-hd {
@@ -272,8 +264,6 @@
 			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 		}
 	}
-
-
 	.featured-speakers {
 		ul {
 		}
@@ -297,7 +287,6 @@
 				font-size:16px;
 			}
 		}
-
 		.speaker-name {
 			font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag';
 			font-weight:500;
@@ -309,7 +298,6 @@
 			@media (min-width: 960px) {
 				font-size:28px;
 			}
-
 		}
 		.speaker-title {
 		}
@@ -348,7 +336,6 @@
 			}
 		}
 	}
-
 	#cboxOverlay {
 		top: 0 !important;
 		height: 100%;
@@ -361,7 +348,6 @@
 			opacity: 1 !important;
 		}
 	}
-
 	#colorbox {
 		font-family:'Open Sans', sans-serif;
 		button {
@@ -653,13 +639,12 @@
 	}
 	.buttonandquote {
 		.buttonandquote-divider {
-		border-bottom:1px solid #ddd;
-		margin-top:1.5em;
-		margin-bottom:1.5em;
+			border-bottom:1px solid #ddd;
+			margin-top:1.5em;
+			margin-bottom:1.5em;
 		}
-		
 		margin-top:1em;
 		.columns {
-	}
+		}
 	}
 }

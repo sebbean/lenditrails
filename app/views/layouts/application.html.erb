@@ -9,8 +9,6 @@
 		<!-- Mobile -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' tgype='text/css'>
-                                                                                                                                                                                                                                                                                                                                                                                                                                      ,
-
 		<link rel="stylesheet" type="text/css" href="http://cloud.typography.com/7219312/623924/css/fonts.css" />
 		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 		<%= csrf_meta_tags %>
@@ -22,16 +20,12 @@
 		<%= javascript_include_tag "vendor/modernizr" %>
 		<%= canonical_tag -%>
 	</head>
-
 	<body class="<%= yield (:body_class) %>">
-
-			<%= render 'layouts/nav' %>
-
+		<%= render 'layouts/nav' %>
 		<%= yield %>
 		<%= render 'layouts/footer' %>
 		<%= render 'layouts/googleanalytics' %>
 		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 		<script src="//fast.wistia.com/assets/external/embed_shepherd-v1.js"></script>
-
 	</body>
 </html>

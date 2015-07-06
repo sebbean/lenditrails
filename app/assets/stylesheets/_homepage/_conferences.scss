@@ -21,7 +21,7 @@
 				font-weight:600;
 				font-size:18px;
 			}	
-			a {
+			a,span {
 				transition: all ease-in-out .1s;
 				height:300px;
 				text-align:center;
@@ -45,7 +45,10 @@
 				&:active {
 					text-decoration:none;
 				}
-				&:hover {
+			
+			}
+			a {
+					&:hover {
 					.conf-loc {
 						color:#f5f9ea;
 						text-shadow:0 2px 2px rgba(0, 0, 0, 0.5);
@@ -73,6 +76,7 @@
 			margin-right:20px;
 			list-style-type:none;
 			li {
+				display:inline-block;
 				margin:0;
 				padding:0;
 				line-height:1.1em;
@@ -135,6 +139,12 @@
 					}
 				}
 			}
+			.photo a:before	{
+				content: '\f03e';
+				font-family:FontAwesome;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
 			.video a:before	{
 				content: '\f04b';
 			}
@@ -144,14 +154,14 @@
 		}
 	}
 	.conf-loc {
-		font-size:30px;
+		font-size:40px;
 		line-height:1.2em;
 		font-weight:600;
 		font-family: 'Verlag A', 'Verlag B', 'verlag';
 		text-rendering: optimizeLegibility;
 	}
-	.conf-usa .conf-hero a {
-		background:url(https://s3-us-west-2.amazonaws.com/lendit/conferences/conf-hero-sm-usa-2015.jpg) center center no-repeat;
+	.conf-usa .conf-hero a, .conf-usa .conf-hero span {
+		background:url(https://s3-us-west-2.amazonaws.com/lendit/conferences/conf-hero-sm-usa-2016.jpg) center center no-repeat;
 		background-size: auto 300px;
 	}
 	.conf-europe .conf-hero a {
@@ -295,8 +305,8 @@
 		background:rgba(245, 249, 234, 0.48);
 		/*
 		@media #{$medium-up} {
-			max-height:400px;
-			overflow:auto;
+		max-height:400px;
+		overflow:auto;
 		}
 		 */
 }	
@@ -305,7 +315,6 @@
 }
 .livestream-area  {
 	.li-button {
-
 	}
 }
 .li-button a {
@@ -317,10 +326,9 @@
 	font-weight:700;
 	padding:6px 10px 6px 28px;
 	margin-top:46px;
-			@media #{$small-only} {
-				margin-top:2em;
-			}
-	
+	@media #{$small-only} {
+		margin-top:2em;
+	}
 	text-shadow:0 1px 1px rgba(0, 0, 0, 0.4);
 	position:relative;
 	&:focus,

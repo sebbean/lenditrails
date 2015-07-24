@@ -6,6 +6,10 @@ class PodcastsController < ApplicationController
     @usa15podcasts = Podcast.where(conference_id: @usa15.id)
   end
 
+  def go_to_usa15
+    redirect_to ('/usa/2015/podcasts'), :status => 301
+  end
+
   def eu14
     @eu14 = Conference.find_by(title: "LendIt Europe 2014")
     @eu14podcasts = Podcast.where(conference_id: @eu14.id)

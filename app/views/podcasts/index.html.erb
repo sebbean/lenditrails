@@ -1,12 +1,12 @@
-<% title "LendIt USA 2015 Podcasts Page" %>
-<% meta_description "LendIt USA 2015 keynotes and presentations" %>
-<% meta_keywords "p2p, start-up, online lending, peer-to-peer, LendIt Europe" %>
+<% title "LendIt Podcasts Page" %>
+<% meta_description "LendIt Conference keynotes and presentations" %>
+<% meta_keywords "p2p, start-up, online lending, peer-to-peer, LendIt" %>
 
 <% body_class "pg-podcasts" %>
 <div class="general-background">
   <div class="row podcasts-main">
     <div class="columns ">
-      <h1>LendIt USA 2015 Podcasts</h1>
+      <h1>LendIt Podcasts</h1>
       <div class="podcast-actions">
         <div>
           <a href="https://itunes.apple.com/us/podcast/lendit-conference/id962047495" target="_blank"> <i class="fa fa-music"></i> Subscribe via iTunes</a>
@@ -19,18 +19,37 @@
         </div>
       </div>
 
-      <h3>LendIt USA 2015 Podcasts</h3>
+      <h3><a href="/usa/2015/podcasts">LendIt USA 2015 Podcasts</a></h3>
       <ul class="podcast-items">
-        <% @usa15podcasts.each do |podcast, index| %>
+        <% @usa15podcasts.each do |podcast| %>
           <li>
             <div class="podcast-title">
               <b>#<%= podcast.episode_number %>:</b> <i><a href="#" data-reveal-id="podcast-<%= podcast.id %>"><%= raw podcast.video.title %></a></i>
             </div>
             <div class="podcast-item-embed reveal-modal" id="podcast-<%= podcast.id %>" data-reveal>
-              <div class="podcast-modal-header">#<%= podcast.episode_number %>: <%= raw podcast.video.title %></div>
+              <div class="podcast-modal-header"># <%= podcast.episode_number %>: <%= raw podcast.video.title %></div>
               <div class="podcast-modal-audio"><%= raw podcast.audio_embed %></div>
               <div class="podcast-modal-desc"><%= raw podcast.video.description %></div>
               <div><%= link_to 'Watch the video', usa15_video_path(podcast.video) %></div>
+              <a href="" class="close-reveal-modal">&#215;</a>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+
+
+      <h3 style="margin-top: 30px;"><a href="/europe/2014/podcasts">LendIt Europe 2014 Podcasts</a></h3>
+      <ul class="podcast-items">
+        <% @eu14podcasts.each do |podcast| %>
+          <li>
+            <div class="podcast-title">
+              <b>#<%= podcast.episode_number %>:</b> <i><a href="#" data-reveal-id="podcast-<%= podcast.id %>"><%= raw podcast.video.title %></a></i>
+            </div>
+            <div class="podcast-item-embed reveal-modal" id="podcast-<%= podcast.id %>" data-reveal>
+              <div class="podcast-modal-header"># <%= podcast.episode_number %>: <%= raw podcast.video.title %></div>
+              <div class="podcast-modal-audio"><%= raw podcast.audio_embed %></div>
+              <div class="podcast-modal-desc"><%= raw podcast.video.description %></div>
+              <div><%= link_to 'Watch the video', eu14_video_path(podcast.video) %></div>
               <a href="" class="close-reveal-modal">&#215;</a>
             </div>
           </li>

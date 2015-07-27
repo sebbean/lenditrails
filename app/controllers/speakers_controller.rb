@@ -6,6 +6,12 @@ class SpeakersController < ApplicationController
     redirect_to ('/usa/2015/speakers'), :status => 301
   end
 
+  def eu15
+    @eu15_speakers = Speaker.where(conference: 'LendIt Europe 2015')
+    @speakers = @eu15_speakers.where(featured: false)
+    @featured = @eu15_speakers.where(featured: true)
+  end
+
   def usa15
     @usa15_speakers = Speaker.where(conference: 'LendIt USA 2015')
     @vip = @usa15_speakers.where(keynote_vip: true)

@@ -1,0 +1,139 @@
+<%= title "LendIt Europe 2015 Speakers Page" %>
+<% meta_description "LendIt Europe 2015 Conference speakers are esteemed European leaders in the peer-to-peer industry." %>
+<% meta_keywords "p2p, online lending, peer-to-peer, LendIt, speakers, presenters, Europe" %>
+<% body_class "usa15-speakers" %>
+
+<div class="general-background" >
+  <div class="row">
+    <div class="columns">
+      <section class="speakers-intro">
+        <div class="speakers-intro-left">
+          <h1>LendIt Europe 2015 Speakers</h1>
+        </div>
+        <div class="speakers-intro-right">
+          <div class="speakers-signup">
+            <a href="/europe/2015/speakers/sign-up">
+              <i class="fa fa-arrow-circle-right"></i>
+              <b>
+                Sign Up To Be A Speaker
+              </b>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="columns">
+      <div class="speakers-section">
+        <h3>Featured Speakers</h3>
+        <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4 current-speakers">
+          <% @featured.each do |speaker| %>
+            <li>
+              <% if speaker.bio? %>
+                <a class="current-speaker cboxElement" href="#<%= raw speaker.first_name %><%= raw speaker.last_name %><%= speaker.id %>">
+                  <div class="speaker speaker-featured">
+                    <div class="speaker-top">
+                      <img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+                      <div class="speaker-top-info">
+                        <div class="speaker-name"><%= raw speaker.first_name %> <%= raw speaker.middle_name %> <%= raw speaker.last_name %><%= raw speaker.suffix %></div>
+                        <div class="speaker-title"><%= raw speaker.title %></div>
+                        <div class="speaker-company"><%= raw speaker.company_name %></div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="speaker-bio" style="display:none;">
+                  <div id="<%= raw speaker.first_name %><%= raw speaker.last_name %><%= speaker.id %>" class="speaker-container">
+                    <div class="speaker-colorbox-title">LendIt USA 2015</div>
+                    <div class="speaker-top-info">
+                      <img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= raw speaker.first_name %> <%= raw speaker.last_name %>">
+                      <div class="speaker-name"><%= raw speaker.first_name %> <%= raw speaker.middle_name %> <%= raw speaker.last_name %><%= raw speaker.suffix %></div>
+                      <div class="speaker-title"><%= raw speaker.title %></div>
+                      <div class="speaker-company"><%= raw speaker.company_name %></div>
+                    </div>
+                    <div class="speaker-bio-text"><div class="speaker-bio-text-inner"><%= raw speaker.bio %></div></div>
+                    <div class="speaker-bio-mask"></div>
+                  </div>
+                </div>
+
+              <% else %>
+                <span>
+                  <div class="speaker">
+                    <div class="speaker-top">
+                      <img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+                      <div class="speaker-top-info">
+                        <div class="speaker-name"><%= raw speaker.first_name %> <%= raw speaker.last_name %><%= raw speaker.suffix %></div>
+                        <div class="speaker-title"><%= raw speaker.title %></div>
+                        <div class="speaker-company"><%= raw speaker.company_name %></div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              <% end %>
+            </li>
+          <% end %>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="columns">
+      <div class="speakers-section">
+        <h3>Speakers</h3>
+        <ul class="small-block-grid-2 medium-block-grid-5 large-block-grid-5 current-speakers">
+          <% @speakers.each do |speaker| %>
+            <li>
+              <% if speaker.bio? %>
+                <a class="current-speaker cboxElement" href="#<%= raw speaker.first_name %><%= raw speaker.last_name %><%= speaker.id %>">
+                  <div class="speaker">
+                    <div class="speaker-top">
+                      <img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= raw speaker.first_name %> <%= raw speaker.last_name %>">
+                      <div class="speaker-top-info">
+                        <div class="speaker-name"><%= raw speaker.first_name %> <%= raw speaker.middle_name %> <%= raw speaker.last_name %><%= raw speaker.suffix %></div>
+                        <div class="speaker-title"><%= raw speaker.title %></div>
+                        <div class="speaker-company"><%= raw speaker.company_name %></div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="speaker-bio" style="display:none;">
+                  <div id="<%= raw speaker.first_name %><%= raw speaker.last_name %><%= speaker.id %>" class="speaker-container">
+                    <div class="speaker-colorbox-title">LendIt USA 2015</div>
+                    <div class="speaker-top-info">
+                      <img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= speaker.first_name %> <%= speaker.last_name %>">
+                      <div class="speaker-name"><%= raw speaker.first_name %> <%= raw speaker.middle_name %> <%= raw speaker.last_name %><%= raw speaker.suffix %></div>
+                      <div class="speaker-title"><%= raw speaker.title %></div>
+                      <div class="speaker-company"><%= raw speaker.company_name %></div>
+                    </div>
+                    <div class="speaker-bio-text"><div class="speaker-bio-text-inner"><%= raw speaker.bio %></div></div>
+                    <div class="speaker-bio-mask"></div>
+                  </div>
+                </div>
+
+              <% else %>
+                <span>
+                  <div class="speaker">
+                    <div class="speaker-top">
+                      <img src="<%= speaker.img_url %>" class="speaker-image" alt="<%= raw speaker.first_name %> <%= raw speaker.last_name %>">
+                      <div class="speaker-top-info">
+                        <div class="speaker-name"><%= raw speaker.first_name %> <%= raw speaker.middle_name %>
+                          <%= raw speaker.last_name %><%= raw speaker.suffix %></div>
+                        <div class="speaker-title"><%= raw speaker.title %></div>
+                        <div class="speaker-company"><%= raw speaker.company_name %></div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+

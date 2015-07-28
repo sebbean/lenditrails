@@ -6,6 +6,21 @@ class SponsorsController < ApplicationController
     redirect_to ('/usa/2015/sponsors'), :status => 301
   end
 
+  def eu15
+    @eu15_sponsors = Sponsor.where(conference: 'LendIt Europe 2015')
+    @title = @eu15_sponsors.where(sponsor_level: 'Title')
+    @platinum = @eu15_sponsors.where(sponsor_level: 'Platinum')
+    @gold = @eu15_sponsors.where(sponsor_level: 'Gold')
+    @silver = @eu15_sponsors.where(sponsor_level: 'Silver')
+    @bronze = @eu15_sponsors.where(sponsor_level: 'Bronze')
+    @mobile = @eu15_sponsors.where(sponsor_level: 'Mobile App')
+    @exhibitors = Exhibitor.where(conference: 'LendIt Europe 2015')
+    @exhibitors.sort_by! { |company| company['company_name'] }
+    @startups = Startup.where(conference: 'LendIt Europe 2015')
+    @associates = @eu15_sponsors.where(associate: true)
+    @partners = Partner.where(conference: 'LendIt Europe 2015')
+  end
+
   def usa15
     @usa15_sponsors = Sponsor.where(conference: 'LendIt USA 2015')
     @title = @usa15_sponsors.where(sponsor_level: 'Title')

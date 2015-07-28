@@ -3,7 +3,7 @@ class SponsorsController < ApplicationController
 
 
   def index
-    redirect_to ('/usa/2015/sponsors'), :status => 301
+    redirect_to ('/europe/2015/sponsors'), :status => 301
   end
 
   def eu15

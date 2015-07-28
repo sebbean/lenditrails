@@ -42,6 +42,7 @@ LenditRails::Application.routes.draw do
   get '/europe/2015/speakers/sign-up' => 'speakers#eu15_sign-up'
   get '/europe-book-hotel', to: redirect('http://www.hilton.com/en/hi/groups/personalized/L/LONMETW-GLEND-20151018/index.jhtml?WT.mc_id=POG', status: 301)
   get '/europe/2015/speakers' => 'speakers#eu15'
+  get '/europe/2015/video-showcase' => 'videos#eu15_showcase'
 
   # LendIt China 2015
   get '/china' => 'conferences#china15'

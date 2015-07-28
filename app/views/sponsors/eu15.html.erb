@@ -46,38 +46,7 @@
           <% end %>
         </ul>
       </div>
-      <div class="sponsors-section">
-        <div class="sponsors-section-head">
-          Platinum Sponsors
-        </div>
-        <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3">
-          <% @platinum.each do |sponsor| %>
 
-            <% if !sponsor.description.empty? %>
-            <li>
-              <a href="#" class="sponsors-thumb" data-reveal-id="sponsor-modal-<%= sponsor.id %>">
-                <img src="<%= sponsor.logo_img %>" />
-              </a>
-            </li>
-
-            <div id="sponsor-modal-<%= sponsor.id %>" class="reveal-modal" data-reveal>
-              <div class="sponsor-category"><span>LendIt USA 2015</span> <b><%= sponsor.sponsor_level %> Sponsor</b></div>
-              <p class="sponsor-modal-thumb"><img src="<%= sponsor.logo_img %>" /></p>
-              <p class="sponsor-modal-visit"><a href="<%= raw sponsor.url %>" target="_blank">Visit <%= sponsor.company_name %></a></p>
-              <p class="sponsor-modal-description"><%= raw sponsor.description %></p>
-              <a class="close-reveal-modal">&#215;</a>
-            </div>
-
-            <% else %>
-              <li>
-                <a href="<%= sponsor.url %>" class="sponsors-thumb" target="_blank">
-                  <img src="<%= sponsor.logo_img %>" />
-                </a>
-              </li>
-            <% end %>
-          <% end %>
-        </ul>
-      </div>
       <div class="sponsors-section">
         <div class="sponsors-section-head">
           Gold Sponsors
@@ -180,7 +149,7 @@
       </div>
 
 
-      <div class="sponsors-section">
+      <div class="sponsors-section" style="display: none;">
         <div class="sponsors-section-head">
           Associate Sponsors
         </div>
@@ -243,7 +212,7 @@
           <% end %>
         </ul>
       </div>
-      <div class="sponsors-section">
+      <div class="sponsors-section" style="display: none;">
         <div class="sponsors-section-head">
           Start-Up Zone
         </div>

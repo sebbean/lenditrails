@@ -1,0 +1,43 @@
+// font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag 
+.eu15-speakers-info {
+	.general-background {
+		padding-bottom:40px;
+		font-family:'Open Sans', sans-serif;
+		font-weight:400;
+	}
+	h1, h2, h3, h4, h5 {
+		font-family: 'Verlag A', 'Verlag B', verlag;
+		font-weight:600;
+
+		line-height:1.2em;
+
+
+	}
+	h2 {
+		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+	}
+	h5 {
+		font-family: 'Open Sans', sans-serif;
+		font-size:16px;
+		font-weight:700;
+
+	}
+	h2 {
+		margin-top:1em;
+		margin-bottom:1em;
+		font-weight:200;
+		border-bottom:1px solid $primary-color;
+		color:$primary-color;
+	}
+	h1 {
+		margin-bottom:20px;
+	}
+
+	.section {
+		margin-bottom:2em;
+	}
+	ul {
+		list-style-type:square;
+	}
+}
+

@@ -1,0 +1,4 @@
+<% @speakers.each do |speaker| %>
+<%= link_to "#{speaker.first_name} #{speaker.last_name}", edit_speaker_path(speaker) %>
+<br/>
+<% end %>

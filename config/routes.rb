@@ -1,5 +1,12 @@
 LenditRails::Application.routes.draw do
+  namespace :admin, as: '' do
+    resources :user_sessions
+    resources :users
+    get 'login' => 'user_sessions#new', :as => :login
+    post 'logout' => 'user_sessions#destroy', :as => :logout  
 
+    resources :speakers
+  end
 
   root 'welcome#home'
   # root 'conferences#china15'

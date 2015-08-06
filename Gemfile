@@ -26,5 +26,8 @@ group :production do
   gem 'rails_12factor'
 end
 
+group :development do
+  gem 'awesome_print'
+end
 
-ruby '1.9.3'
+gem 'sorcery'
